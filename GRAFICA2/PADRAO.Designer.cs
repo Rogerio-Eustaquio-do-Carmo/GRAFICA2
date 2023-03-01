@@ -29,7 +29,20 @@ namespace GRAFICA2
         /// </summary>
         private void InitializeComponent()
         {
+            this.CBBOPCOES = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // CBBOPCOES
+            // 
+            this.CBBOPCOES.FormattingEnabled = true;
+            this.CBBOPCOES.Items.AddRange(new object[] {
+            "CADASTRAR",
+            "ATUALIZAR",
+            "EXCLUIR"});
+            this.CBBOPCOES.Location = new System.Drawing.Point(356, 63);
+            this.CBBOPCOES.Name = "CBBOPCOES";
+            this.CBBOPCOES.Size = new System.Drawing.Size(169, 21);
+            this.CBBOPCOES.TabIndex = 0;
             // 
             // PADRAO
             // 
@@ -37,6 +50,7 @@ namespace GRAFICA2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1784, 861);
+            this.Controls.Add(this.CBBOPCOES);
             this.Name = "PADRAO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -45,6 +59,8 @@ namespace GRAFICA2
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox CBBOPCOES;
     }
 }
 
