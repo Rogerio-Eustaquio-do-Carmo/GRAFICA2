@@ -29,11 +29,10 @@ namespace GRAFICA2
         /// </summary>
         private void InitializeComponent()
         {
-            this.CBBOPCOES = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cADASTROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CADCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
+            this.CADPAPEL = new System.Windows.Forms.ToolStripMenuItem();
             this.aTUALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTEToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pAPELToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,20 +167,14 @@ namespace GRAFICA2
             this.CBBSEXO6 = new System.Windows.Forms.ComboBox();
             this.CBBSEXO7 = new System.Windows.Forms.ComboBox();
             this.CBBSEXO8 = new System.Windows.Forms.ComboBox();
+            this.lOGOTIPOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cADASTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aTUALIZARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXCLUIRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // CBBOPCOES
-            // 
-            this.CBBOPCOES.FormattingEnabled = true;
-            this.CBBOPCOES.Items.AddRange(new object[] {
-            "CADASTRAR",
-            "ATUALIZAR",
-            "EXCLUIR"});
-            this.CBBOPCOES.Location = new System.Drawing.Point(411, 232);
-            this.CBBOPCOES.Name = "CBBOPCOES";
-            this.CBBOPCOES.Size = new System.Drawing.Size(169, 21);
-            this.CBBOPCOES.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -199,23 +192,24 @@ namespace GRAFICA2
             // cADASTROToolStripMenuItem
             // 
             this.cADASTROToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem,
-            this.pAPELToolStripMenuItem});
+            this.CADCLIENTE,
+            this.CADPAPEL});
             this.cADASTROToolStripMenuItem.Name = "cADASTROToolStripMenuItem";
             this.cADASTROToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.cADASTROToolStripMenuItem.Text = "CADASTRAR";
             // 
-            // cLIENTEToolStripMenuItem
+            // CADCLIENTE
             // 
-            this.cLIENTEToolStripMenuItem.Name = "cLIENTEToolStripMenuItem";
-            this.cLIENTEToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
-            this.cLIENTEToolStripMenuItem.Text = "CLIENTE";
+            this.CADCLIENTE.Name = "CADCLIENTE";
+            this.CADCLIENTE.Size = new System.Drawing.Size(180, 22);
+            this.CADCLIENTE.Text = "CLIENTE";
+            this.CADCLIENTE.Click += new System.EventHandler(this.CADCLIENTE_Click);
             // 
-            // pAPELToolStripMenuItem
+            // CADPAPEL
             // 
-            this.pAPELToolStripMenuItem.Name = "pAPELToolStripMenuItem";
-            this.pAPELToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
-            this.pAPELToolStripMenuItem.Text = "PAPEL";
+            this.CADPAPEL.Name = "CADPAPEL";
+            this.CADPAPEL.Size = new System.Drawing.Size(180, 22);
+            this.CADPAPEL.Text = "PAPEL";
             // 
             // aTUALIZARToolStripMenuItem
             // 
@@ -268,6 +262,12 @@ namespace GRAFICA2
             // 
             // menuStrip2
             // 
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lOGOTIPOToolStripMenuItem,
+            this.cADASTRARToolStripMenuItem,
+            this.aTUALIZARToolStripMenuItem1,
+            this.eXCLUIRToolStripMenuItem1,
+            this.sAIRToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 24);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(1904, 24);
@@ -742,23 +742,24 @@ namespace GRAFICA2
             this.BTNINSERIR.TabIndex = 73;
             this.BTNINSERIR.Text = "INSERIR CONTATO";
             this.BTNINSERIR.UseVisualStyleBackColor = true;
+            this.BTNINSERIR.Click += new System.EventHandler(this.BTNINSERIR_Click);
             // 
             // BTNCADAUTEXC
             // 
+            this.BTNCADAUTEXC.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCADAUTEXC.Location = new System.Drawing.Point(411, 814);
             this.BTNCADAUTEXC.Name = "BTNCADAUTEXC";
             this.BTNCADAUTEXC.Size = new System.Drawing.Size(444, 54);
             this.BTNCADAUTEXC.TabIndex = 74;
-            this.BTNCADAUTEXC.Text = "button2";
             this.BTNCADAUTEXC.UseVisualStyleBackColor = true;
             // 
             // BTNCANCELA
             // 
+            this.BTNCANCELA.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCANCELA.Location = new System.Drawing.Point(1066, 814);
             this.BTNCANCELA.Name = "BTNCANCELA";
             this.BTNCANCELA.Size = new System.Drawing.Size(444, 54);
             this.BTNCANCELA.TabIndex = 75;
-            this.BTNCANCELA.Text = "button3";
             this.BTNCANCELA.UseVisualStyleBackColor = true;
             // 
             // label15
@@ -1377,12 +1378,44 @@ namespace GRAFICA2
             this.CBBSEXO8.Size = new System.Drawing.Size(67, 21);
             this.CBBSEXO8.TabIndex = 59;
             // 
+            // lOGOTIPOToolStripMenuItem
+            // 
+            this.lOGOTIPOToolStripMenuItem.Name = "lOGOTIPOToolStripMenuItem";
+            this.lOGOTIPOToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.lOGOTIPOToolStripMenuItem.Text = "LOGOTIPO";
+            // 
+            // cADASTRARToolStripMenuItem
+            // 
+            this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
+            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.cADASTRARToolStripMenuItem.Text = "CADASTRAR";
+            // 
+            // aTUALIZARToolStripMenuItem1
+            // 
+            this.aTUALIZARToolStripMenuItem1.Name = "aTUALIZARToolStripMenuItem1";
+            this.aTUALIZARToolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
+            this.aTUALIZARToolStripMenuItem1.Text = "ATUALIZAR";
+            // 
+            // eXCLUIRToolStripMenuItem1
+            // 
+            this.eXCLUIRToolStripMenuItem1.Name = "eXCLUIRToolStripMenuItem1";
+            this.eXCLUIRToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
+            this.eXCLUIRToolStripMenuItem1.Text = "EXCLUIR";
+            // 
+            // sAIRToolStripMenuItem
+            // 
+            this.sAIRToolStripMenuItem.Name = "sAIRToolStripMenuItem";
+            this.sAIRToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.sAIRToolStripMenuItem.Text = "SAIR";
+            this.sAIRToolStripMenuItem.Click += new System.EventHandler(this.SAIR_Click);
+            // 
             // PADRAO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1904, 921);
+            this.ControlBox = false;
             this.Controls.Add(this.CBBSEXO8);
             this.Controls.Add(this.CBBSEXO7);
             this.Controls.Add(this.CBBSEXO6);
@@ -1506,7 +1539,6 @@ namespace GRAFICA2
             this.Controls.Add(this.TXBCEP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CBBOPCOES);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.menuStrip3);
@@ -1519,14 +1551,14 @@ namespace GRAFICA2
             this.Load += new System.EventHandler(this.PADRAO_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox CBBOPCOES;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.MenuStrip menuStrip3;
@@ -1656,8 +1688,8 @@ namespace GRAFICA2
         private System.Windows.Forms.ComboBox CBBSEXO7;
         private System.Windows.Forms.ComboBox CBBSEXO8;
         private System.Windows.Forms.ToolStripMenuItem cADASTROToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CADCLIENTE;
+        private System.Windows.Forms.ToolStripMenuItem CADPAPEL;
         private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem1;
@@ -1665,6 +1697,11 @@ namespace GRAFICA2
         private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem SAIR;
+        private System.Windows.Forms.ToolStripMenuItem lOGOTIPOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem sAIRToolStripMenuItem;
     }
 }
 
