@@ -31,6 +31,16 @@ namespace GRAFICA2
         {
             this.CBBOPCOES = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cADASTROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aTUALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXCLUIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,38 +57,38 @@ namespace GRAFICA2
             this.TXBINSCMUN = new System.Windows.Forms.TextBox();
             this.TXBINSCEST = new System.Windows.Forms.TextBox();
             this.TXBCNPJ = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO1 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE1 = new System.Windows.Forms.TextBox();
+            this.TXBDDD1 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL1 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL2 = new System.Windows.Forms.TextBox();
+            this.TXBDDD2 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO2 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE2 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL3 = new System.Windows.Forms.TextBox();
+            this.TXBDDD3 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO3 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE3 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL4 = new System.Windows.Forms.TextBox();
+            this.TXBDDD4 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO4 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE4 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL5 = new System.Windows.Forms.TextBox();
+            this.TXBDDD5 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO5 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE5 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL6 = new System.Windows.Forms.TextBox();
+            this.TXBDDD6 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO6 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE6 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL7 = new System.Windows.Forms.TextBox();
+            this.TXBDDD7 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO7 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE7 = new System.Windows.Forms.TextBox();
+            this.TXBEMAIL8 = new System.Windows.Forms.TextBox();
+            this.TXBDDD8 = new System.Windows.Forms.TextBox();
+            this.TXBCONTATO8 = new System.Windows.Forms.TextBox();
+            this.TXBTELEFONE8 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -91,9 +101,9 @@ namespace GRAFICA2
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BTNINSERIR = new System.Windows.Forms.Button();
+            this.BTNCADAUTEXC = new System.Windows.Forms.Button();
+            this.BTNCANCELA = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -142,22 +152,23 @@ namespace GRAFICA2
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO1 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO2 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO3 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO4 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO5 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO6 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO7 = new System.Windows.Forms.ComboBox();
+            this.CBBTIPO8 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO1 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO2 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO3 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO4 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO5 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO6 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO7 = new System.Windows.Forms.ComboBox();
+            this.CBBSEXO8 = new System.Windows.Forms.ComboBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // CBBOPCOES
@@ -174,11 +185,86 @@ namespace GRAFICA2
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cADASTROToolStripMenuItem,
+            this.aTUALIZARToolStripMenuItem,
+            this.eXCLUIRToolStripMenuItem,
+            this.SAIR});
             this.menuStrip1.Location = new System.Drawing.Point(0, 48);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // cADASTROToolStripMenuItem
+            // 
+            this.cADASTROToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem,
+            this.pAPELToolStripMenuItem});
+            this.cADASTROToolStripMenuItem.Name = "cADASTROToolStripMenuItem";
+            this.cADASTROToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.cADASTROToolStripMenuItem.Text = "CADASTRAR";
+            // 
+            // cLIENTEToolStripMenuItem
+            // 
+            this.cLIENTEToolStripMenuItem.Name = "cLIENTEToolStripMenuItem";
+            this.cLIENTEToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.cLIENTEToolStripMenuItem.Text = "CLIENTE";
+            // 
+            // pAPELToolStripMenuItem
+            // 
+            this.pAPELToolStripMenuItem.Name = "pAPELToolStripMenuItem";
+            this.pAPELToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem.Text = "PAPEL";
+            // 
+            // aTUALIZARToolStripMenuItem
+            // 
+            this.aTUALIZARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem1,
+            this.pAPELToolStripMenuItem1});
+            this.aTUALIZARToolStripMenuItem.Name = "aTUALIZARToolStripMenuItem";
+            this.aTUALIZARToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.aTUALIZARToolStripMenuItem.Text = "ATUALIZAR";
+            // 
+            // cLIENTEToolStripMenuItem1
+            // 
+            this.cLIENTEToolStripMenuItem1.Name = "cLIENTEToolStripMenuItem1";
+            this.cLIENTEToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.cLIENTEToolStripMenuItem1.Text = "CLIENTE";
+            // 
+            // pAPELToolStripMenuItem1
+            // 
+            this.pAPELToolStripMenuItem1.Name = "pAPELToolStripMenuItem1";
+            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem1.Text = "PAPEL";
+            // 
+            // eXCLUIRToolStripMenuItem
+            // 
+            this.eXCLUIRToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem2,
+            this.pAPELToolStripMenuItem2});
+            this.eXCLUIRToolStripMenuItem.Name = "eXCLUIRToolStripMenuItem";
+            this.eXCLUIRToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.eXCLUIRToolStripMenuItem.Text = "EXCLUIR";
+            // 
+            // cLIENTEToolStripMenuItem2
+            // 
+            this.cLIENTEToolStripMenuItem2.Name = "cLIENTEToolStripMenuItem2";
+            this.cLIENTEToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.cLIENTEToolStripMenuItem2.Text = "CLIENTE";
+            // 
+            // pAPELToolStripMenuItem2
+            // 
+            this.pAPELToolStripMenuItem2.Name = "pAPELToolStripMenuItem2";
+            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem2.Text = "PAPEL";
+            // 
+            // SAIR
+            // 
+            this.SAIR.Name = "SAIR";
+            this.SAIR.Size = new System.Drawing.Size(43, 20);
+            this.SAIR.Text = "SAIR";
+            this.SAIR.Click += new System.EventHandler(this.SAIR_Click);
             // 
             // menuStrip2
             // 
@@ -303,229 +389,229 @@ namespace GRAFICA2
             this.TXBCNPJ.Size = new System.Drawing.Size(364, 20);
             this.TXBCNPJ.TabIndex = 10;
             // 
-            // textBox13
+            // TXBCONTATO1
             // 
-            this.textBox13.Location = new System.Drawing.Point(721, 464);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(344, 20);
-            this.textBox13.TabIndex = 16;
+            this.TXBCONTATO1.Location = new System.Drawing.Point(721, 464);
+            this.TXBCONTATO1.Name = "TXBCONTATO1";
+            this.TXBCONTATO1.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO1.TabIndex = 16;
             // 
-            // textBox14
+            // TXBTELEFONE1
             // 
-            this.textBox14.Location = new System.Drawing.Point(579, 464);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(136, 20);
-            this.textBox14.TabIndex = 15;
+            this.TXBTELEFONE1.Location = new System.Drawing.Point(579, 464);
+            this.TXBTELEFONE1.Name = "TXBTELEFONE1";
+            this.TXBTELEFONE1.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE1.TabIndex = 15;
             // 
-            // textBox17
+            // TXBDDD1
             // 
-            this.textBox17.Location = new System.Drawing.Point(495, 464);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(78, 20);
-            this.textBox17.TabIndex = 14;
+            this.TXBDDD1.Location = new System.Drawing.Point(495, 464);
+            this.TXBDDD1.Name = "TXBDDD1";
+            this.TXBDDD1.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD1.TabIndex = 14;
             // 
-            // textBox18
+            // TXBEMAIL1
             // 
-            this.textBox18.Location = new System.Drawing.Point(1144, 464);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(364, 20);
-            this.textBox18.TabIndex = 18;
+            this.TXBEMAIL1.Location = new System.Drawing.Point(1144, 464);
+            this.TXBEMAIL1.Name = "TXBEMAIL1";
+            this.TXBEMAIL1.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL1.TabIndex = 18;
             // 
-            // textBox19
+            // TXBEMAIL2
             // 
-            this.textBox19.Location = new System.Drawing.Point(1144, 504);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(364, 20);
-            this.textBox19.TabIndex = 24;
+            this.TXBEMAIL2.Location = new System.Drawing.Point(1144, 504);
+            this.TXBEMAIL2.Name = "TXBEMAIL2";
+            this.TXBEMAIL2.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL2.TabIndex = 24;
             // 
-            // textBox20
+            // TXBDDD2
             // 
-            this.textBox20.Location = new System.Drawing.Point(495, 504);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(78, 20);
-            this.textBox20.TabIndex = 20;
+            this.TXBDDD2.Location = new System.Drawing.Point(495, 504);
+            this.TXBDDD2.Name = "TXBDDD2";
+            this.TXBDDD2.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD2.TabIndex = 20;
             // 
-            // textBox22
+            // TXBCONTATO2
             // 
-            this.textBox22.Location = new System.Drawing.Point(721, 504);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(344, 20);
-            this.textBox22.TabIndex = 22;
+            this.TXBCONTATO2.Location = new System.Drawing.Point(721, 504);
+            this.TXBCONTATO2.Name = "TXBCONTATO2";
+            this.TXBCONTATO2.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO2.TabIndex = 22;
             // 
-            // textBox23
+            // TXBTELEFONE2
             // 
-            this.textBox23.Location = new System.Drawing.Point(579, 504);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(136, 20);
-            this.textBox23.TabIndex = 21;
+            this.TXBTELEFONE2.Location = new System.Drawing.Point(579, 504);
+            this.TXBTELEFONE2.Name = "TXBTELEFONE2";
+            this.TXBTELEFONE2.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE2.TabIndex = 21;
             // 
-            // textBox25
+            // TXBEMAIL3
             // 
-            this.textBox25.Location = new System.Drawing.Point(1144, 542);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(364, 20);
-            this.textBox25.TabIndex = 30;
+            this.TXBEMAIL3.Location = new System.Drawing.Point(1144, 542);
+            this.TXBEMAIL3.Name = "TXBEMAIL3";
+            this.TXBEMAIL3.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL3.TabIndex = 30;
             // 
-            // textBox26
+            // TXBDDD3
             // 
-            this.textBox26.Location = new System.Drawing.Point(495, 542);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(78, 20);
-            this.textBox26.TabIndex = 26;
+            this.TXBDDD3.Location = new System.Drawing.Point(495, 542);
+            this.TXBDDD3.Name = "TXBDDD3";
+            this.TXBDDD3.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD3.TabIndex = 26;
             // 
-            // textBox28
+            // TXBCONTATO3
             // 
-            this.textBox28.Location = new System.Drawing.Point(721, 542);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(344, 20);
-            this.textBox28.TabIndex = 28;
+            this.TXBCONTATO3.Location = new System.Drawing.Point(721, 542);
+            this.TXBCONTATO3.Name = "TXBCONTATO3";
+            this.TXBCONTATO3.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO3.TabIndex = 28;
             // 
-            // textBox29
+            // TXBTELEFONE3
             // 
-            this.textBox29.Location = new System.Drawing.Point(579, 542);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(136, 20);
-            this.textBox29.TabIndex = 27;
+            this.TXBTELEFONE3.Location = new System.Drawing.Point(579, 542);
+            this.TXBTELEFONE3.Name = "TXBTELEFONE3";
+            this.TXBTELEFONE3.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE3.TabIndex = 27;
             // 
-            // textBox31
+            // TXBEMAIL4
             // 
-            this.textBox31.Location = new System.Drawing.Point(1144, 581);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(364, 20);
-            this.textBox31.TabIndex = 36;
+            this.TXBEMAIL4.Location = new System.Drawing.Point(1144, 581);
+            this.TXBEMAIL4.Name = "TXBEMAIL4";
+            this.TXBEMAIL4.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL4.TabIndex = 36;
             // 
-            // textBox32
+            // TXBDDD4
             // 
-            this.textBox32.Location = new System.Drawing.Point(495, 581);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(78, 20);
-            this.textBox32.TabIndex = 32;
+            this.TXBDDD4.Location = new System.Drawing.Point(495, 581);
+            this.TXBDDD4.Name = "TXBDDD4";
+            this.TXBDDD4.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD4.TabIndex = 32;
             // 
-            // textBox34
+            // TXBCONTATO4
             // 
-            this.textBox34.Location = new System.Drawing.Point(721, 581);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(344, 20);
-            this.textBox34.TabIndex = 34;
+            this.TXBCONTATO4.Location = new System.Drawing.Point(721, 581);
+            this.TXBCONTATO4.Name = "TXBCONTATO4";
+            this.TXBCONTATO4.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO4.TabIndex = 34;
             // 
-            // textBox35
+            // TXBTELEFONE4
             // 
-            this.textBox35.Location = new System.Drawing.Point(579, 581);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(136, 20);
-            this.textBox35.TabIndex = 33;
+            this.TXBTELEFONE4.Location = new System.Drawing.Point(579, 581);
+            this.TXBTELEFONE4.Name = "TXBTELEFONE4";
+            this.TXBTELEFONE4.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE4.TabIndex = 33;
             // 
-            // textBox37
+            // TXBEMAIL5
             // 
-            this.textBox37.Location = new System.Drawing.Point(1144, 621);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(364, 20);
-            this.textBox37.TabIndex = 42;
+            this.TXBEMAIL5.Location = new System.Drawing.Point(1144, 621);
+            this.TXBEMAIL5.Name = "TXBEMAIL5";
+            this.TXBEMAIL5.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL5.TabIndex = 42;
             // 
-            // textBox38
+            // TXBDDD5
             // 
-            this.textBox38.Location = new System.Drawing.Point(495, 620);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(78, 20);
-            this.textBox38.TabIndex = 38;
+            this.TXBDDD5.Location = new System.Drawing.Point(495, 620);
+            this.TXBDDD5.Name = "TXBDDD5";
+            this.TXBDDD5.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD5.TabIndex = 38;
             // 
-            // textBox40
+            // TXBCONTATO5
             // 
-            this.textBox40.Location = new System.Drawing.Point(721, 620);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(344, 20);
-            this.textBox40.TabIndex = 40;
+            this.TXBCONTATO5.Location = new System.Drawing.Point(721, 620);
+            this.TXBCONTATO5.Name = "TXBCONTATO5";
+            this.TXBCONTATO5.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO5.TabIndex = 40;
             // 
-            // textBox41
+            // TXBTELEFONE5
             // 
-            this.textBox41.Location = new System.Drawing.Point(579, 620);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(136, 20);
-            this.textBox41.TabIndex = 39;
+            this.TXBTELEFONE5.Location = new System.Drawing.Point(579, 620);
+            this.TXBTELEFONE5.Name = "TXBTELEFONE5";
+            this.TXBTELEFONE5.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE5.TabIndex = 39;
             // 
-            // textBox43
+            // TXBEMAIL6
             // 
-            this.textBox43.Location = new System.Drawing.Point(1144, 660);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(364, 20);
-            this.textBox43.TabIndex = 48;
+            this.TXBEMAIL6.Location = new System.Drawing.Point(1144, 660);
+            this.TXBEMAIL6.Name = "TXBEMAIL6";
+            this.TXBEMAIL6.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL6.TabIndex = 48;
             // 
-            // textBox44
+            // TXBDDD6
             // 
-            this.textBox44.Location = new System.Drawing.Point(495, 659);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(78, 20);
-            this.textBox44.TabIndex = 44;
+            this.TXBDDD6.Location = new System.Drawing.Point(495, 659);
+            this.TXBDDD6.Name = "TXBDDD6";
+            this.TXBDDD6.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD6.TabIndex = 44;
             // 
-            // textBox46
+            // TXBCONTATO6
             // 
-            this.textBox46.Location = new System.Drawing.Point(721, 659);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(344, 20);
-            this.textBox46.TabIndex = 46;
+            this.TXBCONTATO6.Location = new System.Drawing.Point(721, 659);
+            this.TXBCONTATO6.Name = "TXBCONTATO6";
+            this.TXBCONTATO6.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO6.TabIndex = 46;
             // 
-            // textBox47
+            // TXBTELEFONE6
             // 
-            this.textBox47.Location = new System.Drawing.Point(579, 659);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(136, 20);
-            this.textBox47.TabIndex = 45;
+            this.TXBTELEFONE6.Location = new System.Drawing.Point(579, 659);
+            this.TXBTELEFONE6.Name = "TXBTELEFONE6";
+            this.TXBTELEFONE6.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE6.TabIndex = 45;
             // 
-            // textBox49
+            // TXBEMAIL7
             // 
-            this.textBox49.Location = new System.Drawing.Point(1144, 698);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(364, 20);
-            this.textBox49.TabIndex = 54;
+            this.TXBEMAIL7.Location = new System.Drawing.Point(1144, 698);
+            this.TXBEMAIL7.Name = "TXBEMAIL7";
+            this.TXBEMAIL7.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL7.TabIndex = 54;
             // 
-            // textBox50
+            // TXBDDD7
             // 
-            this.textBox50.Location = new System.Drawing.Point(495, 698);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(78, 20);
-            this.textBox50.TabIndex = 50;
+            this.TXBDDD7.Location = new System.Drawing.Point(495, 698);
+            this.TXBDDD7.Name = "TXBDDD7";
+            this.TXBDDD7.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD7.TabIndex = 50;
             // 
-            // textBox52
+            // TXBCONTATO7
             // 
-            this.textBox52.Location = new System.Drawing.Point(721, 698);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(344, 20);
-            this.textBox52.TabIndex = 52;
+            this.TXBCONTATO7.Location = new System.Drawing.Point(721, 698);
+            this.TXBCONTATO7.Name = "TXBCONTATO7";
+            this.TXBCONTATO7.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO7.TabIndex = 52;
             // 
-            // textBox53
+            // TXBTELEFONE7
             // 
-            this.textBox53.Location = new System.Drawing.Point(579, 698);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(136, 20);
-            this.textBox53.TabIndex = 51;
+            this.TXBTELEFONE7.Location = new System.Drawing.Point(579, 698);
+            this.TXBTELEFONE7.Name = "TXBTELEFONE7";
+            this.TXBTELEFONE7.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE7.TabIndex = 51;
             // 
-            // textBox55
+            // TXBEMAIL8
             // 
-            this.textBox55.Location = new System.Drawing.Point(1144, 738);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(364, 20);
-            this.textBox55.TabIndex = 60;
+            this.TXBEMAIL8.Location = new System.Drawing.Point(1144, 738);
+            this.TXBEMAIL8.Name = "TXBEMAIL8";
+            this.TXBEMAIL8.Size = new System.Drawing.Size(364, 20);
+            this.TXBEMAIL8.TabIndex = 60;
             // 
-            // textBox56
+            // TXBDDD8
             // 
-            this.textBox56.Location = new System.Drawing.Point(495, 738);
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(78, 20);
-            this.textBox56.TabIndex = 56;
+            this.TXBDDD8.Location = new System.Drawing.Point(495, 738);
+            this.TXBDDD8.Name = "TXBDDD8";
+            this.TXBDDD8.Size = new System.Drawing.Size(78, 20);
+            this.TXBDDD8.TabIndex = 56;
             // 
-            // textBox58
+            // TXBCONTATO8
             // 
-            this.textBox58.Location = new System.Drawing.Point(721, 738);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(344, 20);
-            this.textBox58.TabIndex = 58;
+            this.TXBCONTATO8.Location = new System.Drawing.Point(721, 738);
+            this.TXBCONTATO8.Name = "TXBCONTATO8";
+            this.TXBCONTATO8.Size = new System.Drawing.Size(344, 20);
+            this.TXBCONTATO8.TabIndex = 58;
             // 
-            // textBox59
+            // TXBTELEFONE8
             // 
-            this.textBox59.Location = new System.Drawing.Point(579, 738);
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(136, 20);
-            this.textBox59.TabIndex = 57;
+            this.TXBTELEFONE8.Location = new System.Drawing.Point(579, 738);
+            this.TXBTELEFONE8.Name = "TXBTELEFONE8";
+            this.TXBTELEFONE8.Size = new System.Drawing.Size(136, 20);
+            this.TXBTELEFONE8.TabIndex = 57;
             // 
             // label3
             // 
@@ -647,33 +733,33 @@ namespace GRAFICA2
             this.label14.TabIndex = 72;
             this.label14.Text = "INSCRIÇÃO MUNICIPAL";
             // 
-            // button1
+            // BTNINSERIR
             // 
-            this.button1.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(411, 773);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1099, 23);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "INSERIR CONTATO";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BTNINSERIR.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNINSERIR.Location = new System.Drawing.Point(411, 773);
+            this.BTNINSERIR.Name = "BTNINSERIR";
+            this.BTNINSERIR.Size = new System.Drawing.Size(1099, 23);
+            this.BTNINSERIR.TabIndex = 73;
+            this.BTNINSERIR.Text = "INSERIR CONTATO";
+            this.BTNINSERIR.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BTNCADAUTEXC
             // 
-            this.button2.Location = new System.Drawing.Point(411, 814);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(444, 54);
-            this.button2.TabIndex = 74;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BTNCADAUTEXC.Location = new System.Drawing.Point(411, 814);
+            this.BTNCADAUTEXC.Name = "BTNCADAUTEXC";
+            this.BTNCADAUTEXC.Size = new System.Drawing.Size(444, 54);
+            this.BTNCADAUTEXC.TabIndex = 74;
+            this.BTNCADAUTEXC.Text = "button2";
+            this.BTNCADAUTEXC.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BTNCANCELA
             // 
-            this.button3.Location = new System.Drawing.Point(1066, 814);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(444, 54);
-            this.button3.TabIndex = 75;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BTNCANCELA.Location = new System.Drawing.Point(1066, 814);
+            this.BTNCANCELA.Name = "BTNCANCELA";
+            this.BTNCANCELA.Size = new System.Drawing.Size(444, 54);
+            this.BTNCANCELA.TabIndex = 75;
+            this.BTNCANCELA.Text = "button3";
+            this.BTNCANCELA.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -1107,189 +1193,189 @@ namespace GRAFICA2
             this.label62.TabIndex = 123;
             this.label62.Text = "EMAIL";
             // 
-            // comboBox1
+            // CBBTIPO1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CBBTIPO1.FormattingEnabled = true;
+            this.CBBTIPO1.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox1.Location = new System.Drawing.Point(411, 464);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(78, 21);
-            this.comboBox1.TabIndex = 13;
+            this.CBBTIPO1.Location = new System.Drawing.Point(411, 464);
+            this.CBBTIPO1.Name = "CBBTIPO1";
+            this.CBBTIPO1.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO1.TabIndex = 13;
             // 
-            // comboBox2
+            // CBBTIPO2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CBBTIPO2.FormattingEnabled = true;
+            this.CBBTIPO2.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox2.Location = new System.Drawing.Point(411, 504);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(78, 21);
-            this.comboBox2.TabIndex = 19;
+            this.CBBTIPO2.Location = new System.Drawing.Point(411, 504);
+            this.CBBTIPO2.Name = "CBBTIPO2";
+            this.CBBTIPO2.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO2.TabIndex = 19;
             // 
-            // comboBox3
+            // CBBTIPO3
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.CBBTIPO3.FormattingEnabled = true;
+            this.CBBTIPO3.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox3.Location = new System.Drawing.Point(411, 542);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(78, 21);
-            this.comboBox3.TabIndex = 25;
+            this.CBBTIPO3.Location = new System.Drawing.Point(411, 542);
+            this.CBBTIPO3.Name = "CBBTIPO3";
+            this.CBBTIPO3.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO3.TabIndex = 25;
             // 
-            // comboBox4
+            // CBBTIPO4
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.CBBTIPO4.FormattingEnabled = true;
+            this.CBBTIPO4.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox4.Location = new System.Drawing.Point(411, 581);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(78, 21);
-            this.comboBox4.TabIndex = 31;
+            this.CBBTIPO4.Location = new System.Drawing.Point(411, 581);
+            this.CBBTIPO4.Name = "CBBTIPO4";
+            this.CBBTIPO4.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO4.TabIndex = 31;
             // 
-            // comboBox5
+            // CBBTIPO5
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.CBBTIPO5.FormattingEnabled = true;
+            this.CBBTIPO5.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox5.Location = new System.Drawing.Point(411, 621);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(78, 21);
-            this.comboBox5.TabIndex = 37;
+            this.CBBTIPO5.Location = new System.Drawing.Point(411, 621);
+            this.CBBTIPO5.Name = "CBBTIPO5";
+            this.CBBTIPO5.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO5.TabIndex = 37;
             // 
-            // comboBox6
+            // CBBTIPO6
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.CBBTIPO6.FormattingEnabled = true;
+            this.CBBTIPO6.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox6.Location = new System.Drawing.Point(411, 660);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(78, 21);
-            this.comboBox6.TabIndex = 43;
+            this.CBBTIPO6.Location = new System.Drawing.Point(411, 660);
+            this.CBBTIPO6.Name = "CBBTIPO6";
+            this.CBBTIPO6.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO6.TabIndex = 43;
             // 
-            // comboBox7
+            // CBBTIPO7
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.CBBTIPO7.FormattingEnabled = true;
+            this.CBBTIPO7.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox7.Location = new System.Drawing.Point(411, 697);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(78, 21);
-            this.comboBox7.TabIndex = 49;
+            this.CBBTIPO7.Location = new System.Drawing.Point(411, 697);
+            this.CBBTIPO7.Name = "CBBTIPO7";
+            this.CBBTIPO7.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO7.TabIndex = 49;
             // 
-            // comboBox8
+            // CBBTIPO8
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.CBBTIPO8.FormattingEnabled = true;
+            this.CBBTIPO8.Items.AddRange(new object[] {
             "CEL",
             "COM",
             "RES"});
-            this.comboBox8.Location = new System.Drawing.Point(411, 738);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(78, 21);
-            this.comboBox8.TabIndex = 55;
+            this.CBBTIPO8.Location = new System.Drawing.Point(411, 738);
+            this.CBBTIPO8.Name = "CBBTIPO8";
+            this.CBBTIPO8.Size = new System.Drawing.Size(78, 21);
+            this.CBBTIPO8.TabIndex = 55;
             // 
-            // comboBox9
+            // CBBSEXO1
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.CBBSEXO1.FormattingEnabled = true;
+            this.CBBSEXO1.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox9.Location = new System.Drawing.Point(1071, 464);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(67, 21);
-            this.comboBox9.TabIndex = 17;
+            this.CBBSEXO1.Location = new System.Drawing.Point(1071, 464);
+            this.CBBSEXO1.Name = "CBBSEXO1";
+            this.CBBSEXO1.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO1.TabIndex = 17;
             // 
-            // comboBox10
+            // CBBSEXO2
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.CBBSEXO2.FormattingEnabled = true;
+            this.CBBSEXO2.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox10.Location = new System.Drawing.Point(1071, 504);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(67, 21);
-            this.comboBox10.TabIndex = 23;
+            this.CBBSEXO2.Location = new System.Drawing.Point(1071, 504);
+            this.CBBSEXO2.Name = "CBBSEXO2";
+            this.CBBSEXO2.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO2.TabIndex = 23;
             // 
-            // comboBox11
+            // CBBSEXO3
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.CBBSEXO3.FormattingEnabled = true;
+            this.CBBSEXO3.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox11.Location = new System.Drawing.Point(1071, 542);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(67, 21);
-            this.comboBox11.TabIndex = 29;
+            this.CBBSEXO3.Location = new System.Drawing.Point(1071, 542);
+            this.CBBSEXO3.Name = "CBBSEXO3";
+            this.CBBSEXO3.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO3.TabIndex = 29;
             // 
-            // comboBox12
+            // CBBSEXO4
             // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.CBBSEXO4.FormattingEnabled = true;
+            this.CBBSEXO4.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox12.Location = new System.Drawing.Point(1071, 581);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(67, 21);
-            this.comboBox12.TabIndex = 35;
+            this.CBBSEXO4.Location = new System.Drawing.Point(1071, 581);
+            this.CBBSEXO4.Name = "CBBSEXO4";
+            this.CBBSEXO4.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO4.TabIndex = 35;
             // 
-            // comboBox13
+            // CBBSEXO5
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.CBBSEXO5.FormattingEnabled = true;
+            this.CBBSEXO5.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox13.Location = new System.Drawing.Point(1071, 620);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(67, 21);
-            this.comboBox13.TabIndex = 41;
+            this.CBBSEXO5.Location = new System.Drawing.Point(1071, 620);
+            this.CBBSEXO5.Name = "CBBSEXO5";
+            this.CBBSEXO5.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO5.TabIndex = 41;
             // 
-            // comboBox14
+            // CBBSEXO6
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.CBBSEXO6.FormattingEnabled = true;
+            this.CBBSEXO6.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox14.Location = new System.Drawing.Point(1071, 659);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(67, 21);
-            this.comboBox14.TabIndex = 47;
+            this.CBBSEXO6.Location = new System.Drawing.Point(1071, 659);
+            this.CBBSEXO6.Name = "CBBSEXO6";
+            this.CBBSEXO6.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO6.TabIndex = 47;
             // 
-            // comboBox15
+            // CBBSEXO7
             // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.CBBSEXO7.FormattingEnabled = true;
+            this.CBBSEXO7.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox15.Location = new System.Drawing.Point(1071, 698);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(67, 21);
-            this.comboBox15.TabIndex = 53;
+            this.CBBSEXO7.Location = new System.Drawing.Point(1071, 698);
+            this.CBBSEXO7.Name = "CBBSEXO7";
+            this.CBBSEXO7.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO7.TabIndex = 53;
             // 
-            // comboBox16
+            // CBBSEXO8
             // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.CBBSEXO8.FormattingEnabled = true;
+            this.CBBSEXO8.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox16.Location = new System.Drawing.Point(1071, 738);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(67, 21);
-            this.comboBox16.TabIndex = 59;
+            this.CBBSEXO8.Location = new System.Drawing.Point(1071, 738);
+            this.CBBSEXO8.Name = "CBBSEXO8";
+            this.CBBSEXO8.Size = new System.Drawing.Size(67, 21);
+            this.CBBSEXO8.TabIndex = 59;
             // 
             // PADRAO
             // 
@@ -1297,20 +1383,20 @@ namespace GRAFICA2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1904, 921);
-            this.Controls.Add(this.comboBox16);
-            this.Controls.Add(this.comboBox15);
-            this.Controls.Add(this.comboBox14);
-            this.Controls.Add(this.comboBox13);
-            this.Controls.Add(this.comboBox12);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.CBBSEXO8);
+            this.Controls.Add(this.CBBSEXO7);
+            this.Controls.Add(this.CBBSEXO6);
+            this.Controls.Add(this.CBBSEXO5);
+            this.Controls.Add(this.CBBSEXO4);
+            this.Controls.Add(this.CBBSEXO3);
+            this.Controls.Add(this.CBBSEXO2);
+            this.Controls.Add(this.CBBTIPO8);
+            this.Controls.Add(this.CBBTIPO7);
+            this.Controls.Add(this.CBBTIPO6);
+            this.Controls.Add(this.CBBTIPO5);
+            this.Controls.Add(this.CBBTIPO4);
+            this.Controls.Add(this.CBBTIPO3);
+            this.Controls.Add(this.CBBTIPO2);
             this.Controls.Add(this.label62);
             this.Controls.Add(this.label61);
             this.Controls.Add(this.label60);
@@ -1359,9 +1445,9 @@ namespace GRAFICA2
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BTNCANCELA);
+            this.Controls.Add(this.BTNCADAUTEXC);
+            this.Controls.Add(this.BTNINSERIR);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -1374,38 +1460,38 @@ namespace GRAFICA2
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox55);
-            this.Controls.Add(this.textBox56);
-            this.Controls.Add(this.textBox58);
-            this.Controls.Add(this.textBox59);
-            this.Controls.Add(this.textBox49);
-            this.Controls.Add(this.textBox50);
-            this.Controls.Add(this.textBox52);
-            this.Controls.Add(this.textBox53);
-            this.Controls.Add(this.textBox43);
-            this.Controls.Add(this.textBox44);
-            this.Controls.Add(this.textBox46);
-            this.Controls.Add(this.textBox47);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox41);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.TXBEMAIL8);
+            this.Controls.Add(this.TXBDDD8);
+            this.Controls.Add(this.TXBCONTATO8);
+            this.Controls.Add(this.TXBTELEFONE8);
+            this.Controls.Add(this.TXBEMAIL7);
+            this.Controls.Add(this.TXBDDD7);
+            this.Controls.Add(this.TXBCONTATO7);
+            this.Controls.Add(this.TXBTELEFONE7);
+            this.Controls.Add(this.TXBEMAIL6);
+            this.Controls.Add(this.TXBDDD6);
+            this.Controls.Add(this.TXBCONTATO6);
+            this.Controls.Add(this.TXBTELEFONE6);
+            this.Controls.Add(this.TXBEMAIL5);
+            this.Controls.Add(this.TXBDDD5);
+            this.Controls.Add(this.TXBCONTATO5);
+            this.Controls.Add(this.TXBTELEFONE5);
+            this.Controls.Add(this.TXBEMAIL4);
+            this.Controls.Add(this.TXBDDD4);
+            this.Controls.Add(this.TXBCONTATO4);
+            this.Controls.Add(this.TXBTELEFONE4);
+            this.Controls.Add(this.TXBEMAIL3);
+            this.Controls.Add(this.TXBDDD3);
+            this.Controls.Add(this.TXBCONTATO3);
+            this.Controls.Add(this.TXBTELEFONE3);
+            this.Controls.Add(this.TXBEMAIL2);
+            this.Controls.Add(this.TXBDDD2);
+            this.Controls.Add(this.TXBCONTATO2);
+            this.Controls.Add(this.TXBTELEFONE2);
+            this.Controls.Add(this.TXBEMAIL1);
+            this.Controls.Add(this.TXBDDD1);
+            this.Controls.Add(this.TXBCONTATO1);
+            this.Controls.Add(this.TXBTELEFONE1);
             this.Controls.Add(this.TXBINSCMUN);
             this.Controls.Add(this.TXBINSCEST);
             this.Controls.Add(this.TXBCNPJ);
@@ -1424,12 +1510,15 @@ namespace GRAFICA2
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.menuStrip3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.CBBTIPO1);
+            this.Controls.Add(this.CBBSEXO1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PADRAO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PADRAO_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1455,38 +1544,38 @@ namespace GRAFICA2
         private System.Windows.Forms.TextBox TXBINSCMUN;
         private System.Windows.Forms.TextBox TXBINSCEST;
         private System.Windows.Forms.TextBox TXBCNPJ;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox59;
+        private System.Windows.Forms.TextBox TXBCONTATO1;
+        private System.Windows.Forms.TextBox TXBTELEFONE1;
+        private System.Windows.Forms.TextBox TXBDDD1;
+        private System.Windows.Forms.TextBox TXBEMAIL1;
+        private System.Windows.Forms.TextBox TXBEMAIL2;
+        private System.Windows.Forms.TextBox TXBDDD2;
+        private System.Windows.Forms.TextBox TXBCONTATO2;
+        private System.Windows.Forms.TextBox TXBTELEFONE2;
+        private System.Windows.Forms.TextBox TXBEMAIL3;
+        private System.Windows.Forms.TextBox TXBDDD3;
+        private System.Windows.Forms.TextBox TXBCONTATO3;
+        private System.Windows.Forms.TextBox TXBTELEFONE3;
+        private System.Windows.Forms.TextBox TXBEMAIL4;
+        private System.Windows.Forms.TextBox TXBDDD4;
+        private System.Windows.Forms.TextBox TXBCONTATO4;
+        private System.Windows.Forms.TextBox TXBTELEFONE4;
+        private System.Windows.Forms.TextBox TXBEMAIL5;
+        private System.Windows.Forms.TextBox TXBDDD5;
+        private System.Windows.Forms.TextBox TXBCONTATO5;
+        private System.Windows.Forms.TextBox TXBTELEFONE5;
+        private System.Windows.Forms.TextBox TXBEMAIL6;
+        private System.Windows.Forms.TextBox TXBDDD6;
+        private System.Windows.Forms.TextBox TXBCONTATO6;
+        private System.Windows.Forms.TextBox TXBTELEFONE6;
+        private System.Windows.Forms.TextBox TXBEMAIL7;
+        private System.Windows.Forms.TextBox TXBDDD7;
+        private System.Windows.Forms.TextBox TXBCONTATO7;
+        private System.Windows.Forms.TextBox TXBTELEFONE7;
+        private System.Windows.Forms.TextBox TXBEMAIL8;
+        private System.Windows.Forms.TextBox TXBDDD8;
+        private System.Windows.Forms.TextBox TXBCONTATO8;
+        private System.Windows.Forms.TextBox TXBTELEFONE8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -1499,9 +1588,9 @@ namespace GRAFICA2
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BTNINSERIR;
+        private System.Windows.Forms.Button BTNCADAUTEXC;
+        private System.Windows.Forms.Button BTNCANCELA;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -1550,22 +1639,32 @@ namespace GRAFICA2
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox CBBTIPO1;
+        private System.Windows.Forms.ComboBox CBBTIPO2;
+        private System.Windows.Forms.ComboBox CBBTIPO3;
+        private System.Windows.Forms.ComboBox CBBTIPO4;
+        private System.Windows.Forms.ComboBox CBBTIPO5;
+        private System.Windows.Forms.ComboBox CBBTIPO6;
+        private System.Windows.Forms.ComboBox CBBTIPO7;
+        private System.Windows.Forms.ComboBox CBBTIPO8;
+        private System.Windows.Forms.ComboBox CBBSEXO1;
+        private System.Windows.Forms.ComboBox CBBSEXO2;
+        private System.Windows.Forms.ComboBox CBBSEXO3;
+        private System.Windows.Forms.ComboBox CBBSEXO4;
+        private System.Windows.Forms.ComboBox CBBSEXO5;
+        private System.Windows.Forms.ComboBox CBBSEXO6;
+        private System.Windows.Forms.ComboBox CBBSEXO7;
+        private System.Windows.Forms.ComboBox CBBSEXO8;
+        private System.Windows.Forms.ToolStripMenuItem cADASTROToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem SAIR;
     }
 }
 
