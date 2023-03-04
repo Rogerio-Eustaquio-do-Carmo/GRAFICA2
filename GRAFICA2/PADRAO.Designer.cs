@@ -34,14 +34,34 @@ namespace GRAFICA2
             this.CADCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
             this.CADPAPEL = new System.Windows.Forms.ToolStripMenuItem();
             this.aTUALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ATUCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
             this.pAPELToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.eXCLUIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.EXCCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
             this.pAPELToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.SAIR = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.lOGOTIPOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cADASTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aTUALIZARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXCLUIRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
+            this.lOGOTIPOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cADASTRARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aTUALIZARToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXCLUIRToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR3 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TXBCEP = new System.Windows.Forms.TextBox();
@@ -167,13 +187,24 @@ namespace GRAFICA2
             this.CBBSEXO6 = new System.Windows.Forms.ComboBox();
             this.CBBSEXO7 = new System.Windows.Forms.ComboBox();
             this.CBBSEXO8 = new System.Windows.Forms.ComboBox();
-            this.lOGOTIPOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cADASTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aTUALIZARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXCLUIRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip4 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip5 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip6 = new System.Windows.Forms.MenuStrip();
+            this.CBBNOME = new System.Windows.Forms.ComboBox();
+            this.lOGOTIPOToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cADASTRARToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aTUALIZARToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXCLUIRToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
+            this.menuStrip3.SuspendLayout();
+            this.menuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -182,8 +213,8 @@ namespace GRAFICA2
             this.cADASTROToolStripMenuItem,
             this.aTUALIZARToolStripMenuItem,
             this.eXCLUIRToolStripMenuItem,
-            this.SAIR});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 48);
+            this.SAIR1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 120);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip1.TabIndex = 1;
@@ -201,30 +232,31 @@ namespace GRAFICA2
             // CADCLIENTE
             // 
             this.CADCLIENTE.Name = "CADCLIENTE";
-            this.CADCLIENTE.Size = new System.Drawing.Size(180, 22);
+            this.CADCLIENTE.Size = new System.Drawing.Size(118, 22);
             this.CADCLIENTE.Text = "CLIENTE";
             this.CADCLIENTE.Click += new System.EventHandler(this.CADCLIENTE_Click);
             // 
             // CADPAPEL
             // 
             this.CADPAPEL.Name = "CADPAPEL";
-            this.CADPAPEL.Size = new System.Drawing.Size(180, 22);
+            this.CADPAPEL.Size = new System.Drawing.Size(118, 22);
             this.CADPAPEL.Text = "PAPEL";
             // 
             // aTUALIZARToolStripMenuItem
             // 
             this.aTUALIZARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem1,
+            this.ATUCLIENTE,
             this.pAPELToolStripMenuItem1});
             this.aTUALIZARToolStripMenuItem.Name = "aTUALIZARToolStripMenuItem";
             this.aTUALIZARToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.aTUALIZARToolStripMenuItem.Text = "ATUALIZAR";
             // 
-            // cLIENTEToolStripMenuItem1
+            // ATUCLIENTE
             // 
-            this.cLIENTEToolStripMenuItem1.Name = "cLIENTEToolStripMenuItem1";
-            this.cLIENTEToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
-            this.cLIENTEToolStripMenuItem1.Text = "CLIENTE";
+            this.ATUCLIENTE.Name = "ATUCLIENTE";
+            this.ATUCLIENTE.Size = new System.Drawing.Size(118, 22);
+            this.ATUCLIENTE.Text = "CLIENTE";
+            this.ATUCLIENTE.Click += new System.EventHandler(this.ATUCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem1
             // 
@@ -235,30 +267,31 @@ namespace GRAFICA2
             // eXCLUIRToolStripMenuItem
             // 
             this.eXCLUIRToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem2,
+            this.EXCCLIENTE,
             this.pAPELToolStripMenuItem2});
             this.eXCLUIRToolStripMenuItem.Name = "eXCLUIRToolStripMenuItem";
             this.eXCLUIRToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.eXCLUIRToolStripMenuItem.Text = "EXCLUIR";
             // 
-            // cLIENTEToolStripMenuItem2
+            // EXCCLIENTE
             // 
-            this.cLIENTEToolStripMenuItem2.Name = "cLIENTEToolStripMenuItem2";
-            this.cLIENTEToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
-            this.cLIENTEToolStripMenuItem2.Text = "CLIENTE";
+            this.EXCCLIENTE.Name = "EXCCLIENTE";
+            this.EXCCLIENTE.Size = new System.Drawing.Size(180, 22);
+            this.EXCCLIENTE.Text = "CLIENTE";
+            this.EXCCLIENTE.Click += new System.EventHandler(this.EXCCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem2
             // 
             this.pAPELToolStripMenuItem2.Name = "pAPELToolStripMenuItem2";
-            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.pAPELToolStripMenuItem2.Text = "PAPEL";
             // 
-            // SAIR
+            // SAIR1
             // 
-            this.SAIR.Name = "SAIR";
-            this.SAIR.Size = new System.Drawing.Size(43, 20);
-            this.SAIR.Text = "SAIR";
-            this.SAIR.Click += new System.EventHandler(this.SAIR_Click);
+            this.SAIR1.Name = "SAIR1";
+            this.SAIR1.Size = new System.Drawing.Size(43, 20);
+            this.SAIR1.Text = "SAIR";
+            this.SAIR1.Click += new System.EventHandler(this.SAIR_Click);
             // 
             // menuStrip2
             // 
@@ -267,20 +300,170 @@ namespace GRAFICA2
             this.cADASTRARToolStripMenuItem,
             this.aTUALIZARToolStripMenuItem1,
             this.eXCLUIRToolStripMenuItem1,
-            this.sAIRToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 24);
+            this.SAIR2});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 96);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
+            // lOGOTIPOToolStripMenuItem
+            // 
+            this.lOGOTIPOToolStripMenuItem.Name = "lOGOTIPOToolStripMenuItem";
+            this.lOGOTIPOToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.lOGOTIPOToolStripMenuItem.Text = "LOGOTIPO";
+            this.lOGOTIPOToolStripMenuItem.Click += new System.EventHandler(this.PADRAO_Load);
+            // 
+            // cADASTRARToolStripMenuItem
+            // 
+            this.cADASTRARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pAPELToolStripMenuItem});
+            this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
+            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.cADASTRARToolStripMenuItem.Text = "CADASTRAR";
+            // 
+            // pAPELToolStripMenuItem
+            // 
+            this.pAPELToolStripMenuItem.Name = "pAPELToolStripMenuItem";
+            this.pAPELToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem.Text = "PAPEL";
+            // 
+            // aTUALIZARToolStripMenuItem1
+            // 
+            this.aTUALIZARToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pAPELToolStripMenuItem3,
+            this.pAPELToolStripMenuItem4});
+            this.aTUALIZARToolStripMenuItem1.Name = "aTUALIZARToolStripMenuItem1";
+            this.aTUALIZARToolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
+            this.aTUALIZARToolStripMenuItem1.Text = "ATUALIZAR";
+            // 
+            // pAPELToolStripMenuItem3
+            // 
+            this.pAPELToolStripMenuItem3.Name = "pAPELToolStripMenuItem3";
+            this.pAPELToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem3.Text = "CLIENTE";
+            this.pAPELToolStripMenuItem3.Click += new System.EventHandler(this.ATUCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem4
+            // 
+            this.pAPELToolStripMenuItem4.Name = "pAPELToolStripMenuItem4";
+            this.pAPELToolStripMenuItem4.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem4.Text = "PAPEL";
+            // 
+            // eXCLUIRToolStripMenuItem1
+            // 
+            this.eXCLUIRToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem,
+            this.pAPELToolStripMenuItem5});
+            this.eXCLUIRToolStripMenuItem1.Name = "eXCLUIRToolStripMenuItem1";
+            this.eXCLUIRToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
+            this.eXCLUIRToolStripMenuItem1.Text = "EXCLUIR";
+            // 
+            // cLIENTEToolStripMenuItem
+            // 
+            this.cLIENTEToolStripMenuItem.Name = "cLIENTEToolStripMenuItem";
+            this.cLIENTEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem.Text = "CLIENTE";
+            this.cLIENTEToolStripMenuItem.Click += new System.EventHandler(this.EXCCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem5
+            // 
+            this.pAPELToolStripMenuItem5.Name = "pAPELToolStripMenuItem5";
+            this.pAPELToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem5.Text = "PAPEL";
+            // 
+            // SAIR2
+            // 
+            this.SAIR2.Name = "SAIR2";
+            this.SAIR2.Size = new System.Drawing.Size(43, 20);
+            this.SAIR2.Text = "SAIR";
+            this.SAIR2.Click += new System.EventHandler(this.SAIR_Click);
+            // 
             // menuStrip3
             // 
-            this.menuStrip3.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lOGOTIPOToolStripMenuItem1,
+            this.cADASTRARToolStripMenuItem1,
+            this.aTUALIZARToolStripMenuItem2,
+            this.eXCLUIRToolStripMenuItem2,
+            this.SAIR3});
+            this.menuStrip3.Location = new System.Drawing.Point(0, 72);
             this.menuStrip3.Name = "menuStrip3";
             this.menuStrip3.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip3.TabIndex = 3;
             this.menuStrip3.Text = "menuStrip3";
+            // 
+            // lOGOTIPOToolStripMenuItem1
+            // 
+            this.lOGOTIPOToolStripMenuItem1.Name = "lOGOTIPOToolStripMenuItem1";
+            this.lOGOTIPOToolStripMenuItem1.Size = new System.Drawing.Size(75, 20);
+            this.lOGOTIPOToolStripMenuItem1.Text = "LOGOTIPO";
+            this.lOGOTIPOToolStripMenuItem1.Click += new System.EventHandler(this.PADRAO_Load);
+            // 
+            // cADASTRARToolStripMenuItem1
+            // 
+            this.cADASTRARToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem1,
+            this.pAPELToolStripMenuItem8});
+            this.cADASTRARToolStripMenuItem1.Name = "cADASTRARToolStripMenuItem1";
+            this.cADASTRARToolStripMenuItem1.Size = new System.Drawing.Size(85, 20);
+            this.cADASTRARToolStripMenuItem1.Text = "CADASTRAR";
+            // 
+            // cLIENTEToolStripMenuItem1
+            // 
+            this.cLIENTEToolStripMenuItem1.Name = "cLIENTEToolStripMenuItem1";
+            this.cLIENTEToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem1.Text = "CLIENTE";
+            this.cLIENTEToolStripMenuItem1.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem8
+            // 
+            this.pAPELToolStripMenuItem8.Name = "pAPELToolStripMenuItem8";
+            this.pAPELToolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem8.Text = "PAPEL";
+            // 
+            // aTUALIZARToolStripMenuItem2
+            // 
+            this.aTUALIZARToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pAPELToolStripMenuItem6});
+            this.aTUALIZARToolStripMenuItem2.Name = "aTUALIZARToolStripMenuItem2";
+            this.aTUALIZARToolStripMenuItem2.Size = new System.Drawing.Size(79, 20);
+            this.aTUALIZARToolStripMenuItem2.Text = "ATUALIZAR";
+            // 
+            // pAPELToolStripMenuItem6
+            // 
+            this.pAPELToolStripMenuItem6.Name = "pAPELToolStripMenuItem6";
+            this.pAPELToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem6.Text = "PAPEL";
+            // 
+            // eXCLUIRToolStripMenuItem2
+            // 
+            this.eXCLUIRToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem4,
+            this.pAPELToolStripMenuItem7});
+            this.eXCLUIRToolStripMenuItem2.Name = "eXCLUIRToolStripMenuItem2";
+            this.eXCLUIRToolStripMenuItem2.Size = new System.Drawing.Size(64, 20);
+            this.eXCLUIRToolStripMenuItem2.Text = "EXCLUIR";
+            // 
+            // cLIENTEToolStripMenuItem4
+            // 
+            this.cLIENTEToolStripMenuItem4.Name = "cLIENTEToolStripMenuItem4";
+            this.cLIENTEToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem4.Text = "CLIENTE";
+            this.cLIENTEToolStripMenuItem4.Click += new System.EventHandler(this.EXCCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem7
+            // 
+            this.pAPELToolStripMenuItem7.Name = "pAPELToolStripMenuItem7";
+            this.pAPELToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem7.Text = "PAPEL";
+            // 
+            // SAIR3
+            // 
+            this.SAIR3.Name = "SAIR3";
+            this.SAIR3.Size = new System.Drawing.Size(43, 20);
+            this.SAIR3.Text = "SAIR";
+            this.SAIR3.Click += new System.EventHandler(this.SAIR_Click);
             // 
             // label1
             // 
@@ -295,7 +478,6 @@ namespace GRAFICA2
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(564, 97);
@@ -735,32 +917,37 @@ namespace GRAFICA2
             // 
             // BTNINSERIR
             // 
+            this.BTNINSERIR.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNINSERIR.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNINSERIR.Location = new System.Drawing.Point(411, 773);
             this.BTNINSERIR.Name = "BTNINSERIR";
             this.BTNINSERIR.Size = new System.Drawing.Size(1099, 23);
             this.BTNINSERIR.TabIndex = 73;
             this.BTNINSERIR.Text = "INSERIR CONTATO";
-            this.BTNINSERIR.UseVisualStyleBackColor = true;
+            this.BTNINSERIR.UseVisualStyleBackColor = false;
             this.BTNINSERIR.Click += new System.EventHandler(this.BTNINSERIR_Click);
             // 
             // BTNCADAUTEXC
             // 
+            this.BTNCADAUTEXC.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNCADAUTEXC.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCADAUTEXC.Location = new System.Drawing.Point(411, 814);
             this.BTNCADAUTEXC.Name = "BTNCADAUTEXC";
             this.BTNCADAUTEXC.Size = new System.Drawing.Size(444, 54);
             this.BTNCADAUTEXC.TabIndex = 74;
-            this.BTNCADAUTEXC.UseVisualStyleBackColor = true;
+            this.BTNCADAUTEXC.UseVisualStyleBackColor = false;
+            this.BTNCADAUTEXC.Click += new System.EventHandler(this.BTNCADAUTEXC_Click);
             // 
             // BTNCANCELA
             // 
+            this.BTNCANCELA.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTNCANCELA.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCANCELA.Location = new System.Drawing.Point(1066, 814);
             this.BTNCANCELA.Name = "BTNCANCELA";
             this.BTNCANCELA.Size = new System.Drawing.Size(444, 54);
             this.BTNCANCELA.TabIndex = 75;
-            this.BTNCANCELA.UseVisualStyleBackColor = true;
+            this.BTNCANCELA.UseVisualStyleBackColor = false;
+            this.BTNCANCELA.Click += new System.EventHandler(this.BTNCANCELA_Click);
             // 
             // label15
             // 
@@ -1378,36 +1565,115 @@ namespace GRAFICA2
             this.CBBSEXO8.Size = new System.Drawing.Size(67, 21);
             this.CBBSEXO8.TabIndex = 59;
             // 
-            // lOGOTIPOToolStripMenuItem
+            // menuStrip4
             // 
-            this.lOGOTIPOToolStripMenuItem.Name = "lOGOTIPOToolStripMenuItem";
-            this.lOGOTIPOToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.lOGOTIPOToolStripMenuItem.Text = "LOGOTIPO";
+            this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lOGOTIPOToolStripMenuItem2,
+            this.cADASTRARToolStripMenuItem2,
+            this.aTUALIZARToolStripMenuItem3,
+            this.eXCLUIRToolStripMenuItem3,
+            this.SAIR4});
+            this.menuStrip4.Location = new System.Drawing.Point(0, 48);
+            this.menuStrip4.Name = "menuStrip4";
+            this.menuStrip4.Size = new System.Drawing.Size(1904, 24);
+            this.menuStrip4.TabIndex = 124;
+            this.menuStrip4.Text = "menuStrip4";
             // 
-            // cADASTRARToolStripMenuItem
+            // menuStrip5
             // 
-            this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
-            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.cADASTRARToolStripMenuItem.Text = "CADASTRAR";
+            this.menuStrip5.Location = new System.Drawing.Point(0, 24);
+            this.menuStrip5.Name = "menuStrip5";
+            this.menuStrip5.Size = new System.Drawing.Size(1904, 24);
+            this.menuStrip5.TabIndex = 125;
+            this.menuStrip5.Text = "menuStrip5";
             // 
-            // aTUALIZARToolStripMenuItem1
+            // menuStrip6
             // 
-            this.aTUALIZARToolStripMenuItem1.Name = "aTUALIZARToolStripMenuItem1";
-            this.aTUALIZARToolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem1.Text = "ATUALIZAR";
+            this.menuStrip6.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip6.Name = "menuStrip6";
+            this.menuStrip6.Size = new System.Drawing.Size(1904, 24);
+            this.menuStrip6.TabIndex = 126;
+            this.menuStrip6.Text = "menuStrip6";
             // 
-            // eXCLUIRToolStripMenuItem1
+            // CBBNOME
             // 
-            this.eXCLUIRToolStripMenuItem1.Name = "eXCLUIRToolStripMenuItem1";
-            this.eXCLUIRToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem1.Text = "EXCLUIR";
+            this.CBBNOME.FormattingEnabled = true;
+            this.CBBNOME.Location = new System.Drawing.Point(543, 299);
+            this.CBBNOME.Name = "CBBNOME";
+            this.CBBNOME.Size = new System.Drawing.Size(286, 21);
+            this.CBBNOME.TabIndex = 127;
             // 
-            // sAIRToolStripMenuItem
+            // lOGOTIPOToolStripMenuItem2
             // 
-            this.sAIRToolStripMenuItem.Name = "sAIRToolStripMenuItem";
-            this.sAIRToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.sAIRToolStripMenuItem.Text = "SAIR";
-            this.sAIRToolStripMenuItem.Click += new System.EventHandler(this.SAIR_Click);
+            this.lOGOTIPOToolStripMenuItem2.Name = "lOGOTIPOToolStripMenuItem2";
+            this.lOGOTIPOToolStripMenuItem2.Size = new System.Drawing.Size(75, 20);
+            this.lOGOTIPOToolStripMenuItem2.Text = "LOGOTIPO";
+            this.lOGOTIPOToolStripMenuItem2.Click += new System.EventHandler(this.PADRAO_Load);
+            // 
+            // cADASTRARToolStripMenuItem2
+            // 
+            this.cADASTRARToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem2,
+            this.pAPELToolStripMenuItem10});
+            this.cADASTRARToolStripMenuItem2.Name = "cADASTRARToolStripMenuItem2";
+            this.cADASTRARToolStripMenuItem2.Size = new System.Drawing.Size(85, 20);
+            this.cADASTRARToolStripMenuItem2.Text = "CADASTRAR";
+            // 
+            // aTUALIZARToolStripMenuItem3
+            // 
+            this.aTUALIZARToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem3,
+            this.pAPELToolStripMenuItem11});
+            this.aTUALIZARToolStripMenuItem3.Name = "aTUALIZARToolStripMenuItem3";
+            this.aTUALIZARToolStripMenuItem3.Size = new System.Drawing.Size(79, 20);
+            this.aTUALIZARToolStripMenuItem3.Text = "ATUALIZAR";
+            // 
+            // eXCLUIRToolStripMenuItem3
+            // 
+            this.eXCLUIRToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pAPELToolStripMenuItem9});
+            this.eXCLUIRToolStripMenuItem3.Name = "eXCLUIRToolStripMenuItem3";
+            this.eXCLUIRToolStripMenuItem3.Size = new System.Drawing.Size(64, 20);
+            this.eXCLUIRToolStripMenuItem3.Text = "EXCLUIR";
+            // 
+            // pAPELToolStripMenuItem9
+            // 
+            this.pAPELToolStripMenuItem9.Name = "pAPELToolStripMenuItem9";
+            this.pAPELToolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem9.Text = "PAPEL";
+            // 
+            // SAIR4
+            // 
+            this.SAIR4.Name = "SAIR4";
+            this.SAIR4.Size = new System.Drawing.Size(43, 20);
+            this.SAIR4.Text = "SAIR";
+            this.SAIR4.Click += new System.EventHandler(this.SAIR_Click);
+            // 
+            // cLIENTEToolStripMenuItem2
+            // 
+            this.cLIENTEToolStripMenuItem2.Name = "cLIENTEToolStripMenuItem2";
+            this.cLIENTEToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem2.Text = "CLIENTE";
+            this.cLIENTEToolStripMenuItem2.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem10
+            // 
+            this.pAPELToolStripMenuItem10.Name = "pAPELToolStripMenuItem10";
+            this.pAPELToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem10.Text = "PAPEL";
+            // 
+            // cLIENTEToolStripMenuItem3
+            // 
+            this.cLIENTEToolStripMenuItem3.Name = "cLIENTEToolStripMenuItem3";
+            this.cLIENTEToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem3.Text = "CLIENTE";
+            this.cLIENTEToolStripMenuItem3.Click += new System.EventHandler(this.ATUCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem11
+            // 
+            this.pAPELToolStripMenuItem11.Name = "pAPELToolStripMenuItem11";
+            this.pAPELToolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem11.Text = "PAPEL";
             // 
             // PADRAO
             // 
@@ -1416,6 +1682,7 @@ namespace GRAFICA2
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1904, 921);
             this.ControlBox = false;
+            this.Controls.Add(this.CBBNOME);
             this.Controls.Add(this.CBBSEXO8);
             this.Controls.Add(this.CBBSEXO7);
             this.Controls.Add(this.CBBSEXO6);
@@ -1538,12 +1805,15 @@ namespace GRAFICA2
             this.Controls.Add(this.TXBNOME);
             this.Controls.Add(this.TXBCEP);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.menuStrip3);
+            this.Controls.Add(this.menuStrip4);
+            this.Controls.Add(this.menuStrip5);
+            this.Controls.Add(this.menuStrip6);
             this.Controls.Add(this.CBBTIPO1);
             this.Controls.Add(this.CBBSEXO1);
+            this.Controls.Add(this.label1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PADRAO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1553,6 +1823,10 @@ namespace GRAFICA2
             this.menuStrip1.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            this.menuStrip3.ResumeLayout(false);
+            this.menuStrip3.PerformLayout();
+            this.menuStrip4.ResumeLayout(false);
+            this.menuStrip4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1691,17 +1965,46 @@ namespace GRAFICA2
         private System.Windows.Forms.ToolStripMenuItem CADCLIENTE;
         private System.Windows.Forms.ToolStripMenuItem CADPAPEL;
         private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ATUCLIENTE;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem EXCCLIENTE;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem SAIR;
+        private System.Windows.Forms.ToolStripMenuItem SAIR1;
         private System.Windows.Forms.ToolStripMenuItem lOGOTIPOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem sAIRToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SAIR2;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem lOGOTIPOToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem SAIR3;
+        private System.Windows.Forms.MenuStrip menuStrip4;
+        private System.Windows.Forms.MenuStrip menuStrip5;
+        private System.Windows.Forms.MenuStrip menuStrip6;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem8;
+        private System.Windows.Forms.ComboBox CBBNOME;
+        private System.Windows.Forms.ToolStripMenuItem lOGOTIPOToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem10;
+        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem11;
+        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem SAIR4;
     }
 }
 
