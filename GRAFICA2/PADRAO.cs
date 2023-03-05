@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace GRAFICA2
 {
@@ -247,13 +248,13 @@ namespace GRAFICA2
             TXBRUA.Enabled = false;
 
             TXBNUMERO.Visible = true;
-            TXBNUMERO.Enabled = false;
+            TXBNUMERO.Enabled = true;
 
             TXBCOMPLEMENTO.Visible = true;
-            TXBCOMPLEMENTO.Enabled = false;
+            TXBCOMPLEMENTO.Enabled = true;
 
             TXBBAIRRO.Visible = true;
-           TXBBAIRRO.Enabled = false;
+            TXBBAIRRO.Enabled = false;
 
             TXBCIDADE.Visible = true;
             TXBCIDADE.Enabled = false;
@@ -349,7 +350,7 @@ namespace GRAFICA2
             BTNCANCELA.Visible = true;
             BTNCANCELA.Text = "CANCELAR";
             BTNCANCELA.ForeColor = Color.Black;
-            BTNCANCELA.Location = new Point(1066,544);
+            BTNCANCELA.Location = new Point(1066, 544);
 
             menuStrip1.Visible = false;
             menuStrip2.Visible = true;
@@ -363,173 +364,347 @@ namespace GRAFICA2
 
         private void BTNINSERIR_Click(object sender, EventArgs e)
         {
-            if (TXBCONTATO1.Text != "")
+            if (label2.Text == "CADASTRAR CLIENTE")
             {
-                BTNINSERIR.Visible = true;
-                BTNINSERIR.Location = new Point(411, 544);
+                if (TXBCONTATO1.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 544);
 
-                BTNCADAUTEXC.Visible = true;
-                BTNCADAUTEXC.Text = "CADASTRAR";
-                BTNCADAUTEXC.ForeColor = Color.Blue;
-                BTNCADAUTEXC.Location = new Point(411, 584);
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "CADASTRAR";
+                    BTNCADAUTEXC.ForeColor = Color.Blue;
+                    BTNCADAUTEXC.Location = new Point(411, 584);
 
-                BTNCANCELA.Visible = true;
-                BTNCANCELA.Text = "CANCELAR";
-                BTNCANCELA.ForeColor = Color.Black;
-                BTNCANCELA.Location = new Point(1066, 584);
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 584);
 
-                TXBDDD2.Visible = true;
-                TXBTELEFONE2.Visible = true;
-                TXBCONTATO2.Visible = true;
-                TXBEMAIL2.Visible = true;
-                CBBTIPO2.Visible = true;
-                CBBSEXO2.Visible = true;
+                    TXBDDD2.Visible = true;
+                    TXBTELEFONE2.Visible = true;
+                    TXBCONTATO2.Visible = true;
+                    TXBEMAIL2.Visible = true;
+                    CBBTIPO2.Visible = true;
+                    CBBSEXO2.Visible = true;
 
-                CBBTIPO2.Focus();
+                    CBBTIPO2.Focus();
+                }
+                if (TXBCONTATO2.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 584);
+
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "CADASTRAR";
+                    BTNCADAUTEXC.ForeColor = Color.Blue;
+                    BTNCADAUTEXC.Location = new Point(411, 624);
+
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 624);
+
+                    TXBDDD3.Visible = true;
+                    TXBTELEFONE3.Visible = true;
+                    TXBCONTATO3.Visible = true;
+                    TXBEMAIL3.Visible = true;
+                    CBBTIPO3.Visible = true;
+                    CBBSEXO3.Visible = true;
+
+                    CBBTIPO3.Focus();
+                }
+                if (TXBCONTATO3.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 624);
+
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "CADASTRAR";
+                    BTNCADAUTEXC.ForeColor = Color.Blue;
+                    BTNCADAUTEXC.Location = new Point(411, 664);
+
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 664);
+
+                    TXBDDD4.Visible = true;
+                    TXBTELEFONE4.Visible = true;
+                    TXBCONTATO4.Visible = true;
+                    TXBEMAIL4.Visible = true;
+                    CBBTIPO4.Visible = true;
+                    CBBSEXO4.Visible = true;
+
+                    CBBTIPO4.Focus();
+                }
+                if (TXBCONTATO4.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 664);
+
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "CADASTRAR";
+                    BTNCADAUTEXC.ForeColor = Color.Blue;
+                    BTNCADAUTEXC.Location = new Point(411, 704);
+
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 704);
+
+                    TXBDDD5.Visible = true;
+                    TXBTELEFONE5.Visible = true;
+                    TXBCONTATO5.Visible = true;
+                    TXBEMAIL5.Visible = true;
+                    CBBTIPO5.Visible = true;
+                    CBBSEXO5.Visible = true;
+
+                    CBBTIPO5.Focus();
+                }
+                if (TXBCONTATO5.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 704);
+
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "CADASTRAR";
+                    BTNCADAUTEXC.ForeColor = Color.Blue;
+                    BTNCADAUTEXC.Location = new Point(411, 744);
+
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 744);
+
+                    TXBDDD6.Visible = true;
+                    TXBTELEFONE6.Visible = true;
+                    TXBCONTATO6.Visible = true;
+                    TXBEMAIL6.Visible = true;
+                    CBBTIPO6.Visible = true;
+                    CBBSEXO6.Visible = true;
+
+                    CBBTIPO6.Focus();
+                }
+                if (TXBCONTATO6.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 744);
+
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "CADASTRAR";
+                    BTNCADAUTEXC.ForeColor = Color.Blue;
+                    BTNCADAUTEXC.Location = new Point(411, 784);
+
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 784);
+
+                    TXBDDD7.Visible = true;
+                    TXBTELEFONE7.Visible = true;
+                    TXBCONTATO7.Visible = true;
+                    TXBEMAIL7.Visible = true;
+                    CBBTIPO7.Visible = true;
+                    CBBSEXO7.Visible = true;
+
+                    CBBTIPO7.Focus();
+                }
+                if (TXBCONTATO7.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 784);
+
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "CADASTRAR";
+                    BTNCADAUTEXC.ForeColor = Color.Blue;
+                    BTNCADAUTEXC.Location = new Point(411, 824);
+
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 824);
+
+                    TXBDDD8.Visible = true;
+                    TXBTELEFONE8.Visible = true;
+                    TXBCONTATO8.Visible = true;
+                    TXBEMAIL8.Visible = true;
+                    CBBTIPO8.Visible = true;
+                    CBBSEXO8.Visible = true;
+
+                    CBBTIPO8.Focus();
+                }
             }
-            if (TXBCONTATO2.Text != "")
+            if (label2.Text == "ATUALIZAR CLIENTE")
             {
-                BTNINSERIR.Visible = true;
-                BTNINSERIR.Location = new Point(411, 584);
+                if (TXBCONTATO1.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 544);
 
-                BTNCADAUTEXC.Visible = true;
-                BTNCADAUTEXC.Text = "CADASTRAR";
-                BTNCADAUTEXC.ForeColor = Color.Blue;
-                BTNCADAUTEXC.Location = new Point(411, 624);
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "ATUALIZAR";
+                    BTNCADAUTEXC.ForeColor = Color.Green;
+                    BTNCADAUTEXC.Location = new Point(411, 584);
 
-                BTNCANCELA.Visible = true;
-                BTNCANCELA.Text = "CANCELAR";
-                BTNCANCELA.ForeColor = Color.Black;
-                BTNCANCELA.Location = new Point(1066, 624);
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 584);
 
-                TXBDDD3.Visible = true;
-                TXBTELEFONE3.Visible = true;
-                TXBCONTATO3.Visible = true;
-                TXBEMAIL3.Visible = true;
-                CBBTIPO3.Visible = true;
-                CBBSEXO3.Visible = true;
+                    TXBDDD2.Visible = true;
+                    TXBTELEFONE2.Visible = true;
+                    TXBCONTATO2.Visible = true;
+                    TXBEMAIL2.Visible = true;
+                    CBBTIPO2.Visible = true;
+                    CBBSEXO2.Visible = true;
 
-                CBBTIPO3.Focus();
-            }
-            if (TXBCONTATO3.Text != "")
-            {
-                BTNINSERIR.Visible = true;
-                BTNINSERIR.Location = new Point(411, 624);
+                    CBBTIPO2.Focus();
+                }
+                if (TXBCONTATO2.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 584);
 
-                BTNCADAUTEXC.Visible = true;
-                BTNCADAUTEXC.Text = "CADASTRAR";
-                BTNCADAUTEXC.ForeColor = Color.Blue;
-                BTNCADAUTEXC.Location = new Point(411, 664);
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "ATUALIZAR";
+                    BTNCADAUTEXC.ForeColor = Color.Green;
+                    BTNCADAUTEXC.Location = new Point(411, 624);
 
-                BTNCANCELA.Visible = true;
-                BTNCANCELA.Text = "CANCELAR";
-                BTNCANCELA.ForeColor = Color.Black;
-                BTNCANCELA.Location = new Point(1066, 664);
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 624);
 
-                TXBDDD4.Visible = true;
-                TXBTELEFONE4.Visible = true;
-                TXBCONTATO4.Visible = true;
-                TXBEMAIL4.Visible = true;
-                CBBTIPO4.Visible = true;
-                CBBSEXO4.Visible = true;
+                    TXBDDD3.Visible = true;
+                    TXBTELEFONE3.Visible = true;
+                    TXBCONTATO3.Visible = true;
+                    TXBEMAIL3.Visible = true;
+                    CBBTIPO3.Visible = true;
+                    CBBSEXO3.Visible = true;
 
-                CBBTIPO4.Focus();
-            }
-            if (TXBCONTATO4.Text != "")
-            {
-                BTNINSERIR.Visible = true;
-                BTNINSERIR.Location = new Point(411, 664);
+                    CBBTIPO3.Focus();
+                }
+                if (TXBCONTATO3.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 624);
 
-                BTNCADAUTEXC.Visible = true;
-                BTNCADAUTEXC.Text = "CADASTRAR";
-                BTNCADAUTEXC.ForeColor = Color.Blue;
-                BTNCADAUTEXC.Location = new Point(411, 704);
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "ATUALIZAR";
+                    BTNCADAUTEXC.ForeColor = Color.Green;
+                    BTNCADAUTEXC.Location = new Point(411, 664);
 
-                BTNCANCELA.Visible = true;
-                BTNCANCELA.Text = "CANCELAR";
-                BTNCANCELA.ForeColor = Color.Black;
-                BTNCANCELA.Location = new Point(1066, 704);
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 664);
 
-                TXBDDD5.Visible = true;
-                TXBTELEFONE5.Visible = true;
-                TXBCONTATO5.Visible = true;
-                TXBEMAIL5.Visible = true;
-                CBBTIPO5.Visible = true;
-                CBBSEXO5.Visible = true;
+                    TXBDDD4.Visible = true;
+                    TXBTELEFONE4.Visible = true;
+                    TXBCONTATO4.Visible = true;
+                    TXBEMAIL4.Visible = true;
+                    CBBTIPO4.Visible = true;
+                    CBBSEXO4.Visible = true;
 
-                CBBTIPO5.Focus();
-            }
-            if (TXBCONTATO5.Text != "")
-            {
-                BTNINSERIR.Visible = true;
-                BTNINSERIR.Location = new Point(411, 704);
+                    CBBTIPO4.Focus();
+                }
+                if (TXBCONTATO4.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 664);
 
-                BTNCADAUTEXC.Visible = true;
-                BTNCADAUTEXC.Text = "CADASTRAR";
-                BTNCADAUTEXC.ForeColor = Color.Blue;
-                BTNCADAUTEXC.Location = new Point(411, 744);
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "ATUALIZAR";
+                    BTNCADAUTEXC.ForeColor = Color.Green;
+                    BTNCADAUTEXC.Location = new Point(411, 704);
 
-                BTNCANCELA.Visible = true;
-                BTNCANCELA.Text = "CANCELAR";
-                BTNCANCELA.ForeColor = Color.Black;
-                BTNCANCELA.Location = new Point(1066, 744);
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 704);
 
-                TXBDDD6.Visible = true;
-                TXBTELEFONE6.Visible = true;
-                TXBCONTATO6.Visible = true;
-                TXBEMAIL6.Visible = true;
-                CBBTIPO6.Visible = true;
-                CBBSEXO6.Visible = true;
+                    TXBDDD5.Visible = true;
+                    TXBTELEFONE5.Visible = true;
+                    TXBCONTATO5.Visible = true;
+                    TXBEMAIL5.Visible = true;
+                    CBBTIPO5.Visible = true;
+                    CBBSEXO5.Visible = true;
 
-                CBBTIPO6.Focus();
-            }
-            if (TXBCONTATO6.Text != "")
-            {
-                BTNINSERIR.Visible = true;
-                BTNINSERIR.Location = new Point(411, 744);
+                    CBBTIPO5.Focus();
+                }
+                if (TXBCONTATO5.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 704);
 
-                BTNCADAUTEXC.Visible = true;
-                BTNCADAUTEXC.Text = "CADASTRAR";
-                BTNCADAUTEXC.ForeColor = Color.Blue;
-                BTNCADAUTEXC.Location = new Point(411, 784);
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "ATUALIZAR";
+                    BTNCADAUTEXC.ForeColor = Color.Green;
+                    BTNCADAUTEXC.Location = new Point(411, 744);
 
-                BTNCANCELA.Visible = true;
-                BTNCANCELA.Text = "CANCELAR";
-                BTNCANCELA.ForeColor = Color.Black;
-                BTNCANCELA.Location = new Point(1066, 784);
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 744);
 
-                TXBDDD7.Visible = true;
-                TXBTELEFONE7.Visible = true;
-                TXBCONTATO7.Visible = true;
-                TXBEMAIL7.Visible = true;
-                CBBTIPO7.Visible = true;
-                CBBSEXO7.Visible = true;
+                    TXBDDD6.Visible = true;
+                    TXBTELEFONE6.Visible = true;
+                    TXBCONTATO6.Visible = true;
+                    TXBEMAIL6.Visible = true;
+                    CBBTIPO6.Visible = true;
+                    CBBSEXO6.Visible = true;
 
-                CBBTIPO7.Focus();
-            }
-            if (TXBCONTATO7.Text != "")
-            {
-                BTNINSERIR.Visible = true;
-                BTNINSERIR.Location = new Point(411, 784);
+                    CBBTIPO6.Focus();
+                }
+                if (TXBCONTATO6.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 744);
 
-                BTNCADAUTEXC.Visible = true;
-                BTNCADAUTEXC.Text = "CADASTRAR";
-                BTNCADAUTEXC.ForeColor = Color.Blue;
-                BTNCADAUTEXC.Location = new Point(411, 824);
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "ATUALIZAR";
+                    BTNCADAUTEXC.ForeColor = Color.Green;
+                    BTNCADAUTEXC.Location = new Point(411, 784);
 
-                BTNCANCELA.Visible = true;
-                BTNCANCELA.Text = "CANCELAR";
-                BTNCANCELA.ForeColor = Color.Black;
-                BTNCANCELA.Location = new Point(1066, 824);
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 784);
 
-                TXBDDD8.Visible = true;
-                TXBTELEFONE8.Visible = true;
-                TXBCONTATO8.Visible = true;
-                TXBEMAIL8.Visible = true;
-                CBBTIPO8.Visible = true;
-                CBBSEXO8.Visible = true;
+                    TXBDDD7.Visible = true;
+                    TXBTELEFONE7.Visible = true;
+                    TXBCONTATO7.Visible = true;
+                    TXBEMAIL7.Visible = true;
+                    CBBTIPO7.Visible = true;
+                    CBBSEXO7.Visible = true;
 
-                CBBTIPO8.Focus();
+                    CBBTIPO7.Focus();
+                }
+                if (TXBCONTATO7.Text != "")
+                {
+                    BTNINSERIR.Visible = true;
+                    BTNINSERIR.Location = new Point(411, 784);
+
+                    BTNCADAUTEXC.Visible = true;
+                    BTNCADAUTEXC.Text = "ATUALIZAR";
+                    BTNCADAUTEXC.ForeColor = Color.Green;
+                    BTNCADAUTEXC.Location = new Point(411, 824);
+
+                    BTNCANCELA.Visible = true;
+                    BTNCANCELA.Text = "CANCELAR";
+                    BTNCANCELA.ForeColor = Color.Black;
+                    BTNCANCELA.Location = new Point(1066, 824);
+
+                    TXBDDD8.Visible = true;
+                    TXBTELEFONE8.Visible = true;
+                    TXBCONTATO8.Visible = true;
+                    TXBEMAIL8.Visible = true;
+                    CBBTIPO8.Visible = true;
+                    CBBSEXO8.Visible = true;
+
+                    CBBTIPO8.Focus();
+                }
             }
         }
         private void BTNCANCELA_Click(object sender, EventArgs e)
@@ -1243,6 +1418,50 @@ namespace GRAFICA2
             if (label2.Text == "CADASTRAR CLIENTE")
             {
 
+                MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+
+                CONEXAO.Open();
+
+                if (TXBRAZAOSOCIAL.Text == "")
+                {
+                    MessageBox.Show("RAZÃO SOCIAL EM BRANCO");
+
+                    TXBRAZAOSOCIAL.Focus();
+                    return;
+                }
+
+                if (TXBNUMERO.Text == "")
+                {
+                    MessageBox.Show("NÚMERO EM BRANCO");
+
+                    TXBNUMERO.Focus();
+                    return;
+                }
+
+                MySqlCommand COMANDO1 = new MySqlCommand("insert into cliente(IDCLIENTE,NOME,RAZAOSOCIAL) values(null,?,?)", CONEXAO);
+                COMANDO1.Parameters.Add("@NOME", MySqlDbType.VarChar, 50).Value = TXBNOME.Text;
+                COMANDO1.Parameters.Add("@RAZAOSOCIAL", MySqlDbType.VarChar, 100).Value = TXBRAZAOSOCIAL.Text;
+
+                MySqlCommand COMANDO2 = new MySqlCommand("insert into endereco(IDENDERECO, RUA, NUMERO, COMPLEMENTO, BAIRRO, CIDADE, ESTADO, CEP) values(null,?,?,?,?,?,?,?)", CONEXAO);
+                COMANDO2.Parameters.Add("@RUA", MySqlDbType.VarChar, 50).Value = TXBRUA.Text;
+                COMANDO2.Parameters.Add("@NUMERO", MySqlDbType.VarChar, 100).Value = TXBNUMERO.Text;
+                COMANDO2.Parameters.Add("@COMPLEMENTO", MySqlDbType.VarChar, 100).Value = TXBCOMPLEMENTO.Text;
+                COMANDO2.Parameters.Add("@BAIRRO", MySqlDbType.VarChar, 100).Value = TXBBAIRRO.Text;
+                COMANDO2.Parameters.Add("@CIDADE", MySqlDbType.VarChar, 100).Value = TXBCIDADE.Text;
+                COMANDO2.Parameters.Add("@ESTADO", MySqlDbType.VarChar, 100).Value = TXBESTADO.Text;
+                COMANDO2.Parameters.Add("@CEP", MySqlDbType.VarChar, 100).Value = TXBCEP.Text;
+
+                COMANDO1.ExecuteNonQuery();
+                COMANDO2.ExecuteNonQuery();
+
+                CONEXAO.Close();
+
+
+
+
+
+
+
             }
             if (label2.Text == "ATUALIZAR CLIENTE")
             {
@@ -1254,5 +1473,5 @@ namespace GRAFICA2
             }
         }
     }
-    
 }
+
