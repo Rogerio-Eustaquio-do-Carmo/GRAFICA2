@@ -188,19 +188,30 @@ namespace GRAFICA2
             this.CBBSEXO7 = new System.Windows.Forms.ComboBox();
             this.CBBSEXO8 = new System.Windows.Forms.ComboBox();
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
-            this.menuStrip5 = new System.Windows.Forms.MenuStrip();
-            this.menuStrip6 = new System.Windows.Forms.MenuStrip();
-            this.CBBNOME = new System.Windows.Forms.ComboBox();
             this.lOGOTIPOToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cADASTRARToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.aTUALIZARToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLIENTEToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPELToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.eXCLUIRToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.pAPELToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.SAIR4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip5 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip6 = new System.Windows.Forms.MenuStrip();
+            this.CBBNOME = new System.Windows.Forms.ComboBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.menuStrip3.SuspendLayout();
@@ -276,14 +287,14 @@ namespace GRAFICA2
             // EXCCLIENTE
             // 
             this.EXCCLIENTE.Name = "EXCCLIENTE";
-            this.EXCCLIENTE.Size = new System.Drawing.Size(180, 22);
+            this.EXCCLIENTE.Size = new System.Drawing.Size(118, 22);
             this.EXCCLIENTE.Text = "CLIENTE";
             this.EXCCLIENTE.Click += new System.EventHandler(this.EXCCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem2
             // 
             this.pAPELToolStripMenuItem2.Name = "pAPELToolStripMenuItem2";
-            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
             this.pAPELToolStripMenuItem2.Text = "PAPEL";
             // 
             // SAIR1
@@ -325,7 +336,7 @@ namespace GRAFICA2
             // pAPELToolStripMenuItem
             // 
             this.pAPELToolStripMenuItem.Name = "pAPELToolStripMenuItem";
-            this.pAPELToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.pAPELToolStripMenuItem.Text = "PAPEL";
             // 
             // aTUALIZARToolStripMenuItem1
@@ -362,14 +373,14 @@ namespace GRAFICA2
             // cLIENTEToolStripMenuItem
             // 
             this.cLIENTEToolStripMenuItem.Name = "cLIENTEToolStripMenuItem";
-            this.cLIENTEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.cLIENTEToolStripMenuItem.Text = "CLIENTE";
             this.cLIENTEToolStripMenuItem.Click += new System.EventHandler(this.EXCCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem5
             // 
             this.pAPELToolStripMenuItem5.Name = "pAPELToolStripMenuItem5";
-            this.pAPELToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem5.Size = new System.Drawing.Size(118, 22);
             this.pAPELToolStripMenuItem5.Text = "PAPEL";
             // 
             // SAIR2
@@ -412,14 +423,14 @@ namespace GRAFICA2
             // cLIENTEToolStripMenuItem1
             // 
             this.cLIENTEToolStripMenuItem1.Name = "cLIENTEToolStripMenuItem1";
-            this.cLIENTEToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.cLIENTEToolStripMenuItem1.Text = "CLIENTE";
             this.cLIENTEToolStripMenuItem1.Click += new System.EventHandler(this.CADCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem8
             // 
             this.pAPELToolStripMenuItem8.Name = "pAPELToolStripMenuItem8";
-            this.pAPELToolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem8.Size = new System.Drawing.Size(118, 22);
             this.pAPELToolStripMenuItem8.Text = "PAPEL";
             // 
             // aTUALIZARToolStripMenuItem2
@@ -433,7 +444,7 @@ namespace GRAFICA2
             // pAPELToolStripMenuItem6
             // 
             this.pAPELToolStripMenuItem6.Name = "pAPELToolStripMenuItem6";
-            this.pAPELToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem6.Size = new System.Drawing.Size(107, 22);
             this.pAPELToolStripMenuItem6.Text = "PAPEL";
             // 
             // eXCLUIRToolStripMenuItem2
@@ -448,14 +459,14 @@ namespace GRAFICA2
             // cLIENTEToolStripMenuItem4
             // 
             this.cLIENTEToolStripMenuItem4.Name = "cLIENTEToolStripMenuItem4";
-            this.cLIENTEToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem4.Size = new System.Drawing.Size(118, 22);
             this.cLIENTEToolStripMenuItem4.Text = "CLIENTE";
             this.cLIENTEToolStripMenuItem4.Click += new System.EventHandler(this.EXCCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem7
             // 
             this.pAPELToolStripMenuItem7.Name = "pAPELToolStripMenuItem7";
-            this.pAPELToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem7.Size = new System.Drawing.Size(118, 22);
             this.pAPELToolStripMenuItem7.Text = "PAPEL";
             // 
             // SAIR3
@@ -500,6 +511,7 @@ namespace GRAFICA2
             this.TXBNOME.Name = "TXBNOME";
             this.TXBNOME.Size = new System.Drawing.Size(286, 20);
             this.TXBNOME.TabIndex = 2;
+            this.TXBNOME.Leave += new System.EventHandler(this.button1_Click);
             // 
             // TXBRAZAOSOCIAL
             // 
@@ -507,6 +519,8 @@ namespace GRAFICA2
             this.TXBRAZAOSOCIAL.Name = "TXBRAZAOSOCIAL";
             this.TXBRAZAOSOCIAL.Size = new System.Drawing.Size(674, 20);
             this.TXBRAZAOSOCIAL.TabIndex = 3;
+            this.TXBRAZAOSOCIAL.Click += new System.EventHandler(this.button2_Click);
+            this.TXBRAZAOSOCIAL.Leave += new System.EventHandler(this.button2_Click);
             // 
             // TXBRUA
             // 
@@ -521,6 +535,8 @@ namespace GRAFICA2
             this.TXBNUMERO.Name = "TXBNUMERO";
             this.TXBNUMERO.Size = new System.Drawing.Size(104, 20);
             this.TXBNUMERO.TabIndex = 5;
+            this.TXBNUMERO.Click += new System.EventHandler(this.button3_Click);
+            this.TXBNUMERO.Leave += new System.EventHandler(this.button3_Click);
             // 
             // TXBCOMPLEMENTO
             // 
@@ -570,6 +586,8 @@ namespace GRAFICA2
             this.TXBCNPJ.Name = "TXBCNPJ";
             this.TXBCNPJ.Size = new System.Drawing.Size(364, 20);
             this.TXBCNPJ.TabIndex = 10;
+            this.TXBCNPJ.Click += new System.EventHandler(this.button4_Click);
+            this.TXBCNPJ.Leave += new System.EventHandler(this.button4_Click);
             // 
             // TXBCONTATO1
             // 
@@ -773,6 +791,7 @@ namespace GRAFICA2
             this.TXBEMAIL8.Name = "TXBEMAIL8";
             this.TXBEMAIL8.Size = new System.Drawing.Size(364, 20);
             this.TXBEMAIL8.TabIndex = 60;
+            this.TXBEMAIL8.Text = "-";
             // 
             // TXBDDD8
             // 
@@ -780,6 +799,7 @@ namespace GRAFICA2
             this.TXBDDD8.Name = "TXBDDD8";
             this.TXBDDD8.Size = new System.Drawing.Size(78, 20);
             this.TXBDDD8.TabIndex = 56;
+            this.TXBDDD8.Text = "-";
             // 
             // TXBCONTATO8
             // 
@@ -787,6 +807,7 @@ namespace GRAFICA2
             this.TXBCONTATO8.Name = "TXBCONTATO8";
             this.TXBCONTATO8.Size = new System.Drawing.Size(344, 20);
             this.TXBCONTATO8.TabIndex = 58;
+            this.TXBCONTATO8.Text = "-";
             // 
             // TXBTELEFONE8
             // 
@@ -794,6 +815,7 @@ namespace GRAFICA2
             this.TXBTELEFONE8.Name = "TXBTELEFONE8";
             this.TXBTELEFONE8.Size = new System.Drawing.Size(136, 20);
             this.TXBTELEFONE8.TabIndex = 57;
+            this.TXBTELEFONE8.Text = "-";
             // 
             // label3
             // 
@@ -1384,10 +1406,6 @@ namespace GRAFICA2
             // CBBTIPO1
             // 
             this.CBBTIPO1.FormattingEnabled = true;
-            this.CBBTIPO1.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
             this.CBBTIPO1.Location = new System.Drawing.Point(411, 464);
             this.CBBTIPO1.Name = "CBBTIPO1";
             this.CBBTIPO1.Size = new System.Drawing.Size(78, 21);
@@ -1476,13 +1494,11 @@ namespace GRAFICA2
             this.CBBTIPO8.Name = "CBBTIPO8";
             this.CBBTIPO8.Size = new System.Drawing.Size(78, 21);
             this.CBBTIPO8.TabIndex = 55;
+            this.CBBTIPO8.Text = "-";
             // 
             // CBBSEXO1
             // 
             this.CBBSEXO1.FormattingEnabled = true;
-            this.CBBSEXO1.Items.AddRange(new object[] {
-            "F",
-            "M"});
             this.CBBSEXO1.Location = new System.Drawing.Point(1071, 464);
             this.CBBSEXO1.Name = "CBBSEXO1";
             this.CBBSEXO1.Size = new System.Drawing.Size(67, 21);
@@ -1564,6 +1580,7 @@ namespace GRAFICA2
             this.CBBSEXO8.Name = "CBBSEXO8";
             this.CBBSEXO8.Size = new System.Drawing.Size(67, 21);
             this.CBBSEXO8.TabIndex = 59;
+            this.CBBSEXO8.Text = "-";
             // 
             // menuStrip4
             // 
@@ -1578,6 +1595,78 @@ namespace GRAFICA2
             this.menuStrip4.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip4.TabIndex = 124;
             this.menuStrip4.Text = "menuStrip4";
+            // 
+            // lOGOTIPOToolStripMenuItem2
+            // 
+            this.lOGOTIPOToolStripMenuItem2.Name = "lOGOTIPOToolStripMenuItem2";
+            this.lOGOTIPOToolStripMenuItem2.Size = new System.Drawing.Size(75, 20);
+            this.lOGOTIPOToolStripMenuItem2.Text = "LOGOTIPO";
+            this.lOGOTIPOToolStripMenuItem2.Click += new System.EventHandler(this.PADRAO_Load);
+            // 
+            // cADASTRARToolStripMenuItem2
+            // 
+            this.cADASTRARToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem2,
+            this.pAPELToolStripMenuItem10});
+            this.cADASTRARToolStripMenuItem2.Name = "cADASTRARToolStripMenuItem2";
+            this.cADASTRARToolStripMenuItem2.Size = new System.Drawing.Size(85, 20);
+            this.cADASTRARToolStripMenuItem2.Text = "CADASTRAR";
+            // 
+            // cLIENTEToolStripMenuItem2
+            // 
+            this.cLIENTEToolStripMenuItem2.Name = "cLIENTEToolStripMenuItem2";
+            this.cLIENTEToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.cLIENTEToolStripMenuItem2.Text = "CLIENTE";
+            this.cLIENTEToolStripMenuItem2.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem10
+            // 
+            this.pAPELToolStripMenuItem10.Name = "pAPELToolStripMenuItem10";
+            this.pAPELToolStripMenuItem10.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem10.Text = "PAPEL";
+            // 
+            // aTUALIZARToolStripMenuItem3
+            // 
+            this.aTUALIZARToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTEToolStripMenuItem3,
+            this.pAPELToolStripMenuItem11});
+            this.aTUALIZARToolStripMenuItem3.Name = "aTUALIZARToolStripMenuItem3";
+            this.aTUALIZARToolStripMenuItem3.Size = new System.Drawing.Size(79, 20);
+            this.aTUALIZARToolStripMenuItem3.Text = "ATUALIZAR";
+            // 
+            // cLIENTEToolStripMenuItem3
+            // 
+            this.cLIENTEToolStripMenuItem3.Name = "cLIENTEToolStripMenuItem3";
+            this.cLIENTEToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.cLIENTEToolStripMenuItem3.Text = "CLIENTE";
+            this.cLIENTEToolStripMenuItem3.Click += new System.EventHandler(this.ATUCLIENTE_Click);
+            // 
+            // pAPELToolStripMenuItem11
+            // 
+            this.pAPELToolStripMenuItem11.Name = "pAPELToolStripMenuItem11";
+            this.pAPELToolStripMenuItem11.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem11.Text = "PAPEL";
+            // 
+            // eXCLUIRToolStripMenuItem3
+            // 
+            this.eXCLUIRToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pAPELToolStripMenuItem9});
+            this.eXCLUIRToolStripMenuItem3.Name = "eXCLUIRToolStripMenuItem3";
+            this.eXCLUIRToolStripMenuItem3.Size = new System.Drawing.Size(64, 20);
+            this.eXCLUIRToolStripMenuItem3.Text = "EXCLUIR";
+            // 
+            // pAPELToolStripMenuItem9
+            // 
+            this.pAPELToolStripMenuItem9.Name = "pAPELToolStripMenuItem9";
+            this.pAPELToolStripMenuItem9.Size = new System.Drawing.Size(107, 22);
+            this.pAPELToolStripMenuItem9.Text = "PAPEL";
+            // 
+            // SAIR4
+            // 
+            this.SAIR4.Name = "SAIR4";
+            this.SAIR4.Size = new System.Drawing.Size(43, 20);
+            this.SAIR4.Text = "SAIR";
+            this.SAIR4.Click += new System.EventHandler(this.SAIR_Click);
             // 
             // menuStrip5
             // 
@@ -1603,86 +1692,135 @@ namespace GRAFICA2
             this.CBBNOME.Size = new System.Drawing.Size(286, 21);
             this.CBBNOME.TabIndex = 127;
             // 
-            // lOGOTIPOToolStripMenuItem2
+            // label63
             // 
-            this.lOGOTIPOToolStripMenuItem2.Name = "lOGOTIPOToolStripMenuItem2";
-            this.lOGOTIPOToolStripMenuItem2.Size = new System.Drawing.Size(75, 20);
-            this.lOGOTIPOToolStripMenuItem2.Text = "LOGOTIPO";
-            this.lOGOTIPOToolStripMenuItem2.Click += new System.EventHandler(this.PADRAO_Load);
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.ForeColor = System.Drawing.Color.Red;
+            this.label63.Location = new System.Drawing.Point(29, 1032);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(133, 23);
+            this.label63.TabIndex = 128;
+            this.label63.Text = "OBRIGATÓRIO";
             // 
-            // cADASTRARToolStripMenuItem2
+            // label64
             // 
-            this.cADASTRARToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem2,
-            this.pAPELToolStripMenuItem10});
-            this.cADASTRARToolStripMenuItem2.Name = "cADASTRARToolStripMenuItem2";
-            this.cADASTRARToolStripMenuItem2.Size = new System.Drawing.Size(85, 20);
-            this.cADASTRARToolStripMenuItem2.Text = "CADASTRAR";
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.Red;
+            this.label64.Location = new System.Drawing.Point(-7, 1018);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(56, 68);
+            this.label64.TabIndex = 129;
+            this.label64.Text = "*";
             // 
-            // aTUALIZARToolStripMenuItem3
+            // label65
             // 
-            this.aTUALIZARToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem3,
-            this.pAPELToolStripMenuItem11});
-            this.aTUALIZARToolStripMenuItem3.Name = "aTUALIZARToolStripMenuItem3";
-            this.aTUALIZARToolStripMenuItem3.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem3.Text = "ATUALIZAR";
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.Red;
+            this.label65.Location = new System.Drawing.Point(568, 261);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(56, 68);
+            this.label65.TabIndex = 130;
+            this.label65.Text = "*";
             // 
-            // eXCLUIRToolStripMenuItem3
+            // label66
             // 
-            this.eXCLUIRToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pAPELToolStripMenuItem9});
-            this.eXCLUIRToolStripMenuItem3.Name = "eXCLUIRToolStripMenuItem3";
-            this.eXCLUIRToolStripMenuItem3.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem3.Text = "EXCLUIR";
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.Red;
+            this.label66.Location = new System.Drawing.Point(907, 261);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(56, 68);
+            this.label66.TabIndex = 131;
+            this.label66.Text = "*";
             // 
-            // pAPELToolStripMenuItem9
+            // label67
             // 
-            this.pAPELToolStripMenuItem9.Name = "pAPELToolStripMenuItem9";
-            this.pAPELToolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem9.Text = "PAPEL";
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.ForeColor = System.Drawing.Color.Red;
+            this.label67.Location = new System.Drawing.Point(1186, 304);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(56, 68);
+            this.label67.TabIndex = 132;
+            this.label67.Text = "*";
             // 
-            // SAIR4
+            // label68
             // 
-            this.SAIR4.Name = "SAIR4";
-            this.SAIR4.Size = new System.Drawing.Size(43, 20);
-            this.SAIR4.Text = "SAIR";
-            this.SAIR4.Click += new System.EventHandler(this.SAIR_Click);
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.ForeColor = System.Drawing.Color.Red;
+            this.label68.Location = new System.Drawing.Point(432, 388);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(56, 68);
+            this.label68.TabIndex = 133;
+            this.label68.Text = "*";
             // 
-            // cLIENTEToolStripMenuItem2
+            // button1
             // 
-            this.cLIENTEToolStripMenuItem2.Name = "cLIENTEToolStripMenuItem2";
-            this.cLIENTEToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem2.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem2.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            this.button1.Location = new System.Drawing.Point(20, 211);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 134;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pAPELToolStripMenuItem10
+            // button2
             // 
-            this.pAPELToolStripMenuItem10.Name = "pAPELToolStripMenuItem10";
-            this.pAPELToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem10.Text = "PAPEL";
+            this.button2.Location = new System.Drawing.Point(20, 240);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 135;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // cLIENTEToolStripMenuItem3
+            // button3
             // 
-            this.cLIENTEToolStripMenuItem3.Name = "cLIENTEToolStripMenuItem3";
-            this.cLIENTEToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem3.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem3.Click += new System.EventHandler(this.ATUCLIENTE_Click);
+            this.button3.Location = new System.Drawing.Point(20, 269);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 136;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // pAPELToolStripMenuItem11
+            // button4
             // 
-            this.pAPELToolStripMenuItem11.Name = "pAPELToolStripMenuItem11";
-            this.pAPELToolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem11.Text = "PAPEL";
+            this.button4.Location = new System.Drawing.Point(20, 296);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 137;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(20, 325);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 138;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // PADRAO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1904, 921);
+            this.ClientSize = new System.Drawing.Size(1904, 1062);
             this.ControlBox = false;
-            this.Controls.Add(this.CBBNOME);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label63);
+            this.Controls.Add(this.label64);
             this.Controls.Add(this.CBBSEXO8);
             this.Controls.Add(this.CBBSEXO7);
             this.Controls.Add(this.CBBSEXO6);
@@ -1814,6 +1952,11 @@ namespace GRAFICA2
             this.Controls.Add(this.CBBTIPO1);
             this.Controls.Add(this.CBBSEXO1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label65);
+            this.Controls.Add(this.label66);
+            this.Controls.Add(this.label67);
+            this.Controls.Add(this.label68);
+            this.Controls.Add(this.CBBNOME);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PADRAO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2005,6 +2148,17 @@ namespace GRAFICA2
         private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem SAIR4;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
