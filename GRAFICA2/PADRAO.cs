@@ -20,6 +20,14 @@ namespace GRAFICA2
 
         private void PADRAO_Load(object sender, EventArgs e)
         {
+
+            button1.Visible = false;
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            button6.Visible = false;
+
             CBBTIPO1.Items.Add("CEL");
             CBBTIPO1.Items.Add("COM");
             CBBTIPO1.Items.Add("RES");
@@ -95,6 +103,7 @@ namespace GRAFICA2
             label66.Visible = false;
             label67.Visible = false;
             label68.Visible = false;
+            label69.Visible = false;
 
             TXBCEP.Visible = false;
             TXBNOME.Visible = false;
@@ -253,6 +262,7 @@ namespace GRAFICA2
             label66.Visible = true;
             label67.Visible = true;
             label68.Visible = true;
+            label69.Visible = true;
 
             TXBCEP.Visible = true;
             TXBCEP.Enabled = true;
@@ -1112,6 +1122,7 @@ namespace GRAFICA2
             label66.Visible = false;
             label67.Visible = false;
             label68.Visible = false;
+            label69.Visible = false;
 
             TXBCEP.Visible = true;
             TXBCEP.Enabled = true;
@@ -1315,6 +1326,7 @@ namespace GRAFICA2
             label66.Visible = false;
             label67.Visible = false;
             label68.Visible = false;
+            label69.Visible = false;
 
             TXBCEP.Visible = true;
             TXBCEP.Enabled = false;
@@ -1618,6 +1630,16 @@ namespace GRAFICA2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (TXBCEP.Text == "")
+            {
+                MessageBox.Show("CEP EM BRANCO");
+
+                TXBCEP.Focus();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             if (TXBNOME.Text == "")
             {
                 MessageBox.Show("NOME EM BRANCO");
@@ -1626,7 +1648,7 @@ namespace GRAFICA2
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             if (TXBRAZAOSOCIAL.Text == "")
             {
@@ -1636,7 +1658,7 @@ namespace GRAFICA2
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             if (TXBNUMERO.Text == "")
             {
@@ -1646,7 +1668,7 @@ namespace GRAFICA2
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             if (TXBCNPJ.Text == "")
             {

@@ -212,6 +212,8 @@ namespace GRAFICA2
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label69 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.menuStrip3.SuspendLayout();
@@ -243,14 +245,14 @@ namespace GRAFICA2
             // CADCLIENTE
             // 
             this.CADCLIENTE.Name = "CADCLIENTE";
-            this.CADCLIENTE.Size = new System.Drawing.Size(118, 22);
+            this.CADCLIENTE.Size = new System.Drawing.Size(180, 22);
             this.CADCLIENTE.Text = "CLIENTE";
             this.CADCLIENTE.Click += new System.EventHandler(this.CADCLIENTE_Click);
             // 
             // CADPAPEL
             // 
             this.CADPAPEL.Name = "CADPAPEL";
-            this.CADPAPEL.Size = new System.Drawing.Size(118, 22);
+            this.CADPAPEL.Size = new System.Drawing.Size(180, 22);
             this.CADPAPEL.Text = "PAPEL";
             // 
             // aTUALIZARToolStripMenuItem
@@ -265,14 +267,14 @@ namespace GRAFICA2
             // ATUCLIENTE
             // 
             this.ATUCLIENTE.Name = "ATUCLIENTE";
-            this.ATUCLIENTE.Size = new System.Drawing.Size(118, 22);
+            this.ATUCLIENTE.Size = new System.Drawing.Size(180, 22);
             this.ATUCLIENTE.Text = "CLIENTE";
             this.ATUCLIENTE.Click += new System.EventHandler(this.ATUCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem1
             // 
             this.pAPELToolStripMenuItem1.Name = "pAPELToolStripMenuItem1";
-            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.pAPELToolStripMenuItem1.Text = "PAPEL";
             // 
             // eXCLUIRToolStripMenuItem
@@ -287,14 +289,14 @@ namespace GRAFICA2
             // EXCCLIENTE
             // 
             this.EXCCLIENTE.Name = "EXCCLIENTE";
-            this.EXCCLIENTE.Size = new System.Drawing.Size(118, 22);
+            this.EXCCLIENTE.Size = new System.Drawing.Size(180, 22);
             this.EXCCLIENTE.Text = "CLIENTE";
             this.EXCCLIENTE.Click += new System.EventHandler(this.EXCCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem2
             // 
             this.pAPELToolStripMenuItem2.Name = "pAPELToolStripMenuItem2";
-            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.pAPELToolStripMenuItem2.Text = "PAPEL";
             // 
             // SAIR1
@@ -495,7 +497,6 @@ namespace GRAFICA2
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(793, 75);
             this.label2.TabIndex = 5;
-            this.label2.Text = "CADASTRO DE CLIENTE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TXBCEP
@@ -504,6 +505,7 @@ namespace GRAFICA2
             this.TXBCEP.Name = "TXBCEP";
             this.TXBCEP.Size = new System.Drawing.Size(126, 20);
             this.TXBCEP.TabIndex = 1;
+            this.TXBCEP.Leave += new System.EventHandler(this.button1_Click);
             // 
             // TXBNOME
             // 
@@ -511,7 +513,7 @@ namespace GRAFICA2
             this.TXBNOME.Name = "TXBNOME";
             this.TXBNOME.Size = new System.Drawing.Size(286, 20);
             this.TXBNOME.TabIndex = 2;
-            this.TXBNOME.Leave += new System.EventHandler(this.button1_Click);
+            this.TXBNOME.Leave += new System.EventHandler(this.button2_Click);
             // 
             // TXBRAZAOSOCIAL
             // 
@@ -520,7 +522,7 @@ namespace GRAFICA2
             this.TXBRAZAOSOCIAL.Size = new System.Drawing.Size(674, 20);
             this.TXBRAZAOSOCIAL.TabIndex = 3;
             this.TXBRAZAOSOCIAL.Click += new System.EventHandler(this.button2_Click);
-            this.TXBRAZAOSOCIAL.Leave += new System.EventHandler(this.button2_Click);
+            this.TXBRAZAOSOCIAL.Leave += new System.EventHandler(this.button3_Click);
             // 
             // TXBRUA
             // 
@@ -536,7 +538,7 @@ namespace GRAFICA2
             this.TXBNUMERO.Size = new System.Drawing.Size(104, 20);
             this.TXBNUMERO.TabIndex = 5;
             this.TXBNUMERO.Click += new System.EventHandler(this.button3_Click);
-            this.TXBNUMERO.Leave += new System.EventHandler(this.button3_Click);
+            this.TXBNUMERO.Leave += new System.EventHandler(this.button4_Click);
             // 
             // TXBCOMPLEMENTO
             // 
@@ -587,7 +589,7 @@ namespace GRAFICA2
             this.TXBCNPJ.Size = new System.Drawing.Size(364, 20);
             this.TXBCNPJ.TabIndex = 10;
             this.TXBCNPJ.Click += new System.EventHandler(this.button4_Click);
-            this.TXBCNPJ.Leave += new System.EventHandler(this.button4_Click);
+            this.TXBCNPJ.Leave += new System.EventHandler(this.button5_Click);
             // 
             // TXBCONTATO1
             // 
@@ -1717,44 +1719,44 @@ namespace GRAFICA2
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label65.ForeColor = System.Drawing.Color.Red;
-            this.label65.Location = new System.Drawing.Point(568, 261);
+            this.label65.Location = new System.Drawing.Point(574, 268);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(56, 68);
+            this.label65.Size = new System.Drawing.Size(44, 52);
             this.label65.TabIndex = 130;
             this.label65.Text = "*";
             // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.ForeColor = System.Drawing.Color.Red;
-            this.label66.Location = new System.Drawing.Point(907, 261);
+            this.label66.Location = new System.Drawing.Point(912, 268);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(56, 68);
+            this.label66.Size = new System.Drawing.Size(44, 52);
             this.label66.TabIndex = 131;
             this.label66.Text = "*";
             // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.ForeColor = System.Drawing.Color.Red;
-            this.label67.Location = new System.Drawing.Point(1186, 304);
+            this.label67.Location = new System.Drawing.Point(1190, 310);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(56, 68);
+            this.label67.Size = new System.Drawing.Size(44, 52);
             this.label67.TabIndex = 132;
             this.label67.Text = "*";
             // 
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label68.ForeColor = System.Drawing.Color.Red;
-            this.label68.Location = new System.Drawing.Point(432, 388);
+            this.label68.Location = new System.Drawing.Point(436, 394);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(56, 68);
+            this.label68.Size = new System.Drawing.Size(44, 52);
             this.label68.TabIndex = 133;
             this.label68.Text = "*";
             // 
@@ -1766,7 +1768,6 @@ namespace GRAFICA2
             this.button1.TabIndex = 134;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -1776,7 +1777,6 @@ namespace GRAFICA2
             this.button2.TabIndex = 135;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -1786,7 +1786,6 @@ namespace GRAFICA2
             this.button3.TabIndex = 136;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -1796,7 +1795,6 @@ namespace GRAFICA2
             this.button4.TabIndex = 137;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -1807,6 +1805,26 @@ namespace GRAFICA2
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(20, 354);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 139;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.ForeColor = System.Drawing.Color.Red;
+            this.label69.Location = new System.Drawing.Point(429, 268);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(44, 52);
+            this.label69.TabIndex = 140;
+            this.label69.Text = "*";
+            // 
             // PADRAO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1814,6 +1832,7 @@ namespace GRAFICA2
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1904, 1062);
             this.ControlBox = false;
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -1957,6 +1976,7 @@ namespace GRAFICA2
             this.Controls.Add(this.label67);
             this.Controls.Add(this.label68);
             this.Controls.Add(this.CBBNOME);
+            this.Controls.Add(this.label69);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PADRAO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2159,6 +2179,8 @@ namespace GRAFICA2
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label69;
     }
 }
 
