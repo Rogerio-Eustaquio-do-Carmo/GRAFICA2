@@ -20,20 +20,50 @@ namespace GRAFICA2
 
         private void PADRAO_Load(object sender, EventArgs e)
         {
-
-            button1.Visible = false;
-            button2.Visible = false;
-            button3.Visible = false;
-            button4.Visible = false;
-            button5.Visible = false;
-            button6.Visible = false;
-
-            CBBTIPO1.Items.Add("CEL");
-            CBBTIPO1.Items.Add("COM");
-            CBBTIPO1.Items.Add("RES");
-
-            CBBSEXO1.Items.Add("F");
-            CBBSEXO1.Items.Add("M");
+            TXBCEP.Visible = false;
+            TXBNOME.Visible = false;
+            TXBRAZAOSOCIAL.Visible = false;
+            TXBRUA.Visible = false;
+            TXBNUMERO.Visible = false;
+            TXBCOMPLEMENTO.Visible = false;
+            TXBBAIRRO.Visible = false;
+            TXBCIDADE.Visible = false;
+            TXBESTADO.Visible = false;
+            TXBCNPJ.Visible = false;
+            TXBINSCEST.Visible = false;
+            TXBINSCMUN.Visible = false;
+            TXBDDD1.Visible = false;
+            TXBDDD2.Visible = false;
+            TXBDDD3.Visible = false;
+            TXBDDD4.Visible = false;
+            TXBDDD5.Visible = false;
+            TXBDDD6.Visible = false;
+            TXBDDD7.Visible = false;
+            TXBDDD8.Visible = false;
+            TXBTELEFONE1.Visible = false;
+            TXBTELEFONE2.Visible = false;
+            TXBTELEFONE3.Visible = false;
+            TXBTELEFONE4.Visible = false;
+            TXBTELEFONE5.Visible = false;
+            TXBTELEFONE6.Visible = false;
+            TXBTELEFONE7.Visible = false;
+            TXBTELEFONE8.Visible = false;
+            TXBCONTATO1.Visible = false;
+            TXBCONTATO2.Visible = false;
+            TXBCONTATO3.Visible = false;
+            TXBCONTATO4.Visible = false;
+            TXBCONTATO5.Visible = false;
+            TXBCONTATO6.Visible = false;
+            TXBCONTATO7.Visible = false;
+            TXBCONTATO8.Visible = false;
+            TXBEMAIL1.Visible = false;
+            TXBEMAIL2.Visible = false;
+            TXBEMAIL3.Visible = false;
+            TXBEMAIL4.Visible = false;
+            TXBEMAIL5.Visible = false;
+            TXBEMAIL6.Visible = false;
+            TXBEMAIL7.Visible = false;
+            TXBEMAIL8.Visible = false;
 
             label1.Visible = true;
             label2.Visible = false;
@@ -105,51 +135,6 @@ namespace GRAFICA2
             label68.Visible = false;
             label69.Visible = false;
 
-            TXBCEP.Visible = false;
-            TXBNOME.Visible = false;
-            TXBRAZAOSOCIAL.Visible = false;
-            TXBRUA.Visible = false;
-            TXBNUMERO.Visible = false;
-            TXBCOMPLEMENTO.Visible = false;
-            TXBBAIRRO.Visible = false;
-            TXBCIDADE.Visible = false;
-            TXBESTADO.Visible = false;
-            TXBCNPJ.Visible = false;
-            TXBINSCEST.Visible = false;
-            TXBINSCMUN.Visible = false;
-            TXBDDD1.Visible = false;
-            TXBDDD2.Visible = false;
-            TXBDDD3.Visible = false;
-            TXBDDD4.Visible = false;
-            TXBDDD5.Visible = false;
-            TXBDDD6.Visible = false;
-            TXBDDD7.Visible = false;
-            TXBDDD8.Visible = false;
-            TXBTELEFONE1.Visible = false;
-            TXBTELEFONE2.Visible = false;
-            TXBTELEFONE3.Visible = false;
-            TXBTELEFONE4.Visible = false;
-            TXBTELEFONE5.Visible = false;
-            TXBTELEFONE6.Visible = false;
-            TXBTELEFONE7.Visible = false;
-            TXBTELEFONE8.Visible = false;
-            TXBCONTATO1.Visible = false;
-            TXBCONTATO2.Visible = false;
-            TXBCONTATO3.Visible = false;
-            TXBCONTATO4.Visible = false;
-            TXBCONTATO5.Visible = false;
-            TXBCONTATO6.Visible = false;
-            TXBCONTATO7.Visible = false;
-            TXBCONTATO8.Visible = false;
-            TXBEMAIL1.Visible = false;
-            TXBEMAIL2.Visible = false;
-            TXBEMAIL3.Visible = false;
-            TXBEMAIL4.Visible = false;
-            TXBEMAIL5.Visible = false;
-            TXBEMAIL6.Visible = false;
-            TXBEMAIL7.Visible = false;
-            TXBEMAIL8.Visible = false;
-
             CBBNOME.Visible = false;
             CBBTIPO1.Visible = false;
             CBBTIPO2.Visible = false;
@@ -179,8 +164,22 @@ namespace GRAFICA2
             menuStrip5.Visible = false;
             menuStrip6.Visible = false;
 
-            label1.Location = new Point(660, 450);
+            button1.Visible = false;
+            button1.Enabled = false;
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            button6.Visible = false;
 
+            CBBTIPO1.Items.Add("CEL");
+            CBBTIPO1.Items.Add("COM");
+            CBBTIPO1.Items.Add("RES");
+
+            CBBSEXO1.Items.Add("F");
+            CBBSEXO1.Items.Add("M");
+
+            label1.Location = new Point(660, 450);
         }
 
         private void SAIR_Click(object sender, EventArgs e)
@@ -1460,156 +1459,156 @@ namespace GRAFICA2
         {
             if (label2.Text == "CADASTRAR CLIENTE")
             {
-                /*      MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+                MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
 
-               CONEXAO.Open();
+                CONEXAO.Open();
 
-               MySqlCommand COMANDO1 = new MySqlCommand("insert into cliente(IDCLIENTE,NOME,RAZAOSOCIAL) values(null,?,?)", CONEXAO);
-               COMANDO1.Parameters.Add("@NOME", MySqlDbType.VarChar, 50).Value = TXBNOME.Text;
-               COMANDO1.Parameters.Add("@RAZAOSOCIAL", MySqlDbType.VarChar, 100).Value = TXBRAZAOSOCIAL.Text;
+                MySqlCommand COMANDO1 = new MySqlCommand("insert into cliente(IDCLIENTE,NOME,RAZAOSOCIAL) values(null,?,?)", CONEXAO);
+                COMANDO1.Parameters.Add("@NOME", MySqlDbType.VarChar, 50).Value = TXBNOME.Text;
+                COMANDO1.Parameters.Add("@RAZAOSOCIAL", MySqlDbType.VarChar, 100).Value = TXBRAZAOSOCIAL.Text;
 
-                       COMANDO1.ExecuteNonQuery();
+                COMANDO1.ExecuteNonQuery();
 
-                   MySqlCommand COMANDO2 = new MySqlCommand("insert into endereco(IDENDERECO, RUA, NUMERO, COMPLEMENTO, BAIRRO, CIDADE, ESTADO, CEP) values(null,?,?,?,?,?,?,?)", CONEXAO);
-                   COMANDO2.Parameters.Add("@RUA", MySqlDbType.VarChar, 150).Value = TXBRUA.Text;
-                   COMANDO2.Parameters.Add("@NUMERO", MySqlDbType.VarChar, 10).Value = TXBNUMERO.Text;
-                   COMANDO2.Parameters.Add("@COMPLEMENTO", MySqlDbType.VarChar, 50).Value = TXBCOMPLEMENTO.Text;
-                   COMANDO2.Parameters.Add("@BAIRRO", MySqlDbType.VarChar, 50).Value = TXBBAIRRO.Text;
-                   COMANDO2.Parameters.Add("@CIDADE", MySqlDbType.VarChar, 50).Value = TXBCIDADE.Text;
-                   COMANDO2.Parameters.Add("@ESTADO", MySqlDbType.VarChar, 2).Value = TXBESTADO.Text;
-                   COMANDO2.Parameters.Add("@CEP", MySqlDbType.VarChar, 9).Value = TXBCEP.Text;
+                MySqlCommand COMANDO2 = new MySqlCommand("insert into endereco(IDENDERECO, RUA, NUMERO, COMPLEMENTO, BAIRRO, CIDADE, ESTADO, CEP) values(null,?,?,?,?,?,?,?)", CONEXAO);
+                COMANDO2.Parameters.Add("@RUA", MySqlDbType.VarChar, 150).Value = TXBRUA.Text;
+                COMANDO2.Parameters.Add("@NUMERO", MySqlDbType.VarChar, 10).Value = TXBNUMERO.Text;
+                COMANDO2.Parameters.Add("@COMPLEMENTO", MySqlDbType.VarChar, 50).Value = TXBCOMPLEMENTO.Text;
+                COMANDO2.Parameters.Add("@BAIRRO", MySqlDbType.VarChar, 50).Value = TXBBAIRRO.Text;
+                COMANDO2.Parameters.Add("@CIDADE", MySqlDbType.VarChar, 50).Value = TXBCIDADE.Text;
+                COMANDO2.Parameters.Add("@ESTADO", MySqlDbType.VarChar, 2).Value = TXBESTADO.Text;
+                COMANDO2.Parameters.Add("@CEP", MySqlDbType.VarChar, 9).Value = TXBCEP.Text;
 
-                      COMANDO2.ExecuteNonQuery();
+                COMANDO2.ExecuteNonQuery();
 
-                        MySqlCommand COMANDO3 = new MySqlCommand("insert into FISCAIS(IDFISCAIS, CNPJ, INSCEST, INSCMUN) values(null,?,?,?)", CONEXAO);
-                        COMANDO3.Parameters.Add("@CNPJ", MySqlDbType.VarChar, 18).Value = TXBCNPJ.Text;
-                        COMANDO3.Parameters.Add("@INSCEST", MySqlDbType.VarChar, 30).Value = TXBINSCEST.Text;
-                        COMANDO3.Parameters.Add("@INSCMUN", MySqlDbType.VarChar, 30).Value = TXBINSCMUN.Text;
+                MySqlCommand COMANDO3 = new MySqlCommand("insert into FISCAIS(IDFISCAIS, CNPJ, INSCEST, INSCMUN) values(null,?,?,?)", CONEXAO);
+                COMANDO3.Parameters.Add("@CNPJ", MySqlDbType.VarChar, 18).Value = TXBCNPJ.Text;
+                COMANDO3.Parameters.Add("@INSCEST", MySqlDbType.VarChar, 30).Value = TXBINSCEST.Text;
+                COMANDO3.Parameters.Add("@INSCMUN", MySqlDbType.VarChar, 30).Value = TXBINSCMUN.Text;
 
-                      COMANDO3.ExecuteNonQuery();
+                COMANDO3.ExecuteNonQuery();
 
-                 MySqlCommand COMANDO4 = new MySqlCommand("insert into contato(IDCONTATO, CONTATO1, SEXO1, EMAIL1, CONTATO2, SEXO2, EMAIL2, CONTATO3, SEXO3, EMAIL3, CONTATO4, SEXO4, EMAIL4, CONTATO5, SEXO5, EMAIL5, CONTATO6, SEXO6, EMAIL6, CONTATO7, SEXO7, EMAIL7, CONTATO8, SEXO8, EMAIL8) values(null,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", CONEXAO);
-                  COMANDO4.Parameters.Add("@CONTATO1", MySqlDbType.VarChar, 100).Value = TXBCONTATO1.Text;
-                  COMANDO4.Parameters.Add("@SEXO1", MySqlDbType.VarChar, 1).Value = CBBSEXO1.Text;
-                  COMANDO4.Parameters.Add("@EMAIL1", MySqlDbType.VarChar, 100).Value = TXBEMAIL1.Text;
-                  COMANDO4.Parameters.Add("@CONTATO2", MySqlDbType.VarChar, 100).Value = TXBCONTATO2.Text;
-                  COMANDO4.Parameters.Add("@SEXO2", MySqlDbType.VarChar, 1).Value = CBBSEXO2.Text;
-                  COMANDO4.Parameters.Add("@EMAIL2", MySqlDbType.VarChar, 100).Value = TXBEMAIL2.Text;
-                  COMANDO4.Parameters.Add("@CONTATO3", MySqlDbType.VarChar, 100).Value = TXBCONTATO3.Text;
-                  COMANDO4.Parameters.Add("@SEXO3", MySqlDbType.VarChar, 1).Value = CBBSEXO3.Text;
-                  COMANDO4.Parameters.Add("@EMAIL3", MySqlDbType.VarChar, 100).Value = TXBEMAIL3.Text;
-                  COMANDO4.Parameters.Add("@CONTATO4", MySqlDbType.VarChar, 100).Value = TXBCONTATO4.Text;
-                  COMANDO4.Parameters.Add("@SEXO4", MySqlDbType.VarChar, 1).Value = CBBSEXO4.Text;
-                  COMANDO4.Parameters.Add("@EMAIL4", MySqlDbType.VarChar, 100).Value = TXBEMAIL4.Text;
-                  COMANDO4.Parameters.Add("@CONTATO5", MySqlDbType.VarChar, 100).Value = TXBCONTATO5.Text;
-                  COMANDO4.Parameters.Add("@SEXO5", MySqlDbType.VarChar, 1).Value = CBBSEXO5.Text;
-                  COMANDO4.Parameters.Add("@EMAIL5", MySqlDbType.VarChar, 100).Value = TXBEMAIL5.Text;
-                  COMANDO4.Parameters.Add("@CONTATO6", MySqlDbType.VarChar, 100).Value = TXBCONTATO6.Text;
-                  COMANDO4.Parameters.Add("@SEXO6", MySqlDbType.VarChar, 1).Value = CBBSEXO6.Text;
-                  COMANDO4.Parameters.Add("@EMAIL6", MySqlDbType.VarChar, 100).Value = TXBEMAIL6.Text;
-                  COMANDO4.Parameters.Add("@CONTATO7", MySqlDbType.VarChar, 100).Value = TXBCONTATO7.Text;
-                  COMANDO4.Parameters.Add("@SEXO7", MySqlDbType.VarChar, 1).Value = CBBSEXO7.Text;
-                  COMANDO4.Parameters.Add("@EMAIL7", MySqlDbType.VarChar, 100).Value = TXBEMAIL7.Text;
-                  COMANDO4.Parameters.Add("@CONTATO8", MySqlDbType.VarChar, 100).Value = TXBCONTATO8.Text;
-                  COMANDO4.Parameters.Add("@SEXO8", MySqlDbType.VarChar, 1).Value = CBBSEXO8.Text;
-                  COMANDO4.Parameters.Add("@EMAIL8", MySqlDbType.VarChar, 100).Value = TXBEMAIL8.Text;
+                MySqlCommand COMANDO4 = new MySqlCommand("insert into contato(IDCONTATO, CONTATO1, SEXO1, EMAIL1, CONTATO2, SEXO2, EMAIL2, CONTATO3, SEXO3, EMAIL3, CONTATO4, SEXO4, EMAIL4, CONTATO5, SEXO5, EMAIL5, CONTATO6, SEXO6, EMAIL6, CONTATO7, SEXO7, EMAIL7, CONTATO8, SEXO8, EMAIL8) values(null,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", CONEXAO);
+                COMANDO4.Parameters.Add("@CONTATO1", MySqlDbType.VarChar, 100).Value = TXBCONTATO1.Text;
+                COMANDO4.Parameters.Add("@SEXO1", MySqlDbType.VarChar, 1).Value = CBBSEXO1.Text;
+                COMANDO4.Parameters.Add("@EMAIL1", MySqlDbType.VarChar, 100).Value = TXBEMAIL1.Text;
+                COMANDO4.Parameters.Add("@CONTATO2", MySqlDbType.VarChar, 100).Value = TXBCONTATO2.Text;
+                COMANDO4.Parameters.Add("@SEXO2", MySqlDbType.VarChar, 1).Value = CBBSEXO2.Text;
+                COMANDO4.Parameters.Add("@EMAIL2", MySqlDbType.VarChar, 100).Value = TXBEMAIL2.Text;
+                COMANDO4.Parameters.Add("@CONTATO3", MySqlDbType.VarChar, 100).Value = TXBCONTATO3.Text;
+                COMANDO4.Parameters.Add("@SEXO3", MySqlDbType.VarChar, 1).Value = CBBSEXO3.Text;
+                COMANDO4.Parameters.Add("@EMAIL3", MySqlDbType.VarChar, 100).Value = TXBEMAIL3.Text;
+                COMANDO4.Parameters.Add("@CONTATO4", MySqlDbType.VarChar, 100).Value = TXBCONTATO4.Text;
+                COMANDO4.Parameters.Add("@SEXO4", MySqlDbType.VarChar, 1).Value = CBBSEXO4.Text;
+                COMANDO4.Parameters.Add("@EMAIL4", MySqlDbType.VarChar, 100).Value = TXBEMAIL4.Text;
+                COMANDO4.Parameters.Add("@CONTATO5", MySqlDbType.VarChar, 100).Value = TXBCONTATO5.Text;
+                COMANDO4.Parameters.Add("@SEXO5", MySqlDbType.VarChar, 1).Value = CBBSEXO5.Text;
+                COMANDO4.Parameters.Add("@EMAIL5", MySqlDbType.VarChar, 100).Value = TXBEMAIL5.Text;
+                COMANDO4.Parameters.Add("@CONTATO6", MySqlDbType.VarChar, 100).Value = TXBCONTATO6.Text;
+                COMANDO4.Parameters.Add("@SEXO6", MySqlDbType.VarChar, 1).Value = CBBSEXO6.Text;
+                COMANDO4.Parameters.Add("@EMAIL6", MySqlDbType.VarChar, 100).Value = TXBEMAIL6.Text;
+                COMANDO4.Parameters.Add("@CONTATO7", MySqlDbType.VarChar, 100).Value = TXBCONTATO7.Text;
+                COMANDO4.Parameters.Add("@SEXO7", MySqlDbType.VarChar, 1).Value = CBBSEXO7.Text;
+                COMANDO4.Parameters.Add("@EMAIL7", MySqlDbType.VarChar, 100).Value = TXBEMAIL7.Text;
+                COMANDO4.Parameters.Add("@CONTATO8", MySqlDbType.VarChar, 100).Value = TXBCONTATO8.Text;
+                COMANDO4.Parameters.Add("@SEXO8", MySqlDbType.VarChar, 1).Value = CBBSEXO8.Text;
+                COMANDO4.Parameters.Add("@EMAIL8", MySqlDbType.VarChar, 100).Value = TXBEMAIL8.Text;
 
-                  COMANDO4.ExecuteNonQuery();
+                COMANDO4.ExecuteNonQuery();
 
-                  MySqlCommand COMANDO5 = new MySqlCommand("insert into TELEFONE(IDTELEFONE, TIPO1, DDD1, TELEFONE1, TIPO2, DDD2, TELEFONE2, TIPO3, DDD3, TELEFONE3, TIPO4, DDD4, TELEFONE4, TIPO5, DDD5, TELEFONE5, TIPO6, DDD6, TELEFONE6, TIPO7, DDD7, TELEFONE7, TIPO8, DDD8, TELEFONE8) values(null,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", CONEXAO);
-                  COMANDO5.Parameters.Add("@TIPO1", MySqlDbType.VarChar, 6).Value = CBBTIPO1.Text;
-                  COMANDO5.Parameters.Add("@DDD1", MySqlDbType.VarChar, 4).Value = TXBDDD1.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE1", MySqlDbType.VarChar, 10).Value = TXBTELEFONE1.Text;
-                  COMANDO5.Parameters.Add("@TIPO2", MySqlDbType.VarChar, 6).Value = CBBTIPO2.Text;
-                  COMANDO5.Parameters.Add("@DDD2", MySqlDbType.VarChar, 4).Value = TXBDDD2.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE2", MySqlDbType.VarChar, 10).Value = TXBTELEFONE2.Text;
-                  COMANDO5.Parameters.Add("@TIPO3", MySqlDbType.VarChar, 6).Value = CBBTIPO3.Text;
-                  COMANDO5.Parameters.Add("@DDD3", MySqlDbType.VarChar, 4).Value = TXBDDD3.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE3", MySqlDbType.VarChar, 10).Value = TXBTELEFONE3.Text;
-                  COMANDO5.Parameters.Add("@TIPO4", MySqlDbType.VarChar, 6).Value = CBBTIPO4.Text;
-                  COMANDO5.Parameters.Add("@DDD4", MySqlDbType.VarChar, 4).Value = TXBDDD4.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE4", MySqlDbType.VarChar, 10).Value = TXBTELEFONE4.Text;
-                  COMANDO5.Parameters.Add("@TIPO5", MySqlDbType.VarChar, 6).Value = CBBTIPO5.Text;
-                  COMANDO5.Parameters.Add("@DDD5", MySqlDbType.VarChar, 4).Value = TXBDDD5.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE5", MySqlDbType.VarChar, 10).Value = TXBTELEFONE5.Text;
-                  COMANDO5.Parameters.Add("@TIPO6", MySqlDbType.VarChar, 6).Value = CBBTIPO6.Text;
-                  COMANDO5.Parameters.Add("@DDD6", MySqlDbType.VarChar, 4).Value = TXBDDD6.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE6", MySqlDbType.VarChar, 10).Value = TXBTELEFONE6.Text;
-                  COMANDO5.Parameters.Add("@TIPO7", MySqlDbType.VarChar, 6).Value = CBBTIPO7.Text;
-                  COMANDO5.Parameters.Add("@DDD7", MySqlDbType.VarChar, 4).Value = TXBDDD7.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE7", MySqlDbType.VarChar, 10).Value = TXBTELEFONE7.Text;
-                  COMANDO5.Parameters.Add("@TIPO8", MySqlDbType.VarChar, 6).Value = CBBTIPO8.Text;
-                  COMANDO5.Parameters.Add("@DDD8", MySqlDbType.VarChar, 4).Value = TXBDDD8.Text;
-                  COMANDO5.Parameters.Add("@TELEFONE8", MySqlDbType.VarChar, 10).Value = TXBTELEFONE8.Text;
+                MySqlCommand COMANDO5 = new MySqlCommand("insert into TELEFONE(IDTELEFONE, TIPO1, DDD1, TELEFONE1, TIPO2, DDD2, TELEFONE2, TIPO3, DDD3, TELEFONE3, TIPO4, DDD4, TELEFONE4, TIPO5, DDD5, TELEFONE5, TIPO6, DDD6, TELEFONE6, TIPO7, DDD7, TELEFONE7, TIPO8, DDD8, TELEFONE8) values(null,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", CONEXAO);
+                COMANDO5.Parameters.Add("@TIPO1", MySqlDbType.VarChar, 6).Value = CBBTIPO1.Text;
+                COMANDO5.Parameters.Add("@DDD1", MySqlDbType.VarChar, 4).Value = TXBDDD1.Text;
+                COMANDO5.Parameters.Add("@TELEFONE1", MySqlDbType.VarChar, 10).Value = TXBTELEFONE1.Text;
+                COMANDO5.Parameters.Add("@TIPO2", MySqlDbType.VarChar, 6).Value = CBBTIPO2.Text;
+                COMANDO5.Parameters.Add("@DDD2", MySqlDbType.VarChar, 4).Value = TXBDDD2.Text;
+                COMANDO5.Parameters.Add("@TELEFONE2", MySqlDbType.VarChar, 10).Value = TXBTELEFONE2.Text;
+                COMANDO5.Parameters.Add("@TIPO3", MySqlDbType.VarChar, 6).Value = CBBTIPO3.Text;
+                COMANDO5.Parameters.Add("@DDD3", MySqlDbType.VarChar, 4).Value = TXBDDD3.Text;
+                COMANDO5.Parameters.Add("@TELEFONE3", MySqlDbType.VarChar, 10).Value = TXBTELEFONE3.Text;
+                COMANDO5.Parameters.Add("@TIPO4", MySqlDbType.VarChar, 6).Value = CBBTIPO4.Text;
+                COMANDO5.Parameters.Add("@DDD4", MySqlDbType.VarChar, 4).Value = TXBDDD4.Text;
+                COMANDO5.Parameters.Add("@TELEFONE4", MySqlDbType.VarChar, 10).Value = TXBTELEFONE4.Text;
+                COMANDO5.Parameters.Add("@TIPO5", MySqlDbType.VarChar, 6).Value = CBBTIPO5.Text;
+                COMANDO5.Parameters.Add("@DDD5", MySqlDbType.VarChar, 4).Value = TXBDDD5.Text;
+                COMANDO5.Parameters.Add("@TELEFONE5", MySqlDbType.VarChar, 10).Value = TXBTELEFONE5.Text;
+                COMANDO5.Parameters.Add("@TIPO6", MySqlDbType.VarChar, 6).Value = CBBTIPO6.Text;
+                COMANDO5.Parameters.Add("@DDD6", MySqlDbType.VarChar, 4).Value = TXBDDD6.Text;
+                COMANDO5.Parameters.Add("@TELEFONE6", MySqlDbType.VarChar, 10).Value = TXBTELEFONE6.Text;
+                COMANDO5.Parameters.Add("@TIPO7", MySqlDbType.VarChar, 6).Value = CBBTIPO7.Text;
+                COMANDO5.Parameters.Add("@DDD7", MySqlDbType.VarChar, 4).Value = TXBDDD7.Text;
+                COMANDO5.Parameters.Add("@TELEFONE7", MySqlDbType.VarChar, 10).Value = TXBTELEFONE7.Text;
+                COMANDO5.Parameters.Add("@TIPO8", MySqlDbType.VarChar, 6).Value = CBBTIPO8.Text;
+                COMANDO5.Parameters.Add("@DDD8", MySqlDbType.VarChar, 4).Value = TXBDDD8.Text;
+                COMANDO5.Parameters.Add("@TELEFONE8", MySqlDbType.VarChar, 10).Value = TXBTELEFONE8.Text;
 
-                  COMANDO5.ExecuteNonQuery();
+                COMANDO5.ExecuteNonQuery();
 
-                  TXBCEP.Clear();
-                  TXBNOME.Clear();
-                  TXBRAZAOSOCIAL.Clear();
-                  TXBRUA.Clear();
-                  TXBNUMERO.Clear();
-                  TXBCOMPLEMENTO.Clear();
-                  TXBBAIRRO.Clear();
-                  TXBCIDADE.Clear();
-                  TXBESTADO.Clear();
-                  TXBCNPJ.Clear();
-                  TXBINSCEST.Clear();
-                  TXBINSCMUN.Clear();
-                  TXBDDD1.Clear();
-                  TXBDDD2.Clear();
-                  TXBDDD3.Clear();
-                  TXBDDD4.Clear();
-                  TXBDDD5.Clear();
-                  TXBDDD6.Clear();
-                  TXBDDD7.Clear();
-                  TXBDDD8.Clear();
-                  TXBTELEFONE1.Clear();
-                  TXBTELEFONE2.Clear();
-                  TXBTELEFONE3.Clear();
-                  TXBTELEFONE4.Clear();
-                  TXBTELEFONE5.Clear();
-                  TXBTELEFONE6.Clear();
-                  TXBTELEFONE7.Clear();
-                  TXBTELEFONE8.Clear();
-                  TXBCONTATO1.Clear();
-                  TXBCONTATO2.Clear();
-                  TXBCONTATO3.Clear();
-                  TXBCONTATO4.Clear();
-                  TXBCONTATO5.Clear();
-                  TXBCONTATO6.Clear();
-                  TXBCONTATO7.Clear();
-                  TXBCONTATO8.Clear();
-                  TXBEMAIL1.Clear();
-                  TXBEMAIL2.Clear();
-                  TXBEMAIL3.Clear();
-                  TXBEMAIL4.Clear();
-                  TXBEMAIL5.Clear();
-                  TXBEMAIL6.Clear();
-                  TXBEMAIL7.Clear();
-                  TXBEMAIL8.Clear();
+                TXBCEP.Clear();
+                TXBNOME.Clear();
+                TXBRAZAOSOCIAL.Clear();
+                TXBRUA.Clear();
+                TXBNUMERO.Clear();
+                TXBCOMPLEMENTO.Clear();
+                TXBBAIRRO.Clear();
+                TXBCIDADE.Clear();
+                TXBESTADO.Clear();
+                TXBCNPJ.Clear();
+                TXBINSCEST.Clear();
+                TXBINSCMUN.Clear();
+                TXBDDD1.Clear();
+                TXBDDD2.Clear();
+                TXBDDD3.Clear();
+                TXBDDD4.Clear();
+                TXBDDD5.Clear();
+                TXBDDD6.Clear();
+                TXBDDD7.Clear();
+                TXBDDD8.Clear();
+                TXBTELEFONE1.Clear();
+                TXBTELEFONE2.Clear();
+                TXBTELEFONE3.Clear();
+                TXBTELEFONE4.Clear();
+                TXBTELEFONE5.Clear();
+                TXBTELEFONE6.Clear();
+                TXBTELEFONE7.Clear();
+                TXBTELEFONE8.Clear();
+                TXBCONTATO1.Clear();
+                TXBCONTATO2.Clear();
+                TXBCONTATO3.Clear();
+                TXBCONTATO4.Clear();
+                TXBCONTATO5.Clear();
+                TXBCONTATO6.Clear();
+                TXBCONTATO7.Clear();
+                TXBCONTATO8.Clear();
+                TXBEMAIL1.Clear();
+                TXBEMAIL2.Clear();
+                TXBEMAIL3.Clear();
+                TXBEMAIL4.Clear();
+                TXBEMAIL5.Clear();
+                TXBEMAIL6.Clear();
+                TXBEMAIL7.Clear();
+                TXBEMAIL8.Clear();
 
-                  CBBNOME.Text = "";
-                  CBBTIPO1.Text = "";
-                  CBBTIPO2.Text = "";
-                  CBBTIPO3.Text = "";
-                  CBBTIPO4.Text = "";
-                  CBBTIPO5.Text = "";
-                  CBBTIPO6.Text = "";
-                  CBBTIPO7.Text = "";
-                  CBBTIPO8.Text = "";
-                  CBBSEXO1.Text = "";
-                  CBBSEXO2.Text = "";
-                  CBBSEXO3.Text = "";
-                  CBBSEXO4.Text = "";
-                  CBBSEXO5.Text = "";
-                  CBBSEXO6.Text = "";
-                  CBBSEXO7.Text = "";
-                  CBBSEXO8.Text = "";
+                CBBNOME.Text = "";
+                CBBTIPO1.Text = "";
+                CBBTIPO2.Text = "";
+                CBBTIPO3.Text = "";
+                CBBTIPO4.Text = "";
+                CBBTIPO5.Text = "";
+                CBBTIPO6.Text = "";
+                CBBTIPO7.Text = "";
+                CBBTIPO8.Text = "";
+                CBBSEXO1.Text = "";
+                CBBSEXO2.Text = "";
+                CBBSEXO3.Text = "";
+                CBBSEXO4.Text = "";
+                CBBSEXO5.Text = "";
+                CBBSEXO6.Text = "";
+                CBBSEXO7.Text = "";
+                CBBSEXO8.Text = "";
 
-                  TXBCEP.Focus();
+                TXBCEP.Focus();
 
-                  CONEXAO.Close(); */
+                CONEXAO.Close();
 
 
 
@@ -1630,52 +1629,104 @@ namespace GRAFICA2
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (TXBCEP.Text == "")
             {
                 MessageBox.Show("CEP EM BRANCO");
 
                 TXBCEP.Focus();
             }
+
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             if (TXBNOME.Text == "")
             {
                 MessageBox.Show("NOME EM BRANCO");
 
                 TXBNOME.Focus();
             }
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+
             if (TXBRAZAOSOCIAL.Text == "")
             {
                 MessageBox.Show("RAZÃO SOCIAL EM BRANCO");
 
                 TXBRAZAOSOCIAL.Focus();
             }
+            try
+            {
+                MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica2;password=1234");
+
+                CONEXAO.Open();
+
+                MySqlCommand COMANDO1 = new MySqlCommand("insert into cliente(RAZAOSOCIAL) values(?)", CONEXAO);
+                COMANDO1.Parameters.Add("@RAZAOSOCIAL", MySqlDbType.VarChar, 100).Value = TXBRAZAOSOCIAL.Text;
+
+                COMANDO1.ExecuteNonQuery();
+            }
+            catch
+            {
+                MessageBox.Show("RAZÃO SOCIAL EXISTENTE");
+
+                TXBRAZAOSOCIAL.Focus();
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+
             if (TXBNUMERO.Text == "")
             {
                 MessageBox.Show("NÚMERO EM BRANCO");
 
                 TXBNUMERO.Focus();
             }
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+
             if (TXBCNPJ.Text == "")
             {
                 MessageBox.Show("CNPJ EM BRANCO");
 
                 TXBCNPJ.Focus();
             }
+            try
+            {
+
+                MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica2;password=1234");
+
+                CONEXAO.Open();
+
+                MySqlCommand COMANDO3 = new MySqlCommand("insert into FISCAIS(CNPJ) values(?)", CONEXAO);
+                COMANDO3.Parameters.Add("@CNPJ", MySqlDbType.VarChar, 18).Value = TXBCNPJ.Text;
+
+
+                COMANDO3.ExecuteNonQuery();
+            }
+            catch
+            {
+                MessageBox.Show("CNPJ EXISTENTE");
+
+                TXBCNPJ.Focus();
+            }
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

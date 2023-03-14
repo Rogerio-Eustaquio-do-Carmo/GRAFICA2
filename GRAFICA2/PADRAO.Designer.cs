@@ -245,14 +245,14 @@ namespace GRAFICA2
             // CADCLIENTE
             // 
             this.CADCLIENTE.Name = "CADCLIENTE";
-            this.CADCLIENTE.Size = new System.Drawing.Size(180, 22);
+            this.CADCLIENTE.Size = new System.Drawing.Size(118, 22);
             this.CADCLIENTE.Text = "CLIENTE";
             this.CADCLIENTE.Click += new System.EventHandler(this.CADCLIENTE_Click);
             // 
             // CADPAPEL
             // 
             this.CADPAPEL.Name = "CADPAPEL";
-            this.CADPAPEL.Size = new System.Drawing.Size(180, 22);
+            this.CADPAPEL.Size = new System.Drawing.Size(118, 22);
             this.CADPAPEL.Text = "PAPEL";
             // 
             // aTUALIZARToolStripMenuItem
@@ -267,14 +267,14 @@ namespace GRAFICA2
             // ATUCLIENTE
             // 
             this.ATUCLIENTE.Name = "ATUCLIENTE";
-            this.ATUCLIENTE.Size = new System.Drawing.Size(180, 22);
+            this.ATUCLIENTE.Size = new System.Drawing.Size(118, 22);
             this.ATUCLIENTE.Text = "CLIENTE";
             this.ATUCLIENTE.Click += new System.EventHandler(this.ATUCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem1
             // 
             this.pAPELToolStripMenuItem1.Name = "pAPELToolStripMenuItem1";
-            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.pAPELToolStripMenuItem1.Text = "PAPEL";
             // 
             // eXCLUIRToolStripMenuItem
@@ -289,14 +289,14 @@ namespace GRAFICA2
             // EXCCLIENTE
             // 
             this.EXCCLIENTE.Name = "EXCCLIENTE";
-            this.EXCCLIENTE.Size = new System.Drawing.Size(180, 22);
+            this.EXCCLIENTE.Size = new System.Drawing.Size(118, 22);
             this.EXCCLIENTE.Text = "CLIENTE";
             this.EXCCLIENTE.Click += new System.EventHandler(this.EXCCLIENTE_Click);
             // 
             // pAPELToolStripMenuItem2
             // 
             this.pAPELToolStripMenuItem2.Name = "pAPELToolStripMenuItem2";
-            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
             this.pAPELToolStripMenuItem2.Text = "PAPEL";
             // 
             // SAIR1
@@ -513,6 +513,7 @@ namespace GRAFICA2
             this.TXBNOME.Name = "TXBNOME";
             this.TXBNOME.Size = new System.Drawing.Size(286, 20);
             this.TXBNOME.TabIndex = 2;
+            this.TXBNOME.Visible = false;
             this.TXBNOME.Leave += new System.EventHandler(this.button2_Click);
             // 
             // TXBRAZAOSOCIAL
@@ -521,6 +522,7 @@ namespace GRAFICA2
             this.TXBRAZAOSOCIAL.Name = "TXBRAZAOSOCIAL";
             this.TXBRAZAOSOCIAL.Size = new System.Drawing.Size(674, 20);
             this.TXBRAZAOSOCIAL.TabIndex = 3;
+            this.TXBRAZAOSOCIAL.Visible = false;
             this.TXBRAZAOSOCIAL.Click += new System.EventHandler(this.button2_Click);
             this.TXBRAZAOSOCIAL.Leave += new System.EventHandler(this.button3_Click);
             // 
@@ -1777,6 +1779,7 @@ namespace GRAFICA2
             this.button2.TabIndex = 135;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Leave += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -1786,6 +1789,7 @@ namespace GRAFICA2
             this.button3.TabIndex = 136;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Leave += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -1813,6 +1817,7 @@ namespace GRAFICA2
             this.button6.TabIndex = 139;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label69
             // 
