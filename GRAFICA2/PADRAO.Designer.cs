@@ -29,6 +29,7 @@ namespace GRAFICA2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cADASTROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CADCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +42,6 @@ namespace GRAFICA2
             this.pAPELToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.SAIR1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.lOGOTIPOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cADASTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pAPELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aTUALIZARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +52,6 @@ namespace GRAFICA2
             this.pAPELToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.SAIR2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
-            this.lOGOTIPOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cADASTRARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTEToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pAPELToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
@@ -188,7 +187,6 @@ namespace GRAFICA2
             this.CBBSEXO7 = new System.Windows.Forms.ComboBox();
             this.CBBSEXO8 = new System.Windows.Forms.ComboBox();
             this.menuStrip4 = new System.Windows.Forms.MenuStrip();
-            this.lOGOTIPOToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cADASTRARToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTEToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pAPELToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
@@ -207,17 +205,18 @@ namespace GRAFICA2
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.label69 = new System.Windows.Forms.Label();
+            this.dataSet1 = new System.Data.DataSet();
+            this.TXBCODIGO = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.BTNPESQUISAR = new System.Windows.Forms.Button();
+            this.tableUpdateStatementBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.menuStrip3.SuspendLayout();
             this.menuStrip4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -245,15 +244,16 @@ namespace GRAFICA2
             // CADCLIENTE
             // 
             this.CADCLIENTE.Name = "CADCLIENTE";
-            this.CADCLIENTE.Size = new System.Drawing.Size(118, 22);
+            this.CADCLIENTE.Size = new System.Drawing.Size(180, 22);
             this.CADCLIENTE.Text = "CLIENTE";
             this.CADCLIENTE.Click += new System.EventHandler(this.CADCLIENTE_Click);
             // 
             // CADPAPEL
             // 
             this.CADPAPEL.Name = "CADPAPEL";
-            this.CADPAPEL.Size = new System.Drawing.Size(118, 22);
+            this.CADPAPEL.Size = new System.Drawing.Size(180, 22);
             this.CADPAPEL.Text = "PAPEL";
+            this.CADPAPEL.Click += new System.EventHandler(this.CADPAPEL_Click);
             // 
             // aTUALIZARToolStripMenuItem
             // 
@@ -274,8 +274,9 @@ namespace GRAFICA2
             // pAPELToolStripMenuItem1
             // 
             this.pAPELToolStripMenuItem1.Name = "pAPELToolStripMenuItem1";
-            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.pAPELToolStripMenuItem1.Text = "PAPEL";
+            this.pAPELToolStripMenuItem1.Click += new System.EventHandler(this.CADPAPEL_Click);
             // 
             // eXCLUIRToolStripMenuItem
             // 
@@ -296,8 +297,9 @@ namespace GRAFICA2
             // pAPELToolStripMenuItem2
             // 
             this.pAPELToolStripMenuItem2.Name = "pAPELToolStripMenuItem2";
-            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.pAPELToolStripMenuItem2.Text = "PAPEL";
+            this.pAPELToolStripMenuItem2.Click += new System.EventHandler(this.CADPAPEL_Click);
             // 
             // SAIR1
             // 
@@ -309,7 +311,6 @@ namespace GRAFICA2
             // menuStrip2
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lOGOTIPOToolStripMenuItem,
             this.cADASTRARToolStripMenuItem,
             this.aTUALIZARToolStripMenuItem1,
             this.eXCLUIRToolStripMenuItem1,
@@ -319,13 +320,6 @@ namespace GRAFICA2
             this.menuStrip2.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
-            // 
-            // lOGOTIPOToolStripMenuItem
-            // 
-            this.lOGOTIPOToolStripMenuItem.Name = "lOGOTIPOToolStripMenuItem";
-            this.lOGOTIPOToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.lOGOTIPOToolStripMenuItem.Text = "LOGOTIPO";
-            this.lOGOTIPOToolStripMenuItem.Click += new System.EventHandler(this.PADRAO_Load);
             // 
             // cADASTRARToolStripMenuItem
             // 
@@ -395,7 +389,6 @@ namespace GRAFICA2
             // menuStrip3
             // 
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lOGOTIPOToolStripMenuItem1,
             this.cADASTRARToolStripMenuItem1,
             this.aTUALIZARToolStripMenuItem2,
             this.eXCLUIRToolStripMenuItem2,
@@ -405,13 +398,6 @@ namespace GRAFICA2
             this.menuStrip3.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip3.TabIndex = 3;
             this.menuStrip3.Text = "menuStrip3";
-            // 
-            // lOGOTIPOToolStripMenuItem1
-            // 
-            this.lOGOTIPOToolStripMenuItem1.Name = "lOGOTIPOToolStripMenuItem1";
-            this.lOGOTIPOToolStripMenuItem1.Size = new System.Drawing.Size(75, 20);
-            this.lOGOTIPOToolStripMenuItem1.Text = "LOGOTIPO";
-            this.lOGOTIPOToolStripMenuItem1.Click += new System.EventHandler(this.PADRAO_Load);
             // 
             // cADASTRARToolStripMenuItem1
             // 
@@ -501,30 +487,31 @@ namespace GRAFICA2
             // 
             // TXBCEP
             // 
-            this.TXBCEP.Location = new System.Drawing.Point(411, 299);
+            this.TXBCEP.Location = new System.Drawing.Point(485, 299);
             this.TXBCEP.Name = "TXBCEP";
             this.TXBCEP.Size = new System.Drawing.Size(126, 20);
             this.TXBCEP.TabIndex = 1;
-            this.TXBCEP.Leave += new System.EventHandler(this.button1_Click);
+            this.TXBCEP.TextChanged += new System.EventHandler(this.TXBCEP_TextChanged_1);
+            this.TXBCEP.Leave += new System.EventHandler(this.TXBCEP_TextChanged);
             // 
             // TXBNOME
             // 
-            this.TXBNOME.Location = new System.Drawing.Point(543, 299);
+            this.TXBNOME.Location = new System.Drawing.Point(617, 299);
             this.TXBNOME.Name = "TXBNOME";
             this.TXBNOME.Size = new System.Drawing.Size(286, 20);
             this.TXBNOME.TabIndex = 2;
             this.TXBNOME.Visible = false;
-            this.TXBNOME.Leave += new System.EventHandler(this.button2_Click);
+            this.TXBNOME.Leave += new System.EventHandler(this.TXBNOME_TextChanged);
             // 
             // TXBRAZAOSOCIAL
             // 
-            this.TXBRAZAOSOCIAL.Location = new System.Drawing.Point(835, 299);
+            this.TXBRAZAOSOCIAL.Location = new System.Drawing.Point(909, 299);
             this.TXBRAZAOSOCIAL.Name = "TXBRAZAOSOCIAL";
-            this.TXBRAZAOSOCIAL.Size = new System.Drawing.Size(674, 20);
+            this.TXBRAZAOSOCIAL.Size = new System.Drawing.Size(600, 20);
             this.TXBRAZAOSOCIAL.TabIndex = 3;
             this.TXBRAZAOSOCIAL.Visible = false;
-            this.TXBRAZAOSOCIAL.Click += new System.EventHandler(this.button2_Click);
-            this.TXBRAZAOSOCIAL.Leave += new System.EventHandler(this.button3_Click);
+            this.TXBRAZAOSOCIAL.TextChanged += new System.EventHandler(this.BTNPESQUISAR_Click);
+            this.TXBRAZAOSOCIAL.Leave += new System.EventHandler(this.TXBRAZAOSOCIAL_TextChanged);
             // 
             // TXBRUA
             // 
@@ -539,8 +526,7 @@ namespace GRAFICA2
             this.TXBNUMERO.Name = "TXBNUMERO";
             this.TXBNUMERO.Size = new System.Drawing.Size(104, 20);
             this.TXBNUMERO.TabIndex = 5;
-            this.TXBNUMERO.Click += new System.EventHandler(this.button3_Click);
-            this.TXBNUMERO.Leave += new System.EventHandler(this.button4_Click);
+            this.TXBNUMERO.Leave += new System.EventHandler(this.TXBNUMERO_TextChanged);
             // 
             // TXBCOMPLEMENTO
             // 
@@ -590,8 +576,7 @@ namespace GRAFICA2
             this.TXBCNPJ.Name = "TXBCNPJ";
             this.TXBCNPJ.Size = new System.Drawing.Size(364, 20);
             this.TXBCNPJ.TabIndex = 10;
-            this.TXBCNPJ.Click += new System.EventHandler(this.button4_Click);
-            this.TXBCNPJ.Leave += new System.EventHandler(this.button5_Click);
+            this.TXBCNPJ.Leave += new System.EventHandler(this.TXBCNPJ_TextChanged);
             // 
             // TXBCONTATO1
             // 
@@ -795,7 +780,6 @@ namespace GRAFICA2
             this.TXBEMAIL8.Name = "TXBEMAIL8";
             this.TXBEMAIL8.Size = new System.Drawing.Size(364, 20);
             this.TXBEMAIL8.TabIndex = 60;
-            this.TXBEMAIL8.Text = "-";
             // 
             // TXBDDD8
             // 
@@ -803,7 +787,6 @@ namespace GRAFICA2
             this.TXBDDD8.Name = "TXBDDD8";
             this.TXBDDD8.Size = new System.Drawing.Size(78, 20);
             this.TXBDDD8.TabIndex = 56;
-            this.TXBDDD8.Text = "-";
             // 
             // TXBCONTATO8
             // 
@@ -811,7 +794,6 @@ namespace GRAFICA2
             this.TXBCONTATO8.Name = "TXBCONTATO8";
             this.TXBCONTATO8.Size = new System.Drawing.Size(344, 20);
             this.TXBCONTATO8.TabIndex = 58;
-            this.TXBCONTATO8.Text = "-";
             // 
             // TXBTELEFONE8
             // 
@@ -819,13 +801,12 @@ namespace GRAFICA2
             this.TXBTELEFONE8.Name = "TXBTELEFONE8";
             this.TXBTELEFONE8.Size = new System.Drawing.Size(136, 20);
             this.TXBTELEFONE8.TabIndex = 57;
-            this.TXBTELEFONE8.Text = "-";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(411, 280);
+            this.label3.Location = new System.Drawing.Point(484, 280);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 16);
             this.label3.TabIndex = 61;
@@ -835,7 +816,7 @@ namespace GRAFICA2
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(544, 280);
+            this.label4.Location = new System.Drawing.Point(617, 280);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 16);
             this.label4.TabIndex = 62;
@@ -845,7 +826,7 @@ namespace GRAFICA2
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(836, 280);
+            this.label5.Location = new System.Drawing.Point(907, 280);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 16);
             this.label5.TabIndex = 63;
@@ -1498,7 +1479,6 @@ namespace GRAFICA2
             this.CBBTIPO8.Name = "CBBTIPO8";
             this.CBBTIPO8.Size = new System.Drawing.Size(78, 21);
             this.CBBTIPO8.TabIndex = 55;
-            this.CBBTIPO8.Text = "-";
             // 
             // CBBSEXO1
             // 
@@ -1584,12 +1564,10 @@ namespace GRAFICA2
             this.CBBSEXO8.Name = "CBBSEXO8";
             this.CBBSEXO8.Size = new System.Drawing.Size(67, 21);
             this.CBBSEXO8.TabIndex = 59;
-            this.CBBSEXO8.Text = "-";
             // 
             // menuStrip4
             // 
             this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lOGOTIPOToolStripMenuItem2,
             this.cADASTRARToolStripMenuItem2,
             this.aTUALIZARToolStripMenuItem3,
             this.eXCLUIRToolStripMenuItem3,
@@ -1599,13 +1577,6 @@ namespace GRAFICA2
             this.menuStrip4.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip4.TabIndex = 124;
             this.menuStrip4.Text = "menuStrip4";
-            // 
-            // lOGOTIPOToolStripMenuItem2
-            // 
-            this.lOGOTIPOToolStripMenuItem2.Name = "lOGOTIPOToolStripMenuItem2";
-            this.lOGOTIPOToolStripMenuItem2.Size = new System.Drawing.Size(75, 20);
-            this.lOGOTIPOToolStripMenuItem2.Text = "LOGOTIPO";
-            this.lOGOTIPOToolStripMenuItem2.Click += new System.EventHandler(this.PADRAO_Load);
             // 
             // cADASTRARToolStripMenuItem2
             // 
@@ -1691,10 +1662,11 @@ namespace GRAFICA2
             // CBBNOME
             // 
             this.CBBNOME.FormattingEnabled = true;
-            this.CBBNOME.Location = new System.Drawing.Point(543, 299);
+            this.CBBNOME.Location = new System.Drawing.Point(617, 299);
             this.CBBNOME.Name = "CBBNOME";
             this.CBBNOME.Size = new System.Drawing.Size(286, 21);
             this.CBBNOME.TabIndex = 127;
+            this.CBBNOME.Leave += new System.EventHandler(this.BTNPESQUISAR_Click);
             // 
             // label63
             // 
@@ -1723,7 +1695,7 @@ namespace GRAFICA2
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label65.ForeColor = System.Drawing.Color.Red;
-            this.label65.Location = new System.Drawing.Point(574, 268);
+            this.label65.Location = new System.Drawing.Point(647, 268);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(44, 52);
             this.label65.TabIndex = 130;
@@ -1734,7 +1706,7 @@ namespace GRAFICA2
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.ForeColor = System.Drawing.Color.Red;
-            this.label66.Location = new System.Drawing.Point(912, 268);
+            this.label66.Location = new System.Drawing.Point(983, 268);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(44, 52);
             this.label66.TabIndex = 131;
@@ -1762,73 +1734,49 @@ namespace GRAFICA2
             this.label68.TabIndex = 133;
             this.label68.Text = "*";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(20, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 134;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(20, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 135;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Leave += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(20, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 136;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Leave += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(20, 296);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 137;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(20, 325);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 138;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(20, 354);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 139;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // label69
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label69.ForeColor = System.Drawing.Color.Red;
-            this.label69.Location = new System.Drawing.Point(429, 268);
+            this.label69.Location = new System.Drawing.Point(502, 268);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(44, 52);
             this.label69.TabIndex = 140;
             this.label69.Text = "*";
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "NewDataSet";
+            // 
+            // TXBCODIGO
+            // 
+            this.TXBCODIGO.Location = new System.Drawing.Point(411, 299);
+            this.TXBCODIGO.Name = "TXBCODIGO";
+            this.TXBCODIGO.Size = new System.Drawing.Size(68, 20);
+            this.TXBCODIGO.TabIndex = 141;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(411, 283);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(49, 13);
+            this.label70.TabIndex = 142;
+            this.label70.Text = "CÓDIGO";
+            // 
+            // BTNPESQUISAR
+            // 
+            this.BTNPESQUISAR.Location = new System.Drawing.Point(620, 242);
+            this.BTNPESQUISAR.Name = "BTNPESQUISAR";
+            this.BTNPESQUISAR.Size = new System.Drawing.Size(94, 23);
+            this.BTNPESQUISAR.TabIndex = 143;
+            this.BTNPESQUISAR.Text = "PESQUISAR";
+            this.BTNPESQUISAR.UseVisualStyleBackColor = true;
+            // 
+            // tableUpdateStatementBindingSource
+            // 
+            this.tableUpdateStatementBindingSource.DataSource = typeof(MySqlX.XDevAPI.Relational.TableUpdateStatement);
             // 
             // PADRAO
             // 
@@ -1837,12 +1785,10 @@ namespace GRAFICA2
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1904, 1062);
             this.ControlBox = false;
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BTNPESQUISAR);
+            this.Controls.Add(this.CBBNOME);
+            this.Controls.Add(this.label70);
+            this.Controls.Add(this.TXBCODIGO);
             this.Controls.Add(this.label63);
             this.Controls.Add(this.label64);
             this.Controls.Add(this.CBBSEXO8);
@@ -1964,8 +1910,6 @@ namespace GRAFICA2
             this.Controls.Add(this.TXBNUMERO);
             this.Controls.Add(this.TXBRUA);
             this.Controls.Add(this.TXBRAZAOSOCIAL);
-            this.Controls.Add(this.TXBNOME);
-            this.Controls.Add(this.TXBCEP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
@@ -1976,11 +1920,12 @@ namespace GRAFICA2
             this.Controls.Add(this.CBBTIPO1);
             this.Controls.Add(this.CBBSEXO1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label65);
             this.Controls.Add(this.label66);
             this.Controls.Add(this.label67);
             this.Controls.Add(this.label68);
-            this.Controls.Add(this.CBBNOME);
+            this.Controls.Add(this.TXBNOME);
+            this.Controls.Add(this.label65);
+            this.Controls.Add(this.TXBCEP);
             this.Controls.Add(this.label69);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PADRAO";
@@ -1995,6 +1940,8 @@ namespace GRAFICA2
             this.menuStrip3.PerformLayout();
             this.menuStrip4.ResumeLayout(false);
             this.menuStrip4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2139,7 +2086,6 @@ namespace GRAFICA2
         private System.Windows.Forms.ToolStripMenuItem EXCCLIENTE;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem SAIR1;
-        private System.Windows.Forms.ToolStripMenuItem lOGOTIPOToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem1;
@@ -2149,7 +2095,6 @@ namespace GRAFICA2
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem lOGOTIPOToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem2;
@@ -2162,8 +2107,6 @@ namespace GRAFICA2
         private System.Windows.Forms.MenuStrip menuStrip5;
         private System.Windows.Forms.MenuStrip menuStrip6;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem8;
-        private System.Windows.Forms.ComboBox CBBNOME;
-        private System.Windows.Forms.ToolStripMenuItem lOGOTIPOToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem10;
@@ -2179,13 +2122,13 @@ namespace GRAFICA2
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.BindingSource tableUpdateStatementBindingSource;
+        private System.Data.DataSet dataSet1;
+        private System.Windows.Forms.TextBox TXBCODIGO;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Button BTNPESQUISAR;
+        private System.Windows.Forms.ComboBox CBBNOME;
     }
 }
 
