@@ -30,83 +30,63 @@ namespace GRAFICA2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cADASTROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CADCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
-            this.CADPAPEL = new System.Windows.Forms.ToolStripMenuItem();
-            this.aTUALIZARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ATUCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
-            this.ATUPAPEL = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXCLUIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EXCCLIENTE = new System.Windows.Forms.ToolStripMenuItem();
-            this.EXCPAPEL = new System.Windows.Forms.ToolStripMenuItem();
-            this.SAIR1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.cADASTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aTUALIZARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXCLUIRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MS5 = new System.Windows.Forms.MenuStrip();
+            this.M5 = new System.Windows.Forms.ToolStripMenuItem();
             this.cLIENTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.SAIR2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip3 = new System.Windows.Forms.MenuStrip();
-            this.cADASTRARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aTUALIZARToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXCLUIRToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.SAIR3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPEISToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fUNCIONARIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MS4 = new System.Windows.Forms.MenuStrip();
+            this.M4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CLIENTE4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.PAPEIS4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR4 = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TXBCEP = new System.Windows.Forms.TextBox();
-            this.TXBNOME = new System.Windows.Forms.TextBox();
-            this.TXBRAZAOSOCIAL = new System.Windows.Forms.TextBox();
-            this.TXBRUA = new System.Windows.Forms.TextBox();
-            this.TXBNUMERO = new System.Windows.Forms.TextBox();
-            this.TXBCOMPLEMENTO = new System.Windows.Forms.TextBox();
-            this.TXBBAIRRO = new System.Windows.Forms.TextBox();
-            this.TXBCIDADE = new System.Windows.Forms.TextBox();
-            this.TXBESTADO = new System.Windows.Forms.TextBox();
-            this.TXBINSCRMUN = new System.Windows.Forms.TextBox();
-            this.TXBINSCREST = new System.Windows.Forms.TextBox();
-            this.TXBCNPJ = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO1 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE1 = new System.Windows.Forms.TextBox();
-            this.TXBDDD1 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL1 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL2 = new System.Windows.Forms.TextBox();
-            this.TXBDDD2 = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO2 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE2 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL3 = new System.Windows.Forms.TextBox();
-            this.TXBDDD3 = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO3 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE3 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL4 = new System.Windows.Forms.TextBox();
-            this.TXBDDD4 = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO4 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE4 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL5 = new System.Windows.Forms.TextBox();
-            this.TXBDDD5 = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO5 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE5 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL6 = new System.Windows.Forms.TextBox();
-            this.TXBDDD6 = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO6 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE6 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL7 = new System.Windows.Forms.TextBox();
-            this.TXBDDD7 = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO7 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE7 = new System.Windows.Forms.TextBox();
-            this.TXBEMAIL8 = new System.Windows.Forms.TextBox();
-            this.TXBDDD8 = new System.Windows.Forms.TextBox();
-            this.TXBCONTATO8 = new System.Windows.Forms.TextBox();
-            this.TXBTELEFONE8 = new System.Windows.Forms.TextBox();
+            this.TXB2 = new System.Windows.Forms.TextBox();
+            this.TXB3 = new System.Windows.Forms.TextBox();
+            this.TXB4 = new System.Windows.Forms.TextBox();
+            this.TXB5 = new System.Windows.Forms.TextBox();
+            this.TXB6 = new System.Windows.Forms.TextBox();
+            this.TXB7 = new System.Windows.Forms.TextBox();
+            this.TXB8 = new System.Windows.Forms.TextBox();
+            this.TXB9 = new System.Windows.Forms.TextBox();
+            this.TXB10 = new System.Windows.Forms.TextBox();
+            this.TXB13 = new System.Windows.Forms.TextBox();
+            this.TXB12 = new System.Windows.Forms.TextBox();
+            this.TXB11 = new System.Windows.Forms.TextBox();
+            this.TXB16 = new System.Windows.Forms.TextBox();
+            this.TXB15 = new System.Windows.Forms.TextBox();
+            this.TXB14 = new System.Windows.Forms.TextBox();
+            this.TXB17 = new System.Windows.Forms.TextBox();
+            this.TXB21 = new System.Windows.Forms.TextBox();
+            this.TXB18 = new System.Windows.Forms.TextBox();
+            this.TXB20 = new System.Windows.Forms.TextBox();
+            this.TXB19 = new System.Windows.Forms.TextBox();
+            this.TXB25 = new System.Windows.Forms.TextBox();
+            this.TXB22 = new System.Windows.Forms.TextBox();
+            this.TXB24 = new System.Windows.Forms.TextBox();
+            this.TXB23 = new System.Windows.Forms.TextBox();
+            this.TXB29 = new System.Windows.Forms.TextBox();
+            this.TXB26 = new System.Windows.Forms.TextBox();
+            this.TXB28 = new System.Windows.Forms.TextBox();
+            this.TXB27 = new System.Windows.Forms.TextBox();
+            this.TXB33 = new System.Windows.Forms.TextBox();
+            this.TXB30 = new System.Windows.Forms.TextBox();
+            this.TXB32 = new System.Windows.Forms.TextBox();
+            this.TXB31 = new System.Windows.Forms.TextBox();
+            this.TXB37 = new System.Windows.Forms.TextBox();
+            this.TXB34 = new System.Windows.Forms.TextBox();
+            this.TXB36 = new System.Windows.Forms.TextBox();
+            this.TXB35 = new System.Windows.Forms.TextBox();
+            this.TXB41 = new System.Windows.Forms.TextBox();
+            this.TXB38 = new System.Windows.Forms.TextBox();
+            this.TXB40 = new System.Windows.Forms.TextBox();
+            this.TXB39 = new System.Windows.Forms.TextBox();
+            this.TXB45 = new System.Windows.Forms.TextBox();
+            this.TXB42 = new System.Windows.Forms.TextBox();
+            this.TXB44 = new System.Windows.Forms.TextBox();
+            this.TXB43 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -119,1148 +99,218 @@ namespace GRAFICA2
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.BTNINSERIR = new System.Windows.Forms.Button();
-            this.BTNCADAUTEXC = new System.Windows.Forms.Button();
-            this.BTNCANCELA = new System.Windows.Forms.Button();
+            this.BTN1 = new System.Windows.Forms.Button();
+            this.BTN3 = new System.Windows.Forms.Button();
+            this.BTN4 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.CBBTIPO1 = new System.Windows.Forms.ComboBox();
-            this.CBBTIPO2 = new System.Windows.Forms.ComboBox();
-            this.CBBTIPO3 = new System.Windows.Forms.ComboBox();
-            this.CBBTIPO4 = new System.Windows.Forms.ComboBox();
-            this.CBBTIPO5 = new System.Windows.Forms.ComboBox();
-            this.CBBTIPO6 = new System.Windows.Forms.ComboBox();
-            this.CBBTIPO7 = new System.Windows.Forms.ComboBox();
-            this.CBBTIPO8 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO1 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO2 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO3 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO4 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO5 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO6 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO7 = new System.Windows.Forms.ComboBox();
-            this.CBBSEXO8 = new System.Windows.Forms.ComboBox();
-            this.menuStrip4 = new System.Windows.Forms.MenuStrip();
-            this.cADASTRARToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aTUALIZARToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXCLUIRToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.SAIR4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip5 = new System.Windows.Forms.MenuStrip();
-            this.cADASTRARToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aTUALIZARToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXCLUIRToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sAIRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip6 = new System.Windows.Forms.MenuStrip();
-            this.cADASTRARToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aTUALIZARToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eXCLUIRToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTEToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPELToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CBBNOME = new System.Windows.Forms.ComboBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
+            this.CBB3 = new System.Windows.Forms.ComboBox();
+            this.CBB5 = new System.Windows.Forms.ComboBox();
+            this.CBB7 = new System.Windows.Forms.ComboBox();
+            this.CBB9 = new System.Windows.Forms.ComboBox();
+            this.CBB11 = new System.Windows.Forms.ComboBox();
+            this.CBB13 = new System.Windows.Forms.ComboBox();
+            this.CBB15 = new System.Windows.Forms.ComboBox();
+            this.CBB17 = new System.Windows.Forms.ComboBox();
+            this.CBB4 = new System.Windows.Forms.ComboBox();
+            this.CBB6 = new System.Windows.Forms.ComboBox();
+            this.CBB8 = new System.Windows.Forms.ComboBox();
+            this.CBB10 = new System.Windows.Forms.ComboBox();
+            this.CBB12 = new System.Windows.Forms.ComboBox();
+            this.CBB14 = new System.Windows.Forms.ComboBox();
+            this.CBB16 = new System.Windows.Forms.ComboBox();
+            this.CBB18 = new System.Windows.Forms.ComboBox();
+            this.MS3 = new System.Windows.Forms.MenuStrip();
+            this.M3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CLIENTE3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.FUNCIONARIOS3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MS2 = new System.Windows.Forms.MenuStrip();
+            this.M2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.PAPEIS2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.FUNCIONARIOS2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CENTRODECUSTO2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MS1 = new System.Windows.Forms.MenuStrip();
+            this.M1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CLIENTE1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.PAPEIS1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.FUNCIONARIOS1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CENTRODECUSTO1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CBB2 = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.dataSet1 = new System.Data.DataSet();
-            this.TXBCODIGO = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
-            this.BTNPESQUISAR = new System.Windows.Forms.Button();
+            this.TXB1 = new System.Windows.Forms.TextBox();
+            this.BTN2 = new System.Windows.Forms.Button();
             this.tableUpdateStatementBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.CBBMATPRIMA = new System.Windows.Forms.ComboBox();
-            this.TXBMATPRIMA = new System.Windows.Forms.TextBox();
-            this.TXBQUANTFOLHAS = new System.Windows.Forms.TextBox();
-            this.TXBESTOQMINIMO = new System.Windows.Forms.TextBox();
-            this.TXBVALOR = new System.Windows.Forms.TextBox();
-            this.TXBVALORFOLHA = new System.Windows.Forms.TextBox();
-            this.TXBQUANTATUAL = new System.Windows.Forms.TextBox();
-            this.BTNENTRADA = new System.Windows.Forms.Button();
-            this.BTNSAIDA = new System.Windows.Forms.Button();
             this.DGV1 = new System.Windows.Forms.DataGridView();
             this.atualizaRemessaAgrupadaResponseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buscaDataAtualResponseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.menuStrip7 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
-            this.menuStrip3.SuspendLayout();
-            this.menuStrip4.SuspendLayout();
-            this.menuStrip5.SuspendLayout();
-            this.menuStrip6.SuspendLayout();
+            this.MS6 = new System.Windows.Forms.MenuStrip();
+            this.M6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.LBLDATA = new System.Windows.Forms.Label();
+            this.LBLCODIGO = new System.Windows.Forms.Label();
+            this.LBLCODIGO1 = new System.Windows.Forms.Label();
+            this.LBLCODIGO2 = new System.Windows.Forms.Label();
+            this.TXBDATAFUN = new System.Windows.Forms.TextBox();
+            this.TXBNOMEFUN = new System.Windows.Forms.TextBox();
+            this.TXBCARGOFUN = new System.Windows.Forms.TextBox();
+            this.TXBCPFFUN = new System.Windows.Forms.TextBox();
+            this.TXBCNHFUN = new System.Windows.Forms.TextBox();
+            this.TXBCERTRESFUN = new System.Windows.Forms.TextBox();
+            this.TXBENDFUN = new System.Windows.Forms.TextBox();
+            this.TXBCEPFUN = new System.Windows.Forms.TextBox();
+            this.TXBCOMPFUN = new System.Windows.Forms.TextBox();
+            this.TXBCIDADEFUN = new System.Windows.Forms.TextBox();
+            this.TXBSALARIOFUN = new System.Windows.Forms.TextBox();
+            this.TXBENCARGOSFUN = new System.Windows.Forms.TextBox();
+            this.TXBBONIFIFUN = new System.Windows.Forms.TextBox();
+            this.CBBDESCRICAO = new System.Windows.Forms.ComboBox();
+            this.TXBDATADEMISSAO = new System.Windows.Forms.TextBox();
+            this.TXBTEMPO = new System.Windows.Forms.TextBox();
+            this.TXBRGFUN = new System.Windows.Forms.TextBox();
+            this.TXBNUMEROFUN = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.TXBTOTALFUN = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.TXBUFFUN = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.TXBBAIRROFUN = new System.Windows.Forms.TextBox();
+            this.TXBDESCRICAO = new System.Windows.Forms.TextBox();
+            this.CBBTIPO = new System.Windows.Forms.ComboBox();
+            this.TXBNHP = new System.Windows.Forms.TextBox();
+            this.TXBSUBSIDIAR = new System.Windows.Forms.TextBox();
+            this.CBBTURNO = new System.Windows.Forms.ComboBox();
+            this.CBBTIPOHORA = new System.Windows.Forms.ComboBox();
+            this.labe32 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.BTNINSERIRCC = new System.Windows.Forms.Button();
+            this.BTNEXCLUIRCC = new System.Windows.Forms.Button();
+            this.RB1 = new System.Windows.Forms.RadioButton();
+            this.RB2 = new System.Windows.Forms.RadioButton();
+            this.LBLCODIGO3 = new System.Windows.Forms.Label();
+            this.LBLCODIGO4 = new System.Windows.Forms.Label();
+            this.LBLCODIGO5 = new System.Windows.Forms.Label();
+            this.LBLCODIGO6 = new System.Windows.Forms.Label();
+            this.LBLCODIGO7 = new System.Windows.Forms.Label();
+            this.CBBFUNCIONARIOS = new System.Windows.Forms.ComboBox();
+            this.CBB1 = new System.Windows.Forms.ComboBox();
+            this.MS7 = new System.Windows.Forms.MenuStrip();
+            this.M7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.SAIR7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MS5.SuspendLayout();
+            this.MS4.SuspendLayout();
+            this.MS3.SuspendLayout();
+            this.MS2.SuspendLayout();
+            this.MS1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.atualizaRemessaAgrupadaResponseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscaDataAtualResponseBindingSource)).BeginInit();
-            this.menuStrip7.SuspendLayout();
+            this.MS6.SuspendLayout();
+            this.MS7.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // MS5
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cADASTROToolStripMenuItem,
-            this.aTUALIZARToolStripMenuItem,
-            this.eXCLUIRToolStripMenuItem,
-            this.SAIR1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 120);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // cADASTROToolStripMenuItem
-            // 
-            this.cADASTROToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CADCLIENTE,
-            this.CADPAPEL});
-            this.cADASTROToolStripMenuItem.Name = "cADASTROToolStripMenuItem";
-            this.cADASTROToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.cADASTROToolStripMenuItem.Text = "CADASTRAR";
-            // 
-            // CADCLIENTE
-            // 
-            this.CADCLIENTE.Name = "CADCLIENTE";
-            this.CADCLIENTE.Size = new System.Drawing.Size(180, 22);
-            this.CADCLIENTE.Text = "CLIENTE";
-            this.CADCLIENTE.Click += new System.EventHandler(this.CADCLIENTE_Click);
-            // 
-            // CADPAPEL
-            // 
-            this.CADPAPEL.Name = "CADPAPEL";
-            this.CADPAPEL.Size = new System.Drawing.Size(180, 22);
-            this.CADPAPEL.Text = "PAPEL";
-            this.CADPAPEL.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
-            // 
-            // aTUALIZARToolStripMenuItem
-            // 
-            this.aTUALIZARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ATUCLIENTE,
-            this.ATUPAPEL});
-            this.aTUALIZARToolStripMenuItem.Name = "aTUALIZARToolStripMenuItem";
-            this.aTUALIZARToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem.Text = "ATUALIZAR";
-            // 
-            // ATUCLIENTE
-            // 
-            this.ATUCLIENTE.Name = "ATUCLIENTE";
-            this.ATUCLIENTE.Size = new System.Drawing.Size(180, 22);
-            this.ATUCLIENTE.Text = "CLIENTE";
-            this.ATUCLIENTE.Click += new System.EventHandler(this.ATUCLIENTE_Click);
-            // 
-            // ATUPAPEL
-            // 
-            this.ATUPAPEL.Name = "ATUPAPEL";
-            this.ATUPAPEL.Size = new System.Drawing.Size(180, 22);
-            this.ATUPAPEL.Text = "PAPEL";
-            // 
-            // eXCLUIRToolStripMenuItem
-            // 
-            this.eXCLUIRToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EXCCLIENTE,
-            this.EXCPAPEL});
-            this.eXCLUIRToolStripMenuItem.Name = "eXCLUIRToolStripMenuItem";
-            this.eXCLUIRToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem.Text = "EXCLUIR";
-            // 
-            // EXCCLIENTE
-            // 
-            this.EXCCLIENTE.Name = "EXCCLIENTE";
-            this.EXCCLIENTE.Size = new System.Drawing.Size(180, 22);
-            this.EXCCLIENTE.Text = "CLIENTE";
-            this.EXCCLIENTE.Click += new System.EventHandler(this.EXCCLIENTE_Click);
-            // 
-            // EXCPAPEL
-            // 
-            this.EXCPAPEL.Name = "EXCPAPEL";
-            this.EXCPAPEL.Size = new System.Drawing.Size(180, 22);
-            this.EXCPAPEL.Text = "PAPEL";
-            // 
-            // SAIR1
-            // 
-            this.SAIR1.Name = "SAIR1";
-            this.SAIR1.Size = new System.Drawing.Size(43, 20);
-            this.SAIR1.Text = "SAIR";
-            this.SAIR1.Click += new System.EventHandler(this.SAIR_Click);
-            // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cADASTRARToolStripMenuItem,
-            this.aTUALIZARToolStripMenuItem1,
-            this.eXCLUIRToolStripMenuItem1,
-            this.SAIR2});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 96);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip2.TabIndex = 2;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
-            // cADASTRARToolStripMenuItem
-            // 
-            this.cADASTRARToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pAPELToolStripMenuItem});
-            this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
-            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.cADASTRARToolStripMenuItem.Text = "CADASTRAR";
-            // 
-            // pAPELToolStripMenuItem
-            // 
-            this.pAPELToolStripMenuItem.Name = "pAPELToolStripMenuItem";
-            this.pAPELToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem.Text = "PAPEL";
-            this.pAPELToolStripMenuItem.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
-            // 
-            // aTUALIZARToolStripMenuItem1
-            // 
-            this.aTUALIZARToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pAPELToolStripMenuItem3,
-            this.pAPELToolStripMenuItem4});
-            this.aTUALIZARToolStripMenuItem1.Name = "aTUALIZARToolStripMenuItem1";
-            this.aTUALIZARToolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem1.Text = "ATUALIZAR";
-            // 
-            // pAPELToolStripMenuItem3
-            // 
-            this.pAPELToolStripMenuItem3.Name = "pAPELToolStripMenuItem3";
-            this.pAPELToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem3.Text = "CLIENTE";
-            this.pAPELToolStripMenuItem3.Click += new System.EventHandler(this.ATUCLIENTE_Click);
-            // 
-            // pAPELToolStripMenuItem4
-            // 
-            this.pAPELToolStripMenuItem4.Name = "pAPELToolStripMenuItem4";
-            this.pAPELToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem4.Text = "PAPEL";
-            // 
-            // eXCLUIRToolStripMenuItem1
-            // 
-            this.eXCLUIRToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MS5.AutoSize = false;
+            this.MS5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.M5,
             this.cLIENTEToolStripMenuItem,
-            this.pAPELToolStripMenuItem5});
-            this.eXCLUIRToolStripMenuItem1.Name = "eXCLUIRToolStripMenuItem1";
-            this.eXCLUIRToolStripMenuItem1.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem1.Text = "EXCLUIR";
+            this.pAPEISToolStripMenuItem,
+            this.fUNCIONARIOSToolStripMenuItem,
+            this.SAIR5});
+            this.MS5.Location = new System.Drawing.Point(0, 120);
+            this.MS5.MaximumSize = new System.Drawing.Size(800, 24);
+            this.MS5.Name = "MS5";
+            this.MS5.Size = new System.Drawing.Size(800, 24);
+            this.MS5.TabIndex = 2;
+            this.MS5.Text = "5";
+            // 
+            // M5
+            // 
+            this.M5.Name = "M5";
+            this.M5.Size = new System.Drawing.Size(36, 20);
+            this.M5.Text = "M5";
             // 
             // cLIENTEToolStripMenuItem
             // 
             this.cLIENTEToolStripMenuItem.Name = "cLIENTEToolStripMenuItem";
-            this.cLIENTEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cLIENTEToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.cLIENTEToolStripMenuItem.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem.Click += new System.EventHandler(this.EXCCLIENTE_Click);
+            this.cLIENTEToolStripMenuItem.Click += new System.EventHandler(this.CLIENTE_Click);
             // 
-            // pAPELToolStripMenuItem5
+            // pAPEISToolStripMenuItem
             // 
-            this.pAPELToolStripMenuItem5.Name = "pAPELToolStripMenuItem5";
-            this.pAPELToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem5.Text = "PAPEL";
+            this.pAPEISToolStripMenuItem.Name = "pAPEISToolStripMenuItem";
+            this.pAPEISToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.pAPEISToolStripMenuItem.Text = "PAPEIS";
+            this.pAPEISToolStripMenuItem.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
             // 
-            // SAIR2
+            // fUNCIONARIOSToolStripMenuItem
             // 
-            this.SAIR2.Name = "SAIR2";
-            this.SAIR2.Size = new System.Drawing.Size(43, 20);
-            this.SAIR2.Text = "SAIR";
-            this.SAIR2.Click += new System.EventHandler(this.SAIR_Click);
+            this.fUNCIONARIOSToolStripMenuItem.Name = "fUNCIONARIOSToolStripMenuItem";
+            this.fUNCIONARIOSToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
+            this.fUNCIONARIOSToolStripMenuItem.Text = "FUNCIONARIOS";
+            this.fUNCIONARIOSToolStripMenuItem.Click += new System.EventHandler(this.FUNCIONARIO_Click);
             // 
-            // menuStrip3
+            // SAIR5
             // 
-            this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cADASTRARToolStripMenuItem1,
-            this.aTUALIZARToolStripMenuItem2,
-            this.eXCLUIRToolStripMenuItem2,
-            this.SAIR3});
-            this.menuStrip3.Location = new System.Drawing.Point(0, 72);
-            this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip3.TabIndex = 3;
-            this.menuStrip3.Text = "menuStrip3";
+            this.SAIR5.Name = "SAIR5";
+            this.SAIR5.Size = new System.Drawing.Size(43, 20);
+            this.SAIR5.Text = "SAIR";
+            this.SAIR5.Click += new System.EventHandler(this.SAIR_Click);
             // 
-            // cADASTRARToolStripMenuItem1
+            // MS4
             // 
-            this.cADASTRARToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem1,
-            this.pAPELToolStripMenuItem8});
-            this.cADASTRARToolStripMenuItem1.Name = "cADASTRARToolStripMenuItem1";
-            this.cADASTRARToolStripMenuItem1.Size = new System.Drawing.Size(85, 20);
-            this.cADASTRARToolStripMenuItem1.Text = "CADASTRAR";
-            // 
-            // cLIENTEToolStripMenuItem1
-            // 
-            this.cLIENTEToolStripMenuItem1.Name = "cLIENTEToolStripMenuItem1";
-            this.cLIENTEToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem1.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem1.Click += new System.EventHandler(this.CADCLIENTE_Click);
-            // 
-            // pAPELToolStripMenuItem8
-            // 
-            this.pAPELToolStripMenuItem8.Name = "pAPELToolStripMenuItem8";
-            this.pAPELToolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem8.Text = "PAPEL";
-            this.pAPELToolStripMenuItem8.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
-            // 
-            // aTUALIZARToolStripMenuItem2
-            // 
-            this.aTUALIZARToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pAPELToolStripMenuItem6});
-            this.aTUALIZARToolStripMenuItem2.Name = "aTUALIZARToolStripMenuItem2";
-            this.aTUALIZARToolStripMenuItem2.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem2.Text = "ATUALIZAR";
-            // 
-            // pAPELToolStripMenuItem6
-            // 
-            this.pAPELToolStripMenuItem6.Name = "pAPELToolStripMenuItem6";
-            this.pAPELToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem6.Text = "PAPEL";
-            // 
-            // eXCLUIRToolStripMenuItem2
-            // 
-            this.eXCLUIRToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem4,
-            this.pAPELToolStripMenuItem7});
-            this.eXCLUIRToolStripMenuItem2.Name = "eXCLUIRToolStripMenuItem2";
-            this.eXCLUIRToolStripMenuItem2.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem2.Text = "EXCLUIR";
-            // 
-            // cLIENTEToolStripMenuItem4
-            // 
-            this.cLIENTEToolStripMenuItem4.Name = "cLIENTEToolStripMenuItem4";
-            this.cLIENTEToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem4.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem4.Click += new System.EventHandler(this.EXCCLIENTE_Click);
-            // 
-            // pAPELToolStripMenuItem7
-            // 
-            this.pAPELToolStripMenuItem7.Name = "pAPELToolStripMenuItem7";
-            this.pAPELToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem7.Text = "PAPEL";
-            // 
-            // SAIR3
-            // 
-            this.SAIR3.Name = "SAIR3";
-            this.SAIR3.Size = new System.Drawing.Size(43, 20);
-            this.SAIR3.Text = "SAIR";
-            this.SAIR3.Click += new System.EventHandler(this.SAIR_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(178, 957);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 45);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "LOGOTIPO";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(1099, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(793, 75);
-            this.label2.TabIndex = 5;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TXBCEP
-            // 
-            this.TXBCEP.Location = new System.Drawing.Point(221, 258);
-            this.TXBCEP.Name = "TXBCEP";
-            this.TXBCEP.Size = new System.Drawing.Size(68, 20);
-            this.TXBCEP.TabIndex = 1;
-            this.TXBCEP.Leave += new System.EventHandler(this.TXBCEP_TextChanged);
-            // 
-            // TXBNOME
-            // 
-            this.TXBNOME.Location = new System.Drawing.Point(369, 258);
-            this.TXBNOME.Name = "TXBNOME";
-            this.TXBNOME.Size = new System.Drawing.Size(68, 20);
-            this.TXBNOME.TabIndex = 2;
-            this.TXBNOME.Visible = false;
-            this.TXBNOME.Leave += new System.EventHandler(this.TXBNOME_TextChanged);
-            // 
-            // TXBRAZAOSOCIAL
-            // 
-            this.TXBRAZAOSOCIAL.Location = new System.Drawing.Point(443, 258);
-            this.TXBRAZAOSOCIAL.Name = "TXBRAZAOSOCIAL";
-            this.TXBRAZAOSOCIAL.Size = new System.Drawing.Size(68, 20);
-            this.TXBRAZAOSOCIAL.TabIndex = 3;
-            this.TXBRAZAOSOCIAL.Visible = false;
-            this.TXBRAZAOSOCIAL.Leave += new System.EventHandler(this.TXBRAZAOSOCIAL_TextChanged);
-            // 
-            // TXBRUA
-            // 
-            this.TXBRUA.Location = new System.Drawing.Point(147, 311);
-            this.TXBRUA.Name = "TXBRUA";
-            this.TXBRUA.Size = new System.Drawing.Size(68, 20);
-            this.TXBRUA.TabIndex = 4;
-            // 
-            // TXBNUMERO
-            // 
-            this.TXBNUMERO.Location = new System.Drawing.Point(221, 310);
-            this.TXBNUMERO.Name = "TXBNUMERO";
-            this.TXBNUMERO.Size = new System.Drawing.Size(68, 20);
-            this.TXBNUMERO.TabIndex = 5;
-            this.TXBNUMERO.Leave += new System.EventHandler(this.TXBNUMERO_TextChanged);
-            // 
-            // TXBCOMPLEMENTO
-            // 
-            this.TXBCOMPLEMENTO.Location = new System.Drawing.Point(295, 311);
-            this.TXBCOMPLEMENTO.Name = "TXBCOMPLEMENTO";
-            this.TXBCOMPLEMENTO.Size = new System.Drawing.Size(68, 20);
-            this.TXBCOMPLEMENTO.TabIndex = 6;
-            // 
-            // TXBBAIRRO
-            // 
-            this.TXBBAIRRO.Location = new System.Drawing.Point(147, 365);
-            this.TXBBAIRRO.Name = "TXBBAIRRO";
-            this.TXBBAIRRO.Size = new System.Drawing.Size(68, 20);
-            this.TXBBAIRRO.TabIndex = 7;
-            // 
-            // TXBCIDADE
-            // 
-            this.TXBCIDADE.Location = new System.Drawing.Point(221, 365);
-            this.TXBCIDADE.Name = "TXBCIDADE";
-            this.TXBCIDADE.Size = new System.Drawing.Size(68, 20);
-            this.TXBCIDADE.TabIndex = 8;
-            // 
-            // TXBESTADO
-            // 
-            this.TXBESTADO.Location = new System.Drawing.Point(295, 365);
-            this.TXBESTADO.Name = "TXBESTADO";
-            this.TXBESTADO.Size = new System.Drawing.Size(68, 20);
-            this.TXBESTADO.TabIndex = 9;
-            // 
-            // TXBINSCRMUN
-            // 
-            this.TXBINSCRMUN.Location = new System.Drawing.Point(295, 415);
-            this.TXBINSCRMUN.Name = "TXBINSCRMUN";
-            this.TXBINSCRMUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBINSCRMUN.TabIndex = 12;
-            // 
-            // TXBINSCREST
-            // 
-            this.TXBINSCREST.Location = new System.Drawing.Point(221, 415);
-            this.TXBINSCREST.Name = "TXBINSCREST";
-            this.TXBINSCREST.Size = new System.Drawing.Size(68, 20);
-            this.TXBINSCREST.TabIndex = 11;
-            // 
-            // TXBCNPJ
-            // 
-            this.TXBCNPJ.Location = new System.Drawing.Point(147, 415);
-            this.TXBCNPJ.Name = "TXBCNPJ";
-            this.TXBCNPJ.Size = new System.Drawing.Size(68, 20);
-            this.TXBCNPJ.TabIndex = 10;
-            this.TXBCNPJ.Leave += new System.EventHandler(this.TXBCNPJ_TextChanged);
-            // 
-            // TXBCONTATO1
-            // 
-            this.TXBCONTATO1.Location = new System.Drawing.Point(369, 463);
-            this.TXBCONTATO1.Name = "TXBCONTATO1";
-            this.TXBCONTATO1.Size = new System.Drawing.Size(68, 20);
-            this.TXBCONTATO1.TabIndex = 16;
-            // 
-            // TXBTELEFONE1
-            // 
-            this.TXBTELEFONE1.Location = new System.Drawing.Point(295, 463);
-            this.TXBTELEFONE1.Name = "TXBTELEFONE1";
-            this.TXBTELEFONE1.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE1.TabIndex = 15;
-            // 
-            // TXBDDD1
-            // 
-            this.TXBDDD1.Location = new System.Drawing.Point(221, 463);
-            this.TXBDDD1.Name = "TXBDDD1";
-            this.TXBDDD1.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD1.TabIndex = 14;
-            // 
-            // TXBEMAIL1
-            // 
-            this.TXBEMAIL1.Location = new System.Drawing.Point(517, 463);
-            this.TXBEMAIL1.Name = "TXBEMAIL1";
-            this.TXBEMAIL1.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL1.TabIndex = 18;
-            // 
-            // TXBEMAIL2
-            // 
-            this.TXBEMAIL2.Location = new System.Drawing.Point(515, 518);
-            this.TXBEMAIL2.Name = "TXBEMAIL2";
-            this.TXBEMAIL2.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL2.TabIndex = 24;
-            // 
-            // TXBDDD2
-            // 
-            this.TXBDDD2.Location = new System.Drawing.Point(221, 518);
-            this.TXBDDD2.Name = "TXBDDD2";
-            this.TXBDDD2.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD2.TabIndex = 20;
-            // 
-            // TXBCONTATO2
-            // 
-            this.TXBCONTATO2.Location = new System.Drawing.Point(371, 518);
-            this.TXBCONTATO2.Name = "TXBCONTATO2";
-            this.TXBCONTATO2.Size = new System.Drawing.Size(66, 20);
-            this.TXBCONTATO2.TabIndex = 22;
-            // 
-            // TXBTELEFONE2
-            // 
-            this.TXBTELEFONE2.Location = new System.Drawing.Point(295, 518);
-            this.TXBTELEFONE2.Name = "TXBTELEFONE2";
-            this.TXBTELEFONE2.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE2.TabIndex = 21;
-            // 
-            // TXBEMAIL3
-            // 
-            this.TXBEMAIL3.Location = new System.Drawing.Point(517, 565);
-            this.TXBEMAIL3.Name = "TXBEMAIL3";
-            this.TXBEMAIL3.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL3.TabIndex = 30;
-            // 
-            // TXBDDD3
-            // 
-            this.TXBDDD3.Location = new System.Drawing.Point(221, 565);
-            this.TXBDDD3.Name = "TXBDDD3";
-            this.TXBDDD3.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD3.TabIndex = 26;
-            // 
-            // TXBCONTATO3
-            // 
-            this.TXBCONTATO3.Location = new System.Drawing.Point(371, 565);
-            this.TXBCONTATO3.Name = "TXBCONTATO3";
-            this.TXBCONTATO3.Size = new System.Drawing.Size(66, 20);
-            this.TXBCONTATO3.TabIndex = 28;
-            // 
-            // TXBTELEFONE3
-            // 
-            this.TXBTELEFONE3.Location = new System.Drawing.Point(295, 565);
-            this.TXBTELEFONE3.Name = "TXBTELEFONE3";
-            this.TXBTELEFONE3.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE3.TabIndex = 27;
-            // 
-            // TXBEMAIL4
-            // 
-            this.TXBEMAIL4.Location = new System.Drawing.Point(515, 619);
-            this.TXBEMAIL4.Name = "TXBEMAIL4";
-            this.TXBEMAIL4.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL4.TabIndex = 36;
-            // 
-            // TXBDDD4
-            // 
-            this.TXBDDD4.Location = new System.Drawing.Point(221, 619);
-            this.TXBDDD4.Name = "TXBDDD4";
-            this.TXBDDD4.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD4.TabIndex = 32;
-            // 
-            // TXBCONTATO4
-            // 
-            this.TXBCONTATO4.Location = new System.Drawing.Point(369, 619);
-            this.TXBCONTATO4.Name = "TXBCONTATO4";
-            this.TXBCONTATO4.Size = new System.Drawing.Size(66, 20);
-            this.TXBCONTATO4.TabIndex = 34;
-            // 
-            // TXBTELEFONE4
-            // 
-            this.TXBTELEFONE4.Location = new System.Drawing.Point(295, 619);
-            this.TXBTELEFONE4.Name = "TXBTELEFONE4";
-            this.TXBTELEFONE4.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE4.TabIndex = 33;
-            // 
-            // TXBEMAIL5
-            // 
-            this.TXBEMAIL5.Location = new System.Drawing.Point(515, 674);
-            this.TXBEMAIL5.Name = "TXBEMAIL5";
-            this.TXBEMAIL5.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL5.TabIndex = 42;
-            // 
-            // TXBDDD5
-            // 
-            this.TXBDDD5.Location = new System.Drawing.Point(221, 674);
-            this.TXBDDD5.Name = "TXBDDD5";
-            this.TXBDDD5.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD5.TabIndex = 38;
-            // 
-            // TXBCONTATO5
-            // 
-            this.TXBCONTATO5.Location = new System.Drawing.Point(371, 674);
-            this.TXBCONTATO5.Name = "TXBCONTATO5";
-            this.TXBCONTATO5.Size = new System.Drawing.Size(66, 20);
-            this.TXBCONTATO5.TabIndex = 40;
-            // 
-            // TXBTELEFONE5
-            // 
-            this.TXBTELEFONE5.Location = new System.Drawing.Point(295, 674);
-            this.TXBTELEFONE5.Name = "TXBTELEFONE5";
-            this.TXBTELEFONE5.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE5.TabIndex = 39;
-            // 
-            // TXBEMAIL6
-            // 
-            this.TXBEMAIL6.Location = new System.Drawing.Point(517, 722);
-            this.TXBEMAIL6.Name = "TXBEMAIL6";
-            this.TXBEMAIL6.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL6.TabIndex = 48;
-            // 
-            // TXBDDD6
-            // 
-            this.TXBDDD6.Location = new System.Drawing.Point(221, 722);
-            this.TXBDDD6.Name = "TXBDDD6";
-            this.TXBDDD6.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD6.TabIndex = 44;
-            // 
-            // TXBCONTATO6
-            // 
-            this.TXBCONTATO6.Location = new System.Drawing.Point(371, 722);
-            this.TXBCONTATO6.Name = "TXBCONTATO6";
-            this.TXBCONTATO6.Size = new System.Drawing.Size(66, 20);
-            this.TXBCONTATO6.TabIndex = 46;
-            // 
-            // TXBTELEFONE6
-            // 
-            this.TXBTELEFONE6.Location = new System.Drawing.Point(295, 722);
-            this.TXBTELEFONE6.Name = "TXBTELEFONE6";
-            this.TXBTELEFONE6.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE6.TabIndex = 45;
-            // 
-            // TXBEMAIL7
-            // 
-            this.TXBEMAIL7.Location = new System.Drawing.Point(515, 773);
-            this.TXBEMAIL7.Name = "TXBEMAIL7";
-            this.TXBEMAIL7.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL7.TabIndex = 54;
-            // 
-            // TXBDDD7
-            // 
-            this.TXBDDD7.Location = new System.Drawing.Point(221, 773);
-            this.TXBDDD7.Name = "TXBDDD7";
-            this.TXBDDD7.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD7.TabIndex = 50;
-            // 
-            // TXBCONTATO7
-            // 
-            this.TXBCONTATO7.Location = new System.Drawing.Point(370, 773);
-            this.TXBCONTATO7.Name = "TXBCONTATO7";
-            this.TXBCONTATO7.Size = new System.Drawing.Size(66, 20);
-            this.TXBCONTATO7.TabIndex = 52;
-            // 
-            // TXBTELEFONE7
-            // 
-            this.TXBTELEFONE7.Location = new System.Drawing.Point(295, 773);
-            this.TXBTELEFONE7.Name = "TXBTELEFONE7";
-            this.TXBTELEFONE7.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE7.TabIndex = 51;
-            // 
-            // TXBEMAIL8
-            // 
-            this.TXBEMAIL8.Location = new System.Drawing.Point(517, 824);
-            this.TXBEMAIL8.Name = "TXBEMAIL8";
-            this.TXBEMAIL8.Size = new System.Drawing.Size(68, 20);
-            this.TXBEMAIL8.TabIndex = 60;
-            // 
-            // TXBDDD8
-            // 
-            this.TXBDDD8.Location = new System.Drawing.Point(221, 824);
-            this.TXBDDD8.Name = "TXBDDD8";
-            this.TXBDDD8.Size = new System.Drawing.Size(68, 20);
-            this.TXBDDD8.TabIndex = 56;
-            // 
-            // TXBCONTATO8
-            // 
-            this.TXBCONTATO8.Location = new System.Drawing.Point(371, 824);
-            this.TXBCONTATO8.Name = "TXBCONTATO8";
-            this.TXBCONTATO8.Size = new System.Drawing.Size(66, 20);
-            this.TXBCONTATO8.TabIndex = 58;
-            // 
-            // TXBTELEFONE8
-            // 
-            this.TXBTELEFONE8.Location = new System.Drawing.Point(295, 824);
-            this.TXBTELEFONE8.Name = "TXBTELEFONE8";
-            this.TXBTELEFONE8.Size = new System.Drawing.Size(68, 20);
-            this.TXBTELEFONE8.TabIndex = 57;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(70, 188);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 16);
-            this.label3.TabIndex = 61;
-            this.label3.Text = "A";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 188);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(15, 16);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "A";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(105, 188);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(15, 16);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "A";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(126, 188);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(15, 16);
-            this.label6.TabIndex = 64;
-            this.label6.Text = "A";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(147, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(15, 16);
-            this.label7.TabIndex = 65;
-            this.label7.Text = "A";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(158, 188);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(15, 16);
-            this.label8.TabIndex = 66;
-            this.label8.Text = "A";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(179, 188);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 16);
-            this.label9.TabIndex = 67;
-            this.label9.Text = "A";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(200, 188);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(15, 16);
-            this.label10.TabIndex = 68;
-            this.label10.Text = "A";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(212, 188);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(15, 16);
-            this.label11.TabIndex = 69;
-            this.label11.Text = "A";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(233, 188);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(15, 16);
-            this.label12.TabIndex = 70;
-            this.label12.Text = "A";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(254, 188);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(15, 16);
-            this.label13.TabIndex = 71;
-            this.label13.Text = "A";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(275, 188);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(15, 16);
-            this.label14.TabIndex = 72;
-            this.label14.Text = "A";
-            // 
-            // BTNINSERIR
-            // 
-            this.BTNINSERIR.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.BTNINSERIR.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNINSERIR.Location = new System.Drawing.Point(20, 539);
-            this.BTNINSERIR.Name = "BTNINSERIR";
-            this.BTNINSERIR.Size = new System.Drawing.Size(65, 23);
-            this.BTNINSERIR.TabIndex = 73;
-            this.BTNINSERIR.Text = "INSERIR CONTATO";
-            this.BTNINSERIR.UseVisualStyleBackColor = false;
-            this.BTNINSERIR.Click += new System.EventHandler(this.BTNINSERIR_Click);
-            // 
-            // BTNCADAUTEXC
-            // 
-            this.BTNCADAUTEXC.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.BTNCADAUTEXC.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNCADAUTEXC.Location = new System.Drawing.Point(20, 580);
-            this.BTNCADAUTEXC.Name = "BTNCADAUTEXC";
-            this.BTNCADAUTEXC.Size = new System.Drawing.Size(65, 54);
-            this.BTNCADAUTEXC.TabIndex = 74;
-            this.BTNCADAUTEXC.UseVisualStyleBackColor = false;
-            this.BTNCADAUTEXC.Click += new System.EventHandler(this.BTNCADAUTEXC_Click);
-            // 
-            // BTNCANCELA
-            // 
-            this.BTNCANCELA.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.BTNCANCELA.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNCANCELA.Location = new System.Drawing.Point(20, 653);
-            this.BTNCANCELA.Name = "BTNCANCELA";
-            this.BTNCANCELA.Size = new System.Drawing.Size(65, 54);
-            this.BTNCANCELA.TabIndex = 75;
-            this.BTNCANCELA.UseVisualStyleBackColor = false;
-            this.BTNCANCELA.Click += new System.EventHandler(this.BTNCANCELA_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(292, 188);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(14, 13);
-            this.label15.TabIndex = 76;
-            this.label15.Text = "A";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(312, 188);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(14, 13);
-            this.label16.TabIndex = 77;
-            this.label16.Text = "A";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(332, 188);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(14, 13);
-            this.label17.TabIndex = 78;
-            this.label17.Text = "A";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(349, 188);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(14, 13);
-            this.label18.TabIndex = 79;
-            this.label18.Text = "A";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(369, 188);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(14, 13);
-            this.label19.TabIndex = 80;
-            this.label19.Text = "A";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(389, 188);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(14, 13);
-            this.label20.TabIndex = 81;
-            this.label20.Text = "A";
-            // 
-            // CBBTIPO1
-            // 
-            this.CBBTIPO1.FormattingEnabled = true;
-            this.CBBTIPO1.Location = new System.Drawing.Point(147, 463);
-            this.CBBTIPO1.Name = "CBBTIPO1";
-            this.CBBTIPO1.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO1.TabIndex = 13;
-            // 
-            // CBBTIPO2
-            // 
-            this.CBBTIPO2.FormattingEnabled = true;
-            this.CBBTIPO2.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
-            this.CBBTIPO2.Location = new System.Drawing.Point(147, 518);
-            this.CBBTIPO2.Name = "CBBTIPO2";
-            this.CBBTIPO2.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO2.TabIndex = 19;
-            // 
-            // CBBTIPO3
-            // 
-            this.CBBTIPO3.FormattingEnabled = true;
-            this.CBBTIPO3.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
-            this.CBBTIPO3.Location = new System.Drawing.Point(147, 565);
-            this.CBBTIPO3.Name = "CBBTIPO3";
-            this.CBBTIPO3.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO3.TabIndex = 25;
-            // 
-            // CBBTIPO4
-            // 
-            this.CBBTIPO4.FormattingEnabled = true;
-            this.CBBTIPO4.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
-            this.CBBTIPO4.Location = new System.Drawing.Point(147, 619);
-            this.CBBTIPO4.Name = "CBBTIPO4";
-            this.CBBTIPO4.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO4.TabIndex = 31;
-            // 
-            // CBBTIPO5
-            // 
-            this.CBBTIPO5.FormattingEnabled = true;
-            this.CBBTIPO5.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
-            this.CBBTIPO5.Location = new System.Drawing.Point(147, 674);
-            this.CBBTIPO5.Name = "CBBTIPO5";
-            this.CBBTIPO5.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO5.TabIndex = 37;
-            // 
-            // CBBTIPO6
-            // 
-            this.CBBTIPO6.FormattingEnabled = true;
-            this.CBBTIPO6.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
-            this.CBBTIPO6.Location = new System.Drawing.Point(147, 722);
-            this.CBBTIPO6.Name = "CBBTIPO6";
-            this.CBBTIPO6.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO6.TabIndex = 43;
-            // 
-            // CBBTIPO7
-            // 
-            this.CBBTIPO7.FormattingEnabled = true;
-            this.CBBTIPO7.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
-            this.CBBTIPO7.Location = new System.Drawing.Point(147, 773);
-            this.CBBTIPO7.Name = "CBBTIPO7";
-            this.CBBTIPO7.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO7.TabIndex = 49;
-            // 
-            // CBBTIPO8
-            // 
-            this.CBBTIPO8.FormattingEnabled = true;
-            this.CBBTIPO8.Items.AddRange(new object[] {
-            "CEL",
-            "COM",
-            "RES"});
-            this.CBBTIPO8.Location = new System.Drawing.Point(147, 824);
-            this.CBBTIPO8.Name = "CBBTIPO8";
-            this.CBBTIPO8.Size = new System.Drawing.Size(68, 21);
-            this.CBBTIPO8.TabIndex = 55;
-            // 
-            // CBBSEXO1
-            // 
-            this.CBBSEXO1.FormattingEnabled = true;
-            this.CBBSEXO1.Location = new System.Drawing.Point(443, 463);
-            this.CBBSEXO1.Name = "CBBSEXO1";
-            this.CBBSEXO1.Size = new System.Drawing.Size(68, 21);
-            this.CBBSEXO1.TabIndex = 17;
-            // 
-            // CBBSEXO2
-            // 
-            this.CBBSEXO2.FormattingEnabled = true;
-            this.CBBSEXO2.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.CBBSEXO2.Location = new System.Drawing.Point(443, 518);
-            this.CBBSEXO2.Name = "CBBSEXO2";
-            this.CBBSEXO2.Size = new System.Drawing.Size(66, 21);
-            this.CBBSEXO2.TabIndex = 23;
-            // 
-            // CBBSEXO3
-            // 
-            this.CBBSEXO3.FormattingEnabled = true;
-            this.CBBSEXO3.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.CBBSEXO3.Location = new System.Drawing.Point(445, 565);
-            this.CBBSEXO3.Name = "CBBSEXO3";
-            this.CBBSEXO3.Size = new System.Drawing.Size(66, 21);
-            this.CBBSEXO3.TabIndex = 29;
-            // 
-            // CBBSEXO4
-            // 
-            this.CBBSEXO4.FormattingEnabled = true;
-            this.CBBSEXO4.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.CBBSEXO4.Location = new System.Drawing.Point(443, 619);
-            this.CBBSEXO4.Name = "CBBSEXO4";
-            this.CBBSEXO4.Size = new System.Drawing.Size(66, 21);
-            this.CBBSEXO4.TabIndex = 35;
-            // 
-            // CBBSEXO5
-            // 
-            this.CBBSEXO5.FormattingEnabled = true;
-            this.CBBSEXO5.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.CBBSEXO5.Location = new System.Drawing.Point(443, 674);
-            this.CBBSEXO5.Name = "CBBSEXO5";
-            this.CBBSEXO5.Size = new System.Drawing.Size(66, 21);
-            this.CBBSEXO5.TabIndex = 41;
-            // 
-            // CBBSEXO6
-            // 
-            this.CBBSEXO6.FormattingEnabled = true;
-            this.CBBSEXO6.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.CBBSEXO6.Location = new System.Drawing.Point(445, 722);
-            this.CBBSEXO6.Name = "CBBSEXO6";
-            this.CBBSEXO6.Size = new System.Drawing.Size(66, 21);
-            this.CBBSEXO6.TabIndex = 47;
-            // 
-            // CBBSEXO7
-            // 
-            this.CBBSEXO7.FormattingEnabled = true;
-            this.CBBSEXO7.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.CBBSEXO7.Location = new System.Drawing.Point(443, 773);
-            this.CBBSEXO7.Name = "CBBSEXO7";
-            this.CBBSEXO7.Size = new System.Drawing.Size(66, 21);
-            this.CBBSEXO7.TabIndex = 53;
-            // 
-            // CBBSEXO8
-            // 
-            this.CBBSEXO8.FormattingEnabled = true;
-            this.CBBSEXO8.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.CBBSEXO8.Location = new System.Drawing.Point(445, 824);
-            this.CBBSEXO8.Name = "CBBSEXO8";
-            this.CBBSEXO8.Size = new System.Drawing.Size(66, 21);
-            this.CBBSEXO8.TabIndex = 59;
-            // 
-            // menuStrip4
-            // 
-            this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cADASTRARToolStripMenuItem2,
-            this.aTUALIZARToolStripMenuItem3,
-            this.eXCLUIRToolStripMenuItem3,
+            this.MS4.AutoSize = false;
+            this.MS4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.M4,
+            this.CLIENTE4,
+            this.PAPEIS4,
             this.SAIR4});
-            this.menuStrip4.Location = new System.Drawing.Point(0, 48);
-            this.menuStrip4.Name = "menuStrip4";
-            this.menuStrip4.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip4.TabIndex = 124;
-            this.menuStrip4.Text = "menuStrip4";
+            this.MS4.Location = new System.Drawing.Point(0, 96);
+            this.MS4.MaximumSize = new System.Drawing.Size(800, 24);
+            this.MS4.Name = "MS4";
+            this.MS4.Size = new System.Drawing.Size(800, 24);
+            this.MS4.TabIndex = 3;
+            this.MS4.Text = "4";
             // 
-            // cADASTRARToolStripMenuItem2
+            // M4
             // 
-            this.cADASTRARToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem2,
-            this.pAPELToolStripMenuItem10});
-            this.cADASTRARToolStripMenuItem2.Name = "cADASTRARToolStripMenuItem2";
-            this.cADASTRARToolStripMenuItem2.Size = new System.Drawing.Size(85, 20);
-            this.cADASTRARToolStripMenuItem2.Text = "CADASTRAR";
+            this.M4.Name = "M4";
+            this.M4.Size = new System.Drawing.Size(36, 20);
+            this.M4.Text = "M4";
             // 
-            // cLIENTEToolStripMenuItem2
+            // CLIENTE4
             // 
-            this.cLIENTEToolStripMenuItem2.Name = "cLIENTEToolStripMenuItem2";
-            this.cLIENTEToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem2.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem2.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            this.CLIENTE4.Name = "CLIENTE4";
+            this.CLIENTE4.Size = new System.Drawing.Size(63, 20);
+            this.CLIENTE4.Text = "CLIENTE";
+            this.CLIENTE4.Click += new System.EventHandler(this.CLIENTE_Click);
             // 
-            // pAPELToolStripMenuItem10
+            // PAPEIS4
             // 
-            this.pAPELToolStripMenuItem10.Name = "pAPELToolStripMenuItem10";
-            this.pAPELToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem10.Text = "PAPEL";
-            this.pAPELToolStripMenuItem10.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
-            // 
-            // aTUALIZARToolStripMenuItem3
-            // 
-            this.aTUALIZARToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem3,
-            this.pAPELToolStripMenuItem11});
-            this.aTUALIZARToolStripMenuItem3.Name = "aTUALIZARToolStripMenuItem3";
-            this.aTUALIZARToolStripMenuItem3.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem3.Text = "ATUALIZAR";
-            // 
-            // cLIENTEToolStripMenuItem3
-            // 
-            this.cLIENTEToolStripMenuItem3.Name = "cLIENTEToolStripMenuItem3";
-            this.cLIENTEToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem3.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem3.Click += new System.EventHandler(this.ATUCLIENTE_Click);
-            // 
-            // pAPELToolStripMenuItem11
-            // 
-            this.pAPELToolStripMenuItem11.Name = "pAPELToolStripMenuItem11";
-            this.pAPELToolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem11.Text = "PAPEL";
-            // 
-            // eXCLUIRToolStripMenuItem3
-            // 
-            this.eXCLUIRToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pAPELToolStripMenuItem9});
-            this.eXCLUIRToolStripMenuItem3.Name = "eXCLUIRToolStripMenuItem3";
-            this.eXCLUIRToolStripMenuItem3.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem3.Text = "EXCLUIR";
-            // 
-            // pAPELToolStripMenuItem9
-            // 
-            this.pAPELToolStripMenuItem9.Name = "pAPELToolStripMenuItem9";
-            this.pAPELToolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem9.Text = "CLIENTE";
-            this.pAPELToolStripMenuItem9.Click += new System.EventHandler(this.EXCCLIENTE_Click);
+            this.PAPEIS4.Name = "PAPEIS4";
+            this.PAPEIS4.Size = new System.Drawing.Size(55, 20);
+            this.PAPEIS4.Text = "PAPEIS";
+            this.PAPEIS4.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
             // 
             // SAIR4
             // 
@@ -1269,361 +319,1081 @@ namespace GRAFICA2
             this.SAIR4.Text = "SAIR";
             this.SAIR4.Click += new System.EventHandler(this.SAIR_Click);
             // 
-            // menuStrip5
+            // label1
             // 
-            this.menuStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cADASTRARToolStripMenuItem3,
-            this.aTUALIZARToolStripMenuItem5,
-            this.eXCLUIRToolStripMenuItem5,
-            this.sAIRToolStripMenuItem1});
-            this.menuStrip5.Location = new System.Drawing.Point(0, 24);
-            this.menuStrip5.Name = "menuStrip5";
-            this.menuStrip5.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip5.TabIndex = 125;
-            this.menuStrip5.Text = "menuStrip5";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1014, 553);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 45);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "A";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cADASTRARToolStripMenuItem3
+            // label2
             // 
-            this.cADASTRARToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem5});
-            this.cADASTRARToolStripMenuItem3.Name = "cADASTRARToolStripMenuItem3";
-            this.cADASTRARToolStripMenuItem3.Size = new System.Drawing.Size(85, 20);
-            this.cADASTRARToolStripMenuItem3.Text = "CADASTRAR";
+            this.label2.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(1334, 895);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 75);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "A";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cLIENTEToolStripMenuItem5
+            // TXB2
             // 
-            this.cLIENTEToolStripMenuItem5.Name = "cLIENTEToolStripMenuItem5";
-            this.cLIENTEToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem5.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem5.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            this.TXB2.Location = new System.Drawing.Point(79, 728);
+            this.TXB2.Name = "TXB2";
+            this.TXB2.Size = new System.Drawing.Size(68, 20);
+            this.TXB2.TabIndex = 1;
+            this.TXB2.Visible = false;
+            this.TXB2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXBCEP_KeyPress);
+            this.TXB2.Leave += new System.EventHandler(this.TXBCEP_TextChanged);
             // 
-            // aTUALIZARToolStripMenuItem5
+            // TXB3
             // 
-            this.aTUALIZARToolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem9,
-            this.pAPELToolStripMenuItem12});
-            this.aTUALIZARToolStripMenuItem5.Name = "aTUALIZARToolStripMenuItem5";
-            this.aTUALIZARToolStripMenuItem5.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem5.Text = "ATUALIZAR";
+            this.TXB3.Location = new System.Drawing.Point(152, 728);
+            this.TXB3.Name = "TXB3";
+            this.TXB3.Size = new System.Drawing.Size(68, 20);
+            this.TXB3.TabIndex = 2;
+            this.TXB3.Visible = false;
+            this.TXB3.Leave += new System.EventHandler(this.TXBNOME_TextChanged);
             // 
-            // cLIENTEToolStripMenuItem9
+            // TXB4
             // 
-            this.cLIENTEToolStripMenuItem9.Name = "cLIENTEToolStripMenuItem9";
-            this.cLIENTEToolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem9.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem9.Click += new System.EventHandler(this.ATUCLIENTE_Click);
+            this.TXB4.Location = new System.Drawing.Point(225, 728);
+            this.TXB4.Name = "TXB4";
+            this.TXB4.Size = new System.Drawing.Size(68, 20);
+            this.TXB4.TabIndex = 3;
+            this.TXB4.Visible = false;
+            this.TXB4.Leave += new System.EventHandler(this.TXBRAZAOSOCIAL_TextChanged);
             // 
-            // pAPELToolStripMenuItem12
+            // TXB5
             // 
-            this.pAPELToolStripMenuItem12.Name = "pAPELToolStripMenuItem12";
-            this.pAPELToolStripMenuItem12.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem12.Text = "PAPEL";
+            this.TXB5.Location = new System.Drawing.Point(6, 758);
+            this.TXB5.Name = "TXB5";
+            this.TXB5.Size = new System.Drawing.Size(68, 20);
+            this.TXB5.TabIndex = 4;
+            this.TXB5.Visible = false;
             // 
-            // eXCLUIRToolStripMenuItem5
+            // TXB6
             // 
-            this.eXCLUIRToolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem10,
-            this.pAPELToolStripMenuItem13});
-            this.eXCLUIRToolStripMenuItem5.Name = "eXCLUIRToolStripMenuItem5";
-            this.eXCLUIRToolStripMenuItem5.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem5.Text = "EXCLUIR";
+            this.TXB6.Location = new System.Drawing.Point(79, 758);
+            this.TXB6.Name = "TXB6";
+            this.TXB6.Size = new System.Drawing.Size(68, 20);
+            this.TXB6.TabIndex = 5;
+            this.TXB6.Visible = false;
+            this.TXB6.Leave += new System.EventHandler(this.TXBNUMERO_TextChanged);
             // 
-            // cLIENTEToolStripMenuItem10
+            // TXB7
             // 
-            this.cLIENTEToolStripMenuItem10.Name = "cLIENTEToolStripMenuItem10";
-            this.cLIENTEToolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem10.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem10.Click += new System.EventHandler(this.EXCCLIENTE_Click);
+            this.TXB7.Location = new System.Drawing.Point(152, 758);
+            this.TXB7.Name = "TXB7";
+            this.TXB7.Size = new System.Drawing.Size(68, 20);
+            this.TXB7.TabIndex = 6;
+            this.TXB7.Visible = false;
             // 
-            // pAPELToolStripMenuItem13
+            // TXB8
             // 
-            this.pAPELToolStripMenuItem13.Name = "pAPELToolStripMenuItem13";
-            this.pAPELToolStripMenuItem13.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem13.Text = "PAPEL";
+            this.TXB8.Location = new System.Drawing.Point(224, 758);
+            this.TXB8.Name = "TXB8";
+            this.TXB8.Size = new System.Drawing.Size(68, 20);
+            this.TXB8.TabIndex = 7;
+            this.TXB8.Visible = false;
             // 
-            // sAIRToolStripMenuItem1
+            // TXB9
             // 
-            this.sAIRToolStripMenuItem1.Name = "sAIRToolStripMenuItem1";
-            this.sAIRToolStripMenuItem1.Size = new System.Drawing.Size(43, 20);
-            this.sAIRToolStripMenuItem1.Text = "SAIR";
-            this.sAIRToolStripMenuItem1.Click += new System.EventHandler(this.SAIR_Click);
+            this.TXB9.Location = new System.Drawing.Point(298, 758);
+            this.TXB9.Name = "TXB9";
+            this.TXB9.Size = new System.Drawing.Size(68, 20);
+            this.TXB9.TabIndex = 8;
+            this.TXB9.Visible = false;
             // 
-            // menuStrip6
+            // TXB10
             // 
-            this.menuStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cADASTRARToolStripMenuItem4,
-            this.aTUALIZARToolStripMenuItem4,
-            this.eXCLUIRToolStripMenuItem4,
-            this.sAIRToolStripMenuItem});
-            this.menuStrip6.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip6.Name = "menuStrip6";
-            this.menuStrip6.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip6.TabIndex = 126;
-            this.menuStrip6.Text = "menuStrip6";
+            this.TXB10.Location = new System.Drawing.Point(5, 787);
+            this.TXB10.Name = "TXB10";
+            this.TXB10.Size = new System.Drawing.Size(68, 20);
+            this.TXB10.TabIndex = 9;
+            this.TXB10.Visible = false;
             // 
-            // cADASTRARToolStripMenuItem4
+            // TXB13
             // 
-            this.cADASTRARToolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem6,
-            this.pAPELToolStripMenuItem1});
-            this.cADASTRARToolStripMenuItem4.Name = "cADASTRARToolStripMenuItem4";
-            this.cADASTRARToolStripMenuItem4.Size = new System.Drawing.Size(85, 20);
-            this.cADASTRARToolStripMenuItem4.Text = "CADASTRAR";
+            this.TXB13.Location = new System.Drawing.Point(225, 787);
+            this.TXB13.Name = "TXB13";
+            this.TXB13.Size = new System.Drawing.Size(68, 20);
+            this.TXB13.TabIndex = 12;
+            this.TXB13.Visible = false;
             // 
-            // cLIENTEToolStripMenuItem6
+            // TXB12
             // 
-            this.cLIENTEToolStripMenuItem6.Name = "cLIENTEToolStripMenuItem6";
-            this.cLIENTEToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem6.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem6.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            this.TXB12.Location = new System.Drawing.Point(152, 787);
+            this.TXB12.Name = "TXB12";
+            this.TXB12.Size = new System.Drawing.Size(68, 20);
+            this.TXB12.TabIndex = 11;
+            this.TXB12.Visible = false;
             // 
-            // pAPELToolStripMenuItem1
+            // TXB11
             // 
-            this.pAPELToolStripMenuItem1.Name = "pAPELToolStripMenuItem1";
-            this.pAPELToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem1.Text = "PAPEL";
-            this.pAPELToolStripMenuItem1.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
+            this.TXB11.Location = new System.Drawing.Point(79, 787);
+            this.TXB11.Name = "TXB11";
+            this.TXB11.Size = new System.Drawing.Size(68, 20);
+            this.TXB11.TabIndex = 10;
+            this.TXB11.Visible = false;
+            this.TXB11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXBCNPJ_KeyPress);
+            this.TXB11.Leave += new System.EventHandler(this.TXBCNPJ_TextChanged);
             // 
-            // aTUALIZARToolStripMenuItem4
+            // TXB16
             // 
-            this.aTUALIZARToolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem7});
-            this.aTUALIZARToolStripMenuItem4.Name = "aTUALIZARToolStripMenuItem4";
-            this.aTUALIZARToolStripMenuItem4.Size = new System.Drawing.Size(79, 20);
-            this.aTUALIZARToolStripMenuItem4.Text = "ATUALIZAR";
+            this.TXB16.Location = new System.Drawing.Point(225, 816);
+            this.TXB16.Name = "TXB16";
+            this.TXB16.Size = new System.Drawing.Size(68, 20);
+            this.TXB16.TabIndex = 16;
+            this.TXB16.Visible = false;
             // 
-            // cLIENTEToolStripMenuItem7
+            // TXB15
             // 
-            this.cLIENTEToolStripMenuItem7.Name = "cLIENTEToolStripMenuItem7";
-            this.cLIENTEToolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem7.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem7.Click += new System.EventHandler(this.ATUCLIENTE_Click);
+            this.TXB15.Location = new System.Drawing.Point(152, 816);
+            this.TXB15.Name = "TXB15";
+            this.TXB15.Size = new System.Drawing.Size(68, 20);
+            this.TXB15.TabIndex = 15;
+            this.TXB15.Visible = false;
             // 
-            // eXCLUIRToolStripMenuItem4
+            // TXB14
             // 
-            this.eXCLUIRToolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cLIENTEToolStripMenuItem8,
-            this.pAPELToolStripMenuItem2});
-            this.eXCLUIRToolStripMenuItem4.Name = "eXCLUIRToolStripMenuItem4";
-            this.eXCLUIRToolStripMenuItem4.Size = new System.Drawing.Size(64, 20);
-            this.eXCLUIRToolStripMenuItem4.Text = "EXCLUIR";
+            this.TXB14.Location = new System.Drawing.Point(79, 816);
+            this.TXB14.Name = "TXB14";
+            this.TXB14.Size = new System.Drawing.Size(68, 20);
+            this.TXB14.TabIndex = 14;
+            this.TXB14.Visible = false;
             // 
-            // cLIENTEToolStripMenuItem8
+            // TXB17
             // 
-            this.cLIENTEToolStripMenuItem8.Name = "cLIENTEToolStripMenuItem8";
-            this.cLIENTEToolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
-            this.cLIENTEToolStripMenuItem8.Text = "CLIENTE";
-            this.cLIENTEToolStripMenuItem8.Click += new System.EventHandler(this.EXCCLIENTE_Click);
+            this.TXB17.Location = new System.Drawing.Point(371, 816);
+            this.TXB17.Name = "TXB17";
+            this.TXB17.Size = new System.Drawing.Size(68, 20);
+            this.TXB17.TabIndex = 18;
+            this.TXB17.Visible = false;
             // 
-            // pAPELToolStripMenuItem2
+            // TXB21
             // 
-            this.pAPELToolStripMenuItem2.Name = "pAPELToolStripMenuItem2";
-            this.pAPELToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.pAPELToolStripMenuItem2.Text = "PAPEL";
+            this.TXB21.Location = new System.Drawing.Point(371, 846);
+            this.TXB21.Name = "TXB21";
+            this.TXB21.Size = new System.Drawing.Size(68, 20);
+            this.TXB21.TabIndex = 24;
+            this.TXB21.Visible = false;
             // 
-            // sAIRToolStripMenuItem
+            // TXB18
             // 
-            this.sAIRToolStripMenuItem.Name = "sAIRToolStripMenuItem";
-            this.sAIRToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.sAIRToolStripMenuItem.Text = "SAIR";
-            this.sAIRToolStripMenuItem.Click += new System.EventHandler(this.SAIR_Click);
+            this.TXB18.Location = new System.Drawing.Point(79, 846);
+            this.TXB18.Name = "TXB18";
+            this.TXB18.Size = new System.Drawing.Size(68, 20);
+            this.TXB18.TabIndex = 20;
+            this.TXB18.Visible = false;
             // 
-            // CBBNOME
+            // TXB20
             // 
-            this.CBBNOME.FormattingEnabled = true;
-            this.CBBNOME.Location = new System.Drawing.Point(295, 258);
-            this.CBBNOME.Name = "CBBNOME";
-            this.CBBNOME.Size = new System.Drawing.Size(68, 21);
-            this.CBBNOME.TabIndex = 127;
+            this.TXB20.Location = new System.Drawing.Point(225, 846);
+            this.TXB20.Name = "TXB20";
+            this.TXB20.Size = new System.Drawing.Size(68, 20);
+            this.TXB20.TabIndex = 22;
+            this.TXB20.Visible = false;
             // 
-            // label63
+            // TXB19
             // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.ForeColor = System.Drawing.Color.Red;
-            this.label63.Location = new System.Drawing.Point(29, 1032);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(133, 23);
-            this.label63.TabIndex = 128;
-            this.label63.Text = "OBRIGATÓRIO";
+            this.TXB19.Location = new System.Drawing.Point(152, 846);
+            this.TXB19.Name = "TXB19";
+            this.TXB19.Size = new System.Drawing.Size(68, 20);
+            this.TXB19.TabIndex = 21;
+            this.TXB19.Visible = false;
             // 
-            // label64
+            // TXB25
             // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.Color.Red;
-            this.label64.Location = new System.Drawing.Point(170, 994);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(56, 68);
-            this.label64.TabIndex = 129;
-            this.label64.Text = "*";
+            this.TXB25.Location = new System.Drawing.Point(371, 876);
+            this.TXB25.Name = "TXB25";
+            this.TXB25.Size = new System.Drawing.Size(68, 20);
+            this.TXB25.TabIndex = 30;
+            this.TXB25.Visible = false;
             // 
-            // label65
+            // TXB22
             // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.ForeColor = System.Drawing.Color.Red;
-            this.label65.Location = new System.Drawing.Point(214, 1001);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(44, 52);
-            this.label65.TabIndex = 130;
-            this.label65.Text = "*";
+            this.TXB22.Location = new System.Drawing.Point(79, 876);
+            this.TXB22.Name = "TXB22";
+            this.TXB22.Size = new System.Drawing.Size(68, 20);
+            this.TXB22.TabIndex = 26;
+            this.TXB22.Visible = false;
             // 
-            // label66
+            // TXB24
             // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.Color.Red;
-            this.label66.Location = new System.Drawing.Point(245, 1001);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(44, 52);
-            this.label66.TabIndex = 131;
-            this.label66.Text = "*";
+            this.TXB24.Location = new System.Drawing.Point(225, 876);
+            this.TXB24.Name = "TXB24";
+            this.TXB24.Size = new System.Drawing.Size(68, 20);
+            this.TXB24.TabIndex = 28;
+            this.TXB24.Visible = false;
             // 
-            // label67
+            // TXB23
             // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.ForeColor = System.Drawing.Color.Red;
-            this.label67.Location = new System.Drawing.Point(282, 1001);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(44, 52);
-            this.label67.TabIndex = 132;
-            this.label67.Text = "*";
+            this.TXB23.Location = new System.Drawing.Point(152, 876);
+            this.TXB23.Name = "TXB23";
+            this.TXB23.Size = new System.Drawing.Size(68, 20);
+            this.TXB23.TabIndex = 27;
+            this.TXB23.Visible = false;
             // 
-            // label68
+            // TXB29
             // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.ForeColor = System.Drawing.Color.Red;
-            this.label68.Location = new System.Drawing.Point(317, 1002);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(44, 52);
-            this.label68.TabIndex = 133;
-            this.label68.Text = "*";
+            this.TXB29.Location = new System.Drawing.Point(371, 906);
+            this.TXB29.Name = "TXB29";
+            this.TXB29.Size = new System.Drawing.Size(68, 20);
+            this.TXB29.TabIndex = 36;
+            this.TXB29.Visible = false;
             // 
-            // label69
+            // TXB26
             // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.ForeColor = System.Drawing.Color.Red;
-            this.label69.Location = new System.Drawing.Point(355, 1001);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(44, 52);
-            this.label69.TabIndex = 140;
-            this.label69.Text = "*";
+            this.TXB26.Location = new System.Drawing.Point(79, 906);
+            this.TXB26.Name = "TXB26";
+            this.TXB26.Size = new System.Drawing.Size(68, 20);
+            this.TXB26.TabIndex = 32;
+            this.TXB26.Visible = false;
+            // 
+            // TXB28
+            // 
+            this.TXB28.Location = new System.Drawing.Point(225, 906);
+            this.TXB28.Name = "TXB28";
+            this.TXB28.Size = new System.Drawing.Size(68, 20);
+            this.TXB28.TabIndex = 34;
+            this.TXB28.Visible = false;
+            // 
+            // TXB27
+            // 
+            this.TXB27.Location = new System.Drawing.Point(152, 906);
+            this.TXB27.Name = "TXB27";
+            this.TXB27.Size = new System.Drawing.Size(68, 20);
+            this.TXB27.TabIndex = 33;
+            this.TXB27.Visible = false;
+            // 
+            // TXB33
+            // 
+            this.TXB33.Location = new System.Drawing.Point(371, 936);
+            this.TXB33.Name = "TXB33";
+            this.TXB33.Size = new System.Drawing.Size(68, 20);
+            this.TXB33.TabIndex = 42;
+            this.TXB33.Visible = false;
+            // 
+            // TXB30
+            // 
+            this.TXB30.Location = new System.Drawing.Point(79, 936);
+            this.TXB30.Name = "TXB30";
+            this.TXB30.Size = new System.Drawing.Size(68, 20);
+            this.TXB30.TabIndex = 38;
+            this.TXB30.Visible = false;
+            // 
+            // TXB32
+            // 
+            this.TXB32.Location = new System.Drawing.Point(225, 936);
+            this.TXB32.Name = "TXB32";
+            this.TXB32.Size = new System.Drawing.Size(68, 20);
+            this.TXB32.TabIndex = 40;
+            this.TXB32.Visible = false;
+            // 
+            // TXB31
+            // 
+            this.TXB31.Location = new System.Drawing.Point(152, 936);
+            this.TXB31.Name = "TXB31";
+            this.TXB31.Size = new System.Drawing.Size(68, 20);
+            this.TXB31.TabIndex = 39;
+            this.TXB31.Visible = false;
+            // 
+            // TXB37
+            // 
+            this.TXB37.Location = new System.Drawing.Point(371, 966);
+            this.TXB37.Name = "TXB37";
+            this.TXB37.Size = new System.Drawing.Size(68, 20);
+            this.TXB37.TabIndex = 48;
+            this.TXB37.Visible = false;
+            // 
+            // TXB34
+            // 
+            this.TXB34.Location = new System.Drawing.Point(79, 966);
+            this.TXB34.Name = "TXB34";
+            this.TXB34.Size = new System.Drawing.Size(68, 20);
+            this.TXB34.TabIndex = 44;
+            this.TXB34.Visible = false;
+            // 
+            // TXB36
+            // 
+            this.TXB36.Location = new System.Drawing.Point(225, 966);
+            this.TXB36.Name = "TXB36";
+            this.TXB36.Size = new System.Drawing.Size(68, 20);
+            this.TXB36.TabIndex = 46;
+            this.TXB36.Visible = false;
+            // 
+            // TXB35
+            // 
+            this.TXB35.Location = new System.Drawing.Point(152, 966);
+            this.TXB35.Name = "TXB35";
+            this.TXB35.Size = new System.Drawing.Size(68, 20);
+            this.TXB35.TabIndex = 45;
+            this.TXB35.Visible = false;
+            // 
+            // TXB41
+            // 
+            this.TXB41.Location = new System.Drawing.Point(371, 996);
+            this.TXB41.Name = "TXB41";
+            this.TXB41.Size = new System.Drawing.Size(68, 20);
+            this.TXB41.TabIndex = 54;
+            this.TXB41.Visible = false;
+            // 
+            // TXB38
+            // 
+            this.TXB38.Location = new System.Drawing.Point(79, 996);
+            this.TXB38.Name = "TXB38";
+            this.TXB38.Size = new System.Drawing.Size(68, 20);
+            this.TXB38.TabIndex = 50;
+            this.TXB38.Visible = false;
+            // 
+            // TXB40
+            // 
+            this.TXB40.Location = new System.Drawing.Point(225, 996);
+            this.TXB40.Name = "TXB40";
+            this.TXB40.Size = new System.Drawing.Size(68, 20);
+            this.TXB40.TabIndex = 52;
+            this.TXB40.Visible = false;
+            // 
+            // TXB39
+            // 
+            this.TXB39.Location = new System.Drawing.Point(152, 996);
+            this.TXB39.Name = "TXB39";
+            this.TXB39.Size = new System.Drawing.Size(68, 20);
+            this.TXB39.TabIndex = 51;
+            this.TXB39.Visible = false;
+            // 
+            // TXB45
+            // 
+            this.TXB45.Location = new System.Drawing.Point(371, 1026);
+            this.TXB45.Name = "TXB45";
+            this.TXB45.Size = new System.Drawing.Size(68, 20);
+            this.TXB45.TabIndex = 60;
+            this.TXB45.Visible = false;
+            // 
+            // TXB42
+            // 
+            this.TXB42.Location = new System.Drawing.Point(79, 1026);
+            this.TXB42.Name = "TXB42";
+            this.TXB42.Size = new System.Drawing.Size(68, 20);
+            this.TXB42.TabIndex = 56;
+            this.TXB42.Visible = false;
+            // 
+            // TXB44
+            // 
+            this.TXB44.Location = new System.Drawing.Point(225, 1026);
+            this.TXB44.Name = "TXB44";
+            this.TXB44.Size = new System.Drawing.Size(68, 20);
+            this.TXB44.TabIndex = 58;
+            this.TXB44.Visible = false;
+            // 
+            // TXB43
+            // 
+            this.TXB43.Location = new System.Drawing.Point(152, 1026);
+            this.TXB43.Name = "TXB43";
+            this.TXB43.Size = new System.Drawing.Size(68, 20);
+            this.TXB43.TabIndex = 57;
+            this.TXB43.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(885, 729);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 13);
+            this.label3.TabIndex = 61;
+            this.label3.Text = "A";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(904, 729);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 13);
+            this.label4.TabIndex = 62;
+            this.label4.Text = "A";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(923, 729);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 13);
+            this.label5.TabIndex = 63;
+            this.label5.Text = "A";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(942, 729);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(14, 13);
+            this.label6.TabIndex = 64;
+            this.label6.Text = "A";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(961, 729);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 13);
+            this.label7.TabIndex = 65;
+            this.label7.Text = "A";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(980, 729);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(14, 13);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "A";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(999, 729);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(14, 13);
+            this.label9.TabIndex = 67;
+            this.label9.Text = "A";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(1018, 729);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 13);
+            this.label10.TabIndex = 68;
+            this.label10.Text = "A";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(1037, 729);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(14, 13);
+            this.label11.TabIndex = 69;
+            this.label11.Text = "A";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(1056, 729);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(14, 13);
+            this.label12.TabIndex = 70;
+            this.label12.Text = "A";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(1075, 729);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(14, 13);
+            this.label13.TabIndex = 71;
+            this.label13.Text = "A";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(885, 756);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(14, 13);
+            this.label14.TabIndex = 72;
+            this.label14.Text = "A";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BTN1
+            // 
+            this.BTN1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN1.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN1.Location = new System.Drawing.Point(561, 764);
+            this.BTN1.Name = "BTN1";
+            this.BTN1.Size = new System.Drawing.Size(68, 25);
+            this.BTN1.TabIndex = 73;
+            this.BTN1.Text = "INSERIR CONTATO";
+            this.BTN1.UseVisualStyleBackColor = false;
+            this.BTN1.Click += new System.EventHandler(this.BTNINSERIR_Click);
+            // 
+            // BTN3
+            // 
+            this.BTN3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN3.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN3.Location = new System.Drawing.Point(634, 729);
+            this.BTN3.Name = "BTN3";
+            this.BTN3.Size = new System.Drawing.Size(68, 60);
+            this.BTN3.TabIndex = 80;
+            this.BTN3.UseVisualStyleBackColor = false;
+            this.BTN3.Click += new System.EventHandler(this.BTNCADAUTEXC_Click);
+            // 
+            // BTN4
+            // 
+            this.BTN4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTN4.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN4.Location = new System.Drawing.Point(707, 729);
+            this.BTN4.Name = "BTN4";
+            this.BTN4.Size = new System.Drawing.Size(68, 60);
+            this.BTN4.TabIndex = 81;
+            this.BTN4.UseVisualStyleBackColor = false;
+            this.BTN4.Click += new System.EventHandler(this.BTNCANCELA_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(904, 756);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(14, 13);
+            this.label15.TabIndex = 76;
+            this.label15.Text = "A";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(923, 756);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(14, 13);
+            this.label16.TabIndex = 77;
+            this.label16.Text = "A";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(942, 756);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(14, 13);
+            this.label17.TabIndex = 78;
+            this.label17.Text = "A";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(961, 756);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(14, 13);
+            this.label18.TabIndex = 79;
+            this.label18.Text = "A";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(980, 756);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(14, 13);
+            this.label19.TabIndex = 80;
+            this.label19.Text = "A";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(999, 756);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(14, 13);
+            this.label20.TabIndex = 81;
+            this.label20.Text = "A";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label20.Visible = false;
+            // 
+            // CBB3
+            // 
+            this.CBB3.FormattingEnabled = true;
+            this.CBB3.Location = new System.Drawing.Point(6, 816);
+            this.CBB3.Name = "CBB3";
+            this.CBB3.Size = new System.Drawing.Size(68, 21);
+            this.CBB3.TabIndex = 13;
+            this.CBB3.Visible = false;
+            // 
+            // CBB5
+            // 
+            this.CBB5.FormattingEnabled = true;
+            this.CBB5.Items.AddRange(new object[] {
+            "CEL",
+            "COM",
+            "RES"});
+            this.CBB5.Location = new System.Drawing.Point(6, 846);
+            this.CBB5.Name = "CBB5";
+            this.CBB5.Size = new System.Drawing.Size(68, 21);
+            this.CBB5.TabIndex = 19;
+            this.CBB5.Visible = false;
+            // 
+            // CBB7
+            // 
+            this.CBB7.FormattingEnabled = true;
+            this.CBB7.Items.AddRange(new object[] {
+            "CEL",
+            "COM",
+            "RES"});
+            this.CBB7.Location = new System.Drawing.Point(6, 876);
+            this.CBB7.Name = "CBB7";
+            this.CBB7.Size = new System.Drawing.Size(68, 21);
+            this.CBB7.TabIndex = 25;
+            this.CBB7.Visible = false;
+            // 
+            // CBB9
+            // 
+            this.CBB9.FormattingEnabled = true;
+            this.CBB9.Items.AddRange(new object[] {
+            "CEL",
+            "COM",
+            "RES"});
+            this.CBB9.Location = new System.Drawing.Point(6, 906);
+            this.CBB9.Name = "CBB9";
+            this.CBB9.Size = new System.Drawing.Size(68, 21);
+            this.CBB9.TabIndex = 31;
+            this.CBB9.Visible = false;
+            // 
+            // CBB11
+            // 
+            this.CBB11.FormattingEnabled = true;
+            this.CBB11.Items.AddRange(new object[] {
+            "CEL",
+            "COM",
+            "RES"});
+            this.CBB11.Location = new System.Drawing.Point(6, 936);
+            this.CBB11.Name = "CBB11";
+            this.CBB11.Size = new System.Drawing.Size(68, 21);
+            this.CBB11.TabIndex = 37;
+            this.CBB11.Visible = false;
+            // 
+            // CBB13
+            // 
+            this.CBB13.FormattingEnabled = true;
+            this.CBB13.Items.AddRange(new object[] {
+            "CEL",
+            "COM",
+            "RES"});
+            this.CBB13.Location = new System.Drawing.Point(6, 966);
+            this.CBB13.Name = "CBB13";
+            this.CBB13.Size = new System.Drawing.Size(68, 21);
+            this.CBB13.TabIndex = 43;
+            this.CBB13.Visible = false;
+            // 
+            // CBB15
+            // 
+            this.CBB15.FormattingEnabled = true;
+            this.CBB15.Items.AddRange(new object[] {
+            "CEL",
+            "COM",
+            "RES"});
+            this.CBB15.Location = new System.Drawing.Point(6, 996);
+            this.CBB15.Name = "CBB15";
+            this.CBB15.Size = new System.Drawing.Size(68, 21);
+            this.CBB15.TabIndex = 49;
+            this.CBB15.Visible = false;
+            // 
+            // CBB17
+            // 
+            this.CBB17.FormattingEnabled = true;
+            this.CBB17.Items.AddRange(new object[] {
+            "CEL",
+            "COM",
+            "RES"});
+            this.CBB17.Location = new System.Drawing.Point(6, 1026);
+            this.CBB17.Name = "CBB17";
+            this.CBB17.Size = new System.Drawing.Size(68, 21);
+            this.CBB17.TabIndex = 55;
+            this.CBB17.Visible = false;
+            // 
+            // CBB4
+            // 
+            this.CBB4.FormattingEnabled = true;
+            this.CBB4.Location = new System.Drawing.Point(298, 816);
+            this.CBB4.Name = "CBB4";
+            this.CBB4.Size = new System.Drawing.Size(68, 21);
+            this.CBB4.TabIndex = 17;
+            this.CBB4.Visible = false;
+            // 
+            // CBB6
+            // 
+            this.CBB6.FormattingEnabled = true;
+            this.CBB6.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.CBB6.Location = new System.Drawing.Point(298, 846);
+            this.CBB6.Name = "CBB6";
+            this.CBB6.Size = new System.Drawing.Size(68, 21);
+            this.CBB6.TabIndex = 23;
+            this.CBB6.Visible = false;
+            // 
+            // CBB8
+            // 
+            this.CBB8.FormattingEnabled = true;
+            this.CBB8.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.CBB8.Location = new System.Drawing.Point(298, 876);
+            this.CBB8.Name = "CBB8";
+            this.CBB8.Size = new System.Drawing.Size(68, 21);
+            this.CBB8.TabIndex = 29;
+            this.CBB8.Visible = false;
+            // 
+            // CBB10
+            // 
+            this.CBB10.FormattingEnabled = true;
+            this.CBB10.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.CBB10.Location = new System.Drawing.Point(298, 906);
+            this.CBB10.Name = "CBB10";
+            this.CBB10.Size = new System.Drawing.Size(68, 21);
+            this.CBB10.TabIndex = 35;
+            this.CBB10.Visible = false;
+            // 
+            // CBB12
+            // 
+            this.CBB12.FormattingEnabled = true;
+            this.CBB12.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.CBB12.Location = new System.Drawing.Point(298, 936);
+            this.CBB12.Name = "CBB12";
+            this.CBB12.Size = new System.Drawing.Size(68, 21);
+            this.CBB12.TabIndex = 41;
+            this.CBB12.Visible = false;
+            // 
+            // CBB14
+            // 
+            this.CBB14.FormattingEnabled = true;
+            this.CBB14.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.CBB14.Location = new System.Drawing.Point(298, 966);
+            this.CBB14.Name = "CBB14";
+            this.CBB14.Size = new System.Drawing.Size(68, 21);
+            this.CBB14.TabIndex = 47;
+            this.CBB14.Visible = false;
+            // 
+            // CBB16
+            // 
+            this.CBB16.FormattingEnabled = true;
+            this.CBB16.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.CBB16.Location = new System.Drawing.Point(298, 996);
+            this.CBB16.Name = "CBB16";
+            this.CBB16.Size = new System.Drawing.Size(68, 21);
+            this.CBB16.TabIndex = 53;
+            this.CBB16.Visible = false;
+            // 
+            // CBB18
+            // 
+            this.CBB18.FormattingEnabled = true;
+            this.CBB18.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.CBB18.Location = new System.Drawing.Point(298, 1026);
+            this.CBB18.Name = "CBB18";
+            this.CBB18.Size = new System.Drawing.Size(68, 21);
+            this.CBB18.TabIndex = 59;
+            this.CBB18.Visible = false;
+            // 
+            // MS3
+            // 
+            this.MS3.AutoSize = false;
+            this.MS3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.M3,
+            this.CLIENTE3,
+            this.FUNCIONARIOS3,
+            this.SAIR3});
+            this.MS3.Location = new System.Drawing.Point(0, 72);
+            this.MS3.MaximumSize = new System.Drawing.Size(800, 24);
+            this.MS3.Name = "MS3";
+            this.MS3.Size = new System.Drawing.Size(800, 24);
+            this.MS3.TabIndex = 124;
+            this.MS3.Text = "3";
+            // 
+            // M3
+            // 
+            this.M3.Name = "M3";
+            this.M3.Size = new System.Drawing.Size(36, 20);
+            this.M3.Text = "M3";
+            // 
+            // CLIENTE3
+            // 
+            this.CLIENTE3.Name = "CLIENTE3";
+            this.CLIENTE3.Size = new System.Drawing.Size(63, 20);
+            this.CLIENTE3.Text = "CLIENTE";
+            this.CLIENTE3.Click += new System.EventHandler(this.CLIENTE_Click);
+            // 
+            // FUNCIONARIOS3
+            // 
+            this.FUNCIONARIOS3.Name = "FUNCIONARIOS3";
+            this.FUNCIONARIOS3.Size = new System.Drawing.Size(104, 20);
+            this.FUNCIONARIOS3.Text = "FUNCIONÁRIOS";
+            this.FUNCIONARIOS3.Click += new System.EventHandler(this.FUNCIONARIO_Click);
+            // 
+            // SAIR3
+            // 
+            this.SAIR3.Name = "SAIR3";
+            this.SAIR3.Size = new System.Drawing.Size(43, 20);
+            this.SAIR3.Text = "SAIR";
+            this.SAIR3.Click += new System.EventHandler(this.SAIR_Click);
+            // 
+            // MS2
+            // 
+            this.MS2.AutoSize = false;
+            this.MS2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.M2,
+            this.PAPEIS2,
+            this.FUNCIONARIOS2,
+            this.CENTRODECUSTO2,
+            this.SAIR2});
+            this.MS2.Location = new System.Drawing.Point(0, 48);
+            this.MS2.MaximumSize = new System.Drawing.Size(800, 24);
+            this.MS2.Name = "MS2";
+            this.MS2.Size = new System.Drawing.Size(800, 24);
+            this.MS2.TabIndex = 125;
+            this.MS2.Text = "2";
+            // 
+            // M2
+            // 
+            this.M2.Name = "M2";
+            this.M2.Size = new System.Drawing.Size(36, 20);
+            this.M2.Text = "M2";
+            // 
+            // PAPEIS2
+            // 
+            this.PAPEIS2.Name = "PAPEIS2";
+            this.PAPEIS2.Size = new System.Drawing.Size(55, 20);
+            this.PAPEIS2.Text = "PAPEIS";
+            this.PAPEIS2.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
+            // 
+            // FUNCIONARIOS2
+            // 
+            this.FUNCIONARIOS2.Name = "FUNCIONARIOS2";
+            this.FUNCIONARIOS2.Size = new System.Drawing.Size(104, 20);
+            this.FUNCIONARIOS2.Text = "FUNCIONÁRIOS";
+            this.FUNCIONARIOS2.Click += new System.EventHandler(this.FUNCIONARIO_Click);
+            // 
+            // CENTRODECUSTO2
+            // 
+            this.CENTRODECUSTO2.Name = "CENTRODECUSTO2";
+            this.CENTRODECUSTO2.Size = new System.Drawing.Size(120, 20);
+            this.CENTRODECUSTO2.Text = "CENTRO DE CUSTO";
+            this.CENTRODECUSTO2.Click += new System.EventHandler(this.CENTRODECUSTO_Click);
+            // 
+            // SAIR2
+            // 
+            this.SAIR2.Name = "SAIR2";
+            this.SAIR2.Size = new System.Drawing.Size(43, 20);
+            this.SAIR2.Text = "SAIR";
+            this.SAIR2.Click += new System.EventHandler(this.SAIR_Click);
+            // 
+            // MS1
+            // 
+            this.MS1.AutoSize = false;
+            this.MS1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.M1,
+            this.CLIENTE1,
+            this.PAPEIS1,
+            this.FUNCIONARIOS1,
+            this.CENTRODECUSTO1,
+            this.SAIR1});
+            this.MS1.Location = new System.Drawing.Point(0, 24);
+            this.MS1.MaximumSize = new System.Drawing.Size(800, 24);
+            this.MS1.Name = "MS1";
+            this.MS1.Size = new System.Drawing.Size(800, 24);
+            this.MS1.TabIndex = 126;
+            this.MS1.Text = "1";
+            // 
+            // M1
+            // 
+            this.M1.Name = "M1";
+            this.M1.Size = new System.Drawing.Size(36, 20);
+            this.M1.Text = "M1";
+            // 
+            // CLIENTE1
+            // 
+            this.CLIENTE1.Name = "CLIENTE1";
+            this.CLIENTE1.Size = new System.Drawing.Size(63, 20);
+            this.CLIENTE1.Text = "CLIENTE";
+            this.CLIENTE1.Click += new System.EventHandler(this.CLIENTE_Click);
+            // 
+            // PAPEIS1
+            // 
+            this.PAPEIS1.Name = "PAPEIS1";
+            this.PAPEIS1.Size = new System.Drawing.Size(55, 20);
+            this.PAPEIS1.Text = "PAPEIS";
+            this.PAPEIS1.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
+            // 
+            // FUNCIONARIOS1
+            // 
+            this.FUNCIONARIOS1.Name = "FUNCIONARIOS1";
+            this.FUNCIONARIOS1.Size = new System.Drawing.Size(104, 20);
+            this.FUNCIONARIOS1.Text = "FUNCIONÁRIOS";
+            this.FUNCIONARIOS1.Click += new System.EventHandler(this.FUNCIONARIO_Click);
+            // 
+            // CENTRODECUSTO1
+            // 
+            this.CENTRODECUSTO1.Name = "CENTRODECUSTO1";
+            this.CENTRODECUSTO1.Size = new System.Drawing.Size(120, 20);
+            this.CENTRODECUSTO1.Text = "CENTRO DE CUSTO";
+            this.CENTRODECUSTO1.Click += new System.EventHandler(this.CENTRODECUSTO_Click);
+            // 
+            // SAIR1
+            // 
+            this.SAIR1.Name = "SAIR1";
+            this.SAIR1.Size = new System.Drawing.Size(43, 20);
+            this.SAIR1.Text = "SAIR";
+            this.SAIR1.Click += new System.EventHandler(this.SAIR_Click);
+            // 
+            // CBB2
+            // 
+            this.CBB2.FormattingEnabled = true;
+            this.CBB2.Location = new System.Drawing.Point(298, 787);
+            this.CBB2.Name = "CBB2";
+            this.CBB2.Size = new System.Drawing.Size(68, 21);
+            this.CBB2.TabIndex = 127;
+            this.CBB2.Visible = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(842, 624);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(133, 23);
+            this.label25.TabIndex = 128;
+            this.label25.Text = "OBRIGATÓRIO";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Red;
+            this.label26.Location = new System.Drawing.Point(970, 609);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(56, 68);
+            this.label26.TabIndex = 129;
+            this.label26.Text = "*";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(1014, 612);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(44, 52);
+            this.label27.TabIndex = 130;
+            this.label27.Text = "*";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Red;
+            this.label28.Location = new System.Drawing.Point(1045, 612);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(44, 52);
+            this.label28.TabIndex = 131;
+            this.label28.Text = "*";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.Red;
+            this.label29.Location = new System.Drawing.Point(1082, 612);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(44, 52);
+            this.label29.TabIndex = 132;
+            this.label29.Text = "*";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Red;
+            this.label30.Location = new System.Drawing.Point(1117, 612);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(44, 52);
+            this.label30.TabIndex = 133;
+            this.label30.Text = "*";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Red;
+            this.label31.Location = new System.Drawing.Point(1155, 612);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(44, 52);
+            this.label31.TabIndex = 140;
+            this.label31.Text = "*";
             // 
             // dataSet1
             // 
             this.dataSet1.DataSetName = "NewDataSet";
             // 
-            // TXBCODIGO
+            // TXB1
             // 
-            this.TXBCODIGO.Location = new System.Drawing.Point(147, 258);
-            this.TXBCODIGO.Name = "TXBCODIGO";
-            this.TXBCODIGO.Size = new System.Drawing.Size(68, 20);
-            this.TXBCODIGO.TabIndex = 141;
+            this.TXB1.Location = new System.Drawing.Point(6, 728);
+            this.TXB1.Name = "TXB1";
+            this.TXB1.Size = new System.Drawing.Size(68, 20);
+            this.TXB1.TabIndex = 141;
+            this.TXB1.Visible = false;
             // 
-            // label70
+            // BTN2
             // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(411, 283);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(49, 13);
-            this.label70.TabIndex = 142;
-            this.label70.Text = "CÓDIGO";
-            // 
-            // BTNPESQUISAR
-            // 
-            this.BTNPESQUISAR.Location = new System.Drawing.Point(620, 242);
-            this.BTNPESQUISAR.Name = "BTNPESQUISAR";
-            this.BTNPESQUISAR.Size = new System.Drawing.Size(94, 23);
-            this.BTNPESQUISAR.TabIndex = 143;
-            this.BTNPESQUISAR.Text = "PESQUISAR";
-            this.BTNPESQUISAR.UseVisualStyleBackColor = true;
-            this.BTNPESQUISAR.Click += new System.EventHandler(this.BTNPESQUISAR_Click);
+            this.BTN2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN2.Location = new System.Drawing.Point(561, 729);
+            this.BTN2.Name = "BTN2";
+            this.BTN2.Size = new System.Drawing.Size(68, 25);
+            this.BTN2.TabIndex = 143;
+            this.BTN2.Text = "PESQUISAR";
+            this.BTN2.UseVisualStyleBackColor = true;
+            this.BTN2.Click += new System.EventHandler(this.BTNPESQUISAR_Click);
             // 
             // tableUpdateStatementBindingSource
             // 
             this.tableUpdateStatementBindingSource.DataSource = typeof(MySqlX.XDevAPI.Relational.TableUpdateStatement);
             // 
-            // CBBMATPRIMA
-            // 
-            this.CBBMATPRIMA.FormattingEnabled = true;
-            this.CBBMATPRIMA.Location = new System.Drawing.Point(20, 258);
-            this.CBBMATPRIMA.Name = "CBBMATPRIMA";
-            this.CBBMATPRIMA.Size = new System.Drawing.Size(65, 21);
-            this.CBBMATPRIMA.TabIndex = 144;
-            // 
-            // TXBMATPRIMA
-            // 
-            this.TXBMATPRIMA.Location = new System.Drawing.Point(20, 285);
-            this.TXBMATPRIMA.Name = "TXBMATPRIMA";
-            this.TXBMATPRIMA.Size = new System.Drawing.Size(65, 20);
-            this.TXBMATPRIMA.TabIndex = 145;
-            // 
-            // TXBQUANTFOLHAS
-            // 
-            this.TXBQUANTFOLHAS.Location = new System.Drawing.Point(20, 311);
-            this.TXBQUANTFOLHAS.Name = "TXBQUANTFOLHAS";
-            this.TXBQUANTFOLHAS.Size = new System.Drawing.Size(65, 20);
-            this.TXBQUANTFOLHAS.TabIndex = 146;
-            this.TXBQUANTFOLHAS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXBQUANTFOLHAS_KeyPress);
-            // 
-            // TXBESTOQMINIMO
-            // 
-            this.TXBESTOQMINIMO.Location = new System.Drawing.Point(20, 337);
-            this.TXBESTOQMINIMO.Name = "TXBESTOQMINIMO";
-            this.TXBESTOQMINIMO.Size = new System.Drawing.Size(65, 20);
-            this.TXBESTOQMINIMO.TabIndex = 148;
-            this.TXBESTOQMINIMO.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXBESTOQMINIMO_KeyPress);
-            // 
-            // TXBVALOR
-            // 
-            this.TXBVALOR.Location = new System.Drawing.Point(20, 363);
-            this.TXBVALOR.Name = "TXBVALOR";
-            this.TXBVALOR.Size = new System.Drawing.Size(65, 20);
-            this.TXBVALOR.TabIndex = 147;
-            this.TXBVALOR.Leave += new System.EventHandler(this.TXBVALOR_TextChanged);
-            // 
-            // TXBVALORFOLHA
-            // 
-            this.TXBVALORFOLHA.Location = new System.Drawing.Point(20, 389);
-            this.TXBVALORFOLHA.Name = "TXBVALORFOLHA";
-            this.TXBVALORFOLHA.Size = new System.Drawing.Size(65, 20);
-            this.TXBVALORFOLHA.TabIndex = 149;
-            // 
-            // TXBQUANTATUAL
-            // 
-            this.TXBQUANTATUAL.Location = new System.Drawing.Point(20, 415);
-            this.TXBQUANTATUAL.Name = "TXBQUANTATUAL";
-            this.TXBQUANTATUAL.Size = new System.Drawing.Size(65, 20);
-            this.TXBQUANTATUAL.TabIndex = 150;
-            // 
-            // BTNENTRADA
-            // 
-            this.BTNENTRADA.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNENTRADA.Location = new System.Drawing.Point(20, 441);
-            this.BTNENTRADA.Name = "BTNENTRADA";
-            this.BTNENTRADA.Size = new System.Drawing.Size(65, 23);
-            this.BTNENTRADA.TabIndex = 151;
-            this.BTNENTRADA.Text = "ENTRADA";
-            this.BTNENTRADA.UseVisualStyleBackColor = true;
-            // 
-            // BTNSAIDA
-            // 
-            this.BTNSAIDA.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNSAIDA.Location = new System.Drawing.Point(20, 470);
-            this.BTNSAIDA.Name = "BTNSAIDA";
-            this.BTNSAIDA.Size = new System.Drawing.Size(65, 23);
-            this.BTNSAIDA.TabIndex = 152;
-            this.BTNSAIDA.Text = "SAÍDA";
-            this.BTNSAIDA.UseVisualStyleBackColor = true;
-            // 
             // DGV1
             // 
+            this.DGV1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV1.Location = new System.Drawing.Point(919, 350);
+            this.DGV1.Location = new System.Drawing.Point(1327, 803);
             this.DGV1.Name = "DGV1";
             this.DGV1.Size = new System.Drawing.Size(565, 252);
             this.DGV1.TabIndex = 154;
@@ -1636,83 +1406,515 @@ namespace GRAFICA2
             // 
             this.buscaDataAtualResponseBindingSource.DataSource = typeof(GRAFICA2.CORREIOS.buscaDataAtualResponse);
             // 
-            // menuStrip7
+            // MS6
             // 
-            this.menuStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem7,
-            this.toolStripMenuItem9});
-            this.menuStrip7.Location = new System.Drawing.Point(0, 144);
-            this.menuStrip7.Name = "menuStrip7";
-            this.menuStrip7.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip7.TabIndex = 155;
-            this.menuStrip7.Text = "menuStrip7";
+            this.MS6.AutoSize = false;
+            this.MS6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.M6,
+            this.SAIR6});
+            this.MS6.Location = new System.Drawing.Point(0, 144);
+            this.MS6.MaximumSize = new System.Drawing.Size(800, 24);
+            this.MS6.Name = "MS6";
+            this.MS6.Size = new System.Drawing.Size(800, 24);
+            this.MS6.TabIndex = 155;
+            this.MS6.Text = "6";
             // 
-            // toolStripMenuItem1
+            // M6
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(85, 20);
-            this.toolStripMenuItem1.Text = "CADASTRAR";
+            this.M6.Name = "M6";
+            this.M6.Size = new System.Drawing.Size(36, 20);
+            this.M6.Text = "M6";
             // 
-            // toolStripMenuItem2
+            // SAIR6
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "CLIENTE";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.CADCLIENTE_Click);
+            this.SAIR6.Name = "SAIR6";
+            this.SAIR6.Size = new System.Drawing.Size(43, 20);
+            this.SAIR6.Text = "SAIR";
+            this.SAIR6.Click += new System.EventHandler(this.SAIR_Click);
             // 
-            // toolStripMenuItem3
+            // LBLDATA
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "PAPEL";
+            this.LBLDATA.AutoSize = true;
+            this.LBLDATA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLDATA.ForeColor = System.Drawing.Color.Red;
+            this.LBLDATA.Location = new System.Drawing.Point(885, 781);
+            this.LBLDATA.Name = "LBLDATA";
+            this.LBLDATA.Size = new System.Drawing.Size(15, 13);
+            this.LBLDATA.TabIndex = 157;
+            this.LBLDATA.Text = "A";
+            this.LBLDATA.Visible = false;
             // 
-            // toolStripMenuItem4
+            // LBLCODIGO
             // 
-            this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6});
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(79, 20);
-            this.toolStripMenuItem4.Text = "ATUALIZAR";
+            this.LBLCODIGO.AutoSize = true;
+            this.LBLCODIGO.Location = new System.Drawing.Point(906, 781);
+            this.LBLCODIGO.Name = "LBLCODIGO";
+            this.LBLCODIGO.Size = new System.Drawing.Size(14, 13);
+            this.LBLCODIGO.TabIndex = 158;
+            this.LBLCODIGO.Text = "A";
+            this.LBLCODIGO.Visible = false;
             // 
-            // toolStripMenuItem5
+            // LBLCODIGO1
             // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem5.Text = "CLIENTE";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.ATUCLIENTE_Click);
+            this.LBLCODIGO1.AutoSize = true;
+            this.LBLCODIGO1.Location = new System.Drawing.Point(926, 781);
+            this.LBLCODIGO1.Name = "LBLCODIGO1";
+            this.LBLCODIGO1.Size = new System.Drawing.Size(14, 13);
+            this.LBLCODIGO1.TabIndex = 162;
+            this.LBLCODIGO1.Text = "B";
+            this.LBLCODIGO1.Visible = false;
             // 
-            // toolStripMenuItem6
+            // LBLCODIGO2
             // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem6.Text = "PAPEL";
+            this.LBLCODIGO2.AutoSize = true;
+            this.LBLCODIGO2.Location = new System.Drawing.Point(946, 781);
+            this.LBLCODIGO2.Name = "LBLCODIGO2";
+            this.LBLCODIGO2.Size = new System.Drawing.Size(14, 13);
+            this.LBLCODIGO2.TabIndex = 163;
+            this.LBLCODIGO2.Text = "C";
+            this.LBLCODIGO2.Visible = false;
             // 
-            // toolStripMenuItem7
+            // TXBDATAFUN
             // 
-            this.toolStripMenuItem7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem8});
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(64, 20);
-            this.toolStripMenuItem7.Text = "EXCLUIR";
+            this.TXBDATAFUN.Location = new System.Drawing.Point(6, 678);
+            this.TXBDATAFUN.Name = "TXBDATAFUN";
+            this.TXBDATAFUN.Size = new System.Drawing.Size(67, 20);
+            this.TXBDATAFUN.TabIndex = 170;
+            this.TXBDATAFUN.Visible = false;
             // 
-            // toolStripMenuItem8
+            // TXBNOMEFUN
             // 
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem8.Text = "PAPEL";
+            this.TXBNOMEFUN.Location = new System.Drawing.Point(6, 648);
+            this.TXBNOMEFUN.Name = "TXBNOMEFUN";
+            this.TXBNOMEFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBNOMEFUN.TabIndex = 171;
+            this.TXBNOMEFUN.Visible = false;
             // 
-            // toolStripMenuItem9
+            // TXBCARGOFUN
             // 
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(43, 20);
-            this.toolStripMenuItem9.Text = "SAIR";
-            this.toolStripMenuItem9.Click += new System.EventHandler(this.SAIR_Click);
+            this.TXBCARGOFUN.Location = new System.Drawing.Point(371, 648);
+            this.TXBCARGOFUN.Name = "TXBCARGOFUN";
+            this.TXBCARGOFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBCARGOFUN.TabIndex = 172;
+            this.TXBCARGOFUN.Visible = false;
+            // 
+            // TXBCPFFUN
+            // 
+            this.TXBCPFFUN.Location = new System.Drawing.Point(153, 648);
+            this.TXBCPFFUN.Name = "TXBCPFFUN";
+            this.TXBCPFFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBCPFFUN.TabIndex = 175;
+            this.TXBCPFFUN.Visible = false;
+            // 
+            // TXBCNHFUN
+            // 
+            this.TXBCNHFUN.Location = new System.Drawing.Point(225, 648);
+            this.TXBCNHFUN.Name = "TXBCNHFUN";
+            this.TXBCNHFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBCNHFUN.TabIndex = 177;
+            this.TXBCNHFUN.Visible = false;
+            // 
+            // TXBCERTRESFUN
+            // 
+            this.TXBCERTRESFUN.Location = new System.Drawing.Point(298, 648);
+            this.TXBCERTRESFUN.Name = "TXBCERTRESFUN";
+            this.TXBCERTRESFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBCERTRESFUN.TabIndex = 178;
+            this.TXBCERTRESFUN.Visible = false;
+            // 
+            // TXBENDFUN
+            // 
+            this.TXBENDFUN.Location = new System.Drawing.Point(81, 618);
+            this.TXBENDFUN.Name = "TXBENDFUN";
+            this.TXBENDFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBENDFUN.TabIndex = 180;
+            this.TXBENDFUN.Visible = false;
+            // 
+            // TXBCEPFUN
+            // 
+            this.TXBCEPFUN.Location = new System.Drawing.Point(6, 618);
+            this.TXBCEPFUN.Name = "TXBCEPFUN";
+            this.TXBCEPFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBCEPFUN.TabIndex = 179;
+            this.TXBCEPFUN.Visible = false;
+            this.TXBCEPFUN.Leave += new System.EventHandler(this.TXBCEP_TextChanged);
+            // 
+            // TXBCOMPFUN
+            // 
+            this.TXBCOMPFUN.Location = new System.Drawing.Point(444, 618);
+            this.TXBCOMPFUN.Name = "TXBCOMPFUN";
+            this.TXBCOMPFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBCOMPFUN.TabIndex = 184;
+            this.TXBCOMPFUN.Visible = false;
+            // 
+            // TXBCIDADEFUN
+            // 
+            this.TXBCIDADEFUN.Location = new System.Drawing.Point(225, 618);
+            this.TXBCIDADEFUN.Name = "TXBCIDADEFUN";
+            this.TXBCIDADEFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBCIDADEFUN.TabIndex = 181;
+            this.TXBCIDADEFUN.Visible = false;
+            // 
+            // TXBSALARIOFUN
+            // 
+            this.TXBSALARIOFUN.Location = new System.Drawing.Point(225, 678);
+            this.TXBSALARIOFUN.Name = "TXBSALARIOFUN";
+            this.TXBSALARIOFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBSALARIOFUN.TabIndex = 173;
+            this.TXBSALARIOFUN.Visible = false;
+            // 
+            // TXBENCARGOSFUN
+            // 
+            this.TXBENCARGOSFUN.Location = new System.Drawing.Point(298, 678);
+            this.TXBENCARGOSFUN.Name = "TXBENCARGOSFUN";
+            this.TXBENCARGOSFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBENCARGOSFUN.TabIndex = 174;
+            this.TXBENCARGOSFUN.Visible = false;
+            // 
+            // TXBBONIFIFUN
+            // 
+            this.TXBBONIFIFUN.Location = new System.Drawing.Point(371, 678);
+            this.TXBBONIFIFUN.Name = "TXBBONIFIFUN";
+            this.TXBBONIFIFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBBONIFIFUN.TabIndex = 186;
+            this.TXBBONIFIFUN.Visible = false;
+            // 
+            // CBBDESCRICAO
+            // 
+            this.CBBDESCRICAO.FormattingEnabled = true;
+            this.CBBDESCRICAO.Location = new System.Drawing.Point(229, 484);
+            this.CBBDESCRICAO.Name = "CBBDESCRICAO";
+            this.CBBDESCRICAO.Size = new System.Drawing.Size(68, 21);
+            this.CBBDESCRICAO.TabIndex = 185;
+            this.CBBDESCRICAO.Visible = false;
+            // 
+            // TXBDATADEMISSAO
+            // 
+            this.TXBDATADEMISSAO.Location = new System.Drawing.Point(81, 678);
+            this.TXBDATADEMISSAO.Name = "TXBDATADEMISSAO";
+            this.TXBDATADEMISSAO.Size = new System.Drawing.Size(68, 20);
+            this.TXBDATADEMISSAO.TabIndex = 188;
+            this.TXBDATADEMISSAO.Visible = false;
+            // 
+            // TXBTEMPO
+            // 
+            this.TXBTEMPO.Location = new System.Drawing.Point(153, 678);
+            this.TXBTEMPO.Name = "TXBTEMPO";
+            this.TXBTEMPO.Size = new System.Drawing.Size(68, 20);
+            this.TXBTEMPO.TabIndex = 189;
+            this.TXBTEMPO.Visible = false;
+            // 
+            // TXBRGFUN
+            // 
+            this.TXBRGFUN.Location = new System.Drawing.Point(81, 648);
+            this.TXBRGFUN.Name = "TXBRGFUN";
+            this.TXBRGFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBRGFUN.TabIndex = 176;
+            this.TXBRGFUN.Visible = false;
+            // 
+            // TXBNUMEROFUN
+            // 
+            this.TXBNUMEROFUN.Location = new System.Drawing.Point(371, 618);
+            this.TXBNUMEROFUN.Name = "TXBNUMEROFUN";
+            this.TXBNUMEROFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBNUMEROFUN.TabIndex = 183;
+            this.TXBNUMEROFUN.Visible = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(1019, 756);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(14, 13);
+            this.label21.TabIndex = 212;
+            this.label21.Text = "A";
+            this.label21.Visible = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(1038, 756);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(14, 13);
+            this.label22.TabIndex = 213;
+            this.label22.Text = "A";
+            this.label22.Visible = false;
+            // 
+            // TXBTOTALFUN
+            // 
+            this.TXBTOTALFUN.Location = new System.Drawing.Point(444, 678);
+            this.TXBTOTALFUN.Name = "TXBTOTALFUN";
+            this.TXBTOTALFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBTOTALFUN.TabIndex = 187;
+            this.TXBTOTALFUN.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(1057, 756);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(14, 13);
+            this.label23.TabIndex = 215;
+            this.label23.Text = "A";
+            this.label23.Visible = false;
+            // 
+            // TXBUFFUN
+            // 
+            this.TXBUFFUN.Location = new System.Drawing.Point(298, 618);
+            this.TXBUFFUN.Name = "TXBUFFUN";
+            this.TXBUFFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBUFFUN.TabIndex = 216;
+            this.TXBUFFUN.Visible = false;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(1076, 756);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(14, 13);
+            this.label24.TabIndex = 217;
+            this.label24.Text = "A";
+            this.label24.Visible = false;
+            // 
+            // TXBBAIRROFUN
+            // 
+            this.TXBBAIRROFUN.Location = new System.Drawing.Point(153, 618);
+            this.TXBBAIRROFUN.Name = "TXBBAIRROFUN";
+            this.TXBBAIRROFUN.Size = new System.Drawing.Size(68, 20);
+            this.TXBBAIRROFUN.TabIndex = 218;
+            this.TXBBAIRROFUN.Visible = false;
+            // 
+            // TXBDESCRICAO
+            // 
+            this.TXBDESCRICAO.Location = new System.Drawing.Point(6, 484);
+            this.TXBDESCRICAO.Name = "TXBDESCRICAO";
+            this.TXBDESCRICAO.Size = new System.Drawing.Size(69, 20);
+            this.TXBDESCRICAO.TabIndex = 219;
+            this.TXBDESCRICAO.Visible = false;
+            // 
+            // CBBTIPO
+            // 
+            this.CBBTIPO.FormattingEnabled = true;
+            this.CBBTIPO.Location = new System.Drawing.Point(303, 484);
+            this.CBBTIPO.Name = "CBBTIPO";
+            this.CBBTIPO.Size = new System.Drawing.Size(67, 21);
+            this.CBBTIPO.TabIndex = 220;
+            this.CBBTIPO.Visible = false;
+            // 
+            // TXBNHP
+            // 
+            this.TXBNHP.Location = new System.Drawing.Point(155, 484);
+            this.TXBNHP.Name = "TXBNHP";
+            this.TXBNHP.Size = new System.Drawing.Size(68, 20);
+            this.TXBNHP.TabIndex = 221;
+            this.TXBNHP.Visible = false;
+            // 
+            // TXBSUBSIDIAR
+            // 
+            this.TXBSUBSIDIAR.Location = new System.Drawing.Point(81, 484);
+            this.TXBSUBSIDIAR.Name = "TXBSUBSIDIAR";
+            this.TXBSUBSIDIAR.Size = new System.Drawing.Size(68, 20);
+            this.TXBSUBSIDIAR.TabIndex = 222;
+            this.TXBSUBSIDIAR.Visible = false;
+            // 
+            // CBBTURNO
+            // 
+            this.CBBTURNO.FormattingEnabled = true;
+            this.CBBTURNO.Location = new System.Drawing.Point(376, 484);
+            this.CBBTURNO.Name = "CBBTURNO";
+            this.CBBTURNO.Size = new System.Drawing.Size(68, 21);
+            this.CBBTURNO.TabIndex = 223;
+            this.CBBTURNO.Visible = false;
+            // 
+            // CBBTIPOHORA
+            // 
+            this.CBBTIPOHORA.FormattingEnabled = true;
+            this.CBBTIPOHORA.Location = new System.Drawing.Point(450, 484);
+            this.CBBTIPOHORA.Name = "CBBTIPOHORA";
+            this.CBBTIPOHORA.Size = new System.Drawing.Size(68, 21);
+            this.CBBTIPOHORA.TabIndex = 224;
+            this.CBBTIPOHORA.Visible = false;
+            // 
+            // labe32
+            // 
+            this.labe32.AutoSize = true;
+            this.labe32.Location = new System.Drawing.Point(543, 465);
+            this.labe32.Name = "labe32";
+            this.labe32.Size = new System.Drawing.Size(110, 13);
+            this.labe32.TabIndex = 225;
+            this.labe32.Text = "CENTRO DE CUSTO";
+            this.labe32.Visible = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(519, 651);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(88, 13);
+            this.label34.TabIndex = 226;
+            this.label34.Text = "FUNCIONÁRIOS";
+            this.label34.Visible = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(782, 756);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(51, 13);
+            this.label36.TabIndex = 228;
+            this.label36.Text = "BOTÕES";
+            this.label36.Visible = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(372, 775);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(52, 13);
+            this.label35.TabIndex = 229;
+            this.label35.Text = "CLIENTE";
+            this.label35.Visible = false;
+            // 
+            // BTNINSERIRCC
+            // 
+            this.BTNINSERIRCC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNINSERIRCC.Location = new System.Drawing.Point(376, 455);
+            this.BTNINSERIRCC.Name = "BTNINSERIRCC";
+            this.BTNINSERIRCC.Size = new System.Drawing.Size(68, 23);
+            this.BTNINSERIRCC.TabIndex = 230;
+            this.BTNINSERIRCC.Text = "INSERIR CENTRO DE CUSTO";
+            this.BTNINSERIRCC.UseVisualStyleBackColor = true;
+            this.BTNINSERIRCC.Visible = false;
+            // 
+            // BTNEXCLUIRCC
+            // 
+            this.BTNEXCLUIRCC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNEXCLUIRCC.Location = new System.Drawing.Point(450, 455);
+            this.BTNEXCLUIRCC.Name = "BTNEXCLUIRCC";
+            this.BTNEXCLUIRCC.Size = new System.Drawing.Size(68, 23);
+            this.BTNEXCLUIRCC.TabIndex = 231;
+            this.BTNEXCLUIRCC.Text = "EXCLUIR CENTRO DE CUSTO";
+            this.BTNEXCLUIRCC.UseVisualStyleBackColor = true;
+            this.BTNEXCLUIRCC.Visible = false;
+            // 
+            // RB1
+            // 
+            this.RB1.AutoSize = true;
+            this.RB1.Location = new System.Drawing.Point(229, 460);
+            this.RB1.Name = "RB1";
+            this.RB1.Size = new System.Drawing.Size(14, 13);
+            this.RB1.TabIndex = 233;
+            this.RB1.TabStop = true;
+            this.RB1.UseVisualStyleBackColor = true;
+            this.RB1.Visible = false;
+            this.RB1.CheckedChanged += new System.EventHandler(this.RB1_CheckedChanged);
+            // 
+            // RB2
+            // 
+            this.RB2.AutoSize = true;
+            this.RB2.Location = new System.Drawing.Point(303, 460);
+            this.RB2.Name = "RB2";
+            this.RB2.Size = new System.Drawing.Size(14, 13);
+            this.RB2.TabIndex = 234;
+            this.RB2.TabStop = true;
+            this.RB2.UseVisualStyleBackColor = true;
+            this.RB2.Visible = false;
+            this.RB2.CheckedChanged += new System.EventHandler(this.RB2_CheckedChanged);
+            // 
+            // LBLCODIGO3
+            // 
+            this.LBLCODIGO3.AutoSize = true;
+            this.LBLCODIGO3.Location = new System.Drawing.Point(966, 781);
+            this.LBLCODIGO3.Name = "LBLCODIGO3";
+            this.LBLCODIGO3.Size = new System.Drawing.Size(15, 13);
+            this.LBLCODIGO3.TabIndex = 235;
+            this.LBLCODIGO3.Text = "D";
+            this.LBLCODIGO3.Visible = false;
+            // 
+            // LBLCODIGO4
+            // 
+            this.LBLCODIGO4.AutoSize = true;
+            this.LBLCODIGO4.Location = new System.Drawing.Point(987, 781);
+            this.LBLCODIGO4.Name = "LBLCODIGO4";
+            this.LBLCODIGO4.Size = new System.Drawing.Size(18, 13);
+            this.LBLCODIGO4.TabIndex = 236;
+            this.LBLCODIGO4.Text = "W";
+            this.LBLCODIGO4.Visible = false;
+            // 
+            // LBLCODIGO5
+            // 
+            this.LBLCODIGO5.AutoSize = true;
+            this.LBLCODIGO5.Location = new System.Drawing.Point(1011, 781);
+            this.LBLCODIGO5.Name = "LBLCODIGO5";
+            this.LBLCODIGO5.Size = new System.Drawing.Size(14, 13);
+            this.LBLCODIGO5.TabIndex = 237;
+            this.LBLCODIGO5.Text = "X";
+            this.LBLCODIGO5.Visible = false;
+            // 
+            // LBLCODIGO6
+            // 
+            this.LBLCODIGO6.AutoSize = true;
+            this.LBLCODIGO6.Location = new System.Drawing.Point(1031, 781);
+            this.LBLCODIGO6.Name = "LBLCODIGO6";
+            this.LBLCODIGO6.Size = new System.Drawing.Size(14, 13);
+            this.LBLCODIGO6.TabIndex = 238;
+            this.LBLCODIGO6.Text = "Y";
+            this.LBLCODIGO6.Visible = false;
+            // 
+            // LBLCODIGO7
+            // 
+            this.LBLCODIGO7.AutoSize = true;
+            this.LBLCODIGO7.Location = new System.Drawing.Point(1051, 781);
+            this.LBLCODIGO7.Name = "LBLCODIGO7";
+            this.LBLCODIGO7.Size = new System.Drawing.Size(14, 13);
+            this.LBLCODIGO7.TabIndex = 239;
+            this.LBLCODIGO7.Text = "Z";
+            this.LBLCODIGO7.Visible = false;
+            // 
+            // CBBFUNCIONARIOS
+            // 
+            this.CBBFUNCIONARIOS.FormattingEnabled = true;
+            this.CBBFUNCIONARIOS.Items.AddRange(new object[] {
+            "CADASTRO",
+            "ATIVO",
+            "DESATIVAR"});
+            this.CBBFUNCIONARIOS.Location = new System.Drawing.Point(443, 648);
+            this.CBBFUNCIONARIOS.Name = "CBBFUNCIONARIOS";
+            this.CBBFUNCIONARIOS.Size = new System.Drawing.Size(69, 21);
+            this.CBBFUNCIONARIOS.TabIndex = 240;
+            // 
+            // CBB1
+            // 
+            this.CBB1.Location = new System.Drawing.Point(298, 728);
+            this.CBB1.Name = "CBB1";
+            this.CBB1.Size = new System.Drawing.Size(68, 21);
+            this.CBB1.TabIndex = 241;
+            this.CBB1.Visible = false;
+            this.CBB1.Leave += new System.EventHandler(this.CBBCLIENTE_Leave);
+            // 
+            // MS7
+            // 
+            this.MS7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.M7,
+            this.SAIR7});
+            this.MS7.Location = new System.Drawing.Point(0, 0);
+            this.MS7.Name = "MS7";
+            this.MS7.Size = new System.Drawing.Size(1904, 24);
+            this.MS7.TabIndex = 242;
+            this.MS7.Text = "menuStrip7";
+            // 
+            // M7
+            // 
+            this.M7.Name = "M7";
+            this.M7.Size = new System.Drawing.Size(36, 20);
+            this.M7.Text = "M7";
+            // 
+            // SAIR7
+            // 
+            this.SAIR7.Name = "SAIR7";
+            this.SAIR7.Size = new System.Drawing.Size(43, 20);
+            this.SAIR7.Text = "SAIR";
+            this.SAIR7.Click += new System.EventHandler(this.SAIR_Click);
             // 
             // PADRAO
             // 
@@ -1721,46 +1923,86 @@ namespace GRAFICA2
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1904, 1062);
             this.ControlBox = false;
-            this.Controls.Add(this.menuStrip7);
+            this.Controls.Add(this.CBB1);
+            this.Controls.Add(this.CBBFUNCIONARIOS);
+            this.Controls.Add(this.LBLCODIGO7);
+            this.Controls.Add(this.LBLCODIGO6);
+            this.Controls.Add(this.LBLCODIGO5);
+            this.Controls.Add(this.LBLCODIGO4);
+            this.Controls.Add(this.LBLCODIGO3);
+            this.Controls.Add(this.RB2);
+            this.Controls.Add(this.RB1);
+            this.Controls.Add(this.BTNEXCLUIRCC);
+            this.Controls.Add(this.BTNINSERIRCC);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.labe32);
+            this.Controls.Add(this.CBBTIPOHORA);
+            this.Controls.Add(this.CBBTURNO);
+            this.Controls.Add(this.TXBSUBSIDIAR);
+            this.Controls.Add(this.TXBNHP);
+            this.Controls.Add(this.CBBTIPO);
+            this.Controls.Add(this.TXBDESCRICAO);
+            this.Controls.Add(this.TXBBAIRROFUN);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.TXBUFFUN);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.TXBTOTALFUN);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.TXBNUMEROFUN);
+            this.Controls.Add(this.TXBRGFUN);
+            this.Controls.Add(this.TXBTEMPO);
+            this.Controls.Add(this.TXBDATADEMISSAO);
+            this.Controls.Add(this.CBBDESCRICAO);
+            this.Controls.Add(this.TXBBONIFIFUN);
+            this.Controls.Add(this.TXBENCARGOSFUN);
+            this.Controls.Add(this.TXBSALARIOFUN);
+            this.Controls.Add(this.TXBCIDADEFUN);
+            this.Controls.Add(this.TXBCOMPFUN);
+            this.Controls.Add(this.TXBCEPFUN);
+            this.Controls.Add(this.TXBENDFUN);
+            this.Controls.Add(this.TXBCERTRESFUN);
+            this.Controls.Add(this.TXBCNHFUN);
+            this.Controls.Add(this.TXBCPFFUN);
+            this.Controls.Add(this.TXBCARGOFUN);
+            this.Controls.Add(this.TXBNOMEFUN);
+            this.Controls.Add(this.TXBDATAFUN);
+            this.Controls.Add(this.LBLCODIGO2);
+            this.Controls.Add(this.LBLCODIGO1);
+            this.Controls.Add(this.LBLCODIGO);
+            this.Controls.Add(this.LBLDATA);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.MS6);
             this.Controls.Add(this.DGV1);
-            this.Controls.Add(this.BTNSAIDA);
-            this.Controls.Add(this.BTNENTRADA);
-            this.Controls.Add(this.TXBQUANTATUAL);
-            this.Controls.Add(this.TXBVALORFOLHA);
-            this.Controls.Add(this.TXBVALOR);
-            this.Controls.Add(this.TXBESTOQMINIMO);
-            this.Controls.Add(this.TXBQUANTFOLHAS);
-            this.Controls.Add(this.TXBMATPRIMA);
-            this.Controls.Add(this.CBBMATPRIMA);
-            this.Controls.Add(this.BTNPESQUISAR);
-            this.Controls.Add(this.CBBNOME);
-            this.Controls.Add(this.label70);
-            this.Controls.Add(this.TXBCODIGO);
-            this.Controls.Add(this.label63);
-            this.Controls.Add(this.label64);
-            this.Controls.Add(this.CBBSEXO8);
-            this.Controls.Add(this.CBBSEXO7);
-            this.Controls.Add(this.CBBSEXO6);
-            this.Controls.Add(this.CBBSEXO5);
-            this.Controls.Add(this.CBBSEXO4);
-            this.Controls.Add(this.CBBSEXO3);
-            this.Controls.Add(this.CBBSEXO2);
-            this.Controls.Add(this.CBBTIPO8);
-            this.Controls.Add(this.CBBTIPO7);
-            this.Controls.Add(this.CBBTIPO6);
-            this.Controls.Add(this.CBBTIPO5);
-            this.Controls.Add(this.CBBTIPO4);
-            this.Controls.Add(this.CBBTIPO3);
-            this.Controls.Add(this.CBBTIPO2);
+            this.Controls.Add(this.BTN2);
+            this.Controls.Add(this.CBB2);
+            this.Controls.Add(this.TXB1);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.CBB18);
+            this.Controls.Add(this.CBB16);
+            this.Controls.Add(this.CBB14);
+            this.Controls.Add(this.CBB12);
+            this.Controls.Add(this.CBB10);
+            this.Controls.Add(this.CBB8);
+            this.Controls.Add(this.CBB6);
+            this.Controls.Add(this.CBB17);
+            this.Controls.Add(this.CBB15);
+            this.Controls.Add(this.CBB13);
+            this.Controls.Add(this.CBB11);
+            this.Controls.Add(this.CBB9);
+            this.Controls.Add(this.CBB7);
+            this.Controls.Add(this.CBB5);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.BTNCANCELA);
-            this.Controls.Add(this.BTNCADAUTEXC);
-            this.Controls.Add(this.BTNINSERIR);
+            this.Controls.Add(this.BTN4);
+            this.Controls.Add(this.BTN3);
+            this.Controls.Add(this.BTN1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -1773,144 +2015,142 @@ namespace GRAFICA2
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.TXBEMAIL8);
-            this.Controls.Add(this.TXBDDD8);
-            this.Controls.Add(this.TXBCONTATO8);
-            this.Controls.Add(this.TXBTELEFONE8);
-            this.Controls.Add(this.TXBEMAIL7);
-            this.Controls.Add(this.TXBDDD7);
-            this.Controls.Add(this.TXBCONTATO7);
-            this.Controls.Add(this.TXBTELEFONE7);
-            this.Controls.Add(this.TXBEMAIL6);
-            this.Controls.Add(this.TXBDDD6);
-            this.Controls.Add(this.TXBCONTATO6);
-            this.Controls.Add(this.TXBTELEFONE6);
-            this.Controls.Add(this.TXBEMAIL5);
-            this.Controls.Add(this.TXBDDD5);
-            this.Controls.Add(this.TXBCONTATO5);
-            this.Controls.Add(this.TXBTELEFONE5);
-            this.Controls.Add(this.TXBEMAIL4);
-            this.Controls.Add(this.TXBDDD4);
-            this.Controls.Add(this.TXBCONTATO4);
-            this.Controls.Add(this.TXBTELEFONE4);
-            this.Controls.Add(this.TXBEMAIL3);
-            this.Controls.Add(this.TXBDDD3);
-            this.Controls.Add(this.TXBCONTATO3);
-            this.Controls.Add(this.TXBTELEFONE3);
-            this.Controls.Add(this.TXBEMAIL2);
-            this.Controls.Add(this.TXBDDD2);
-            this.Controls.Add(this.TXBCONTATO2);
-            this.Controls.Add(this.TXBTELEFONE2);
-            this.Controls.Add(this.TXBEMAIL1);
-            this.Controls.Add(this.TXBDDD1);
-            this.Controls.Add(this.TXBCONTATO1);
-            this.Controls.Add(this.TXBTELEFONE1);
-            this.Controls.Add(this.TXBINSCRMUN);
-            this.Controls.Add(this.TXBINSCREST);
-            this.Controls.Add(this.TXBCNPJ);
-            this.Controls.Add(this.TXBESTADO);
-            this.Controls.Add(this.TXBCIDADE);
-            this.Controls.Add(this.TXBBAIRRO);
-            this.Controls.Add(this.TXBCOMPLEMENTO);
-            this.Controls.Add(this.TXBNUMERO);
-            this.Controls.Add(this.TXBRUA);
-            this.Controls.Add(this.TXBRAZAOSOCIAL);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.menuStrip2);
-            this.Controls.Add(this.menuStrip3);
-            this.Controls.Add(this.menuStrip4);
-            this.Controls.Add(this.menuStrip5);
-            this.Controls.Add(this.menuStrip6);
-            this.Controls.Add(this.CBBTIPO1);
-            this.Controls.Add(this.CBBSEXO1);
+            this.Controls.Add(this.TXB45);
+            this.Controls.Add(this.TXB42);
+            this.Controls.Add(this.TXB44);
+            this.Controls.Add(this.TXB43);
+            this.Controls.Add(this.TXB41);
+            this.Controls.Add(this.TXB38);
+            this.Controls.Add(this.TXB40);
+            this.Controls.Add(this.TXB39);
+            this.Controls.Add(this.TXB37);
+            this.Controls.Add(this.TXB34);
+            this.Controls.Add(this.TXB36);
+            this.Controls.Add(this.TXB35);
+            this.Controls.Add(this.TXB33);
+            this.Controls.Add(this.TXB30);
+            this.Controls.Add(this.TXB32);
+            this.Controls.Add(this.TXB31);
+            this.Controls.Add(this.TXB29);
+            this.Controls.Add(this.TXB26);
+            this.Controls.Add(this.TXB28);
+            this.Controls.Add(this.TXB27);
+            this.Controls.Add(this.TXB25);
+            this.Controls.Add(this.TXB22);
+            this.Controls.Add(this.TXB24);
+            this.Controls.Add(this.TXB23);
+            this.Controls.Add(this.TXB21);
+            this.Controls.Add(this.TXB18);
+            this.Controls.Add(this.TXB20);
+            this.Controls.Add(this.TXB19);
+            this.Controls.Add(this.TXB17);
+            this.Controls.Add(this.TXB14);
+            this.Controls.Add(this.TXB16);
+            this.Controls.Add(this.TXB15);
+            this.Controls.Add(this.TXB13);
+            this.Controls.Add(this.TXB12);
+            this.Controls.Add(this.TXB11);
+            this.Controls.Add(this.TXB10);
+            this.Controls.Add(this.TXB9);
+            this.Controls.Add(this.TXB8);
+            this.Controls.Add(this.TXB7);
+            this.Controls.Add(this.TXB6);
+            this.Controls.Add(this.TXB5);
+            this.Controls.Add(this.TXB4);
+            this.Controls.Add(this.MS5);
+            this.Controls.Add(this.MS4);
+            this.Controls.Add(this.MS3);
+            this.Controls.Add(this.MS2);
+            this.Controls.Add(this.MS1);
+            this.Controls.Add(this.MS7);
+            this.Controls.Add(this.CBB3);
+            this.Controls.Add(this.CBB4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label66);
-            this.Controls.Add(this.label67);
-            this.Controls.Add(this.label68);
-            this.Controls.Add(this.TXBNOME);
-            this.Controls.Add(this.label65);
-            this.Controls.Add(this.TXBCEP);
-            this.Controls.Add(this.label69);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.TXB3);
+            this.Controls.Add(this.TXB2);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label31);
             this.Name = "PADRAO";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PADRAO_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
-            this.menuStrip3.ResumeLayout(false);
-            this.menuStrip3.PerformLayout();
-            this.menuStrip4.ResumeLayout(false);
-            this.menuStrip4.PerformLayout();
-            this.menuStrip5.ResumeLayout(false);
-            this.menuStrip5.PerformLayout();
-            this.menuStrip6.ResumeLayout(false);
-            this.menuStrip6.PerformLayout();
+            this.MS5.ResumeLayout(false);
+            this.MS5.PerformLayout();
+            this.MS4.ResumeLayout(false);
+            this.MS4.PerformLayout();
+            this.MS3.ResumeLayout(false);
+            this.MS3.PerformLayout();
+            this.MS2.ResumeLayout(false);
+            this.MS2.PerformLayout();
+            this.MS1.ResumeLayout(false);
+            this.MS1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.atualizaRemessaAgrupadaResponseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buscaDataAtualResponseBindingSource)).EndInit();
-            this.menuStrip7.ResumeLayout(false);
-            this.menuStrip7.PerformLayout();
+            this.MS6.ResumeLayout(false);
+            this.MS6.PerformLayout();
+            this.MS7.ResumeLayout(false);
+            this.MS7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.MenuStrip menuStrip3;
+        private System.Windows.Forms.MenuStrip MS5;
+        private System.Windows.Forms.MenuStrip MS4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TXBCEP;
-        private System.Windows.Forms.TextBox TXBNOME;
-        private System.Windows.Forms.TextBox TXBRAZAOSOCIAL;
-        private System.Windows.Forms.TextBox TXBRUA;
-        private System.Windows.Forms.TextBox TXBNUMERO;
-        private System.Windows.Forms.TextBox TXBCOMPLEMENTO;
-        private System.Windows.Forms.TextBox TXBBAIRRO;
-        private System.Windows.Forms.TextBox TXBCIDADE;
-        private System.Windows.Forms.TextBox TXBESTADO;
-        private System.Windows.Forms.TextBox TXBINSCRMUN;
-        private System.Windows.Forms.TextBox TXBINSCREST;
-        private System.Windows.Forms.TextBox TXBCNPJ;
-        private System.Windows.Forms.TextBox TXBCONTATO1;
-        private System.Windows.Forms.TextBox TXBTELEFONE1;
-        private System.Windows.Forms.TextBox TXBDDD1;
-        private System.Windows.Forms.TextBox TXBEMAIL1;
-        private System.Windows.Forms.TextBox TXBEMAIL2;
-        private System.Windows.Forms.TextBox TXBDDD2;
-        private System.Windows.Forms.TextBox TXBCONTATO2;
-        private System.Windows.Forms.TextBox TXBTELEFONE2;
-        private System.Windows.Forms.TextBox TXBEMAIL3;
-        private System.Windows.Forms.TextBox TXBDDD3;
-        private System.Windows.Forms.TextBox TXBCONTATO3;
-        private System.Windows.Forms.TextBox TXBTELEFONE3;
-        private System.Windows.Forms.TextBox TXBEMAIL4;
-        private System.Windows.Forms.TextBox TXBDDD4;
-        private System.Windows.Forms.TextBox TXBCONTATO4;
-        private System.Windows.Forms.TextBox TXBTELEFONE4;
-        private System.Windows.Forms.TextBox TXBEMAIL5;
-        private System.Windows.Forms.TextBox TXBDDD5;
-        private System.Windows.Forms.TextBox TXBCONTATO5;
-        private System.Windows.Forms.TextBox TXBTELEFONE5;
-        private System.Windows.Forms.TextBox TXBEMAIL6;
-        private System.Windows.Forms.TextBox TXBDDD6;
-        private System.Windows.Forms.TextBox TXBCONTATO6;
-        private System.Windows.Forms.TextBox TXBTELEFONE6;
-        private System.Windows.Forms.TextBox TXBEMAIL7;
-        private System.Windows.Forms.TextBox TXBDDD7;
-        private System.Windows.Forms.TextBox TXBCONTATO7;
-        private System.Windows.Forms.TextBox TXBTELEFONE7;
-        private System.Windows.Forms.TextBox TXBEMAIL8;
-        private System.Windows.Forms.TextBox TXBDDD8;
-        private System.Windows.Forms.TextBox TXBCONTATO8;
-        private System.Windows.Forms.TextBox TXBTELEFONE8;
+        private System.Windows.Forms.TextBox TXB2;
+        private System.Windows.Forms.TextBox TXB3;
+        private System.Windows.Forms.TextBox TXB4;
+        private System.Windows.Forms.TextBox TXB5;
+        private System.Windows.Forms.TextBox TXB6;
+        private System.Windows.Forms.TextBox TXB7;
+        private System.Windows.Forms.TextBox TXB8;
+        private System.Windows.Forms.TextBox TXB9;
+        private System.Windows.Forms.TextBox TXB10;
+        private System.Windows.Forms.TextBox TXB13;
+        private System.Windows.Forms.TextBox TXB12;
+        private System.Windows.Forms.TextBox TXB11;
+        private System.Windows.Forms.TextBox TXB16;
+        private System.Windows.Forms.TextBox TXB15;
+        private System.Windows.Forms.TextBox TXB14;
+        private System.Windows.Forms.TextBox TXB17;
+        private System.Windows.Forms.TextBox TXB21;
+        private System.Windows.Forms.TextBox TXB18;
+        private System.Windows.Forms.TextBox TXB20;
+        private System.Windows.Forms.TextBox TXB19;
+        private System.Windows.Forms.TextBox TXB25;
+        private System.Windows.Forms.TextBox TXB22;
+        private System.Windows.Forms.TextBox TXB24;
+        private System.Windows.Forms.TextBox TXB23;
+        private System.Windows.Forms.TextBox TXB29;
+        private System.Windows.Forms.TextBox TXB26;
+        private System.Windows.Forms.TextBox TXB28;
+        private System.Windows.Forms.TextBox TXB27;
+        private System.Windows.Forms.TextBox TXB33;
+        private System.Windows.Forms.TextBox TXB30;
+        private System.Windows.Forms.TextBox TXB32;
+        private System.Windows.Forms.TextBox TXB31;
+        private System.Windows.Forms.TextBox TXB37;
+        private System.Windows.Forms.TextBox TXB34;
+        private System.Windows.Forms.TextBox TXB36;
+        private System.Windows.Forms.TextBox TXB35;
+        private System.Windows.Forms.TextBox TXB41;
+        private System.Windows.Forms.TextBox TXB38;
+        private System.Windows.Forms.TextBox TXB40;
+        private System.Windows.Forms.TextBox TXB39;
+        private System.Windows.Forms.TextBox TXB45;
+        private System.Windows.Forms.TextBox TXB42;
+        private System.Windows.Forms.TextBox TXB44;
+        private System.Windows.Forms.TextBox TXB43;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -1923,124 +2163,129 @@ namespace GRAFICA2
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button BTNINSERIR;
-        private System.Windows.Forms.Button BTNCADAUTEXC;
-        private System.Windows.Forms.Button BTNCANCELA;
+        private System.Windows.Forms.Button BTN1;
+        private System.Windows.Forms.Button BTN3;
+        private System.Windows.Forms.Button BTN4;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox CBBTIPO1;
-        private System.Windows.Forms.ComboBox CBBTIPO2;
-        private System.Windows.Forms.ComboBox CBBTIPO3;
-        private System.Windows.Forms.ComboBox CBBTIPO4;
-        private System.Windows.Forms.ComboBox CBBTIPO5;
-        private System.Windows.Forms.ComboBox CBBTIPO6;
-        private System.Windows.Forms.ComboBox CBBTIPO7;
-        private System.Windows.Forms.ComboBox CBBTIPO8;
-        private System.Windows.Forms.ComboBox CBBSEXO1;
-        private System.Windows.Forms.ComboBox CBBSEXO2;
-        private System.Windows.Forms.ComboBox CBBSEXO3;
-        private System.Windows.Forms.ComboBox CBBSEXO4;
-        private System.Windows.Forms.ComboBox CBBSEXO5;
-        private System.Windows.Forms.ComboBox CBBSEXO6;
-        private System.Windows.Forms.ComboBox CBBSEXO7;
-        private System.Windows.Forms.ComboBox CBBSEXO8;
-        private System.Windows.Forms.ToolStripMenuItem cADASTROToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem CADCLIENTE;
-        private System.Windows.Forms.ToolStripMenuItem CADPAPEL;
-        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ATUCLIENTE;
-        private System.Windows.Forms.ToolStripMenuItem ATUPAPEL;
-        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem EXCCLIENTE;
-        private System.Windows.Forms.ToolStripMenuItem EXCPAPEL;
-        private System.Windows.Forms.ToolStripMenuItem SAIR1;
-        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem SAIR2;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem7;
-        private System.Windows.Forms.ToolStripMenuItem SAIR3;
-        private System.Windows.Forms.MenuStrip menuStrip4;
-        private System.Windows.Forms.MenuStrip menuStrip5;
-        private System.Windows.Forms.MenuStrip menuStrip6;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem8;
-        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem10;
-        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem11;
-        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem9;
+        private System.Windows.Forms.ComboBox CBB3;
+        private System.Windows.Forms.ComboBox CBB5;
+        private System.Windows.Forms.ComboBox CBB7;
+        private System.Windows.Forms.ComboBox CBB9;
+        private System.Windows.Forms.ComboBox CBB11;
+        private System.Windows.Forms.ComboBox CBB13;
+        private System.Windows.Forms.ComboBox CBB15;
+        private System.Windows.Forms.ComboBox CBB17;
+        private System.Windows.Forms.ComboBox CBB4;
+        private System.Windows.Forms.ComboBox CBB6;
+        private System.Windows.Forms.ComboBox CBB8;
+        private System.Windows.Forms.ComboBox CBB10;
+        private System.Windows.Forms.ComboBox CBB12;
+        private System.Windows.Forms.ComboBox CBB14;
+        private System.Windows.Forms.ComboBox CBB16;
+        private System.Windows.Forms.ComboBox CBB18;
+        private System.Windows.Forms.ToolStripMenuItem SAIR5;
         private System.Windows.Forms.ToolStripMenuItem SAIR4;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.MenuStrip MS3;
+        private System.Windows.Forms.MenuStrip MS2;
+        private System.Windows.Forms.MenuStrip MS1;
+        private System.Windows.Forms.ToolStripMenuItem SAIR3;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.BindingSource tableUpdateStatementBindingSource;
         private System.Data.DataSet dataSet1;
-        private System.Windows.Forms.TextBox TXBCODIGO;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Button BTNPESQUISAR;
-        private System.Windows.Forms.ComboBox CBBNOME;
-        private System.Windows.Forms.ComboBox CBBMATPRIMA;
-        private System.Windows.Forms.TextBox TXBMATPRIMA;
-        private System.Windows.Forms.TextBox TXBQUANTFOLHAS;
-        private System.Windows.Forms.TextBox TXBESTOQMINIMO;
-        private System.Windows.Forms.TextBox TXBVALOR;
-        private System.Windows.Forms.TextBox TXBVALORFOLHA;
-        private System.Windows.Forms.TextBox TXBQUANTATUAL;
-        private System.Windows.Forms.Button BTNENTRADA;
-        private System.Windows.Forms.Button BTNSAIDA;
-        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem9;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem12;
-        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem10;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem13;
-        private System.Windows.Forms.ToolStripMenuItem sAIRToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem aTUALIZARToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem7;
-        private System.Windows.Forms.ToolStripMenuItem eXCLUIRToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem8;
-        private System.Windows.Forms.ToolStripMenuItem pAPELToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem sAIRToolStripMenuItem;
+        private System.Windows.Forms.TextBox TXB1;
+        private System.Windows.Forms.Button BTN2;
+        private System.Windows.Forms.ComboBox CBB2;
+        private System.Windows.Forms.ToolStripMenuItem SAIR2;
+        private System.Windows.Forms.ToolStripMenuItem SAIR1;
         private System.Windows.Forms.DataGridView DGV1;
         private System.Windows.Forms.BindingSource buscaDataAtualResponseBindingSource;
         private System.Windows.Forms.BindingSource atualizaRemessaAgrupadaResponseBindingSource;
-        private System.Windows.Forms.MenuStrip menuStrip7;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.MenuStrip MS6;
+        private System.Windows.Forms.ToolStripMenuItem SAIR6;
+        private System.Windows.Forms.Label LBLDATA;
+        private System.Windows.Forms.Label LBLCODIGO;
+        private System.Windows.Forms.Label LBLCODIGO1;
+        private System.Windows.Forms.Label LBLCODIGO2;
+        private System.Windows.Forms.TextBox TXBDATAFUN;
+        private System.Windows.Forms.TextBox TXBNOMEFUN;
+        private System.Windows.Forms.TextBox TXBCARGOFUN;
+        private System.Windows.Forms.TextBox TXBCPFFUN;
+        private System.Windows.Forms.TextBox TXBCNHFUN;
+        private System.Windows.Forms.TextBox TXBCERTRESFUN;
+        private System.Windows.Forms.TextBox TXBENDFUN;
+        private System.Windows.Forms.TextBox TXBCEPFUN;
+        private System.Windows.Forms.TextBox TXBCOMPFUN;
+        private System.Windows.Forms.TextBox TXBCIDADEFUN;
+        private System.Windows.Forms.TextBox TXBSALARIOFUN;
+        private System.Windows.Forms.TextBox TXBENCARGOSFUN;
+        private System.Windows.Forms.TextBox TXBBONIFIFUN;
+        private System.Windows.Forms.ComboBox CBBDESCRICAO;
+        private System.Windows.Forms.TextBox TXBDATADEMISSAO;
+        private System.Windows.Forms.TextBox TXBTEMPO;
+        private System.Windows.Forms.TextBox TXBRGFUN;
+        private System.Windows.Forms.TextBox TXBNUMEROFUN;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox TXBTOTALFUN;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox TXBUFFUN;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox TXBBAIRROFUN;
+        private System.Windows.Forms.TextBox TXBDESCRICAO;
+        private System.Windows.Forms.ComboBox CBBTIPO;
+        private System.Windows.Forms.TextBox TXBNHP;
+        private System.Windows.Forms.TextBox TXBSUBSIDIAR;
+        private System.Windows.Forms.ComboBox CBBTURNO;
+        private System.Windows.Forms.ComboBox CBBTIPOHORA;
+        private System.Windows.Forms.Label labe32;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button BTNINSERIRCC;
+        private System.Windows.Forms.Button BTNEXCLUIRCC;
+        private System.Windows.Forms.RadioButton RB1;
+        private System.Windows.Forms.RadioButton RB2;
+        private System.Windows.Forms.Label LBLCODIGO3;
+        private System.Windows.Forms.Label LBLCODIGO4;
+        private System.Windows.Forms.Label LBLCODIGO5;
+        private System.Windows.Forms.Label LBLCODIGO6;
+        private System.Windows.Forms.Label LBLCODIGO7;
+        private System.Windows.Forms.ComboBox CBBFUNCIONARIOS;
+        private System.Windows.Forms.ComboBox CBB1;
+        private System.Windows.Forms.MenuStrip MS7;
+        private System.Windows.Forms.ToolStripMenuItem SAIR7;
+        private System.Windows.Forms.ToolStripMenuItem CLIENTE1;
+        private System.Windows.Forms.ToolStripMenuItem PAPEIS1;
+        private System.Windows.Forms.ToolStripMenuItem CLIENTE3;
+        private System.Windows.Forms.ToolStripMenuItem PAPEIS2;
+        private System.Windows.Forms.ToolStripMenuItem FUNCIONARIOS1;
+        private System.Windows.Forms.ToolStripMenuItem FUNCIONARIOS3;
+        private System.Windows.Forms.ToolStripMenuItem FUNCIONARIOS2;
+        private System.Windows.Forms.ToolStripMenuItem CLIENTE4;
+        private System.Windows.Forms.ToolStripMenuItem PAPEIS4;
+        private System.Windows.Forms.ToolStripMenuItem M1;
+        private System.Windows.Forms.ToolStripMenuItem M7;
+        private System.Windows.Forms.ToolStripMenuItem M5;
+        private System.Windows.Forms.ToolStripMenuItem M4;
+        private System.Windows.Forms.ToolStripMenuItem M3;
+        private System.Windows.Forms.ToolStripMenuItem M2;
+        private System.Windows.Forms.ToolStripMenuItem M6;
+        private System.Windows.Forms.ToolStripMenuItem CENTRODECUSTO1;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTEToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pAPEISToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fUNCIONARIOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CENTRODECUSTO2;
     }
 }
 
