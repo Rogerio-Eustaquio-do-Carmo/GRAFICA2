@@ -4128,6 +4128,15 @@ namespace GRAFICA2
             label2.Font = new Font("arial black", 48);
             label25.Visible = false;
 
+           /* label1.Visible = false;
+            label2.Visible = true;
+            label2.Text = "CLIENTE";
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(500, 50);
+            label2.Size = new Size(900, 75);
+            label2.Font = new Font("arial black", 48);
+            label25.Visible = false; */
+
             BotoesInicialCadastroAtualizarExcluir();
             DATACLIENTE();
             DATAHORA();
