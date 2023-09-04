@@ -15,48 +15,284 @@ namespace GRAFICA2
             InitializeComponent();
         }
 
-        // ATUALIZA O COMBOBOX NOME NO FORMULARIO ATUALIZAR E EXCLUIR CLIENTE
-        private void ATUALIZACBBNOME()
+        // MENUSTRIPS
+        public void MNS1()
         {
-            MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
-
-            CONEXAO.Open();
-
-            string CLIENTE = "SELECT NOME FROM CLIENTE ORDER BY NOME";
-            MySqlCommand COMANDO = new MySqlCommand(CLIENTE, CONEXAO);
-
-            DataSet ds = new DataSet();
-
-            MySqlDataAdapter da = new MySqlDataAdapter(COMANDO);
-
-            da.Fill(ds);
-            CBB2.DataSource = ds.Tables[0];
-            CBB2.DisplayMember = "nome";
-            CBB2.ValueMember = "";//CBBNOME
-
-            CONEXAO.Close();
+            MS1.Visible = true;
+            MS1.MaximumSize = new Size(1904, 24);
+            MS2.Visible = false;
+            MS3.Visible = false;
+            MS4.Visible = false;
+            MS5.Visible = false;
+            MS6.Visible = false;
+            MS7.Visible = false;
         }
 
-        // ATUALIZA O COMBOBOX PAPEIS
-        public void ATUALIZACBBPAPEIS()
+        public void MNS2()
         {
-            MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+            MS1.Visible = false;
+            MS2.Visible = true;
+            MS2.MaximumSize = new Size(1904, 24);
+            MS3.Visible = false;
+            MS4.Visible = false;
+            MS5.Visible = false;
+            MS6.Visible = false;
+            MS7.Visible = false;
+        }
 
-            CONEXAO.Open();
+        public void MNS3()
+        {
+            MS1.Visible = false;
+            MS2.Visible = false;
+            MS3.Visible = true;
+            MS3.MaximumSize = new Size(1904, 24);
+            MS4.Visible = false;
+            MS5.Visible = false;
+            MS6.Visible = false;
+            MS7.Visible = false;
+        }
 
-            string PAPEIS = "SELECT MATPRIMA FROM PAPEISCADASTRO ORDER BY MATPRIMA";
-            MySqlCommand COMANDO = new MySqlCommand(PAPEIS, CONEXAO);
+        public void MNS4()
+        {
+            MS1.Visible = false;
+            MS2.Visible = false;
+            MS3.Visible = false;
+            MS4.Visible = true;
+            MS4.MaximumSize = new Size(1904, 24);
+            MS5.Visible = false;
+            MS6.Visible = false;
+            MS7.Visible = false;
+        }
 
-            DataSet ds = new DataSet();
+        public void MNS5()
+        {
+            MS1.Visible = false;
+            MS2.Visible = false;
+            MS3.Visible = false;
+            MS4.Visible = false;
+            MS5.Visible = true;
+            MS5.MaximumSize = new Size(1904, 24);
+            MS6.Visible = false;
+            MS7.Visible = false;
+        }
 
-            MySqlDataAdapter da = new MySqlDataAdapter(COMANDO);
+        public void MNS6()
+        {
+            MS1.Visible = false;
+            MS2.Visible = false;
+            MS3.Visible = false;
+            MS4.Visible = false;
+            MS5.Visible = false;
+            MS6.Visible = true;
+            MS6.MaximumSize = new Size(1904, 24);
+            MS7.Visible = false;
+        }
 
-            da.Fill(ds);
-            CBB2.DataSource = ds.Tables[0];
-            CBB2.DisplayMember = "matprima";
-            CBB2.ValueMember = "";
+        public void MNS7()
+        {
+            MS1.Visible = false;
+            MS2.Visible = false;
+            MS3.Visible = false;
+            MS4.Visible = false;
+            MS5.Visible = false;
+            MS6.Visible = false;
+            MS7.Visible = true;
+            MS7.MaximumSize = new Size(1904, 24);
+        }
 
-            CONEXAO.Close();
+        // DDD OCULTO
+        public void DDDFALSE()
+        {
+            if (label2.Text == "CLIENTE" || label2.Text == "PAPEIS")
+            {
+                TXB14.Visible = false;//TXBDDD1
+                TXB18.Visible = false;//TXBDDD2
+                TXB22.Visible = false;//TXBDDD3
+                TXB26.Visible = false;//TXBDDD4
+                TXB30.Visible = false;//TXBDDD5
+                TXB34.Visible = false;//TXBDDD6
+                TXB38.Visible = false;//TXBDDD7
+                TXB42.Visible = false;//TXBDDD8
+                CBB2.Visible = false;
+            }
+        }
+
+        // TELEFONE OCULTO
+        public void TELEFONEFALSE()
+        {
+            if (label2.Text == "CLIENTE" || label2.Text == "PAPEIS")
+            {
+                TXB15.Visible = false;//TXBTELEFONE1
+                TXB19.Visible = false;//TXBTELEFONE2
+                TXB23.Visible = false;//TXBTELEFONE3
+                TXB27.Visible = false;//TXBTELEFONE4
+                TXB31.Visible = false;//TXBTELEFONE5
+                TXB35.Visible = false;//TXBTELEFONE6
+                TXB39.Visible = false;//TXBTELEFONE7
+                TXB43.Visible = false;//TXBTELEFONE8
+                CBB2.Visible = false;
+            }
+        }
+
+        // CONTATO OCULTO
+        public void CONTATOFALSE()
+        {
+            if (label2.Text == "CLIENTE" || label2.Text == "PAPEIS")
+            {
+                TXB16.Visible = false;//TXBCONTATO1
+                TXB20.Visible = false;//TXBCONTATO2
+                TXB24.Visible = false;//TXBCONTATO3
+                TXB28.Visible = false;//TXBCONTATO4
+                TXB32.Visible = false;//TXBCONTATO5
+                TXB36.Visible = false;//TXBCONTATO6
+                TXB40.Visible = false;//TXBCONTATO7
+                TXB44.Visible = false;//TXBCONTATO8
+                CBB2.Visible = false;
+            }
+        }
+
+        // EMAIL OCULTO
+        public void EMAILFALSE()
+        {
+            if (label2.Text == "CLIENTE" || label2.Text == "PAPEIS")
+            {
+                TXB17.Visible = false;//TXBEMAIL1
+                TXB21.Visible = false;//TXBEMAIL2
+                TXB25.Visible = false;//TXBEMAIL3
+                TXB29.Visible = false;//TXBEMAIL4
+                TXB33.Visible = false;//TXBEMAIL5
+                TXB37.Visible = false;//TXBEMAIL6
+                TXB41.Visible = false;//TXBEMAIL7
+                TXB45.Visible = false;//TXBEMAIL8
+                CBB2.Visible = false;
+            }
+        }
+
+        // TIPO OCULTO
+        public void TIPOFALSE()
+        {
+            if (label2.Text == "CLIENTE" || label2.Text == "PAPEIS")
+            {
+                CBB3.Visible = false;//CBBTIPO1
+                CBB5.Visible = false;//CBBTIPO2
+                CBB7.Visible = false;//CBBTIPO3
+                CBB9.Visible = false;//CBBTIPO4
+                CBB11.Visible = false;//CBBTIPO5
+                CBB13.Visible = false;//CBBTIPO6
+                CBB15.Visible = false;//CBBTIPO7
+                CBB17.Visible = false;//CBBTIPO8
+                CBB2.Visible = false;
+            }
+        }
+
+        // SEXO OCULTO
+        public void SEXOFALSE()
+        {
+            if (label2.Text == "CLIENTE" || label2.Text == "PAPEIS")
+            {
+                CBB4.Visible = false;//CBBSEXO1
+                CBB6.Visible = false;//CBBSEXO2
+                CBB8.Visible = false;//CBBSEXO3
+                CBB10.Visible = false;//CBBSEXO4
+                CBB12.Visible = false;//CBBSEXO5
+                CBB14.Visible = false;//CBBSEXO6
+                CBB16.Visible = false;//CBBSEXO7
+                CBB18.Visible = false;//CBBSEXO8
+            }
+        }
+
+        public void CBBOX1()
+        {
+            if (label2.Text == "CLIENTE")
+            {
+                CBB1.Items.Clear();
+
+                CBB1.Visible = true;
+                CBB1.Location = new Point(411, 243);
+                CBB1.Size = new Size(94, 21);
+
+                string[] stringArray = new string[]
+                {
+                    "Selecione", "CADASTRAR", "ATUALIZAR", "EXCLUIR"
+                };
+                CBB1.Items.AddRange(stringArray);
+                CBB1.SelectedIndex = 0;
+            }
+            if (label2.Text == "PAPEIS")
+            {
+                CBB1.Items.Clear();
+
+                CBB1.Visible = true;
+                CBB1.Location = new Point(411, 243);
+                CBB1.Size = new Size(94, 21);
+
+                string[] stringArray = new string[]
+                {
+                    "Selecione", "CADASTRAR", "ENTRADA", "SAÍDA"
+                };
+                CBB1.Items.AddRange(stringArray);
+                CBB1.SelectedIndex = 0;
+            }
+            if (label2.Text == "FUNCIONÁRIOS")
+            {
+                CBB1.Items.Clear();
+
+                CBB1.Visible = true;
+                CBB1.Location = new Point(411, 243);
+                CBB1.Size = new Size(94, 21);
+
+                string[] stringArray = new string[]
+                {
+                    "Selecione", "CADASTRAR", "TESTE1", "TESTE2"
+                };
+                CBB1.Items.AddRange(stringArray);
+                CBB1.SelectedIndex = 0;
+            }
+        }
+
+        // ATUALIZA O COMBOBOX2
+        private void ATUALIZACBB2()
+        {
+            if (label2.Text == "ATUALIZAR CLIENTE" || label2.Text == "EXCLUIR CLIENTE")
+            {
+                MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+
+                CONEXAO.Open();
+
+                string CLIENTE = "SELECT NOME FROM CLIENTE ORDER BY NOME";
+                MySqlCommand COMANDO = new MySqlCommand(CLIENTE, CONEXAO);
+
+                DataSet ds = new DataSet();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(COMANDO);
+
+                da.Fill(ds);
+                CBB2.DataSource = ds.Tables[0];
+                CBB2.DisplayMember = "nome";
+                CBB2.ValueMember = "";//CBBNOME
+
+                CONEXAO.Close();
+            }
+            if (label2.Text == "ENTRADA PAPEIS" || label2.Text == "SAÍDA PAPEIS")
+            {
+                MySqlConnection CONEXAO = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+
+                CONEXAO.Open();
+
+                string PAPEIS = "SELECT MATPRIMA FROM PAPEISCADASTRO ORDER BY MATPRIMA";
+                MySqlCommand COMANDO = new MySqlCommand(PAPEIS, CONEXAO);
+
+                DataSet ds = new DataSet();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(COMANDO);
+
+                da.Fill(ds);
+                CBB2.DataSource = ds.Tables[0];
+                CBB2.DisplayMember = "matprima";
+                CBB2.ValueMember = "";
+
+                CONEXAO.Close();
+            }
         }
 
         // SAIR DO APLICATIVO
@@ -118,7 +354,14 @@ namespace GRAFICA2
         // BOTÃO PESQUISAR VISIVEL
         public void PESQUISARVISIVEL()
         {
-            if (label2.Text == "ATUALIZAR CLIENTE" || label2.Text == "EXCLUIR CLIENTE")
+            if (label2.Text == "CLIENTE" || label2.Text == "ATUALIZAR CLIENTE" || label2.Text == "EXCLUIR CLIENTE")
+            {
+                BTN2.Text = "PESQUISAR";
+                BTN2.Visible = true;
+                BTN2.Location = new Point(620, 242);
+                BTN2.Size = new Size(94, 23);
+            }
+            if (label2.Text == "PAPEIS" || label2.Text == "ENTRADA PAPEIS" || label2.Text == "SAÍDA PAPEIS")
             {
                 BTN2.Text = "PESQUISAR";
                 BTN2.Visible = true;
@@ -169,15 +412,15 @@ namespace GRAFICA2
                 {
                     try
                     {
-                        var ENDERECO = ws.consultaCEP(TXBCEPFUN.Text.Trim());
-                        TXBENDFUN.Text = ENDERECO.end.ToUpper();
-                        TXBBAIRROFUN.Text = ENDERECO.bairro.ToUpper();
-                        TXBCIDADEFUN.Text = ENDERECO.cidade.ToUpper();
-                        TXBUFFUN.Text = ENDERECO.uf.ToUpper();
+                        var ENDERECO = ws.consultaCEP(TXB10.Text.Trim());
+                        TXB11.Text = ENDERECO.end.ToUpper();
+                        TXB12.Text = ENDERECO.bairro.ToUpper();
+                        TXB13.Text = ENDERECO.cidade.ToUpper();
+                        TXB14.Text = ENDERECO.uf.ToUpper();
                     }
                     catch
                     {
-                        TXBENDFUN.Text = "NÃO ENCONTRADO - VERIFIQUE A CONEXÃO OU O CEP INFORMADO.";
+                        TXB11.Text = "NÃO ENCONTRADO - VERIFIQUE A CONEXÃO OU O CEP INFORMADO.";
                     }
                 }
             }
@@ -210,19 +453,19 @@ namespace GRAFICA2
             }
             if (label2.Text == "CADASTRAR FUNCIONÁRIO")
             {
-                if (TXBCEPFUN.Text == "")
+                if (TXB10.Text == "")
                 {
                     MessageBox.Show("CEP EM BRANCO");
 
-                    TXBCEPFUN.Focus();
+                    TXB10.Focus();
 
                     return;
                 }
-                if (TXBCEPFUN.Text.Length != 8)
+                if (TXB10.Text.Length != 8)
                 {
                     MessageBox.Show("CEP COM TAMANHO ERRADO");
 
-                    TXBCEPFUN.Focus();
+                    TXB10.Focus();
 
                     return;
                 }
@@ -431,7 +674,6 @@ namespace GRAFICA2
             TXB44.Clear();//TXBCONTATO8
             TXB45.Clear();//TXBEMAIL8
 
-            CBB2.Text = "";//CBBNOME
             CBB3.Text = "";//CBBTIPO1
             CBB4.Text = "";//CBBSEXO1
             CBB5.Text = "";//CBBTIPO2
@@ -448,84 +690,6 @@ namespace GRAFICA2
             CBB16.Text = "";//CBBSEXO7
             CBB17.Text = "";//CBBTIPO8
             CBB18.Text = "";//CBBSEXO8
-        }
-
-        // DDD OCULTO
-        public void DDDFALSE()
-        {
-            TXB14.Visible = false;//TXBDDD1
-            TXB18.Visible = false;//TXBDDD2
-            TXB22.Visible = false;//TXBDDD3
-            TXB26.Visible = false;//TXBDDD4
-            TXB30.Visible = false;//TXBDDD5
-            TXB34.Visible = false;//TXBDDD6
-            TXB38.Visible = false;//TXBDDD7
-            TXB42.Visible = false;//TXBDDD8
-        }
-
-        // TELEFONE OCULTO
-        public void TELEFONEFALSE()
-        {
-            TXB15.Visible = false;//TXBTELEFONE1
-            TXB19.Visible = false;//TXBTELEFONE2
-            TXB23.Visible = false;//TXBTELEFONE3
-            TXB27.Visible = false;//TXBTELEFONE4
-            TXB31.Visible = false;//TXBTELEFONE5
-            TXB35.Visible = false;//TXBTELEFONE6
-            TXB39.Visible = false;//TXBTELEFONE7
-            TXB43.Visible = false;//TXBTELEFONE8
-        }
-
-        // CONTATO OCULTO
-        public void CONTATOFALSE()
-        {
-            TXB16.Visible = false;//TXBCONTATO1
-            TXB20.Visible = false;//TXBCONTATO2
-            TXB24.Visible = false;//TXBCONTATO3
-            TXB28.Visible = false;//TXBCONTATO4
-            TXB32.Visible = false;//TXBCONTATO5
-            TXB36.Visible = false;//TXBCONTATO6
-            TXB40.Visible = false;//TXBCONTATO7
-            TXB44.Visible = false;//TXBCONTATO8
-        }
-
-        // EMAIL OCULTO
-        public void EMAILFALSE()
-        {
-            TXB17.Visible = false;//TXBEMAIL1
-            TXB21.Visible = false;//TXBEMAIL2
-            TXB25.Visible = false;//TXBEMAIL3
-            TXB29.Visible = false;//TXBEMAIL4
-            TXB33.Visible = false;//TXBEMAIL5
-            TXB37.Visible = false;//TXBEMAIL6
-            TXB41.Visible = false;//TXBEMAIL7
-            TXB45.Visible = false;//TXBEMAIL8
-        }
-
-        // TIPO OCULTO
-        public void TIPOFALSE()
-        {
-            CBB3.Visible = false;//CBBTIPO1
-            CBB5.Visible = false;//CBBTIPO2
-            CBB7.Visible = false;//CBBTIPO3
-            CBB9.Visible = false;//CBBTIPO4
-            CBB11.Visible = false;//CBBTIPO5
-            CBB13.Visible = false;//CBBTIPO6
-            CBB15.Visible = false;//CBBTIPO7
-            CBB17.Visible = false;//CBBTIPO8
-        }
-
-        // SEXO OCULTO
-        public void SEXOFALSE()
-        {
-            CBB4.Visible = false;//CBBSEXO1
-            CBB6.Visible = false;//CBBSEXO2
-            CBB8.Visible = false;//CBBSEXO3
-            CBB10.Visible = false;//CBBSEXO4
-            CBB12.Visible = false;//CBBSEXO5
-            CBB14.Visible = false;//CBBSEXO6
-            CBB16.Visible = false;//CBBSEXO7
-            CBB18.Visible = false;//CBBSEXO8
         }
 
         // CAMPO HORA DO FORMULÁRIO CLIENTE
@@ -545,76 +709,31 @@ namespace GRAFICA2
             LBLDATA.Location = new Point(780, 282);
             LBLDATA.Size = new Size(130, 20);
         }
+
+        // CAMPO HORA DO FORMULÁRIO FUNCIONÁRIOS
+        public void DATAFUN()
+        {
+            LBLDATA.Visible = true;
+            LBLDATA.Enabled = true;
+            LBLDATA.Location = new Point(850, 282);
+            LBLDATA.Size = new Size(130, 20);
+        }
         // CAMPOS DOS FORMULÁRIOS VISIVEIS
         public void TXBVISIVEIS()
         {
-            if (label2.Text == "CLIENTE")
+            label1.Visible = false;
+
+            label25.Visible = true;
+
+            label2.Visible = true;
+            label2.Text = "CADASTRAR CLIENTE";
+            label2.ForeColor = Color.Blue;
+            label2.Location = new Point(500, 50);
+            label2.Size = new Size(900, 100);
+            label2.Font = new Font("arial black", 48);
+
+            if (label2.Text == "CADASTRAR CLIENTE")//CBBCLIENTE
             {
-                DATACLIENTE();
-
-                TXB1.Visible = false;//TXBCODIGO
-                TXB2.Visible = true;
-                TXB2.Enabled = false;//TXBCEP
-                TXB2.Location = new Point(411, 300);
-                TXB2.Size = new Size(128, 20);
-                TXB3.Visible = true;
-                TXB3.Enabled = false;//TXBNOME
-                TXB3.Location = new Point(545, 300);
-                TXB3.Size = new Size(283, 20);
-                CBB2.Visible = false;//CBBNOME
-                TXB4.Visible = true;
-                TXB4.Enabled = false;//TXBRAZAOSOCIAL
-                TXB4.Location = new Point(834, 300);
-                TXB4.Size = new Size(676, 20);
-                TXB5.Visible = true;
-                TXB5.Enabled = false;//TXBRUA
-                TXB5.Location = new Point(411, 345);
-                TXB5.Size = new Size(725, 20);
-                TXB6.Visible = true;
-                TXB6.Enabled = false;//TXBNUMERO
-                TXB6.Location = new Point(1144, 345);
-                TXB6.Size = new Size(103, 20);
-                TXB7.Visible = true;
-                TXB7.Enabled = false;//TXBCOMPLEMENTO
-                TXB7.Location = new Point(1254, 345);
-                TXB7.Size = new Size(255, 20);
-                TXB8.Visible = true;
-                TXB8.Enabled = false;//TXBBAIRRO
-                TXB8.Location = new Point(411, 390);
-                TXB8.Size = new Size(519, 20);
-                TXB9.Visible = true;
-                TXB9.Enabled = false;//TXBCIDADE
-                TXB9.Location = new Point(939, 390);
-                TXB9.Size = new Size(513, 20);
-                TXB10.Visible = true;
-                TXB10.Enabled = false;//TXBESTADO
-                TXB10.Location = new Point(1461, 390);
-                TXB10.Size = new Size(49, 20);
-                TXB11.Visible = true;
-                TXB11.Enabled = false;//TXBCNPJ
-                TXB11.Location = new Point(411, 435);
-                TXB11.Size = new Size(364, 20);
-                TXB12.Visible = true;
-                TXB12.Enabled = false;//TXBINSCREST
-                TXB12.Location = new Point(783, 435);
-                TXB12.Size = new Size(358, 20);
-                TXB13.Visible = true;
-                TXB13.Enabled = false;//INSCRMUN
-                TXB13.Location = new Point(1149, 435);
-                TXB13.Size = new Size(360, 20);
-            }
-            if (CBB1.Text == "CADASTRAR")//CBBCLIENTE
-            {
-                label1.Visible = false;
-
-                label25.Visible = true;
-
-                label2.Visible = true;
-                label2.Text = "CADASTRAR CLIENTE";
-                label2.ForeColor = Color.Blue;
-                label2.Location = new Point(500, 50);
-                label2.Size = new Size(900, 100);
-                label2.Font = new Font("arial black", 48);
 
                 BTN3.Text = "CADASTRAR";
                 BTN3.ForeColor = Color.Blue;
@@ -679,12 +798,12 @@ namespace GRAFICA2
                 CONTATOFALSE();
                 EMAILFALSE();
                 SEXOFALSE();
-                BotoesInicialCadastroAtualizarExcluir();
+                BTNCLIENTE();
                 PESQUISAROCULTO();
-                CENTRODECUSTOOCULTO();
 
 
                 TXB2.Focus();//TXBCEP
+
             }
             if (CBB1.Text == "ATUALIZAR")//CBBCLIENTE
             {
@@ -756,11 +875,12 @@ namespace GRAFICA2
                 TXB13.Location = new Point(1149, 435);
                 TXB13.Size = new Size(360, 20);
 
+                TXBVISIVEIS();
                 PESQUISARVISIVEL();
                 DATACLIENTE();
                 DATAHORA();
                 LIMPARTXBCBB();
-                ATUALIZACBBNOME();
+                ATUALIZACBB2();
                 AsteriscosFalse();
                 DDDFALSE();
                 TELEFONEFALSE();
@@ -768,10 +888,10 @@ namespace GRAFICA2
                 CONTATOFALSE();
                 EMAILFALSE();
                 SEXOFALSE();
-                BotoesInicialCadastroAtualizarExcluir();
-                CENTRODECUSTOOCULTO();
+                BTNCLIENTE();
 
                 CBB2.Focus();//CBBNOME
+
             }
             if (CBB1.Text == "EXCLUIR")//CBBCLIENTE
             {
@@ -786,7 +906,7 @@ namespace GRAFICA2
                 label2.Size = new Size(900, 100);
                 label2.Font = new Font("arial black", 48);
 
-                BTN3.Text = "EXCLUIR";
+                BTN3.Text = "EXCLUIR CLIENTE";
                 BTN3.ForeColor = Color.Red;
 
                 TXB1.Visible = false;//TXBCODIGO
@@ -847,7 +967,7 @@ namespace GRAFICA2
                 DATACLIENTE();
                 DATAHORA();
                 LIMPARTXBCBB();
-                ATUALIZACBBNOME();
+                ATUALIZACBB2();
                 AsteriscosFalse();
                 DDDFALSE();
                 TELEFONEFALSE();
@@ -855,12 +975,16 @@ namespace GRAFICA2
                 CONTATOFALSE();
                 EMAILFALSE();
                 SEXOFALSE();
-                BotoesInicialCadastroAtualizarExcluir();
-                INSERIROCULTO();
-                CENTRODECUSTOOCULTO();
+                BTNCLIENTE();
+                INSERIROCULTO(); ;
 
                 CBB2.Focus();//CBBNOME
             }
+            if (label2.Text == "PAPEIS")
+            {
+                // TXBVISIVEIS();
+            }
+
         }
 
         // CAMPOS DO FORMULÁRIO CADASTRAR OCULTOS
@@ -1105,28 +1229,8 @@ namespace GRAFICA2
             }
         }
 
-        // LABELS OCULTOS NOS FORMULÁRIOS
-        public void LabelsDadosDoClienteParaCadastrarAtualizarExcluirFalse()
-        {
-            if (label2.Text == "PAPEIS" || label2.Text == "CADASTRAR PAPEIS" || label2.Text == "ATUALIZAR PAPEIS" || label2.Text == "EXCLUIR PAPEIS")
-            {
-                label3.Visible = false;
-                label4.Visible = false;
-                label5.Visible = false;
-                label6.Visible = false;
-                label7.Visible = false;
-                label8.Visible = false;
-                label9.Visible = false;
-                label10.Visible = false;
-                label11.Visible = false;
-                label12.Visible = false;
-                label13.Visible = false;
-                label14.Visible = false;
-            }
-        }
-
         // BOTÕES NO INÍCIO DOS FORMULÁRIOS CLIENTE
-        public void BotoesInicialCadastroAtualizarExcluir()
+        public void BTNCLIENTE()
         {
             if (label2.Text == "CLIENTE")
             {
@@ -1585,135 +1689,6 @@ namespace GRAFICA2
             DATA = DateTime.Now;
             LBLDATA.Text = DATA.ToString();
         }
-
-        // CHAMA O FORMULÁRIO LOGOTIPO
-        private void PADRAO_Load(object sender, EventArgs e)
-        {
-            LOGOTIPO();
-        }
-
-        // CRIA O FORMULÁRIO LOGOTIPO
-        public void LOGOTIPO()
-        {
-            label1.Visible = true;
-            label1.Text = "LOGOTIPO";
-            label1.Location = new Point(660, 450);
-            label1.Size = new Size(612, 136);
-            label1.Font = new Font("arial black", 72);
-
-            CBBOX2FALSE();
-
-            DGV1OCULTO();
-
-            label2.Visible = false;
-            label3.Visible = false;
-            label4.Visible = false;
-            label5.Visible = false;
-            label6.Visible = false;
-            label7.Visible = false;
-            label8.Visible = false;
-            label9.Visible = false;
-            label10.Visible = false;
-            label11.Visible = false;
-            label12.Visible = false;
-            label13.Visible = false;
-            label14.Visible = false;
-            label15.Visible = false;
-            label16.Visible = false;
-            label17.Visible = false;
-            label18.Visible = false;
-            label19.Visible = false;
-            label25.Visible = false;
-            label26.Visible = false;
-            label27.Visible = false;
-            label28.Visible = false;
-            label29.Visible = false;
-            label30.Visible = false;
-            label31.Visible = false;
-
-            BTN1.Visible = false;
-            BTN3.Visible = false;
-            BTN4.Visible = false;
-
-            PESQUISAROCULTO();
-
-            MNS1();
-        }
-
-        // EXECUTA QUANDO O CBBCLIENTE E SELECIONADO
-        /*   public void CADASTRARATUALIZAREXCLUIR()
-           {
-
-               if (CBBCLIENTE.Text == "CADASTRAR")
-               {
-
-
-                   PESQUISAROCULTO();
-                   LIMPARTXBCBB();
-                   TXBVISIVEIS();
-                   DDDFALSE();
-                   TELEFONEFALSE();
-                   SEXOFALSE();
-                   CONTATOFALSE();
-                   TIPOFALSE();
-                   EMAILFALSE();
-                   Asteriscos();
-                   BotoesInicialCadastroAtualizarExcluir();
-
-                   TXBCEP.Focus();
-               }
-
-               if (CBBCLIENTE.Text == "ATUALIZAR")
-               {
-
-
-                   TXBVISIVEIS();
-                   PESQUISARVISIVEL();
-                   INSERIRVISIVEL();
-                   ATUALIZACBB();
-                   LIMPARTXBCBB();
-                  // DadosDoClienteParaExcluir();
-                   AsteriscosFalse();
-                   DDDFALSE();
-                   TELEFONEFALSE();
-                   SEXOFALSE();
-                   CONTATOFALSE();
-                   TIPOFALSE();
-                   EMAILFALSE();
-                   BotoesInicialCadastroAtualizarExcluir();
-
-                   CBBNOME.Focus();
-               }
-               if (CBBCLIENTE.Text == "EXCLUIR")
-               {
-
-
-                   PESQUISARVISIVEL();
-                   ATUALIZACBB();
-                   LIMPARTXBCBB();
-                  // DadosDoClienteParaExcluir();
-                   AsteriscosFalse();
-                   INSERIROCULTO();
-                   BotoesInicialCadastroAtualizarExcluir();
-                   BotaoCadastroAtualizarContato1();
-                   BotaoCadastroAtualizarContato2();
-                   BotaoCadastroAtualizarContato3();
-                   BotaoCadastroAtualizarContato4();
-                   BotaoCadastroAtualizarContato5();
-                   BotaoCadastroAtualizarContato6();
-                   BotaoCadastroAtualizarContato7();
-                   BotaoCadastroAtualizarContato8();
-                   DDDFALSE();
-                   TELEFONEFALSE();
-                   SEXOFALSE();
-                   CONTATOFALSE();
-                   TIPOFALSE();
-                   EMAILFALSE();
-                   BotoesInicialCadastroAtualizarExcluir();
-
-                   CBBNOME.Focus();
-               }
-           } */
 
         // TAMANHO E POSIÇÃO DOS CAMPOS CONTATO1
         public void TamanhoePosicaoContato1()
@@ -2276,7 +2251,7 @@ namespace GRAFICA2
                 DATAHORA();
                 CBBEMBRANCO();
                 LIMPARTXBCBB();
-                BotoesInicialCadastroAtualizarExcluir();
+                BTNCLIENTE();
                 LabelsContatoFalse();
                 DDDFALSE();
                 TELEFONEFALSE();
@@ -2285,6 +2260,7 @@ namespace GRAFICA2
                 TIPOFALSE();
                 SEXOFALSE();
 
+                CBB1.SelectedIndex = 0;
                 CBB1.Focus();//CBBCLIENTE
             }
             if (label2.Text == "ATUALIZAR CLIENTE")
@@ -2292,7 +2268,7 @@ namespace GRAFICA2
                 DATAHORA();
                 CBBEMBRANCO();
                 LIMPARTXBCBB();
-                BotoesInicialCadastroAtualizarExcluir();
+                BTNCLIENTE();
                 LabelsContatoFalse();
                 DDDFALSE();
                 TELEFONEFALSE();
@@ -2308,6 +2284,7 @@ namespace GRAFICA2
                 TXB12.Enabled = false;//TXBINSCREST
                 TXB13.Enabled = false;//INSCRMUN
 
+                CBB1.SelectedIndex = 0;
                 CBB2.Visible = true;
                 CBB2.Enabled = false;//CBBNOME
                 CBB1.Focus();//CBBCLIENTE
@@ -2317,7 +2294,7 @@ namespace GRAFICA2
                 DATAHORA();
                 CBBEMBRANCO();
                 LIMPARTXBCBB();
-                BotoesInicialCadastroAtualizarExcluir();
+                BTNCLIENTE();
                 LabelsContatoFalse();
                 DDDFALSE();
                 TELEFONEFALSE();
@@ -2332,218 +2309,216 @@ namespace GRAFICA2
 
                 CBB2.Visible = true;
                 CBB2.Enabled = false;//CBBNOME
+                CBB1.SelectedIndex = 0;
                 CBB1.Focus();//CBBCLIENTE
             }
-            if (CBB1.Text == "CADASTRAR" || CBB1.Text == "ENTRADA" || CBB1.Text == "SAÍDA")
-            {
-                LIMPACAMPOSCADASTRARPAPEIS();
-                TXBCADASTROPAPELDESABILITADO();
-                CBB2.Visible = false;
-            }
-
         }
 
         // BOTÃO CADASTRAR/ATUALIZAR/EXCLUIR
         public void BTNCADAUTEXC_Click(object sender, EventArgs e)
         {
             // CADASTRO - BOTÃO CADASTRAR
-            if (BTN3.Text == "CADASTRAR")
+            if (label2.Text == "CLIENTE")
             {
                 try
                 {
-                    DATAHORA();
+                    if (BTN3.Text == "CADASTRAR")
+                    {
+                        DATAHORA();
 
-                    MySqlConnection CONEXAOCADASTRARCLIENTE = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
-                    CONEXAOCADASTRARCLIENTE.Open();
-                    MySqlCommand COMANDOCADASTRARCLIENTE = new MySqlCommand("insert into CLIENTE(NOME, RAZAOSOCIAL, DIAHORA, CNPJ, INSCREST, INSCRMUN, RUA, NUMERO, COMPLEMENTO, BAIRRO, CIDADE, ESTADO, CEP, CONTATO1, SEXO1, EMAIL1, CONTATO2, SEXO2, EMAIL2, CONTATO3, SEXO3, EMAIL3, CONTATO4, SEXO4, EMAIL4, CONTATO5, SEXO5, EMAIL5, CONTATO6, SEXO6, EMAIL6, CONTATO7, SEXO7, EMAIL7, CONTATO8, SEXO8, EMAIL8, TIPO1, DDD1, TELEFONE1, TIPO2, DDD2, TELEFONE2, TIPO3, DDD3, TELEFONE3, TIPO4, DDD4, TELEFONE4, TIPO5, DDD5, TELEFONE5, TIPO6, DDD6, TELEFONE6, TIPO7, DDD7, TELEFONE7, TIPO8, DDD8, TELEFONE8) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", CONEXAOCADASTRARCLIENTE);
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@NOME", MySqlDbType.VarChar, 50).Value = TXB3.Text;//TXBNOME
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@RAZAOSOCIAL", MySqlDbType.VarChar, 100).Value = TXB4.Text;//TXBRAZAOSOCIAL
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DIAHORA", MySqlDbType.VarChar, 50).Value = LBLDATA.Text;
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CNPJ", MySqlDbType.VarChar, 18).Value = TXB11.Text;//TXBCNPJ
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@INSCREST", MySqlDbType.VarChar, 30).Value = TXB12.Text;//TXBINSCREST
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@INSCRMUN", MySqlDbType.VarChar, 30).Value = TXB13.Text;//TXBINSCRMUN
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@RUA", MySqlDbType.VarChar, 150).Value = TXB5.Text;//TXBRUA
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@NUMERO", MySqlDbType.VarChar, 10).Value = TXB6.Text;//TXBNUMERO
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@COMPLEMENTO", MySqlDbType.VarChar, 50).Value = TXB7.Text;//TXBCOMPLEMENTO
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@BAIRRO", MySqlDbType.VarChar, 50).Value = TXB8.Text;//TXBBAIRRO
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CIDADE", MySqlDbType.VarChar, 50).Value = TXB9.Text;//TXBCIDADE
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@ESTADO", MySqlDbType.VarChar, 2).Value = TXB10.Text;//TXBESTADO
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CEP", MySqlDbType.VarChar, 9).Value = TXB2.Text;//TXBCEP
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO1", MySqlDbType.VarChar, 100).Value = TXB16.Text;//TXBCONTATO1
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO1", MySqlDbType.VarChar, 1).Value = CBB4.Text;//CBBSEXO1
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL1", MySqlDbType.VarChar, 100).Value = TXB17.Text;//TXBEMAIL1
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO2", MySqlDbType.VarChar, 100).Value = TXB20.Text;//TXBCONTATO2
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO2", MySqlDbType.VarChar, 1).Value = CBB6.Text;//CBBSEXO2
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL2", MySqlDbType.VarChar, 100).Value = TXB21.Text;//TXBEMAIL2
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO3", MySqlDbType.VarChar, 100).Value = TXB24.Text;//TXBCONTATO3
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO3", MySqlDbType.VarChar, 1).Value = CBB8.Text;//CBBSEXO3
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL3", MySqlDbType.VarChar, 100).Value = TXB25.Text;//TXBEMAIL3
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO4", MySqlDbType.VarChar, 100).Value = TXB28.Text;//TXBCONTATO4
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO4", MySqlDbType.VarChar, 1).Value = CBB10.Text;//CBBSEXO4
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL4", MySqlDbType.VarChar, 100).Value = TXB29.Text;//TXBEMAIL4
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO5", MySqlDbType.VarChar, 100).Value = TXB32.Text;//TXBCONTATO5
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO5", MySqlDbType.VarChar, 1).Value = CBB12.Text;//CBBSEXO5
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL5", MySqlDbType.VarChar, 100).Value = TXB33.Text;//TXBEMAIL5
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO6", MySqlDbType.VarChar, 100).Value = TXB36.Text;//TXBCONTATO6
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO6", MySqlDbType.VarChar, 1).Value = CBB14.Text;//CBBSEXO6
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL6", MySqlDbType.VarChar, 100).Value = TXB37.Text;//TXBEMAIL6
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO7", MySqlDbType.VarChar, 100).Value = TXB40.Text;//TXBCONTATO7
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO7", MySqlDbType.VarChar, 1).Value = CBB16.Text;//CBBSEXO7
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL7", MySqlDbType.VarChar, 100).Value = TXB41.Text;//TXBEMAIL7
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO8", MySqlDbType.VarChar, 100).Value = TXB44.Text;//TXBCONTATO8
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO8", MySqlDbType.VarChar, 1).Value = CBB18.Text;//CBBSEXO8
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL8", MySqlDbType.VarChar, 100).Value = TXB45.Text;//TXBEMAIL8
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO1", MySqlDbType.VarChar, 6).Value = CBB3.Text;//CBBTIPO1
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD1", MySqlDbType.VarChar, 4).Value = TXB14.Text;//TXBDDD1
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE1", MySqlDbType.VarChar, 10).Value = TXB15.Text;//TXBTELEFONE1
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO2", MySqlDbType.VarChar, 6).Value = CBB5.Text;//CBBTIPO2
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD2", MySqlDbType.VarChar, 4).Value = TXB18.Text;//TXBDDD2
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE2", MySqlDbType.VarChar, 10).Value = TXB19.Text;//TXBTELEFONE2
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO3", MySqlDbType.VarChar, 6).Value = CBB7.Text;//CBBTIPO3
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD3", MySqlDbType.VarChar, 4).Value = TXB22.Text;//TXBDDD3
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE3", MySqlDbType.VarChar, 10).Value = TXB23.Text;//TXBTELEFONE3
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO4", MySqlDbType.VarChar, 6).Value = CBB9.Text;//CBBTIPO4
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD4", MySqlDbType.VarChar, 4).Value = TXB26.Text;//TXBDDD4
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE4", MySqlDbType.VarChar, 10).Value = TXB27.Text;//TXBTELEFONE4
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO5", MySqlDbType.VarChar, 6).Value = CBB11.Text;//CBBTIPO5
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD5", MySqlDbType.VarChar, 4).Value = TXB30.Text;//TXBDDD5
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE5", MySqlDbType.VarChar, 10).Value = TXB31.Text;//TXBTELEFONE5
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO6", MySqlDbType.VarChar, 6).Value = CBB13.Text;//CBBTIPO6
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD6", MySqlDbType.VarChar, 4).Value = TXB34.Text;//TXBDDD6
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE6", MySqlDbType.VarChar, 10).Value = TXB35.Text;//TXBTELEFONE6
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO7", MySqlDbType.VarChar, 6).Value = CBB15.Text;//CBBTIPO7
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD7", MySqlDbType.VarChar, 4).Value = TXB38.Text;//TXBDDD7
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE7", MySqlDbType.VarChar, 10).Value = TXB39.Text;//TXBTELEFONE7
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO8", MySqlDbType.VarChar, 6).Value = CBB17.Text;//CBBTIPO8
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD8", MySqlDbType.VarChar, 4).Value = TXB42.Text;//TXBDDD8
-                    COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE8", MySqlDbType.VarChar, 10).Value = TXB43.Text;//TXBTELEFONE8
+                        MySqlConnection CONEXAOCADASTRARCLIENTE = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+                        CONEXAOCADASTRARCLIENTE.Open();
+                        MySqlCommand COMANDOCADASTRARCLIENTE = new MySqlCommand("insert into CLIENTE(NOME, RAZAOSOCIAL, DIAHORA, CNPJ, INSCREST, INSCRMUN, RUA, NUMERO, COMPLEMENTO, BAIRRO, CIDADE, ESTADO, CEP, CONTATO1, SEXO1, EMAIL1, CONTATO2, SEXO2, EMAIL2, CONTATO3, SEXO3, EMAIL3, CONTATO4, SEXO4, EMAIL4, CONTATO5, SEXO5, EMAIL5, CONTATO6, SEXO6, EMAIL6, CONTATO7, SEXO7, EMAIL7, CONTATO8, SEXO8, EMAIL8, TIPO1, DDD1, TELEFONE1, TIPO2, DDD2, TELEFONE2, TIPO3, DDD3, TELEFONE3, TIPO4, DDD4, TELEFONE4, TIPO5, DDD5, TELEFONE5, TIPO6, DDD6, TELEFONE6, TIPO7, DDD7, TELEFONE7, TIPO8, DDD8, TELEFONE8) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", CONEXAOCADASTRARCLIENTE);
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@NOME", MySqlDbType.VarChar, 50).Value = TXB3.Text;//TXBNOME
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@RAZAOSOCIAL", MySqlDbType.VarChar, 100).Value = TXB4.Text;//TXBRAZAOSOCIAL
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DIAHORA", MySqlDbType.VarChar, 50).Value = LBLDATA.Text;
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CNPJ", MySqlDbType.VarChar, 18).Value = TXB11.Text;//TXBCNPJ
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@INSCREST", MySqlDbType.VarChar, 30).Value = TXB12.Text;//TXBINSCREST
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@INSCRMUN", MySqlDbType.VarChar, 30).Value = TXB13.Text;//TXBINSCRMUN
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@RUA", MySqlDbType.VarChar, 150).Value = TXB5.Text;//TXBRUA
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@NUMERO", MySqlDbType.VarChar, 10).Value = TXB6.Text;//TXBNUMERO
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@COMPLEMENTO", MySqlDbType.VarChar, 50).Value = TXB7.Text;//TXBCOMPLEMENTO
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@BAIRRO", MySqlDbType.VarChar, 50).Value = TXB8.Text;//TXBBAIRRO
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CIDADE", MySqlDbType.VarChar, 50).Value = TXB9.Text;//TXBCIDADE
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@ESTADO", MySqlDbType.VarChar, 2).Value = TXB10.Text;//TXBESTADO
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CEP", MySqlDbType.VarChar, 9).Value = TXB2.Text;//TXBCEP
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO1", MySqlDbType.VarChar, 100).Value = TXB16.Text;//TXBCONTATO1
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO1", MySqlDbType.VarChar, 1).Value = CBB4.Text;//CBBSEXO1
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL1", MySqlDbType.VarChar, 100).Value = TXB17.Text;//TXBEMAIL1
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO2", MySqlDbType.VarChar, 100).Value = TXB20.Text;//TXBCONTATO2
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO2", MySqlDbType.VarChar, 1).Value = CBB6.Text;//CBBSEXO2
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL2", MySqlDbType.VarChar, 100).Value = TXB21.Text;//TXBEMAIL2
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO3", MySqlDbType.VarChar, 100).Value = TXB24.Text;//TXBCONTATO3
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO3", MySqlDbType.VarChar, 1).Value = CBB8.Text;//CBBSEXO3
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL3", MySqlDbType.VarChar, 100).Value = TXB25.Text;//TXBEMAIL3
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO4", MySqlDbType.VarChar, 100).Value = TXB28.Text;//TXBCONTATO4
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO4", MySqlDbType.VarChar, 1).Value = CBB10.Text;//CBBSEXO4
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL4", MySqlDbType.VarChar, 100).Value = TXB29.Text;//TXBEMAIL4
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO5", MySqlDbType.VarChar, 100).Value = TXB32.Text;//TXBCONTATO5
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO5", MySqlDbType.VarChar, 1).Value = CBB12.Text;//CBBSEXO5
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL5", MySqlDbType.VarChar, 100).Value = TXB33.Text;//TXBEMAIL5
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO6", MySqlDbType.VarChar, 100).Value = TXB36.Text;//TXBCONTATO6
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO6", MySqlDbType.VarChar, 1).Value = CBB14.Text;//CBBSEXO6
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL6", MySqlDbType.VarChar, 100).Value = TXB37.Text;//TXBEMAIL6
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO7", MySqlDbType.VarChar, 100).Value = TXB40.Text;//TXBCONTATO7
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO7", MySqlDbType.VarChar, 1).Value = CBB16.Text;//CBBSEXO7
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL7", MySqlDbType.VarChar, 100).Value = TXB41.Text;//TXBEMAIL7
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@CONTATO8", MySqlDbType.VarChar, 100).Value = TXB44.Text;//TXBCONTATO8
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@SEXO8", MySqlDbType.VarChar, 1).Value = CBB18.Text;//CBBSEXO8
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@EMAIL8", MySqlDbType.VarChar, 100).Value = TXB45.Text;//TXBEMAIL8
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO1", MySqlDbType.VarChar, 6).Value = CBB3.Text;//CBBTIPO1
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD1", MySqlDbType.VarChar, 4).Value = TXB14.Text;//TXBDDD1
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE1", MySqlDbType.VarChar, 10).Value = TXB15.Text;//TXBTELEFONE1
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO2", MySqlDbType.VarChar, 6).Value = CBB5.Text;//CBBTIPO2
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD2", MySqlDbType.VarChar, 4).Value = TXB18.Text;//TXBDDD2
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE2", MySqlDbType.VarChar, 10).Value = TXB19.Text;//TXBTELEFONE2
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO3", MySqlDbType.VarChar, 6).Value = CBB7.Text;//CBBTIPO3
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD3", MySqlDbType.VarChar, 4).Value = TXB22.Text;//TXBDDD3
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE3", MySqlDbType.VarChar, 10).Value = TXB23.Text;//TXBTELEFONE3
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO4", MySqlDbType.VarChar, 6).Value = CBB9.Text;//CBBTIPO4
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD4", MySqlDbType.VarChar, 4).Value = TXB26.Text;//TXBDDD4
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE4", MySqlDbType.VarChar, 10).Value = TXB27.Text;//TXBTELEFONE4
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO5", MySqlDbType.VarChar, 6).Value = CBB11.Text;//CBBTIPO5
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD5", MySqlDbType.VarChar, 4).Value = TXB30.Text;//TXBDDD5
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE5", MySqlDbType.VarChar, 10).Value = TXB31.Text;//TXBTELEFONE5
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO6", MySqlDbType.VarChar, 6).Value = CBB13.Text;//CBBTIPO6
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD6", MySqlDbType.VarChar, 4).Value = TXB34.Text;//TXBDDD6
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE6", MySqlDbType.VarChar, 10).Value = TXB35.Text;//TXBTELEFONE6
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO7", MySqlDbType.VarChar, 6).Value = CBB15.Text;//CBBTIPO7
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD7", MySqlDbType.VarChar, 4).Value = TXB38.Text;//TXBDDD7
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE7", MySqlDbType.VarChar, 10).Value = TXB39.Text;//TXBTELEFONE7
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TIPO8", MySqlDbType.VarChar, 6).Value = CBB17.Text;//CBBTIPO8
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@DDD8", MySqlDbType.VarChar, 4).Value = TXB42.Text;//TXBDDD8
+                        COMANDOCADASTRARCLIENTE.Parameters.Add("@TELEFONE8", MySqlDbType.VarChar, 10).Value = TXB43.Text;//TXBTELEFONE8
 
-                    COMANDOCADASTRARCLIENTE.ExecuteNonQuery();
-                    CONEXAOCADASTRARCLIENTE.Close();
+                        COMANDOCADASTRARCLIENTE.ExecuteNonQuery();
+                        CONEXAOCADASTRARCLIENTE.Close();
 
-                    BotoesInicialCadastroAtualizarExcluir();
+                        BTNCLIENTE();
 
-                    LabelsContatoFalse();
+                        LabelsContatoFalse();
 
-                    DDDFALSE();
-                    TELEFONEFALSE();
-                    CONTATOFALSE();
-                    EMAILFALSE();
-                    TIPOFALSE();
-                    SEXOFALSE();
+                        DDDFALSE();
+                        TELEFONEFALSE();
+                        CONTATOFALSE();
+                        EMAILFALSE();
+                        TIPOFALSE();
+                        SEXOFALSE();
 
-                    LIMPARTXBCBB();
+                        LIMPARTXBCBB();
+                    }
                 }
                 catch
                 {
 
                 }
-
             }
-
             // ATUALIZAR - BOTÃO ATUALIZAR
-            if (BTN3.Text == "ATUALIZAR")
+            if (label2.Text == "ATUALIZAR CLIENTE")
             {
                 try
                 {
-                    if (DialogResult.Yes == MessageBox.Show("ATUALIZAR CLIENTE?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
+                    if (BTN3.Text == "ATUALIZAR")
                     {
-                        DATAHORA();
+                        if (DialogResult.Yes == MessageBox.Show("ATUALIZAR CLIENTE?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
+                        {
+                            DATAHORA();
 
-                        MySqlConnection CONEXAOATUALIZARCLIENTE = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
-                        CONEXAOATUALIZARCLIENTE.Open();
-                        MySqlCommand COMANDOATUALIZARCLIENTE = new MySqlCommand("update CLIENTE SET INSCREST = ?,INSCRMUN = ?, RUA = ?,NUMERO = ?,COMPLEMENTO = ?,BAIRRO = ?,CIDADE = ?,ESTADO = ?,CEP = ?, CONTATO1 = ?,SEXO1 = ?,EMAIL1 = ?,CONTATO2 = ?,SEXO2 = ?,EMAIL2 = ?,CONTATO3 = ?,SEXO3 = ?,EMAIL3 = ?,CONTATO4 = ?,SEXO4 = ?,EMAIL4 = ?,CONTATO5 = ?,SEXO5 = ?,EMAIL5 = ?,CONTATO6 = ?,SEXO6 = ?,EMAIL6 = ?,CONTATO7 = ?,SEXO7 = ?,EMAIL7 = ?,CONTATO8 = ?,SEXO8 = ?,EMAIL8 = ?, TIPO1 = ?, DDD1 = ?, TELEFONE1 = ?, TIPO2 = ?, DDD2 = ?, TELEFONE2 = ?, TIPO3 = ?, DDD3 = ?, TELEFONE3 = ?, TIPO4 = ?, DDD4 = ?, TELEFONE4 = ?, TIPO5 = ?, DDD5 = ?, TELEFONE5 = ?, TIPO6 = ?, DDD6 = ?, TELEFONE6 = ?, TIPO7 = ?, DDD7 = ?, TELEFONE7 = ?,TIPO8 = ?, DDD8 = ?, TELEFONE8 = ? WHERE IDCLIENTE = ?", CONEXAOATUALIZARCLIENTE);
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@INSCREST", MySqlDbType.VarChar).Value = TXB12.Text;//TXBINSCREST
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@INSCRMUN", MySqlDbType.VarChar).Value = TXB13.Text;//TXBINSCRMUN
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@RUA", MySqlDbType.VarChar).Value = TXB5.Text;//TXBRUA
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@NUMERO", MySqlDbType.VarChar).Value = TXB6.Text;//TXBNUMERO
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@COMPLEMENTO", MySqlDbType.VarChar).Value = TXB7.Text;//TXBCOMPLEMENTO
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@BAIRRO", MySqlDbType.VarChar).Value = TXB8.Text;//TXBBAIRRO
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CIDADE", MySqlDbType.VarChar).Value = TXB9.Text;//TXBCIDADE
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@ESTADO", MySqlDbType.VarChar).Value = TXB10.Text;//TXBESTADO
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CEP", MySqlDbType.VarChar).Value = TXB2.Text;//TXBCEP
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO1", MySqlDbType.VarChar).Value = TXB16.Text;//TXBCONTATO1
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO1", MySqlDbType.VarChar).Value = CBB4.Text;//CBBSEXO1
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL1", MySqlDbType.VarChar).Value = TXB17.Text;//TXBEMAIL1
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO2", MySqlDbType.VarChar).Value = TXB20.Text;//TXBCONTATO2
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO2", MySqlDbType.VarChar).Value = CBB6.Text;//CBBSEXO2
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL2", MySqlDbType.VarChar).Value = TXB21.Text;//TXBEMAIL2
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO3", MySqlDbType.VarChar).Value = TXB24.Text;//TXBCONTATO3
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO3", MySqlDbType.VarChar).Value = CBB8.Text;//CBBSEXO3
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL3", MySqlDbType.VarChar).Value = TXB25.Text;//TXBEMAIL3
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO4", MySqlDbType.VarChar).Value = TXB28.Text;//TXBCONTATO4
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO4", MySqlDbType.VarChar).Value = CBB10.Text;//CBBSEXO4
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL4", MySqlDbType.VarChar).Value = TXB29.Text;//TXBEMAIL4
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO5", MySqlDbType.VarChar).Value = TXB32.Text;//TXBCONTATO5
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO5", MySqlDbType.VarChar).Value = CBB12.Text;//CBBSEXO5
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL5", MySqlDbType.VarChar).Value = TXB33.Text;//TXBEMAIL5
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO6", MySqlDbType.VarChar).Value = TXB36.Text;//TXBCONTATO6
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO6", MySqlDbType.VarChar).Value = CBB14.Text;//CBBSEXO6
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL6", MySqlDbType.VarChar).Value = TXB37.Text;//TXBEMAIL6
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO7", MySqlDbType.VarChar).Value = TXB40.Text;//TXBCONTATO7
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO7", MySqlDbType.VarChar).Value = CBB16.Text;//CBBSEXO7
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL7", MySqlDbType.VarChar).Value = TXB41.Text;//TXBEMAIL7
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO8", MySqlDbType.VarChar).Value = TXB44.Text;//TXBCONTATO8
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO8", MySqlDbType.VarChar).Value = CBB18.Text;//CBBSEXO8
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL8", MySqlDbType.VarChar).Value = TXB45.Text;//TXBEMAIL8
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO1", MySqlDbType.VarChar).Value = CBB3.Text;//CBBTIPO1
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD1", MySqlDbType.VarChar).Value = TXB14.Text;//TXBDDD1
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE1", MySqlDbType.VarChar).Value = TXB15.Text;//TXBTELEFONE1
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO2", MySqlDbType.VarChar).Value = CBB5.Text;//CBBTIPO2
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD2", MySqlDbType.VarChar).Value = TXB18.Text;//TXBDDD2
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE2", MySqlDbType.VarChar).Value = TXB19.Text;//TXBTELEFONE2
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO3", MySqlDbType.VarChar).Value = CBB7.Text;//CBBTIPO3
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD3", MySqlDbType.VarChar).Value = TXB22.Text;//TXBDDD3
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE3", MySqlDbType.VarChar).Value = TXB23.Text;//TXBTELEFONE3
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO4", MySqlDbType.VarChar).Value = CBB9.Text;//CBBTIPO4
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD4", MySqlDbType.VarChar).Value = TXB26.Text;//TXBDDD4
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE4", MySqlDbType.VarChar).Value = TXB27.Text;//TXBTELEFONE4
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO5", MySqlDbType.VarChar).Value = CBB11.Text;//CBBTIPO5
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD5", MySqlDbType.VarChar).Value = TXB30.Text;//TXBDDD5
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE5", MySqlDbType.VarChar).Value = TXB31.Text;//TXBTELEFONE5
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO6", MySqlDbType.VarChar).Value = CBB13.Text;//CBBTIPO6
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD6", MySqlDbType.VarChar).Value = TXB34.Text;//TXBDDD6
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE6", MySqlDbType.VarChar).Value = TXB35.Text;//TXBTELEFONE6
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO7", MySqlDbType.VarChar).Value = CBB15.Text;//CBBTIPO7
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD7", MySqlDbType.VarChar).Value = TXB38.Text;//TXBDDD7
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE7", MySqlDbType.VarChar).Value = TXB39.Text;//TXBTELEFONE7
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO8", MySqlDbType.VarChar).Value = CBB17.Text;//CBBTIPO8
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD8", MySqlDbType.VarChar).Value = TXB42.Text;//TXBDDD8
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE8", MySqlDbType.VarChar).Value = TXB43.Text;//TXBTELEFONE8
-                        COMANDOATUALIZARCLIENTE.Parameters.Add("@IDCLIENTE", MySqlDbType.VarChar).Value = TXB1.Text;//TXBCODIGO
-                        COMANDOATUALIZARCLIENTE.ExecuteNonQuery();
-                        CONEXAOATUALIZARCLIENTE.Close();
+                            MySqlConnection CONEXAOATUALIZARCLIENTE = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+                            CONEXAOATUALIZARCLIENTE.Open();
+                            MySqlCommand COMANDOATUALIZARCLIENTE = new MySqlCommand("update CLIENTE SET INSCREST = ?,INSCRMUN = ?, RUA = ?,NUMERO = ?,COMPLEMENTO = ?,BAIRRO = ?,CIDADE = ?,ESTADO = ?,CEP = ?, CONTATO1 = ?,SEXO1 = ?,EMAIL1 = ?,CONTATO2 = ?,SEXO2 = ?,EMAIL2 = ?,CONTATO3 = ?,SEXO3 = ?,EMAIL3 = ?,CONTATO4 = ?,SEXO4 = ?,EMAIL4 = ?,CONTATO5 = ?,SEXO5 = ?,EMAIL5 = ?,CONTATO6 = ?,SEXO6 = ?,EMAIL6 = ?,CONTATO7 = ?,SEXO7 = ?,EMAIL7 = ?,CONTATO8 = ?,SEXO8 = ?,EMAIL8 = ?, TIPO1 = ?, DDD1 = ?, TELEFONE1 = ?, TIPO2 = ?, DDD2 = ?, TELEFONE2 = ?, TIPO3 = ?, DDD3 = ?, TELEFONE3 = ?, TIPO4 = ?, DDD4 = ?, TELEFONE4 = ?, TIPO5 = ?, DDD5 = ?, TELEFONE5 = ?, TIPO6 = ?, DDD6 = ?, TELEFONE6 = ?, TIPO7 = ?, DDD7 = ?, TELEFONE7 = ?,TIPO8 = ?, DDD8 = ?, TELEFONE8 = ? WHERE IDCLIENTE = ?", CONEXAOATUALIZARCLIENTE);
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@INSCREST", MySqlDbType.VarChar).Value = TXB12.Text;//TXBINSCREST
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@INSCRMUN", MySqlDbType.VarChar).Value = TXB13.Text;//TXBINSCRMUN
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@RUA", MySqlDbType.VarChar).Value = TXB5.Text;//TXBRUA
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@NUMERO", MySqlDbType.VarChar).Value = TXB6.Text;//TXBNUMERO
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@COMPLEMENTO", MySqlDbType.VarChar).Value = TXB7.Text;//TXBCOMPLEMENTO
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@BAIRRO", MySqlDbType.VarChar).Value = TXB8.Text;//TXBBAIRRO
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CIDADE", MySqlDbType.VarChar).Value = TXB9.Text;//TXBCIDADE
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@ESTADO", MySqlDbType.VarChar).Value = TXB10.Text;//TXBESTADO
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CEP", MySqlDbType.VarChar).Value = TXB2.Text;//TXBCEP
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO1", MySqlDbType.VarChar).Value = TXB16.Text;//TXBCONTATO1
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO1", MySqlDbType.VarChar).Value = CBB4.Text;//CBBSEXO1
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL1", MySqlDbType.VarChar).Value = TXB17.Text;//TXBEMAIL1
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO2", MySqlDbType.VarChar).Value = TXB20.Text;//TXBCONTATO2
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO2", MySqlDbType.VarChar).Value = CBB6.Text;//CBBSEXO2
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL2", MySqlDbType.VarChar).Value = TXB21.Text;//TXBEMAIL2
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO3", MySqlDbType.VarChar).Value = TXB24.Text;//TXBCONTATO3
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO3", MySqlDbType.VarChar).Value = CBB8.Text;//CBBSEXO3
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL3", MySqlDbType.VarChar).Value = TXB25.Text;//TXBEMAIL3
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO4", MySqlDbType.VarChar).Value = TXB28.Text;//TXBCONTATO4
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO4", MySqlDbType.VarChar).Value = CBB10.Text;//CBBSEXO4
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL4", MySqlDbType.VarChar).Value = TXB29.Text;//TXBEMAIL4
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO5", MySqlDbType.VarChar).Value = TXB32.Text;//TXBCONTATO5
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO5", MySqlDbType.VarChar).Value = CBB12.Text;//CBBSEXO5
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL5", MySqlDbType.VarChar).Value = TXB33.Text;//TXBEMAIL5
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO6", MySqlDbType.VarChar).Value = TXB36.Text;//TXBCONTATO6
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO6", MySqlDbType.VarChar).Value = CBB14.Text;//CBBSEXO6
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL6", MySqlDbType.VarChar).Value = TXB37.Text;//TXBEMAIL6
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO7", MySqlDbType.VarChar).Value = TXB40.Text;//TXBCONTATO7
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO7", MySqlDbType.VarChar).Value = CBB16.Text;//CBBSEXO7
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL7", MySqlDbType.VarChar).Value = TXB41.Text;//TXBEMAIL7
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@CONTATO8", MySqlDbType.VarChar).Value = TXB44.Text;//TXBCONTATO8
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@SEXO8", MySqlDbType.VarChar).Value = CBB18.Text;//CBBSEXO8
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@EMAIL8", MySqlDbType.VarChar).Value = TXB45.Text;//TXBEMAIL8
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO1", MySqlDbType.VarChar).Value = CBB3.Text;//CBBTIPO1
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD1", MySqlDbType.VarChar).Value = TXB14.Text;//TXBDDD1
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE1", MySqlDbType.VarChar).Value = TXB15.Text;//TXBTELEFONE1
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO2", MySqlDbType.VarChar).Value = CBB5.Text;//CBBTIPO2
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD2", MySqlDbType.VarChar).Value = TXB18.Text;//TXBDDD2
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE2", MySqlDbType.VarChar).Value = TXB19.Text;//TXBTELEFONE2
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO3", MySqlDbType.VarChar).Value = CBB7.Text;//CBBTIPO3
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD3", MySqlDbType.VarChar).Value = TXB22.Text;//TXBDDD3
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE3", MySqlDbType.VarChar).Value = TXB23.Text;//TXBTELEFONE3
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO4", MySqlDbType.VarChar).Value = CBB9.Text;//CBBTIPO4
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD4", MySqlDbType.VarChar).Value = TXB26.Text;//TXBDDD4
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE4", MySqlDbType.VarChar).Value = TXB27.Text;//TXBTELEFONE4
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO5", MySqlDbType.VarChar).Value = CBB11.Text;//CBBTIPO5
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD5", MySqlDbType.VarChar).Value = TXB30.Text;//TXBDDD5
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE5", MySqlDbType.VarChar).Value = TXB31.Text;//TXBTELEFONE5
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO6", MySqlDbType.VarChar).Value = CBB13.Text;//CBBTIPO6
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD6", MySqlDbType.VarChar).Value = TXB34.Text;//TXBDDD6
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE6", MySqlDbType.VarChar).Value = TXB35.Text;//TXBTELEFONE6
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO7", MySqlDbType.VarChar).Value = CBB15.Text;//CBBTIPO7
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD7", MySqlDbType.VarChar).Value = TXB38.Text;//TXBDDD7
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE7", MySqlDbType.VarChar).Value = TXB39.Text;//TXBTELEFONE7
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TIPO8", MySqlDbType.VarChar).Value = CBB17.Text;//CBBTIPO8
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@DDD8", MySqlDbType.VarChar).Value = TXB42.Text;//TXBDDD8
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@TELEFONE8", MySqlDbType.VarChar).Value = TXB43.Text;//TXBTELEFONE8
+                            COMANDOATUALIZARCLIENTE.Parameters.Add("@IDCLIENTE", MySqlDbType.VarChar).Value = TXB1.Text;//TXBCODIGO
+                            COMANDOATUALIZARCLIENTE.ExecuteNonQuery();
+                            CONEXAOATUALIZARCLIENTE.Close();
 
-                        BotoesInicialCadastroAtualizarExcluir();
+                            BTNCLIENTE();
 
-                        TXB6.Visible = true;
-                        TXB6.Enabled = false;//TXBNUMERO
-                        TXB7.Visible = true;
-                        TXB7.Enabled = false;//TXBCOMPLEMENTO
-                        TXB12.Visible = true;
-                        TXB12.Enabled = false;//TXBINSCREST
-                        TXB13.Visible = true;
-                        TXB13.Enabled = false;//INSCRMUN
+                            TXB6.Visible = true;
+                            TXB6.Enabled = false;//TXBNUMERO
+                            TXB7.Visible = true;
+                            TXB7.Enabled = false;//TXBCOMPLEMENTO
+                            TXB12.Visible = true;
+                            TXB12.Enabled = false;//TXBINSCREST
+                            TXB13.Visible = true;
+                            TXB13.Enabled = false;//INSCRMUN
 
-                        DDDFALSE();
-                        TELEFONEFALSE();
-                        CONTATOFALSE();
-                        EMAILFALSE();
-                        TIPOFALSE();
-                        SEXOFALSE();
+                            DDDFALSE();
+                            TELEFONEFALSE();
+                            CONTATOFALSE();
+                            EMAILFALSE();
+                            TIPOFALSE();
+                            SEXOFALSE();
 
-                        ATUALIZACBBNOME();
+                            ATUALIZACBB2();
 
-                        LIMPARTXBCBB();
+                            LIMPARTXBCBB();
 
-                        LabelsContatoFalse();
+                            LabelsContatoFalse();
 
-                        TXB2.Visible = true;
-                        TXB2.Enabled = false;//TXBCEP
+                            TXB2.Visible = true;
+                            TXB2.Enabled = false;//TXBCEP
 
-                        CBB2.Visible = true;
-                        CBB2.Enabled = true;
-                        CBB2.Focus();//CBBNOME
+                            CBB2.Visible = true;
+                            CBB2.Enabled = true;
+                            CBB2.Focus();//CBBNOME
+                        }
                     }
                 }
                 catch
@@ -2551,46 +2526,50 @@ namespace GRAFICA2
 
                 }
             }
-
             // EXCLUSÃO - BOTÃO EXCLUIR
-            if (BTN3.Text == "EXCLUIR")
+            if (label2.Text == "EXCLUIR CLIENTE")
             {
                 try
                 {
-                    if (DialogResult.Yes == MessageBox.Show("TEM CERTEZA QUE DESEJA EXCLUIR?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
+                    if (BTN3.Text == "EXCLUIR")
                     {
-                        DATAHORA();
+                        if (DialogResult.Yes == MessageBox.Show("TEM CERTEZA QUE DESEJA EXCLUIR?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2))
+                        {
+                            DATAHORA();
 
-                        MySqlConnection CONEXAOEXCLUIRCLIENTE = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
-                        CONEXAOEXCLUIRCLIENTE.Open();
-                        MySqlCommand COMANDOEXCLUIRCLIENTE = new MySqlCommand("delete FROM CLIENTE where IDCLIENTE = ?", CONEXAOEXCLUIRCLIENTE);
-                        COMANDOEXCLUIRCLIENTE.Parameters.Add("@IDCLIENTE", MySqlDbType.VarChar).Value = TXB1.Text;//TXBCODIGO
-                        COMANDOEXCLUIRCLIENTE.ExecuteNonQuery();
-                        CONEXAOEXCLUIRCLIENTE.Close();
+                            MySqlConnection CONEXAOEXCLUIRCLIENTE = new MySqlConnection("server=localhost;port=3306;user id=root;database=grafica;password=1234");
+                            CONEXAOEXCLUIRCLIENTE.Open();
+                            MySqlCommand COMANDOEXCLUIRCLIENTE = new MySqlCommand("delete FROM CLIENTE where IDCLIENTE = ?", CONEXAOEXCLUIRCLIENTE);
+                            COMANDOEXCLUIRCLIENTE.Parameters.Add("@IDCLIENTE", MySqlDbType.VarChar).Value = TXB1.Text;//TXBCODIGO
+                            COMANDOEXCLUIRCLIENTE.ExecuteNonQuery();
+                            CONEXAOEXCLUIRCLIENTE.Close();
 
-                        BotoesInicialCadastroAtualizarExcluir();
+                            BTNCLIENTE();
 
-                        LabelsContatoFalse();
+                            LabelsContatoFalse();
 
-                        DDDFALSE();
-                        TELEFONEFALSE();
-                        CONTATOFALSE();
-                        EMAILFALSE();
-                        TIPOFALSE();
-                        SEXOFALSE();
+                            DDDFALSE();
+                            TELEFONEFALSE();
+                            CONTATOFALSE();
+                            EMAILFALSE();
+                            TIPOFALSE();
+                            SEXOFALSE();
 
-                        ATUALIZACBBNOME();
+                            ATUALIZACBB2();
 
-                        LIMPARTXBCBB();
+                            LIMPARTXBCBB();
 
-                        CBB2.Focus();//CBBNOME
+                            CBB2.Focus();//CBBNOME
+                        }
                     }
+
                 }
                 catch
                 {
 
                 }
             }
+
             if (label2.Text == "CADASTRAR PAPEIS")
             {
                 try
@@ -2613,11 +2592,17 @@ namespace GRAFICA2
                         COMANDOCADASTRARPAPEL.ExecuteNonQuery();
 
                         CONEXAOCADASTRARPAPEL.Close();
-
-                        LIMPACAMPOSCADASTRARPAPEIS();
-
-                        TXBCADASTROPAPELDESABILITADO();
                     }
+                }
+                catch
+                {
+
+                }
+            }
+            if (label2.Text == "ENTRADA PAPEIS")
+            {
+                try
+                {
                     if (CBB1.Text == "ENTRADA")
                     {
                         DATAHORA();
@@ -2636,12 +2621,18 @@ namespace GRAFICA2
 
                         CONEXAOCADASTRARPAPEL.Close();
 
-                        LIMPACAMPOSCADASTRARPAPEIS();
-
-                        TXBCADASTROPAPELDESABILITADO();
-
                         CBB2.Visible = false;
                     }
+                }
+                catch
+                {
+
+                }
+            }
+            if (label2.Text == "SAÍDA PAPEIS")
+            {
+                try
+                {
                     if (CBB1.Text == "SAÍDA")
                     {
                         DATAHORA();
@@ -2660,20 +2651,15 @@ namespace GRAFICA2
 
                         CONEXAOCADASTRARPAPEL.Close();
 
-                        LIMPACAMPOSCADASTRARPAPEIS();
-
-                        TXBCADASTROPAPELDESABILITADO();
 
                         CBB2.Visible = false;
                     }
                 }
-
                 catch
                 {
 
                 }
             }
-
         }
 
         // CHAMA O ESTOQUE MÍNIMO
@@ -3351,53 +3337,6 @@ namespace GRAFICA2
             }
         }
 
-        // EXIBE O FORMULÁRIO DE CADASTRO DE PAPEL
-        private void FORMCADPAPEL_Click(object sender, EventArgs e)
-        {
-
-
-            label1.Visible = false;
-            label2.Visible = true;
-            label2.Text = "PAPEIS";
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(500, 50);
-            label2.Size = new Size(900, 100);
-            label2.Font = new Font("arial black", 48);
-            label10.Visible = false;
-            label11.Visible = false;
-            label12.Visible = false;
-            label13.Visible = false;
-            label14.Visible = false;
-
-            TXBCADASTROPAPELDESABILITADO();
-            CBBCADASTROCLIENTEOCULTO();
-            DGV1OCULTO();
-            INSERIROCULTO();
-            AsteriscosFalse();
-            LabelsContatoFalse();
-            DDDFALSE();
-            TELEFONEFALSE();
-            CONTATOFALSE();
-            EMAILFALSE();
-            TIPOFALSE();
-            SEXOFALSE();
-            CBBOX2FALSE();
-            TXBCADASTROFUNCIONARIOSOCULTO();
-
-            CBB2.Visible = false;
-
-            BTNFORMPAPEIS();
-            DATAHORA();
-            DATAPAPEIS();
-            CBBOX1();
-            MNS3();
-            LABELFORMULARIOSVISIVEIS();
-            LIMPACAMPOSCADASTRARPAPEIS();
-            PESQUISARVISIVEL();
-
-            CBB1.Focus();
-        }
-
         // LIMPA OS CBB E TXB DO CADASTRO DE PAPEIS
         public void LIMPACAMPOSCADASTRARPAPEIS()
         {
@@ -3444,30 +3383,7 @@ namespace GRAFICA2
         // DESABILITA OS TEXTBOX PARA CADASTRO/ATUALIZAR PAPEIS
         public void TXBCADASTROPAPELDESABILITADO()
         {
-            TXB1.Visible = true;
-            TXB1.Enabled = false;
-            TXB1.Size = new Size(500, 20);
-            TXB1.Location = new Point(411, 299);
-            TXB2.Visible = true;
-            TXB2.Size = new Size(111, 20);
-            TXB2.Enabled = false;
-            TXB2.Location = new Point(919, 299);
-            TXB3.Visible = true;
-            TXB3.Size = new Size(111, 20);
-            TXB3.Enabled = false;
-            TXB3.Location = new Point(1039, 299);
-            TXB4.Visible = true;
-            TXB4.Size = new Size(111, 20);
-            TXB4.Enabled = false;
-            TXB4.Location = new Point(1158, 299);
-            TXB5.Visible = true;
-            TXB5.Enabled = false;
-            TXB5.Size = new Size(111, 20);
-            TXB5.Location = new Point(1278, 299);
-            TXB6.Visible = true;
-            TXB6.Enabled = false;
-            TXB6.Size = new Size(111, 20);
-            TXB6.Location = new Point(1398, 299);
+
         }
 
         // CADASTRO DE PAPEL OCULTO
@@ -3483,17 +3399,85 @@ namespace GRAFICA2
             TXB3.Visible = false;
             TXB4.Visible = false;
             TXB5.Visible = false;
-            TXB5.Enabled = false;
             TXB6.Visible = false;
-            TXB6.Enabled = false;
 
             TXB1.Focus();
         }
 
-        // EXECUTA QUANDO É SELECIONADO CADASTRAR, ENTRADA OU SAÍDA NO COMBOBOX CBB1 - CBBCLIENTE
-        public void ENTRADA_SAÍDA()
+        // EXECUTA QUANDO É SELECIONADO A OPÇÃO NO COMBOBOX1
+        public void OPCOESCBB1()
         {
-            if (CBB1.Text == "CADASTRAR")
+            if (label2.Text == "CLIENTE" && CBB1.Text == "CADASTRAR")
+            {
+                label1.Visible = false;
+                label2.Visible = true;
+                label2.Text = "CADASTRAR CLIENTE";
+                label2.ForeColor = Color.Blue;
+                label2.Location = new Point(500, 50);
+                label2.Size = new Size(900, 100);
+                label2.Font = new Font("arial black", 48);
+
+                if (label2.Text == "CADASTRAR CLIENTE")
+                {
+                    TXB1.Visible = false;//TXBCODIGO
+                    TXB2.Visible = true;
+                    TXB2.Enabled = true;//TXBCEP
+                    TXB2.Location = new Point(411, 300);
+                    TXB2.Size = new Size(128, 20);
+                    TXB3.Visible = true;
+                    TXB3.Enabled = true;//TXBNOME
+                    TXB3.Location = new Point(545, 300);
+                    TXB3.Size = new Size(283, 20);
+                    CBB2.Visible = false;//CBBNOME
+                    TXB4.Visible = true;
+                    TXB4.Enabled = true;//TXBRAZAOSOCIAL
+                    TXB4.Location = new Point(834, 300);
+                    TXB4.Size = new Size(676, 20);
+                    TXB5.Visible = true;
+                    TXB5.Enabled = false;//TXBRUA
+                    TXB5.Location = new Point(411, 345);
+                    TXB5.Size = new Size(725, 20);
+                    TXB6.Visible = true;
+                    TXB6.Enabled = true;//TXBNUMERO
+                    TXB6.Location = new Point(1144, 345);
+                    TXB6.Size = new Size(103, 20);
+                    TXB7.Visible = true;
+                    TXB7.Enabled = true;//TXBCOMPLEMENTO
+                    TXB7.Location = new Point(1254, 345);
+                    TXB7.Size = new Size(255, 20);
+                    TXB8.Visible = true;
+                    TXB8.Enabled = false;//TXBBAIRRO
+                    TXB8.Location = new Point(411, 390);
+                    TXB8.Size = new Size(519, 20);
+                    TXB9.Visible = true;
+                    TXB9.Enabled = false;//TXBCIDADE
+                    TXB9.Location = new Point(939, 390);
+                    TXB9.Size = new Size(513, 20);
+                    TXB10.Visible = true;
+                    TXB10.Enabled = false;//TXBESTADO
+                    TXB10.Location = new Point(1461, 390);
+                    TXB10.Size = new Size(49, 20);
+                    TXB11.Visible = true;
+                    TXB11.Enabled = true;//TXBCNPJ
+                    TXB11.Location = new Point(411, 435);
+                    TXB11.Size = new Size(364, 20);
+                    TXB12.Visible = true;
+                    TXB12.Enabled = true;//TXBINSCREST
+                    TXB12.Location = new Point(783, 435);
+                    TXB12.Size = new Size(358, 20);
+                    TXB13.Visible = true;
+                    TXB13.Enabled = true;//INSCRMUN
+                    TXB13.Location = new Point(1149, 435);
+                    TXB13.Size = new Size(360, 20);
+
+                    TXB2.Focus();
+
+                    PESQUISAROCULTO();
+                    BTNCLIENTE();
+
+                }
+            }
+            if (label2.Text == "PAPEIS" && CBB1.Text == "CADASTRAR")
             {
                 label1.Visible = false;
                 label2.Visible = true;
@@ -3503,28 +3487,27 @@ namespace GRAFICA2
                 label2.Size = new Size(900, 100);
                 label2.Font = new Font("arial black", 48);
 
-                BTNFORMPAPEIS();
+                if (label2.Text == "CADASTRAR PAPEIS")
+                {
+                    TXB1.Visible = true;
+                    TXB1.Enabled = true;
+                    TXB2.Enabled = true;
+                    TXB2.Clear();
+                    TXB3.Enabled = true;
+                    TXB3.Clear();
+                    TXB4.Enabled = true;
+                    TXB4.Clear();
+                    TXB5.Clear();
+                    CBB2.Text = "";
+                    CBB2.Visible = false;
+                    CBB2.Size = new Size(500, 20);
+                    CBB2.Location = new Point(411, 299);
+                    CBB2.Enabled = false;
 
-                CBBCADASTROCLIENTEOCULTO();
+                    BTNFORMPAPEIS();
 
-                BTN2.Visible = false;
-
-                TXB2.Enabled = true;
-                TXB2.Clear();
-                TXB3.Enabled = true;
-                TXB3.Clear();
-                TXB4.Enabled = true;
-                TXB4.Clear();
-                TXB5.Clear();
-                CBB2.Text = "";
-                CBB2.Visible = false;
-                CBB2.Size = new Size(500, 20);
-                CBB2.Location = new Point(411, 299);
-                CBB2.Enabled = false;
-                TXB1.Visible = true;
-                TXB1.Enabled = true;
-
-                TXB1.Focus();
+                    TXB1.Focus();
+                }
             }
             if (CBB1.Text == "ENTRADA")
             {
@@ -3536,25 +3519,29 @@ namespace GRAFICA2
                 label2.Size = new Size(900, 100);
                 label2.Font = new Font("arial black", 48);
 
-                ATUALIZACBBPAPEIS();
-                PESQUISARVISIVEL();
-                BTNFORMPAPEIS();
+                if (label2.Text == "ENTRADA PAPEIS")
+                {
+                    TXB2.Enabled = true;
+                    TXB2.Clear();
+                    TXB3.Enabled = true;
+                    TXB3.Clear();
+                    TXB4.Enabled = false;
+                    TXB4.Clear();
+                    TXB5.Clear();
+                    CBB2.Visible = true;
+                    CBB2.Size = new Size(500, 20);
+                    CBB2.Location = new Point(411, 299);
+                    CBB2.Enabled = true;
+                    CBB2.Text = "";
+                    TXB1.Visible = false;
+                    TXB1.Clear();
 
-                TXB2.Enabled = true;
-                TXB2.Clear();
-                TXB3.Enabled = true;
-                TXB3.Clear();
-                TXB4.Enabled = false;
-                TXB4.Clear();
-                TXB5.Clear();
-                CBB2.Visible = true;
-                CBB2.Size = new Size(500, 20);
-                CBB2.Location = new Point(411, 299);
-                CBB2.Enabled = true;
-                CBB2.Text = "";
-                TXB1.Visible = false;
-                TXB1.Clear();
-                CBB2.Focus();
+                    ATUALIZACBB2();
+                    PESQUISARVISIVEL();
+                    BTNFORMPAPEIS();
+
+                    CBB2.Focus();
+                }
             }
             if (CBB1.Text == "SAÍDA")
             {
@@ -3566,7 +3553,7 @@ namespace GRAFICA2
                 label2.Size = new Size(900, 100);
                 label2.Font = new Font("arial black", 48);
 
-                ATUALIZACBBPAPEIS();
+                ATUALIZACBB2();
                 PESQUISARVISIVEL();
                 BTNFORMPAPEIS();
 
@@ -3589,15 +3576,18 @@ namespace GRAFICA2
         // BOTÕES FORMULÁRIO FUNCIONÁRIOS
         public void BTNFORMFUN()
         {
-            BTN3.Visible = true;
-            BTN3.Text = "CADASTRAR";
-            BTN3.ForeColor = Color.Blue;
-            BTN3.Location = new Point(411, 430);
-            BTN3.Size = new Size(500, 54);
+            if (label2.Text == "FUNCIONÁRIOS")
+            {
+                BTN3.Visible = true;
+                BTN3.Text = "FORMULÁRIO";
+                BTN3.ForeColor = Color.Black;
+                BTN3.Location = new Point(411, 430);
+                BTN3.Size = new Size(500, 54);
 
-            BTNCANCELAR();
-            BTN4.Location = new Point(1011, 430);
-            BTN4.Size = new Size(500, 54);
+                BTNCANCELAR();
+                BTN4.Location = new Point(1011, 430);
+                BTN4.Size = new Size(500, 54);
+            }
         }
 
         // BOTÕES NO FORMULÁRIO PAPEIS
@@ -3652,36 +3642,11 @@ namespace GRAFICA2
                 BTN4.Size = new Size(500, 54);
             }
         }
-
-        // TAMANHO E LOCALIZAÇÃO DO COMBOBOX CADASTRO DO CLIENTE
-        public void CBBCADASTROCLIENTE()
-        {
-            CBB1.Visible = true;
-            CBB1.Text = "Selecione";//CBBCLIENTE
-            CBB1.Location = new Point(411, 243);
-            CBB1.Size = new Size(94, 21);
-        }
         // COMBOBOX CADASTRO DO CLIENTE OCULTO
         public void CBBCADASTROCLIENTEOCULTO()
         {
             CBB1.Visible = false;//CBBCLIENTE
 
-        }
-
-        // TAMANHO E LOCALIZAÇÃO DO COMBOBOX FUNCIONÁRIOS
-        public void CBBOX2()
-        {
-            CBBFUNCIONARIOS.Visible = true;
-            CBBFUNCIONARIOS.Location = new Point(411, 243);
-            CBBFUNCIONARIOS.Size = new Size(94, 21);
-        }
-
-        // TAMANHO E LOCALIZAÇÃO DO COMBOBOX PAPEIS
-        public void CBBOX1()
-        {
-            CBB1.Visible = true;
-            CBB1.Location = new Point(411, 243);
-            CBB1.Size = new Size(94, 21);
         }
 
         // COMBOBOX PAPEIS OCULTO
@@ -3693,7 +3658,7 @@ namespace GRAFICA2
         // COMBOBOX FUNCIONÁRIOS OCULTO
         public void CBBOX2FALSE()
         {
-            CBBFUNCIONARIOS.Visible = false;
+            CBB1.Visible = false;
         }
 
         // EXIBE MATERIA PRIMA EM BRANCO OU EXISTENTE
@@ -3708,7 +3673,7 @@ namespace GRAFICA2
                     {
                         MessageBox.Show("NOME DO PAPEL EM BRANCO");
                         LIMPACAMPOSCADASTRARPAPEIS();
-                        TXBCADASTROPAPELDESABILITADO();
+                        //   TXBCADASTROPAPELDESABILITADO();
                         CBB1.Focus();
                         return;
                     }
@@ -3743,41 +3708,6 @@ namespace GRAFICA2
                 }
             }
         }
-
-        // EXIBE O FORMULÁRIO FUNCIONÁRIO
-        private void FUNCIONARIO_Click(object sender, EventArgs e)
-        {
-            label1.Visible = false;
-            label2.Visible = true;
-            label2.Text = "CADASTRAR FUNCIONÁRIO";
-            label2.ForeColor = Color.Blue;
-            label2.Location = new Point(230, 50);
-            label2.Size = new Size(1500, 100);
-            label2.Font = new Font("arial black", 48);
-
-            CBB2.Visible = false;
-
-            LABELFORMULARIOSVISIVEIS();
-            DadosDoClienteParaCadastroFalse();
-            AsteriscosFalse();
-            LabelsContatoFalse();
-            DDDFALSE();
-            TELEFONEFALSE();
-            CONTATOFALSE();
-            EMAILFALSE();
-            TIPOFALSE();
-            SEXOFALSE();
-            CADPAPELINVISIVEL();
-            MNS4();
-            DGV1OCULTO();
-            INSERIROCULTO();
-            BTNFORMFUN();
-            TXBCADASTROFUNCIONARIOS();
-            CBBOX2();
-
-            TXBDATAFUN.Focus();
-        }
-
         // OCULTA AS LABELS DO CADASTRO FUNCIONÁRIOS
         public void LABELSCADASTROFUNCIONARIOSOCULTO()
         {
@@ -3804,120 +3734,6 @@ namespace GRAFICA2
             label24.Visible = false;
 
         }
-        // EXIBE E HABILITA OS TEXTBOX PARA CADASTRO DE FUNCIONÁRIOS
-        public void TXBCADASTROFUNCIONARIOS()
-        {
-            TXBDATAFUN.Visible = true;
-            TXBDATAFUN.Size = new Size(80, 20);
-            TXBDATAFUN.Enabled = true;
-            TXBDATAFUN.Location = new Point(411, 299);
-            TXBNOMEFUN.Visible = true;
-            TXBNOMEFUN.Size = new Size(551, 20);
-            TXBNOMEFUN.Enabled = true;
-            TXBNOMEFUN.Location = new Point(497, 299);
-            TXBCARGOFUN.Visible = true;
-            TXBCARGOFUN.Size = new Size(265, 20);
-            TXBCARGOFUN.Enabled = true;
-            TXBCARGOFUN.Location = new Point(1054, 299);
-            TXBSALARIOFUN.Visible = true;
-            TXBSALARIOFUN.Enabled = true;
-            TXBSALARIOFUN.Size = new Size(111, 20);
-            TXBSALARIOFUN.Location = new Point(1325, 299);
-            TXBENCARGOSFUN.Visible = true;
-            TXBENCARGOSFUN.Enabled = true;
-            TXBENCARGOSFUN.Size = new Size(69, 20);
-            TXBENCARGOSFUN.Location = new Point(1441, 299);
-            TXBCPFFUN.Visible = true;
-            TXBCPFFUN.Enabled = true;
-            TXBCPFFUN.Size = new Size(111, 20);
-            TXBCPFFUN.Location = new Point(411, 344);
-            TXBRGFUN.Visible = true;
-            TXBRGFUN.Enabled = true;
-            TXBRGFUN.Size = new Size(111, 20);
-            TXBRGFUN.Location = new Point(528, 344);
-            TXBCNHFUN.Visible = true;
-            TXBCNHFUN.Enabled = true;
-            TXBCNHFUN.Size = new Size(111, 20);
-            TXBCNHFUN.Location = new Point(645, 344);
-            TXBCERTRESFUN.Visible = true;
-            TXBCERTRESFUN.Enabled = true;
-            TXBCERTRESFUN.Size = new Size(111, 20);
-            TXBCERTRESFUN.Location = new Point(761, 344);
-            TXBCEPFUN.Visible = true;
-            TXBCEPFUN.Enabled = true;
-            TXBCEPFUN.Size = new Size(111, 20);
-            TXBCEPFUN.Location = new Point(878, 344);
-            TXBENDFUN.Visible = true;
-            TXBENDFUN.Enabled = false;
-            TXBENDFUN.Size = new Size(515, 20);
-            TXBENDFUN.Location = new Point(995, 344);
-            TXBBAIRROFUN.Visible = true;
-            TXBBAIRROFUN.Enabled = false;
-            TXBBAIRROFUN.Size = new Size(191, 20);
-            TXBBAIRROFUN.Location = new Point(411, 389);
-            TXBCIDADEFUN.Visible = true;
-            TXBCIDADEFUN.Enabled = false;
-            TXBCIDADEFUN.Size = new Size(159, 20);
-            TXBCIDADEFUN.Location = new Point(609, 389);
-            TXBUFFUN.Visible = true;
-            TXBUFFUN.Enabled = false;
-            TXBUFFUN.Size = new Size(50, 20);
-            TXBUFFUN.Location = new Point(774, 389);
-            TXBNUMEROFUN.Visible = true;
-            TXBNUMEROFUN.Enabled = true;
-            TXBNUMEROFUN.Size = new Size(70, 20);
-            TXBNUMEROFUN.Location = new Point(830, 389);
-            TXBCOMPFUN.Visible = true;
-            TXBCOMPFUN.Enabled = true;
-            TXBCOMPFUN.Size = new Size(160, 20);
-            TXBCOMPFUN.Location = new Point(905, 389);
-            CBBDESCRICAO.Visible = true;
-            CBBDESCRICAO.Enabled = true;
-            CBBDESCRICAO.Size = new Size(250, 20);
-            CBBDESCRICAO.Location = new Point(1070, 389);
-            TXBBONIFIFUN.Visible = true;
-            TXBBONIFIFUN.Enabled = true;
-            TXBBONIFIFUN.Size = new Size(90, 20);
-            TXBBONIFIFUN.Location = new Point(1325, 389);
-            TXBTOTALFUN.Visible = true;
-            TXBTOTALFUN.Enabled = true;
-            TXBTOTALFUN.Size = new Size(90, 20);
-            TXBTOTALFUN.Location = new Point(1420, 389);
-            TXBDATADEMISSAO.Visible = true;
-            TXBDATADEMISSAO.Enabled = true;
-            TXBDATADEMISSAO.Size = new Size(80, 20);
-            TXBDATADEMISSAO.Location = new Point(1315, 520);
-            TXBTEMPO.Visible = true;
-            TXBTEMPO.Enabled = true;
-            TXBTEMPO.Size = new Size(111, 20);
-            TXBTEMPO.Location = new Point(1400, 520);
-        }
-
-        // OCULTA OS TEXTBOX PARA CADASTRO DE FUNCIONÁRIOS
-        public void TXBCADASTROFUNCIONARIOSOCULTO()
-        {
-            TXBDATAFUN.Visible = false;
-            TXBNOMEFUN.Visible = false;
-            TXBCARGOFUN.Visible = false;
-            TXBSALARIOFUN.Visible = false;
-            TXBENCARGOSFUN.Visible = false;
-            TXBCPFFUN.Visible = false;
-            TXBRGFUN.Visible = false;
-            TXBCNHFUN.Visible = false;
-            TXBCERTRESFUN.Visible = false;
-            TXBCEPFUN.Visible = false;
-            TXBENDFUN.Visible = false;
-            TXBBAIRROFUN.Visible = false;
-            TXBCIDADEFUN.Visible = false;
-            TXBUFFUN.Visible = false;
-            TXBNUMEROFUN.Visible = false;
-            TXBCOMPFUN.Visible = false;
-            CBBDESCRICAO.Visible = false;
-            TXBBONIFIFUN.Visible = false;
-            TXBTOTALFUN.Visible = false;
-            TXBDATADEMISSAO.Visible = false;
-            TXBTEMPO.Visible = false;
-        }
 
         // FORMULÁRIO CENTRO DE CUSTO
         private void CENTRODECUSTO_Click(object sender, EventArgs e)
@@ -3938,7 +3754,6 @@ namespace GRAFICA2
 
             TXBCADASTROCENTRODECUSTO();
             CADPAPELINVISIVEL();
-            TXBCADASTROFUNCIONARIOSOCULTO();
 
             CBB2.Visible = false;
 
@@ -3954,10 +3769,10 @@ namespace GRAFICA2
             TXBDESCRICAO.Size = new Size(358, 20);
             TXBDESCRICAO.Enabled = true;
             TXBDESCRICAO.Location = new Point(521, 250);
-            CBBDESCRICAO.Visible = false;
-            CBBDESCRICAO.Size = new Size(358, 20);
-            CBBDESCRICAO.Enabled = true;
-            CBBDESCRICAO.Location = new Point(521, 250);
+            CBB1.Visible = false;
+            CBB1.Size = new Size(358, 20);
+            CBB1.Enabled = true;
+            CBB1.Location = new Point(521, 250);
             CBBTIPO.Visible = true;
             CBBTIPO.Size = new Size(121, 20);
             CBBTIPO.Enabled = true;
@@ -3989,26 +3804,11 @@ namespace GRAFICA2
             RB2.Location = new Point(1260, 290);
         }
 
-        // OCULTA FORMULÁRIO CENTRO DE CUSTO
-        public void CENTRODECUSTOOCULTO()
-        {
-            TXBDESCRICAO.Visible = false;
-            CBBDESCRICAO.Visible = false;
-            CBBTIPO.Visible = false;
-            TXBNHP.Visible = false;
-            TXBSUBSIDIAR.Visible = false;
-            CBBTURNO.Visible = false;
-            CBBTIPOHORA.Visible = false;
-
-            RB1.Visible = false;
-            RB2.Visible = false;
-        }
-
         // RB1 EXIBE AS TXB DO FORMULÁRIO CENTRO DE CUSTO
         private void RB1_CheckedChanged(object sender, EventArgs e)
         {
             TXBDESCRICAO.Visible = true;
-            CBBDESCRICAO.Visible = false;
+            CBB1.Visible = false;
             CBBTIPO.Enabled = true;
             TXBNHP.Enabled = true;
             TXBSUBSIDIAR.Enabled = true;
@@ -4022,98 +3822,59 @@ namespace GRAFICA2
         private void RB2_CheckedChanged(object sender, EventArgs e)
         {
             TXBDESCRICAO.Visible = false;
-            CBBDESCRICAO.Visible = true;
+            CBB1.Visible = true;
             CBBTIPO.Enabled = false;
             TXBNHP.Enabled = false;
             TXBSUBSIDIAR.Enabled = false;
             CBBTURNO.Enabled = false;
             CBBTIPOHORA.Enabled = false;
 
-            CBBDESCRICAO.Focus();
-        }
-        // MENUSTRIPS
-        public void MNS1()
-        {
-            MS1.Visible = true;
-            MS1.MaximumSize = new Size(1904, 24);
-            MS2.Visible = false;
-            MS3.Visible = false;
-            MS4.Visible = false;
-            MS5.Visible = false;
-            MS6.Visible = false;
-            MS7.Visible = false;
+            CBB1.Focus();
         }
 
-        public void MNS2()
+        // FORMULÁRIO LOGOTIPO
+        public void LOGOTIPO()
         {
-            MS1.Visible = false;
-            MS2.Visible = true;
-            MS2.MaximumSize = new Size(1904, 24);
-            MS3.Visible = false;
-            MS4.Visible = false;
-            MS5.Visible = false;
-            MS6.Visible = false;
-            MS7.Visible = false;
-        }
+            label1.Visible = true;
+            label1.Text = "LOGOTIPO";
+            label1.Location = new Point(660, 450);
+            label1.Size = new Size(612, 136);
+            label1.Font = new Font("arial black", 72);
 
-        public void MNS3()
-        {
-            MS1.Visible = false;
-            MS2.Visible = false;
-            MS3.Visible = true;
-            MS3.MaximumSize = new Size(1904, 24);
-            MS4.Visible = false;
-            MS5.Visible = false;
-            MS6.Visible = false;
-            MS7.Visible = false;
-        }
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label16.Visible = false;
+            label17.Visible = false;
+            label18.Visible = false;
+            label19.Visible = false;
+            label25.Visible = false;
+            label26.Visible = false;
+            label27.Visible = false;
+            label28.Visible = false;
+            label29.Visible = false;
+            label30.Visible = false;
+            label31.Visible = false;
 
-        public void MNS4()
-        {
-            MS1.Visible = false;
-            MS2.Visible = false;
-            MS3.Visible = false;
-            MS4.Visible = true;
-            MS4.MaximumSize = new Size(1904, 24);
-            MS5.Visible = false;
-            MS6.Visible = false;
-            MS7.Visible = false;
-        }
+            BTN1.Visible = false;
+            BTN3.Visible = false;
+            BTN4.Visible = false;
 
-        public void MNS5()
-        {
-            MS1.Visible = false;
-            MS2.Visible = false;
-            MS3.Visible = false;
-            MS4.Visible = false;
-            MS5.Visible = true;
-            MS5.MaximumSize = new Size(1904, 24);
-            MS6.Visible = false;
-            MS7.Visible = false;
-        }
-
-        public void MNS6()
-        {
-            MS1.Visible = false;
-            MS2.Visible = false;
-            MS3.Visible = false;
-            MS4.Visible = false;
-            MS5.Visible = false;
-            MS6.Visible = true;
-            MS6.MaximumSize = new Size(1904, 24);
-            MS7.Visible = false;
-        }
-
-        public void MNS7()
-        {
-            MS1.Visible = false;
-            MS2.Visible = false;
-            MS3.Visible = false;
-            MS4.Visible = false;
-            MS5.Visible = false;
-            MS6.Visible = false;
-            MS7.Visible = true;
-            MS7.MaximumSize = new Size(1904, 24);
+            CBBOX2FALSE();
+            DGV1OCULTO();
+            PESQUISAROCULTO();
+            MNS1();
         }
 
         // FORMULÁRIO CLIENTE
@@ -4128,46 +3889,286 @@ namespace GRAFICA2
             label2.Font = new Font("arial black", 48);
             label25.Visible = false;
 
-           /* label1.Visible = false;
-            label2.Visible = true;
-            label2.Text = "CLIENTE";
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(500, 50);
-            label2.Size = new Size(900, 75);
-            label2.Font = new Font("arial black", 48);
-            label25.Visible = false; */
+            TXB1.Visible = false;//TXBCODIGO
+            TXB2.Visible = true;
+            TXB2.Enabled = false;//TXBCEP
+            TXB2.Location = new Point(411, 300);
+            TXB2.Size = new Size(128, 20);
+            TXB3.Visible = true;
+            TXB3.Enabled = false;//TXBNOME
+            TXB3.Location = new Point(545, 300);
+            TXB3.Size = new Size(283, 20);
+            CBB2.Visible = false;//CBBNOME
+            TXB4.Visible = true;
+            TXB4.Enabled = false;//TXBRAZAOSOCIAL
+            TXB4.Location = new Point(834, 300);
+            TXB4.Size = new Size(676, 20);
+            TXB5.Visible = true;
+            TXB5.Enabled = false;//TXBRUA
+            TXB5.Location = new Point(411, 345);
+            TXB5.Size = new Size(725, 20);
+            TXB6.Visible = true;
+            TXB6.Enabled = false;//TXBNUMERO
+            TXB6.Location = new Point(1144, 345);
+            TXB6.Size = new Size(103, 20);
+            TXB7.Visible = true;
+            TXB7.Enabled = false;//TXBCOMPLEMENTO
+            TXB7.Location = new Point(1254, 345);
+            TXB7.Size = new Size(255, 20);
+            TXB8.Visible = true;
+            TXB8.Enabled = false;//TXBBAIRRO
+            TXB8.Location = new Point(411, 390);
+            TXB8.Size = new Size(519, 20);
+            TXB9.Visible = true;
+            TXB9.Enabled = false;//TXBCIDADE
+            TXB9.Location = new Point(939, 390);
+            TXB9.Size = new Size(513, 20);
+            TXB10.Visible = true;
+            TXB10.Enabled = false;//TXBESTADO
+            TXB10.Location = new Point(1461, 390);
+            TXB10.Size = new Size(49, 20);
+            TXB11.Visible = true;
+            TXB11.Enabled = false;//TXBCNPJ
+            TXB11.Location = new Point(411, 435);
+            TXB11.Size = new Size(364, 20);
+            TXB12.Visible = true;
+            TXB12.Enabled = false;//TXBINSCREST
+            TXB12.Location = new Point(783, 435);
+            TXB12.Size = new Size(358, 20);
+            TXB13.Visible = true;
+            TXB13.Enabled = false;//INSCRMUN
+            TXB13.Location = new Point(1149, 435);
+            TXB13.Size = new Size(360, 20);
+            TXB14.Visible = false;
+            TXB15.Visible = false;
+            TXB16.Visible = false;
+            TXB17.Visible = false;
+            TXB18.Visible = false;
+            TXB19.Visible = false;
+            TXB20.Visible = false;
+            TXB21.Visible = false;
 
-            BotoesInicialCadastroAtualizarExcluir();
+            BTNCLIENTE();
             DATACLIENTE();
             DATAHORA();
             LABELFORMULARIOSVISIVEIS();
-            TXBVISIVEIS();
-            CBBCADASTROCLIENTE();
+            CBBOX1();
             INSERIRVISIVEL();
             MNS2();
             Asteriscos();
             LIMPARTXBCBB();
-            TXBCADASTROFUNCIONARIOSOCULTO();
+            PESQUISARVISIVEL();
             CBB1.Focus();//CBBCLIENTE
         }
+        // FORMULÁRIO PAPEL
+        private void PAPEL()
+        {
 
-        // CHAMA O FORMULÁRIO CLIENTE E OCULTA AS LABELS CONTATO
+            label1.Visible = false;
+            label2.Visible = true;
+            label2.Text = "PAPEIS";
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(500, 50);
+            label2.Size = new Size(900, 100);
+            label2.Font = new Font("arial black", 48);
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
+
+            TXB1.Visible = true;
+            TXB1.Enabled = false;
+            TXB1.Size = new Size(500, 20);
+            TXB1.Location = new Point(411, 299);
+            TXB2.Visible = true;
+            TXB2.Size = new Size(111, 20);
+            TXB2.Enabled = false;
+            TXB2.Location = new Point(919, 299);
+            TXB3.Visible = true;
+            TXB3.Size = new Size(111, 20);
+            TXB3.Enabled = false;
+            TXB3.Location = new Point(1039, 299);
+            TXB4.Visible = true;
+            TXB4.Size = new Size(111, 20);
+            TXB4.Enabled = false;
+            TXB4.Location = new Point(1158, 299);
+            TXB5.Visible = true;
+            TXB5.Enabled = false;
+            TXB5.Size = new Size(111, 20);
+            TXB5.Location = new Point(1278, 299);
+            TXB6.Visible = true;
+            TXB6.Enabled = false;
+            TXB6.Size = new Size(111, 20);
+            TXB6.Location = new Point(1398, 299);
+            TXB7.Visible = false;
+            TXB8.Visible = false;
+            TXB9.Visible = false;
+            TXB10.Visible = false;
+            TXB11.Visible = false;
+            TXB12.Visible = false;
+            TXB13.Visible = false;
+
+            INSERIROCULTO();
+            AsteriscosFalse();
+            DDDFALSE();
+            TELEFONEFALSE();
+            CONTATOFALSE();
+            EMAILFALSE();
+            TIPOFALSE();
+            SEXOFALSE();
+            BTNFORMPAPEIS();
+            DATAHORA();
+            DATAPAPEIS();
+            CBBOX1();
+            MNS3();
+            LABELFORMULARIOSVISIVEIS();
+            LIMPACAMPOSCADASTRARPAPEIS();
+            PESQUISARVISIVEL();
+            CBB1.Focus();
+        }
+        // FORMULÁRIO FUNCIONÁRIOS
+        public void FUNCIONARIOS()
+        {
+            label1.Visible = false;
+            label2.Visible = true;
+            label2.Text = "FUNCIONÁRIOS";
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(230, 50);
+            label2.Size = new Size(1500, 100);
+            label2.Font = new Font("arial black", 48);
+
+            TXB1.Visible = true;
+            TXB1.Size = new Size(80, 20);
+            TXB1.Enabled = false;
+            TXB1.Location = new Point(411, 299);
+            TXB2.Visible = true;
+            TXB2.Size = new Size(551, 20);
+            TXB2.Enabled = false;
+            TXB2.Location = new Point(497, 299);
+            TXB3.Visible = true;
+            TXB3.Size = new Size(265, 20);
+            TXB3.Enabled = false;
+            TXB3.Location = new Point(1054, 299);
+            TXB4.Visible = true;
+            TXB4.Enabled = false;
+            TXB4.Size = new Size(111, 20);
+            TXB4.Location = new Point(1325, 299);
+            TXB5.Visible = true;
+            TXB5.Enabled = false;
+            TXB5.Size = new Size(69, 20);
+            TXB5.Location = new Point(1441, 299);
+            TXB6.Visible = true;
+            TXB6.Enabled = false;
+            TXB6.Size = new Size(111, 20);
+            TXB6.Location = new Point(411, 344);
+            TXB7.Visible = true;
+            TXB7.Enabled = false;
+            TXB7.Size = new Size(111, 20);
+            TXB7.Location = new Point(528, 344);
+            TXB8.Visible = true;
+            TXB8.Enabled = false;
+            TXB8.Size = new Size(111, 20);
+            TXB8.Location = new Point(645, 344);
+            TXB9.Visible = true;
+            TXB9.Enabled = false;
+            TXB9.Size = new Size(111, 20);
+            TXB9.Location = new Point(761, 344);
+            TXB10.Visible = true;
+            TXB10.Enabled = false;
+            TXB10.Size = new Size(111, 20);
+            TXB10.Location = new Point(878, 344);
+            TXB11.Visible = true;
+            TXB11.Enabled = false;
+            TXB11.Size = new Size(515, 20);
+            TXB11.Location = new Point(995, 344);
+            TXB12.Visible = true;
+            TXB12.Enabled = false;
+            TXB12.Size = new Size(191, 20);
+            TXB12.Location = new Point(411, 389);
+            TXB13.Visible = true;
+            TXB13.Enabled = false;
+            TXB13.Size = new Size(159, 20);
+            TXB13.Location = new Point(609, 389);
+            TXB14.Visible = true;
+            TXB14.Enabled = false;
+            TXB14.Size = new Size(50, 20);
+            TXB14.Location = new Point(774, 389);
+            TXB15.Visible = true;
+            TXB15.Enabled = false;
+            TXB15.Size = new Size(70, 20);
+            TXB15.Location = new Point(830, 389);
+            TXB16.Visible = true;
+            TXB16.Enabled = false;
+            TXB16.Size = new Size(160, 20);
+            TXB16.Location = new Point(905, 389);
+            CBB2.Visible = true;
+            CBB2.Enabled = false;
+            CBB2.Size = new Size(250, 20);
+            CBB2.Location = new Point(1070, 389);
+            TXB17.Visible = true;
+            TXB17.Enabled = false;
+            TXB17.Size = new Size(90, 20);
+            TXB17.Location = new Point(1325, 389);
+            TXB18.Visible = true;
+            TXB18.Enabled = false;
+            TXB18.Size = new Size(90, 20);
+            TXB18.Location = new Point(1420, 389);
+            TXB19.Visible = true;
+            TXB19.Enabled = false;
+            TXB19.Size = new Size(80, 20);
+            TXB19.Location = new Point(1315, 520);
+            TXB20.Visible = true;
+            TXB20.Enabled = false;
+            TXB20.Size = new Size(111, 20);
+            TXB20.Location = new Point(1400, 520);
+
+            LABELFORMULARIOSVISIVEIS();
+            AsteriscosFalse();
+            INSERIROCULTO();
+            BTNFORMFUN();
+            CBBOX1();
+            DDDFALSE();
+            TELEFONEFALSE();
+            CONTATOFALSE();
+            EMAILFALSE();
+            TIPOFALSE();
+            SEXOFALSE();
+            DATAHORA();
+            DATAFUN();
+            MNS4();
+            PESQUISARVISIVEL();
+            CBB1.Focus();
+        }
+
+        // CHAMA O FORMULÁRIO LOGOTIPO
+        private void PADRAO_Load(object sender, EventArgs e)
+        {
+            LOGOTIPO();
+        }
+
+        // CHAMA O FORMULÁRIO CLIENTE
         private void CLIENTE_Click(object sender, EventArgs e)
         {
             CLIENTE();
         }
 
-        // COMBOBOX PARA ESCOLHER CADASTRO, ATUALIZAR E EXCLUIR CLIENTE
-        private void CBBCLIENTE_Leave(object sender, EventArgs e)
+        // CHAMA O FORMULÁRIO PAPEL
+        private void PAPEL_Click(object sender, EventArgs e)
         {
-            // CADASTRARATUALIZAREXCLUIR();
-            TXBVISIVEIS();
+            PAPEL();
         }
 
-        // COMBOBOX USADO PARA SELECIONAR CADASTRAR, ENTRADA OU SAÍDA - EXECUTA QUANDO PERDE O FOCO
-        private void CBB1_Leave(object sender, EventArgs e) //CBBCLIENTE
+        // CHAMA O FORMULÁRIO FUNCIONÁRIOS
+        private void FUNCIONARIO_Click(object sender, EventArgs e)
         {
-            ENTRADA_SAÍDA();
+            FUNCIONARIOS();
+        }
+
+        // COMBOBOX PARA ESCOLHER CADASTRO, ATUALIZAR E EXCLUIR CLIENTE
+        private void CBB1_Leave(object sender, EventArgs e)
+        {
+            OPCOESCBB1();
         }
     }
 }

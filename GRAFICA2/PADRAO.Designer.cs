@@ -164,31 +164,11 @@ namespace GRAFICA2
             this.LBLCODIGO = new System.Windows.Forms.Label();
             this.LBLCODIGO1 = new System.Windows.Forms.Label();
             this.LBLCODIGO2 = new System.Windows.Forms.Label();
-            this.TXBDATAFUN = new System.Windows.Forms.TextBox();
-            this.TXBNOMEFUN = new System.Windows.Forms.TextBox();
-            this.TXBCARGOFUN = new System.Windows.Forms.TextBox();
-            this.TXBCPFFUN = new System.Windows.Forms.TextBox();
-            this.TXBCNHFUN = new System.Windows.Forms.TextBox();
-            this.TXBCERTRESFUN = new System.Windows.Forms.TextBox();
-            this.TXBENDFUN = new System.Windows.Forms.TextBox();
-            this.TXBCEPFUN = new System.Windows.Forms.TextBox();
-            this.TXBCOMPFUN = new System.Windows.Forms.TextBox();
-            this.TXBCIDADEFUN = new System.Windows.Forms.TextBox();
-            this.TXBSALARIOFUN = new System.Windows.Forms.TextBox();
-            this.TXBENCARGOSFUN = new System.Windows.Forms.TextBox();
-            this.TXBBONIFIFUN = new System.Windows.Forms.TextBox();
             this.CBBDESCRICAO = new System.Windows.Forms.ComboBox();
-            this.TXBDATADEMISSAO = new System.Windows.Forms.TextBox();
-            this.TXBTEMPO = new System.Windows.Forms.TextBox();
-            this.TXBRGFUN = new System.Windows.Forms.TextBox();
-            this.TXBNUMEROFUN = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.TXBTOTALFUN = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.TXBUFFUN = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.TXBBAIRROFUN = new System.Windows.Forms.TextBox();
             this.TXBDESCRICAO = new System.Windows.Forms.TextBox();
             this.CBBTIPO = new System.Windows.Forms.ComboBox();
             this.TXBNHP = new System.Windows.Forms.TextBox();
@@ -196,7 +176,6 @@ namespace GRAFICA2
             this.CBBTURNO = new System.Windows.Forms.ComboBox();
             this.CBBTIPOHORA = new System.Windows.Forms.ComboBox();
             this.labe32 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.BTNINSERIRCC = new System.Windows.Forms.Button();
@@ -208,7 +187,6 @@ namespace GRAFICA2
             this.LBLCODIGO5 = new System.Windows.Forms.Label();
             this.LBLCODIGO6 = new System.Windows.Forms.Label();
             this.LBLCODIGO7 = new System.Windows.Forms.Label();
-            this.CBBFUNCIONARIOS = new System.Windows.Forms.ComboBox();
             this.CBB1 = new System.Windows.Forms.ComboBox();
             this.MS7 = new System.Windows.Forms.MenuStrip();
             this.M7 = new System.Windows.Forms.ToolStripMenuItem();
@@ -261,7 +239,7 @@ namespace GRAFICA2
             this.pAPEISToolStripMenuItem.Name = "pAPEISToolStripMenuItem";
             this.pAPEISToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.pAPEISToolStripMenuItem.Text = "PAPEIS";
-            this.pAPEISToolStripMenuItem.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
+            this.pAPEISToolStripMenuItem.Click += new System.EventHandler(this.PAPEL_Click);
             // 
             // fUNCIONARIOSToolStripMenuItem
             // 
@@ -310,7 +288,7 @@ namespace GRAFICA2
             this.PAPEIS4.Name = "PAPEIS4";
             this.PAPEIS4.Size = new System.Drawing.Size(55, 20);
             this.PAPEIS4.Text = "PAPEIS";
-            this.PAPEIS4.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
+            this.PAPEIS4.Click += new System.EventHandler(this.PAPEL_Click);
             // 
             // SAIR4
             // 
@@ -323,7 +301,7 @@ namespace GRAFICA2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1014, 553);
+            this.label1.Location = new System.Drawing.Point(1245, 450);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 45);
             this.label1.TabIndex = 4;
@@ -334,7 +312,7 @@ namespace GRAFICA2
             // 
             this.label2.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(1334, 895);
+            this.label2.Location = new System.Drawing.Point(1108, 523);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 75);
             this.label2.TabIndex = 5;
@@ -343,7 +321,7 @@ namespace GRAFICA2
             // 
             // TXB2
             // 
-            this.TXB2.Location = new System.Drawing.Point(79, 728);
+            this.TXB2.Location = new System.Drawing.Point(930, 41);
             this.TXB2.Name = "TXB2";
             this.TXB2.Size = new System.Drawing.Size(68, 20);
             this.TXB2.TabIndex = 1;
@@ -353,7 +331,7 @@ namespace GRAFICA2
             // 
             // TXB3
             // 
-            this.TXB3.Location = new System.Drawing.Point(152, 728);
+            this.TXB3.Location = new System.Drawing.Point(1003, 41);
             this.TXB3.Name = "TXB3";
             this.TXB3.Size = new System.Drawing.Size(68, 20);
             this.TXB3.TabIndex = 2;
@@ -362,7 +340,7 @@ namespace GRAFICA2
             // 
             // TXB4
             // 
-            this.TXB4.Location = new System.Drawing.Point(225, 728);
+            this.TXB4.Location = new System.Drawing.Point(1076, 41);
             this.TXB4.Name = "TXB4";
             this.TXB4.Size = new System.Drawing.Size(68, 20);
             this.TXB4.TabIndex = 3;
@@ -371,7 +349,7 @@ namespace GRAFICA2
             // 
             // TXB5
             // 
-            this.TXB5.Location = new System.Drawing.Point(6, 758);
+            this.TXB5.Location = new System.Drawing.Point(857, 71);
             this.TXB5.Name = "TXB5";
             this.TXB5.Size = new System.Drawing.Size(68, 20);
             this.TXB5.TabIndex = 4;
@@ -379,7 +357,7 @@ namespace GRAFICA2
             // 
             // TXB6
             // 
-            this.TXB6.Location = new System.Drawing.Point(79, 758);
+            this.TXB6.Location = new System.Drawing.Point(930, 71);
             this.TXB6.Name = "TXB6";
             this.TXB6.Size = new System.Drawing.Size(68, 20);
             this.TXB6.TabIndex = 5;
@@ -388,7 +366,7 @@ namespace GRAFICA2
             // 
             // TXB7
             // 
-            this.TXB7.Location = new System.Drawing.Point(152, 758);
+            this.TXB7.Location = new System.Drawing.Point(1003, 71);
             this.TXB7.Name = "TXB7";
             this.TXB7.Size = new System.Drawing.Size(68, 20);
             this.TXB7.TabIndex = 6;
@@ -396,7 +374,7 @@ namespace GRAFICA2
             // 
             // TXB8
             // 
-            this.TXB8.Location = new System.Drawing.Point(224, 758);
+            this.TXB8.Location = new System.Drawing.Point(1075, 71);
             this.TXB8.Name = "TXB8";
             this.TXB8.Size = new System.Drawing.Size(68, 20);
             this.TXB8.TabIndex = 7;
@@ -404,7 +382,7 @@ namespace GRAFICA2
             // 
             // TXB9
             // 
-            this.TXB9.Location = new System.Drawing.Point(298, 758);
+            this.TXB9.Location = new System.Drawing.Point(1149, 71);
             this.TXB9.Name = "TXB9";
             this.TXB9.Size = new System.Drawing.Size(68, 20);
             this.TXB9.TabIndex = 8;
@@ -412,7 +390,7 @@ namespace GRAFICA2
             // 
             // TXB10
             // 
-            this.TXB10.Location = new System.Drawing.Point(5, 787);
+            this.TXB10.Location = new System.Drawing.Point(856, 100);
             this.TXB10.Name = "TXB10";
             this.TXB10.Size = new System.Drawing.Size(68, 20);
             this.TXB10.TabIndex = 9;
@@ -420,7 +398,7 @@ namespace GRAFICA2
             // 
             // TXB13
             // 
-            this.TXB13.Location = new System.Drawing.Point(225, 787);
+            this.TXB13.Location = new System.Drawing.Point(1076, 100);
             this.TXB13.Name = "TXB13";
             this.TXB13.Size = new System.Drawing.Size(68, 20);
             this.TXB13.TabIndex = 12;
@@ -428,7 +406,7 @@ namespace GRAFICA2
             // 
             // TXB12
             // 
-            this.TXB12.Location = new System.Drawing.Point(152, 787);
+            this.TXB12.Location = new System.Drawing.Point(1003, 100);
             this.TXB12.Name = "TXB12";
             this.TXB12.Size = new System.Drawing.Size(68, 20);
             this.TXB12.TabIndex = 11;
@@ -436,7 +414,7 @@ namespace GRAFICA2
             // 
             // TXB11
             // 
-            this.TXB11.Location = new System.Drawing.Point(79, 787);
+            this.TXB11.Location = new System.Drawing.Point(930, 100);
             this.TXB11.Name = "TXB11";
             this.TXB11.Size = new System.Drawing.Size(68, 20);
             this.TXB11.TabIndex = 10;
@@ -446,7 +424,7 @@ namespace GRAFICA2
             // 
             // TXB16
             // 
-            this.TXB16.Location = new System.Drawing.Point(225, 816);
+            this.TXB16.Location = new System.Drawing.Point(1076, 129);
             this.TXB16.Name = "TXB16";
             this.TXB16.Size = new System.Drawing.Size(68, 20);
             this.TXB16.TabIndex = 16;
@@ -454,7 +432,7 @@ namespace GRAFICA2
             // 
             // TXB15
             // 
-            this.TXB15.Location = new System.Drawing.Point(152, 816);
+            this.TXB15.Location = new System.Drawing.Point(1003, 129);
             this.TXB15.Name = "TXB15";
             this.TXB15.Size = new System.Drawing.Size(68, 20);
             this.TXB15.TabIndex = 15;
@@ -462,7 +440,7 @@ namespace GRAFICA2
             // 
             // TXB14
             // 
-            this.TXB14.Location = new System.Drawing.Point(79, 816);
+            this.TXB14.Location = new System.Drawing.Point(930, 129);
             this.TXB14.Name = "TXB14";
             this.TXB14.Size = new System.Drawing.Size(68, 20);
             this.TXB14.TabIndex = 14;
@@ -470,7 +448,7 @@ namespace GRAFICA2
             // 
             // TXB17
             // 
-            this.TXB17.Location = new System.Drawing.Point(371, 816);
+            this.TXB17.Location = new System.Drawing.Point(1222, 129);
             this.TXB17.Name = "TXB17";
             this.TXB17.Size = new System.Drawing.Size(68, 20);
             this.TXB17.TabIndex = 18;
@@ -478,7 +456,7 @@ namespace GRAFICA2
             // 
             // TXB21
             // 
-            this.TXB21.Location = new System.Drawing.Point(371, 846);
+            this.TXB21.Location = new System.Drawing.Point(1222, 159);
             this.TXB21.Name = "TXB21";
             this.TXB21.Size = new System.Drawing.Size(68, 20);
             this.TXB21.TabIndex = 24;
@@ -486,7 +464,7 @@ namespace GRAFICA2
             // 
             // TXB18
             // 
-            this.TXB18.Location = new System.Drawing.Point(79, 846);
+            this.TXB18.Location = new System.Drawing.Point(930, 159);
             this.TXB18.Name = "TXB18";
             this.TXB18.Size = new System.Drawing.Size(68, 20);
             this.TXB18.TabIndex = 20;
@@ -494,7 +472,7 @@ namespace GRAFICA2
             // 
             // TXB20
             // 
-            this.TXB20.Location = new System.Drawing.Point(225, 846);
+            this.TXB20.Location = new System.Drawing.Point(1076, 159);
             this.TXB20.Name = "TXB20";
             this.TXB20.Size = new System.Drawing.Size(68, 20);
             this.TXB20.TabIndex = 22;
@@ -502,7 +480,7 @@ namespace GRAFICA2
             // 
             // TXB19
             // 
-            this.TXB19.Location = new System.Drawing.Point(152, 846);
+            this.TXB19.Location = new System.Drawing.Point(1003, 159);
             this.TXB19.Name = "TXB19";
             this.TXB19.Size = new System.Drawing.Size(68, 20);
             this.TXB19.TabIndex = 21;
@@ -510,7 +488,7 @@ namespace GRAFICA2
             // 
             // TXB25
             // 
-            this.TXB25.Location = new System.Drawing.Point(371, 876);
+            this.TXB25.Location = new System.Drawing.Point(1222, 189);
             this.TXB25.Name = "TXB25";
             this.TXB25.Size = new System.Drawing.Size(68, 20);
             this.TXB25.TabIndex = 30;
@@ -518,7 +496,7 @@ namespace GRAFICA2
             // 
             // TXB22
             // 
-            this.TXB22.Location = new System.Drawing.Point(79, 876);
+            this.TXB22.Location = new System.Drawing.Point(930, 189);
             this.TXB22.Name = "TXB22";
             this.TXB22.Size = new System.Drawing.Size(68, 20);
             this.TXB22.TabIndex = 26;
@@ -526,7 +504,7 @@ namespace GRAFICA2
             // 
             // TXB24
             // 
-            this.TXB24.Location = new System.Drawing.Point(225, 876);
+            this.TXB24.Location = new System.Drawing.Point(1076, 189);
             this.TXB24.Name = "TXB24";
             this.TXB24.Size = new System.Drawing.Size(68, 20);
             this.TXB24.TabIndex = 28;
@@ -534,7 +512,7 @@ namespace GRAFICA2
             // 
             // TXB23
             // 
-            this.TXB23.Location = new System.Drawing.Point(152, 876);
+            this.TXB23.Location = new System.Drawing.Point(1003, 189);
             this.TXB23.Name = "TXB23";
             this.TXB23.Size = new System.Drawing.Size(68, 20);
             this.TXB23.TabIndex = 27;
@@ -542,7 +520,7 @@ namespace GRAFICA2
             // 
             // TXB29
             // 
-            this.TXB29.Location = new System.Drawing.Point(371, 906);
+            this.TXB29.Location = new System.Drawing.Point(1222, 219);
             this.TXB29.Name = "TXB29";
             this.TXB29.Size = new System.Drawing.Size(68, 20);
             this.TXB29.TabIndex = 36;
@@ -550,7 +528,7 @@ namespace GRAFICA2
             // 
             // TXB26
             // 
-            this.TXB26.Location = new System.Drawing.Point(79, 906);
+            this.TXB26.Location = new System.Drawing.Point(930, 219);
             this.TXB26.Name = "TXB26";
             this.TXB26.Size = new System.Drawing.Size(68, 20);
             this.TXB26.TabIndex = 32;
@@ -558,7 +536,7 @@ namespace GRAFICA2
             // 
             // TXB28
             // 
-            this.TXB28.Location = new System.Drawing.Point(225, 906);
+            this.TXB28.Location = new System.Drawing.Point(1076, 219);
             this.TXB28.Name = "TXB28";
             this.TXB28.Size = new System.Drawing.Size(68, 20);
             this.TXB28.TabIndex = 34;
@@ -566,7 +544,7 @@ namespace GRAFICA2
             // 
             // TXB27
             // 
-            this.TXB27.Location = new System.Drawing.Point(152, 906);
+            this.TXB27.Location = new System.Drawing.Point(1003, 219);
             this.TXB27.Name = "TXB27";
             this.TXB27.Size = new System.Drawing.Size(68, 20);
             this.TXB27.TabIndex = 33;
@@ -574,7 +552,7 @@ namespace GRAFICA2
             // 
             // TXB33
             // 
-            this.TXB33.Location = new System.Drawing.Point(371, 936);
+            this.TXB33.Location = new System.Drawing.Point(1222, 249);
             this.TXB33.Name = "TXB33";
             this.TXB33.Size = new System.Drawing.Size(68, 20);
             this.TXB33.TabIndex = 42;
@@ -582,7 +560,7 @@ namespace GRAFICA2
             // 
             // TXB30
             // 
-            this.TXB30.Location = new System.Drawing.Point(79, 936);
+            this.TXB30.Location = new System.Drawing.Point(930, 249);
             this.TXB30.Name = "TXB30";
             this.TXB30.Size = new System.Drawing.Size(68, 20);
             this.TXB30.TabIndex = 38;
@@ -590,7 +568,7 @@ namespace GRAFICA2
             // 
             // TXB32
             // 
-            this.TXB32.Location = new System.Drawing.Point(225, 936);
+            this.TXB32.Location = new System.Drawing.Point(1076, 249);
             this.TXB32.Name = "TXB32";
             this.TXB32.Size = new System.Drawing.Size(68, 20);
             this.TXB32.TabIndex = 40;
@@ -598,7 +576,7 @@ namespace GRAFICA2
             // 
             // TXB31
             // 
-            this.TXB31.Location = new System.Drawing.Point(152, 936);
+            this.TXB31.Location = new System.Drawing.Point(1003, 249);
             this.TXB31.Name = "TXB31";
             this.TXB31.Size = new System.Drawing.Size(68, 20);
             this.TXB31.TabIndex = 39;
@@ -606,7 +584,7 @@ namespace GRAFICA2
             // 
             // TXB37
             // 
-            this.TXB37.Location = new System.Drawing.Point(371, 966);
+            this.TXB37.Location = new System.Drawing.Point(1222, 279);
             this.TXB37.Name = "TXB37";
             this.TXB37.Size = new System.Drawing.Size(68, 20);
             this.TXB37.TabIndex = 48;
@@ -614,7 +592,7 @@ namespace GRAFICA2
             // 
             // TXB34
             // 
-            this.TXB34.Location = new System.Drawing.Point(79, 966);
+            this.TXB34.Location = new System.Drawing.Point(930, 279);
             this.TXB34.Name = "TXB34";
             this.TXB34.Size = new System.Drawing.Size(68, 20);
             this.TXB34.TabIndex = 44;
@@ -622,7 +600,7 @@ namespace GRAFICA2
             // 
             // TXB36
             // 
-            this.TXB36.Location = new System.Drawing.Point(225, 966);
+            this.TXB36.Location = new System.Drawing.Point(1076, 279);
             this.TXB36.Name = "TXB36";
             this.TXB36.Size = new System.Drawing.Size(68, 20);
             this.TXB36.TabIndex = 46;
@@ -630,7 +608,7 @@ namespace GRAFICA2
             // 
             // TXB35
             // 
-            this.TXB35.Location = new System.Drawing.Point(152, 966);
+            this.TXB35.Location = new System.Drawing.Point(1003, 279);
             this.TXB35.Name = "TXB35";
             this.TXB35.Size = new System.Drawing.Size(68, 20);
             this.TXB35.TabIndex = 45;
@@ -638,7 +616,7 @@ namespace GRAFICA2
             // 
             // TXB41
             // 
-            this.TXB41.Location = new System.Drawing.Point(371, 996);
+            this.TXB41.Location = new System.Drawing.Point(1222, 309);
             this.TXB41.Name = "TXB41";
             this.TXB41.Size = new System.Drawing.Size(68, 20);
             this.TXB41.TabIndex = 54;
@@ -646,7 +624,7 @@ namespace GRAFICA2
             // 
             // TXB38
             // 
-            this.TXB38.Location = new System.Drawing.Point(79, 996);
+            this.TXB38.Location = new System.Drawing.Point(930, 309);
             this.TXB38.Name = "TXB38";
             this.TXB38.Size = new System.Drawing.Size(68, 20);
             this.TXB38.TabIndex = 50;
@@ -654,7 +632,7 @@ namespace GRAFICA2
             // 
             // TXB40
             // 
-            this.TXB40.Location = new System.Drawing.Point(225, 996);
+            this.TXB40.Location = new System.Drawing.Point(1076, 309);
             this.TXB40.Name = "TXB40";
             this.TXB40.Size = new System.Drawing.Size(68, 20);
             this.TXB40.TabIndex = 52;
@@ -662,7 +640,7 @@ namespace GRAFICA2
             // 
             // TXB39
             // 
-            this.TXB39.Location = new System.Drawing.Point(152, 996);
+            this.TXB39.Location = new System.Drawing.Point(1003, 309);
             this.TXB39.Name = "TXB39";
             this.TXB39.Size = new System.Drawing.Size(68, 20);
             this.TXB39.TabIndex = 51;
@@ -670,7 +648,7 @@ namespace GRAFICA2
             // 
             // TXB45
             // 
-            this.TXB45.Location = new System.Drawing.Point(371, 1026);
+            this.TXB45.Location = new System.Drawing.Point(1222, 339);
             this.TXB45.Name = "TXB45";
             this.TXB45.Size = new System.Drawing.Size(68, 20);
             this.TXB45.TabIndex = 60;
@@ -678,7 +656,7 @@ namespace GRAFICA2
             // 
             // TXB42
             // 
-            this.TXB42.Location = new System.Drawing.Point(79, 1026);
+            this.TXB42.Location = new System.Drawing.Point(930, 339);
             this.TXB42.Name = "TXB42";
             this.TXB42.Size = new System.Drawing.Size(68, 20);
             this.TXB42.TabIndex = 56;
@@ -686,7 +664,7 @@ namespace GRAFICA2
             // 
             // TXB44
             // 
-            this.TXB44.Location = new System.Drawing.Point(225, 1026);
+            this.TXB44.Location = new System.Drawing.Point(1076, 339);
             this.TXB44.Name = "TXB44";
             this.TXB44.Size = new System.Drawing.Size(68, 20);
             this.TXB44.TabIndex = 58;
@@ -694,7 +672,7 @@ namespace GRAFICA2
             // 
             // TXB43
             // 
-            this.TXB43.Location = new System.Drawing.Point(152, 1026);
+            this.TXB43.Location = new System.Drawing.Point(1003, 339);
             this.TXB43.Name = "TXB43";
             this.TXB43.Size = new System.Drawing.Size(68, 20);
             this.TXB43.TabIndex = 57;
@@ -704,7 +682,7 @@ namespace GRAFICA2
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(885, 729);
+            this.label3.Location = new System.Drawing.Point(866, 524);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(14, 13);
             this.label3.TabIndex = 61;
@@ -715,7 +693,7 @@ namespace GRAFICA2
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(904, 729);
+            this.label4.Location = new System.Drawing.Point(885, 524);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(14, 13);
             this.label4.TabIndex = 62;
@@ -726,7 +704,7 @@ namespace GRAFICA2
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(923, 729);
+            this.label5.Location = new System.Drawing.Point(904, 524);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(14, 13);
             this.label5.TabIndex = 63;
@@ -737,7 +715,7 @@ namespace GRAFICA2
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(942, 729);
+            this.label6.Location = new System.Drawing.Point(923, 524);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(14, 13);
             this.label6.TabIndex = 64;
@@ -748,7 +726,7 @@ namespace GRAFICA2
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(961, 729);
+            this.label7.Location = new System.Drawing.Point(942, 524);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(14, 13);
             this.label7.TabIndex = 65;
@@ -759,7 +737,7 @@ namespace GRAFICA2
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(980, 729);
+            this.label8.Location = new System.Drawing.Point(961, 524);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(14, 13);
             this.label8.TabIndex = 66;
@@ -770,7 +748,7 @@ namespace GRAFICA2
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(999, 729);
+            this.label9.Location = new System.Drawing.Point(980, 524);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(14, 13);
             this.label9.TabIndex = 67;
@@ -781,7 +759,7 @@ namespace GRAFICA2
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1018, 729);
+            this.label10.Location = new System.Drawing.Point(999, 524);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(14, 13);
             this.label10.TabIndex = 68;
@@ -792,7 +770,7 @@ namespace GRAFICA2
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1037, 729);
+            this.label11.Location = new System.Drawing.Point(1018, 524);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(14, 13);
             this.label11.TabIndex = 69;
@@ -803,7 +781,7 @@ namespace GRAFICA2
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1056, 729);
+            this.label12.Location = new System.Drawing.Point(1037, 524);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(14, 13);
             this.label12.TabIndex = 70;
@@ -814,7 +792,7 @@ namespace GRAFICA2
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1075, 729);
+            this.label13.Location = new System.Drawing.Point(1056, 524);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(14, 13);
             this.label13.TabIndex = 71;
@@ -825,7 +803,7 @@ namespace GRAFICA2
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(885, 756);
+            this.label14.Location = new System.Drawing.Point(866, 551);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(14, 13);
             this.label14.TabIndex = 72;
@@ -836,7 +814,7 @@ namespace GRAFICA2
             // 
             this.BTN1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTN1.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN1.Location = new System.Drawing.Point(561, 764);
+            this.BTN1.Location = new System.Drawing.Point(857, 470);
             this.BTN1.Name = "BTN1";
             this.BTN1.Size = new System.Drawing.Size(68, 25);
             this.BTN1.TabIndex = 73;
@@ -848,7 +826,7 @@ namespace GRAFICA2
             // 
             this.BTN3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTN3.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN3.Location = new System.Drawing.Point(634, 729);
+            this.BTN3.Location = new System.Drawing.Point(930, 435);
             this.BTN3.Name = "BTN3";
             this.BTN3.Size = new System.Drawing.Size(68, 60);
             this.BTN3.TabIndex = 80;
@@ -859,7 +837,7 @@ namespace GRAFICA2
             // 
             this.BTN4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BTN4.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN4.Location = new System.Drawing.Point(707, 729);
+            this.BTN4.Location = new System.Drawing.Point(1003, 435);
             this.BTN4.Name = "BTN4";
             this.BTN4.Size = new System.Drawing.Size(68, 60);
             this.BTN4.TabIndex = 81;
@@ -870,7 +848,7 @@ namespace GRAFICA2
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(904, 756);
+            this.label15.Location = new System.Drawing.Point(885, 551);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(14, 13);
             this.label15.TabIndex = 76;
@@ -881,7 +859,7 @@ namespace GRAFICA2
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(923, 756);
+            this.label16.Location = new System.Drawing.Point(904, 551);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(14, 13);
             this.label16.TabIndex = 77;
@@ -892,7 +870,7 @@ namespace GRAFICA2
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(942, 756);
+            this.label17.Location = new System.Drawing.Point(923, 551);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(14, 13);
             this.label17.TabIndex = 78;
@@ -903,7 +881,7 @@ namespace GRAFICA2
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(961, 756);
+            this.label18.Location = new System.Drawing.Point(942, 551);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(14, 13);
             this.label18.TabIndex = 79;
@@ -914,7 +892,7 @@ namespace GRAFICA2
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(980, 756);
+            this.label19.Location = new System.Drawing.Point(961, 551);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(14, 13);
             this.label19.TabIndex = 80;
@@ -925,7 +903,7 @@ namespace GRAFICA2
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(999, 756);
+            this.label20.Location = new System.Drawing.Point(980, 551);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(14, 13);
             this.label20.TabIndex = 81;
@@ -936,7 +914,7 @@ namespace GRAFICA2
             // CBB3
             // 
             this.CBB3.FormattingEnabled = true;
-            this.CBB3.Location = new System.Drawing.Point(6, 816);
+            this.CBB3.Location = new System.Drawing.Point(857, 129);
             this.CBB3.Name = "CBB3";
             this.CBB3.Size = new System.Drawing.Size(68, 21);
             this.CBB3.TabIndex = 13;
@@ -949,7 +927,7 @@ namespace GRAFICA2
             "CEL",
             "COM",
             "RES"});
-            this.CBB5.Location = new System.Drawing.Point(6, 846);
+            this.CBB5.Location = new System.Drawing.Point(857, 159);
             this.CBB5.Name = "CBB5";
             this.CBB5.Size = new System.Drawing.Size(68, 21);
             this.CBB5.TabIndex = 19;
@@ -962,7 +940,7 @@ namespace GRAFICA2
             "CEL",
             "COM",
             "RES"});
-            this.CBB7.Location = new System.Drawing.Point(6, 876);
+            this.CBB7.Location = new System.Drawing.Point(857, 189);
             this.CBB7.Name = "CBB7";
             this.CBB7.Size = new System.Drawing.Size(68, 21);
             this.CBB7.TabIndex = 25;
@@ -975,7 +953,7 @@ namespace GRAFICA2
             "CEL",
             "COM",
             "RES"});
-            this.CBB9.Location = new System.Drawing.Point(6, 906);
+            this.CBB9.Location = new System.Drawing.Point(857, 219);
             this.CBB9.Name = "CBB9";
             this.CBB9.Size = new System.Drawing.Size(68, 21);
             this.CBB9.TabIndex = 31;
@@ -988,7 +966,7 @@ namespace GRAFICA2
             "CEL",
             "COM",
             "RES"});
-            this.CBB11.Location = new System.Drawing.Point(6, 936);
+            this.CBB11.Location = new System.Drawing.Point(857, 249);
             this.CBB11.Name = "CBB11";
             this.CBB11.Size = new System.Drawing.Size(68, 21);
             this.CBB11.TabIndex = 37;
@@ -1001,7 +979,7 @@ namespace GRAFICA2
             "CEL",
             "COM",
             "RES"});
-            this.CBB13.Location = new System.Drawing.Point(6, 966);
+            this.CBB13.Location = new System.Drawing.Point(857, 279);
             this.CBB13.Name = "CBB13";
             this.CBB13.Size = new System.Drawing.Size(68, 21);
             this.CBB13.TabIndex = 43;
@@ -1014,7 +992,7 @@ namespace GRAFICA2
             "CEL",
             "COM",
             "RES"});
-            this.CBB15.Location = new System.Drawing.Point(6, 996);
+            this.CBB15.Location = new System.Drawing.Point(857, 309);
             this.CBB15.Name = "CBB15";
             this.CBB15.Size = new System.Drawing.Size(68, 21);
             this.CBB15.TabIndex = 49;
@@ -1027,7 +1005,7 @@ namespace GRAFICA2
             "CEL",
             "COM",
             "RES"});
-            this.CBB17.Location = new System.Drawing.Point(6, 1026);
+            this.CBB17.Location = new System.Drawing.Point(857, 339);
             this.CBB17.Name = "CBB17";
             this.CBB17.Size = new System.Drawing.Size(68, 21);
             this.CBB17.TabIndex = 55;
@@ -1036,7 +1014,7 @@ namespace GRAFICA2
             // CBB4
             // 
             this.CBB4.FormattingEnabled = true;
-            this.CBB4.Location = new System.Drawing.Point(298, 816);
+            this.CBB4.Location = new System.Drawing.Point(1149, 129);
             this.CBB4.Name = "CBB4";
             this.CBB4.Size = new System.Drawing.Size(68, 21);
             this.CBB4.TabIndex = 17;
@@ -1048,7 +1026,7 @@ namespace GRAFICA2
             this.CBB6.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.CBB6.Location = new System.Drawing.Point(298, 846);
+            this.CBB6.Location = new System.Drawing.Point(1149, 159);
             this.CBB6.Name = "CBB6";
             this.CBB6.Size = new System.Drawing.Size(68, 21);
             this.CBB6.TabIndex = 23;
@@ -1060,7 +1038,7 @@ namespace GRAFICA2
             this.CBB8.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.CBB8.Location = new System.Drawing.Point(298, 876);
+            this.CBB8.Location = new System.Drawing.Point(1149, 189);
             this.CBB8.Name = "CBB8";
             this.CBB8.Size = new System.Drawing.Size(68, 21);
             this.CBB8.TabIndex = 29;
@@ -1072,7 +1050,7 @@ namespace GRAFICA2
             this.CBB10.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.CBB10.Location = new System.Drawing.Point(298, 906);
+            this.CBB10.Location = new System.Drawing.Point(1149, 219);
             this.CBB10.Name = "CBB10";
             this.CBB10.Size = new System.Drawing.Size(68, 21);
             this.CBB10.TabIndex = 35;
@@ -1084,7 +1062,7 @@ namespace GRAFICA2
             this.CBB12.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.CBB12.Location = new System.Drawing.Point(298, 936);
+            this.CBB12.Location = new System.Drawing.Point(1149, 249);
             this.CBB12.Name = "CBB12";
             this.CBB12.Size = new System.Drawing.Size(68, 21);
             this.CBB12.TabIndex = 41;
@@ -1096,7 +1074,7 @@ namespace GRAFICA2
             this.CBB14.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.CBB14.Location = new System.Drawing.Point(298, 966);
+            this.CBB14.Location = new System.Drawing.Point(1149, 279);
             this.CBB14.Name = "CBB14";
             this.CBB14.Size = new System.Drawing.Size(68, 21);
             this.CBB14.TabIndex = 47;
@@ -1108,7 +1086,7 @@ namespace GRAFICA2
             this.CBB16.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.CBB16.Location = new System.Drawing.Point(298, 996);
+            this.CBB16.Location = new System.Drawing.Point(1149, 309);
             this.CBB16.Name = "CBB16";
             this.CBB16.Size = new System.Drawing.Size(68, 21);
             this.CBB16.TabIndex = 53;
@@ -1120,7 +1098,7 @@ namespace GRAFICA2
             this.CBB18.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.CBB18.Location = new System.Drawing.Point(298, 1026);
+            this.CBB18.Location = new System.Drawing.Point(1149, 339);
             this.CBB18.Name = "CBB18";
             this.CBB18.Size = new System.Drawing.Size(68, 21);
             this.CBB18.TabIndex = 59;
@@ -1195,7 +1173,7 @@ namespace GRAFICA2
             this.PAPEIS2.Name = "PAPEIS2";
             this.PAPEIS2.Size = new System.Drawing.Size(55, 20);
             this.PAPEIS2.Text = "PAPEIS";
-            this.PAPEIS2.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
+            this.PAPEIS2.Click += new System.EventHandler(this.PAPEL_Click);
             // 
             // FUNCIONARIOS2
             // 
@@ -1253,7 +1231,7 @@ namespace GRAFICA2
             this.PAPEIS1.Name = "PAPEIS1";
             this.PAPEIS1.Size = new System.Drawing.Size(55, 20);
             this.PAPEIS1.Text = "PAPEIS";
-            this.PAPEIS1.Click += new System.EventHandler(this.FORMCADPAPEL_Click);
+            this.PAPEIS1.Click += new System.EventHandler(this.PAPEL_Click);
             // 
             // FUNCIONARIOS1
             // 
@@ -1279,7 +1257,7 @@ namespace GRAFICA2
             // CBB2
             // 
             this.CBB2.FormattingEnabled = true;
-            this.CBB2.Location = new System.Drawing.Point(298, 787);
+            this.CBB2.Location = new System.Drawing.Point(1149, 100);
             this.CBB2.Name = "CBB2";
             this.CBB2.Size = new System.Drawing.Size(68, 21);
             this.CBB2.TabIndex = 127;
@@ -1290,7 +1268,7 @@ namespace GRAFICA2
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(842, 624);
+            this.label25.Location = new System.Drawing.Point(863, 389);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(133, 23);
             this.label25.TabIndex = 128;
@@ -1301,7 +1279,7 @@ namespace GRAFICA2
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(970, 609);
+            this.label26.Location = new System.Drawing.Point(991, 374);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(56, 68);
             this.label26.TabIndex = 129;
@@ -1312,7 +1290,7 @@ namespace GRAFICA2
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(1014, 612);
+            this.label27.Location = new System.Drawing.Point(1035, 377);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(44, 52);
             this.label27.TabIndex = 130;
@@ -1323,7 +1301,7 @@ namespace GRAFICA2
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Red;
-            this.label28.Location = new System.Drawing.Point(1045, 612);
+            this.label28.Location = new System.Drawing.Point(1066, 377);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(44, 52);
             this.label28.TabIndex = 131;
@@ -1334,7 +1312,7 @@ namespace GRAFICA2
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(1082, 612);
+            this.label29.Location = new System.Drawing.Point(1103, 377);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(44, 52);
             this.label29.TabIndex = 132;
@@ -1345,7 +1323,7 @@ namespace GRAFICA2
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.Red;
-            this.label30.Location = new System.Drawing.Point(1117, 612);
+            this.label30.Location = new System.Drawing.Point(1138, 377);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(44, 52);
             this.label30.TabIndex = 133;
@@ -1356,7 +1334,7 @@ namespace GRAFICA2
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(1155, 612);
+            this.label31.Location = new System.Drawing.Point(1176, 377);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(44, 52);
             this.label31.TabIndex = 140;
@@ -1368,7 +1346,7 @@ namespace GRAFICA2
             // 
             // TXB1
             // 
-            this.TXB1.Location = new System.Drawing.Point(6, 728);
+            this.TXB1.Location = new System.Drawing.Point(857, 41);
             this.TXB1.Name = "TXB1";
             this.TXB1.Size = new System.Drawing.Size(68, 20);
             this.TXB1.TabIndex = 141;
@@ -1377,7 +1355,7 @@ namespace GRAFICA2
             // BTN2
             // 
             this.BTN2.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN2.Location = new System.Drawing.Point(561, 729);
+            this.BTN2.Location = new System.Drawing.Point(857, 435);
             this.BTN2.Name = "BTN2";
             this.BTN2.Size = new System.Drawing.Size(68, 25);
             this.BTN2.TabIndex = 143;
@@ -1393,9 +1371,9 @@ namespace GRAFICA2
             // 
             this.DGV1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV1.Location = new System.Drawing.Point(1327, 803);
+            this.DGV1.Location = new System.Drawing.Point(1101, 515);
             this.DGV1.Name = "DGV1";
-            this.DGV1.Size = new System.Drawing.Size(565, 252);
+            this.DGV1.Size = new System.Drawing.Size(237, 92);
             this.DGV1.TabIndex = 154;
             // 
             // atualizaRemessaAgrupadaResponseBindingSource
@@ -1437,7 +1415,7 @@ namespace GRAFICA2
             this.LBLDATA.AutoSize = true;
             this.LBLDATA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLDATA.ForeColor = System.Drawing.Color.Red;
-            this.LBLDATA.Location = new System.Drawing.Point(885, 781);
+            this.LBLDATA.Location = new System.Drawing.Point(866, 576);
             this.LBLDATA.Name = "LBLDATA";
             this.LBLDATA.Size = new System.Drawing.Size(15, 13);
             this.LBLDATA.TabIndex = 157;
@@ -1447,7 +1425,7 @@ namespace GRAFICA2
             // LBLCODIGO
             // 
             this.LBLCODIGO.AutoSize = true;
-            this.LBLCODIGO.Location = new System.Drawing.Point(906, 781);
+            this.LBLCODIGO.Location = new System.Drawing.Point(887, 576);
             this.LBLCODIGO.Name = "LBLCODIGO";
             this.LBLCODIGO.Size = new System.Drawing.Size(14, 13);
             this.LBLCODIGO.TabIndex = 158;
@@ -1457,7 +1435,7 @@ namespace GRAFICA2
             // LBLCODIGO1
             // 
             this.LBLCODIGO1.AutoSize = true;
-            this.LBLCODIGO1.Location = new System.Drawing.Point(926, 781);
+            this.LBLCODIGO1.Location = new System.Drawing.Point(907, 576);
             this.LBLCODIGO1.Name = "LBLCODIGO1";
             this.LBLCODIGO1.Size = new System.Drawing.Size(14, 13);
             this.LBLCODIGO1.TabIndex = 162;
@@ -1467,163 +1445,26 @@ namespace GRAFICA2
             // LBLCODIGO2
             // 
             this.LBLCODIGO2.AutoSize = true;
-            this.LBLCODIGO2.Location = new System.Drawing.Point(946, 781);
+            this.LBLCODIGO2.Location = new System.Drawing.Point(927, 576);
             this.LBLCODIGO2.Name = "LBLCODIGO2";
             this.LBLCODIGO2.Size = new System.Drawing.Size(14, 13);
             this.LBLCODIGO2.TabIndex = 163;
             this.LBLCODIGO2.Text = "C";
             this.LBLCODIGO2.Visible = false;
             // 
-            // TXBDATAFUN
-            // 
-            this.TXBDATAFUN.Location = new System.Drawing.Point(6, 678);
-            this.TXBDATAFUN.Name = "TXBDATAFUN";
-            this.TXBDATAFUN.Size = new System.Drawing.Size(67, 20);
-            this.TXBDATAFUN.TabIndex = 170;
-            this.TXBDATAFUN.Visible = false;
-            // 
-            // TXBNOMEFUN
-            // 
-            this.TXBNOMEFUN.Location = new System.Drawing.Point(6, 648);
-            this.TXBNOMEFUN.Name = "TXBNOMEFUN";
-            this.TXBNOMEFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBNOMEFUN.TabIndex = 171;
-            this.TXBNOMEFUN.Visible = false;
-            // 
-            // TXBCARGOFUN
-            // 
-            this.TXBCARGOFUN.Location = new System.Drawing.Point(371, 648);
-            this.TXBCARGOFUN.Name = "TXBCARGOFUN";
-            this.TXBCARGOFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBCARGOFUN.TabIndex = 172;
-            this.TXBCARGOFUN.Visible = false;
-            // 
-            // TXBCPFFUN
-            // 
-            this.TXBCPFFUN.Location = new System.Drawing.Point(153, 648);
-            this.TXBCPFFUN.Name = "TXBCPFFUN";
-            this.TXBCPFFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBCPFFUN.TabIndex = 175;
-            this.TXBCPFFUN.Visible = false;
-            // 
-            // TXBCNHFUN
-            // 
-            this.TXBCNHFUN.Location = new System.Drawing.Point(225, 648);
-            this.TXBCNHFUN.Name = "TXBCNHFUN";
-            this.TXBCNHFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBCNHFUN.TabIndex = 177;
-            this.TXBCNHFUN.Visible = false;
-            // 
-            // TXBCERTRESFUN
-            // 
-            this.TXBCERTRESFUN.Location = new System.Drawing.Point(298, 648);
-            this.TXBCERTRESFUN.Name = "TXBCERTRESFUN";
-            this.TXBCERTRESFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBCERTRESFUN.TabIndex = 178;
-            this.TXBCERTRESFUN.Visible = false;
-            // 
-            // TXBENDFUN
-            // 
-            this.TXBENDFUN.Location = new System.Drawing.Point(81, 618);
-            this.TXBENDFUN.Name = "TXBENDFUN";
-            this.TXBENDFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBENDFUN.TabIndex = 180;
-            this.TXBENDFUN.Visible = false;
-            // 
-            // TXBCEPFUN
-            // 
-            this.TXBCEPFUN.Location = new System.Drawing.Point(6, 618);
-            this.TXBCEPFUN.Name = "TXBCEPFUN";
-            this.TXBCEPFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBCEPFUN.TabIndex = 179;
-            this.TXBCEPFUN.Visible = false;
-            this.TXBCEPFUN.Leave += new System.EventHandler(this.TXBCEP_TextChanged);
-            // 
-            // TXBCOMPFUN
-            // 
-            this.TXBCOMPFUN.Location = new System.Drawing.Point(444, 618);
-            this.TXBCOMPFUN.Name = "TXBCOMPFUN";
-            this.TXBCOMPFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBCOMPFUN.TabIndex = 184;
-            this.TXBCOMPFUN.Visible = false;
-            // 
-            // TXBCIDADEFUN
-            // 
-            this.TXBCIDADEFUN.Location = new System.Drawing.Point(225, 618);
-            this.TXBCIDADEFUN.Name = "TXBCIDADEFUN";
-            this.TXBCIDADEFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBCIDADEFUN.TabIndex = 181;
-            this.TXBCIDADEFUN.Visible = false;
-            // 
-            // TXBSALARIOFUN
-            // 
-            this.TXBSALARIOFUN.Location = new System.Drawing.Point(225, 678);
-            this.TXBSALARIOFUN.Name = "TXBSALARIOFUN";
-            this.TXBSALARIOFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBSALARIOFUN.TabIndex = 173;
-            this.TXBSALARIOFUN.Visible = false;
-            // 
-            // TXBENCARGOSFUN
-            // 
-            this.TXBENCARGOSFUN.Location = new System.Drawing.Point(298, 678);
-            this.TXBENCARGOSFUN.Name = "TXBENCARGOSFUN";
-            this.TXBENCARGOSFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBENCARGOSFUN.TabIndex = 174;
-            this.TXBENCARGOSFUN.Visible = false;
-            // 
-            // TXBBONIFIFUN
-            // 
-            this.TXBBONIFIFUN.Location = new System.Drawing.Point(371, 678);
-            this.TXBBONIFIFUN.Name = "TXBBONIFIFUN";
-            this.TXBBONIFIFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBBONIFIFUN.TabIndex = 186;
-            this.TXBBONIFIFUN.Visible = false;
-            // 
             // CBBDESCRICAO
             // 
             this.CBBDESCRICAO.FormattingEnabled = true;
-            this.CBBDESCRICAO.Location = new System.Drawing.Point(229, 484);
+            this.CBBDESCRICAO.Location = new System.Drawing.Point(236, 250);
             this.CBBDESCRICAO.Name = "CBBDESCRICAO";
             this.CBBDESCRICAO.Size = new System.Drawing.Size(68, 21);
             this.CBBDESCRICAO.TabIndex = 185;
             this.CBBDESCRICAO.Visible = false;
             // 
-            // TXBDATADEMISSAO
-            // 
-            this.TXBDATADEMISSAO.Location = new System.Drawing.Point(81, 678);
-            this.TXBDATADEMISSAO.Name = "TXBDATADEMISSAO";
-            this.TXBDATADEMISSAO.Size = new System.Drawing.Size(68, 20);
-            this.TXBDATADEMISSAO.TabIndex = 188;
-            this.TXBDATADEMISSAO.Visible = false;
-            // 
-            // TXBTEMPO
-            // 
-            this.TXBTEMPO.Location = new System.Drawing.Point(153, 678);
-            this.TXBTEMPO.Name = "TXBTEMPO";
-            this.TXBTEMPO.Size = new System.Drawing.Size(68, 20);
-            this.TXBTEMPO.TabIndex = 189;
-            this.TXBTEMPO.Visible = false;
-            // 
-            // TXBRGFUN
-            // 
-            this.TXBRGFUN.Location = new System.Drawing.Point(81, 648);
-            this.TXBRGFUN.Name = "TXBRGFUN";
-            this.TXBRGFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBRGFUN.TabIndex = 176;
-            this.TXBRGFUN.Visible = false;
-            // 
-            // TXBNUMEROFUN
-            // 
-            this.TXBNUMEROFUN.Location = new System.Drawing.Point(371, 618);
-            this.TXBNUMEROFUN.Name = "TXBNUMEROFUN";
-            this.TXBNUMEROFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBNUMEROFUN.TabIndex = 183;
-            this.TXBNUMEROFUN.Visible = false;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(1019, 756);
+            this.label21.Location = new System.Drawing.Point(1000, 551);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(14, 13);
             this.label21.TabIndex = 212;
@@ -1633,60 +1474,36 @@ namespace GRAFICA2
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(1038, 756);
+            this.label22.Location = new System.Drawing.Point(1019, 551);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(14, 13);
             this.label22.TabIndex = 213;
             this.label22.Text = "A";
             this.label22.Visible = false;
             // 
-            // TXBTOTALFUN
-            // 
-            this.TXBTOTALFUN.Location = new System.Drawing.Point(444, 678);
-            this.TXBTOTALFUN.Name = "TXBTOTALFUN";
-            this.TXBTOTALFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBTOTALFUN.TabIndex = 187;
-            this.TXBTOTALFUN.Visible = false;
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(1057, 756);
+            this.label23.Location = new System.Drawing.Point(1038, 551);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(14, 13);
             this.label23.TabIndex = 215;
             this.label23.Text = "A";
             this.label23.Visible = false;
             // 
-            // TXBUFFUN
-            // 
-            this.TXBUFFUN.Location = new System.Drawing.Point(298, 618);
-            this.TXBUFFUN.Name = "TXBUFFUN";
-            this.TXBUFFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBUFFUN.TabIndex = 216;
-            this.TXBUFFUN.Visible = false;
-            // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(1076, 756);
+            this.label24.Location = new System.Drawing.Point(1057, 551);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(14, 13);
             this.label24.TabIndex = 217;
             this.label24.Text = "A";
             this.label24.Visible = false;
             // 
-            // TXBBAIRROFUN
-            // 
-            this.TXBBAIRROFUN.Location = new System.Drawing.Point(153, 618);
-            this.TXBBAIRROFUN.Name = "TXBBAIRROFUN";
-            this.TXBBAIRROFUN.Size = new System.Drawing.Size(68, 20);
-            this.TXBBAIRROFUN.TabIndex = 218;
-            this.TXBBAIRROFUN.Visible = false;
-            // 
             // TXBDESCRICAO
             // 
-            this.TXBDESCRICAO.Location = new System.Drawing.Point(6, 484);
+            this.TXBDESCRICAO.Location = new System.Drawing.Point(13, 250);
             this.TXBDESCRICAO.Name = "TXBDESCRICAO";
             this.TXBDESCRICAO.Size = new System.Drawing.Size(69, 20);
             this.TXBDESCRICAO.TabIndex = 219;
@@ -1695,7 +1512,7 @@ namespace GRAFICA2
             // CBBTIPO
             // 
             this.CBBTIPO.FormattingEnabled = true;
-            this.CBBTIPO.Location = new System.Drawing.Point(303, 484);
+            this.CBBTIPO.Location = new System.Drawing.Point(310, 250);
             this.CBBTIPO.Name = "CBBTIPO";
             this.CBBTIPO.Size = new System.Drawing.Size(67, 21);
             this.CBBTIPO.TabIndex = 220;
@@ -1703,7 +1520,7 @@ namespace GRAFICA2
             // 
             // TXBNHP
             // 
-            this.TXBNHP.Location = new System.Drawing.Point(155, 484);
+            this.TXBNHP.Location = new System.Drawing.Point(162, 250);
             this.TXBNHP.Name = "TXBNHP";
             this.TXBNHP.Size = new System.Drawing.Size(68, 20);
             this.TXBNHP.TabIndex = 221;
@@ -1711,7 +1528,7 @@ namespace GRAFICA2
             // 
             // TXBSUBSIDIAR
             // 
-            this.TXBSUBSIDIAR.Location = new System.Drawing.Point(81, 484);
+            this.TXBSUBSIDIAR.Location = new System.Drawing.Point(88, 250);
             this.TXBSUBSIDIAR.Name = "TXBSUBSIDIAR";
             this.TXBSUBSIDIAR.Size = new System.Drawing.Size(68, 20);
             this.TXBSUBSIDIAR.TabIndex = 222;
@@ -1720,7 +1537,7 @@ namespace GRAFICA2
             // CBBTURNO
             // 
             this.CBBTURNO.FormattingEnabled = true;
-            this.CBBTURNO.Location = new System.Drawing.Point(376, 484);
+            this.CBBTURNO.Location = new System.Drawing.Point(383, 250);
             this.CBBTURNO.Name = "CBBTURNO";
             this.CBBTURNO.Size = new System.Drawing.Size(68, 21);
             this.CBBTURNO.TabIndex = 223;
@@ -1729,7 +1546,7 @@ namespace GRAFICA2
             // CBBTIPOHORA
             // 
             this.CBBTIPOHORA.FormattingEnabled = true;
-            this.CBBTIPOHORA.Location = new System.Drawing.Point(450, 484);
+            this.CBBTIPOHORA.Location = new System.Drawing.Point(457, 250);
             this.CBBTIPOHORA.Name = "CBBTIPOHORA";
             this.CBBTIPOHORA.Size = new System.Drawing.Size(68, 21);
             this.CBBTIPOHORA.TabIndex = 224;
@@ -1738,27 +1555,17 @@ namespace GRAFICA2
             // labe32
             // 
             this.labe32.AutoSize = true;
-            this.labe32.Location = new System.Drawing.Point(543, 465);
+            this.labe32.Location = new System.Drawing.Point(550, 231);
             this.labe32.Name = "labe32";
             this.labe32.Size = new System.Drawing.Size(110, 13);
             this.labe32.TabIndex = 225;
             this.labe32.Text = "CENTRO DE CUSTO";
             this.labe32.Visible = false;
             // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(519, 651);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(88, 13);
-            this.label34.TabIndex = 226;
-            this.label34.Text = "FUNCIONÁRIOS";
-            this.label34.Visible = false;
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(782, 756);
+            this.label36.Location = new System.Drawing.Point(1078, 462);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(51, 13);
             this.label36.TabIndex = 228;
@@ -1768,7 +1575,7 @@ namespace GRAFICA2
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(372, 775);
+            this.label35.Location = new System.Drawing.Point(1223, 75);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(52, 13);
             this.label35.TabIndex = 229;
@@ -1778,7 +1585,7 @@ namespace GRAFICA2
             // BTNINSERIRCC
             // 
             this.BTNINSERIRCC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNINSERIRCC.Location = new System.Drawing.Point(376, 455);
+            this.BTNINSERIRCC.Location = new System.Drawing.Point(383, 221);
             this.BTNINSERIRCC.Name = "BTNINSERIRCC";
             this.BTNINSERIRCC.Size = new System.Drawing.Size(68, 23);
             this.BTNINSERIRCC.TabIndex = 230;
@@ -1789,7 +1596,7 @@ namespace GRAFICA2
             // BTNEXCLUIRCC
             // 
             this.BTNEXCLUIRCC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNEXCLUIRCC.Location = new System.Drawing.Point(450, 455);
+            this.BTNEXCLUIRCC.Location = new System.Drawing.Point(457, 221);
             this.BTNEXCLUIRCC.Name = "BTNEXCLUIRCC";
             this.BTNEXCLUIRCC.Size = new System.Drawing.Size(68, 23);
             this.BTNEXCLUIRCC.TabIndex = 231;
@@ -1800,7 +1607,7 @@ namespace GRAFICA2
             // RB1
             // 
             this.RB1.AutoSize = true;
-            this.RB1.Location = new System.Drawing.Point(229, 460);
+            this.RB1.Location = new System.Drawing.Point(236, 226);
             this.RB1.Name = "RB1";
             this.RB1.Size = new System.Drawing.Size(14, 13);
             this.RB1.TabIndex = 233;
@@ -1812,7 +1619,7 @@ namespace GRAFICA2
             // RB2
             // 
             this.RB2.AutoSize = true;
-            this.RB2.Location = new System.Drawing.Point(303, 460);
+            this.RB2.Location = new System.Drawing.Point(310, 226);
             this.RB2.Name = "RB2";
             this.RB2.Size = new System.Drawing.Size(14, 13);
             this.RB2.TabIndex = 234;
@@ -1824,7 +1631,7 @@ namespace GRAFICA2
             // LBLCODIGO3
             // 
             this.LBLCODIGO3.AutoSize = true;
-            this.LBLCODIGO3.Location = new System.Drawing.Point(966, 781);
+            this.LBLCODIGO3.Location = new System.Drawing.Point(947, 576);
             this.LBLCODIGO3.Name = "LBLCODIGO3";
             this.LBLCODIGO3.Size = new System.Drawing.Size(15, 13);
             this.LBLCODIGO3.TabIndex = 235;
@@ -1834,7 +1641,7 @@ namespace GRAFICA2
             // LBLCODIGO4
             // 
             this.LBLCODIGO4.AutoSize = true;
-            this.LBLCODIGO4.Location = new System.Drawing.Point(987, 781);
+            this.LBLCODIGO4.Location = new System.Drawing.Point(968, 576);
             this.LBLCODIGO4.Name = "LBLCODIGO4";
             this.LBLCODIGO4.Size = new System.Drawing.Size(18, 13);
             this.LBLCODIGO4.TabIndex = 236;
@@ -1844,7 +1651,7 @@ namespace GRAFICA2
             // LBLCODIGO5
             // 
             this.LBLCODIGO5.AutoSize = true;
-            this.LBLCODIGO5.Location = new System.Drawing.Point(1011, 781);
+            this.LBLCODIGO5.Location = new System.Drawing.Point(992, 576);
             this.LBLCODIGO5.Name = "LBLCODIGO5";
             this.LBLCODIGO5.Size = new System.Drawing.Size(14, 13);
             this.LBLCODIGO5.TabIndex = 237;
@@ -1854,7 +1661,7 @@ namespace GRAFICA2
             // LBLCODIGO6
             // 
             this.LBLCODIGO6.AutoSize = true;
-            this.LBLCODIGO6.Location = new System.Drawing.Point(1031, 781);
+            this.LBLCODIGO6.Location = new System.Drawing.Point(1012, 576);
             this.LBLCODIGO6.Name = "LBLCODIGO6";
             this.LBLCODIGO6.Size = new System.Drawing.Size(14, 13);
             this.LBLCODIGO6.TabIndex = 238;
@@ -1864,33 +1671,21 @@ namespace GRAFICA2
             // LBLCODIGO7
             // 
             this.LBLCODIGO7.AutoSize = true;
-            this.LBLCODIGO7.Location = new System.Drawing.Point(1051, 781);
+            this.LBLCODIGO7.Location = new System.Drawing.Point(1032, 576);
             this.LBLCODIGO7.Name = "LBLCODIGO7";
             this.LBLCODIGO7.Size = new System.Drawing.Size(14, 13);
             this.LBLCODIGO7.TabIndex = 239;
             this.LBLCODIGO7.Text = "Z";
             this.LBLCODIGO7.Visible = false;
             // 
-            // CBBFUNCIONARIOS
-            // 
-            this.CBBFUNCIONARIOS.FormattingEnabled = true;
-            this.CBBFUNCIONARIOS.Items.AddRange(new object[] {
-            "CADASTRO",
-            "ATIVO",
-            "DESATIVAR"});
-            this.CBBFUNCIONARIOS.Location = new System.Drawing.Point(443, 648);
-            this.CBBFUNCIONARIOS.Name = "CBBFUNCIONARIOS";
-            this.CBBFUNCIONARIOS.Size = new System.Drawing.Size(69, 21);
-            this.CBBFUNCIONARIOS.TabIndex = 240;
-            // 
             // CBB1
             // 
-            this.CBB1.Location = new System.Drawing.Point(298, 728);
+            this.CBB1.Location = new System.Drawing.Point(1149, 41);
             this.CBB1.Name = "CBB1";
             this.CBB1.Size = new System.Drawing.Size(68, 21);
             this.CBB1.TabIndex = 241;
             this.CBB1.Visible = false;
-            this.CBB1.Leave += new System.EventHandler(this.CBBCLIENTE_Leave);
+            this.CBB1.Leave += new System.EventHandler(this.CBB1_Leave);
             // 
             // MS7
             // 
@@ -1898,8 +1693,9 @@ namespace GRAFICA2
             this.M7,
             this.SAIR7});
             this.MS7.Location = new System.Drawing.Point(0, 0);
+            this.MS7.MaximumSize = new System.Drawing.Size(800, 24);
             this.MS7.Name = "MS7";
-            this.MS7.Size = new System.Drawing.Size(1904, 24);
+            this.MS7.Size = new System.Drawing.Size(800, 24);
             this.MS7.TabIndex = 242;
             this.MS7.Text = "menuStrip7";
             // 
@@ -1924,7 +1720,6 @@ namespace GRAFICA2
             this.ClientSize = new System.Drawing.Size(1904, 1062);
             this.ControlBox = false;
             this.Controls.Add(this.CBB1);
-            this.Controls.Add(this.CBBFUNCIONARIOS);
             this.Controls.Add(this.LBLCODIGO7);
             this.Controls.Add(this.LBLCODIGO6);
             this.Controls.Add(this.LBLCODIGO5);
@@ -1936,7 +1731,6 @@ namespace GRAFICA2
             this.Controls.Add(this.BTNINSERIRCC);
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.label34);
             this.Controls.Add(this.labe32);
             this.Controls.Add(this.CBBTIPOHORA);
             this.Controls.Add(this.CBBTURNO);
@@ -1944,31 +1738,11 @@ namespace GRAFICA2
             this.Controls.Add(this.TXBNHP);
             this.Controls.Add(this.CBBTIPO);
             this.Controls.Add(this.TXBDESCRICAO);
-            this.Controls.Add(this.TXBBAIRROFUN);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.TXBUFFUN);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.TXBTOTALFUN);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.TXBNUMEROFUN);
-            this.Controls.Add(this.TXBRGFUN);
-            this.Controls.Add(this.TXBTEMPO);
-            this.Controls.Add(this.TXBDATADEMISSAO);
             this.Controls.Add(this.CBBDESCRICAO);
-            this.Controls.Add(this.TXBBONIFIFUN);
-            this.Controls.Add(this.TXBENCARGOSFUN);
-            this.Controls.Add(this.TXBSALARIOFUN);
-            this.Controls.Add(this.TXBCIDADEFUN);
-            this.Controls.Add(this.TXBCOMPFUN);
-            this.Controls.Add(this.TXBCEPFUN);
-            this.Controls.Add(this.TXBENDFUN);
-            this.Controls.Add(this.TXBCERTRESFUN);
-            this.Controls.Add(this.TXBCNHFUN);
-            this.Controls.Add(this.TXBCPFFUN);
-            this.Controls.Add(this.TXBCARGOFUN);
-            this.Controls.Add(this.TXBNOMEFUN);
-            this.Controls.Add(this.TXBDATAFUN);
             this.Controls.Add(this.LBLCODIGO2);
             this.Controls.Add(this.LBLCODIGO1);
             this.Controls.Add(this.LBLCODIGO);
@@ -2217,31 +1991,11 @@ namespace GRAFICA2
         private System.Windows.Forms.Label LBLCODIGO;
         private System.Windows.Forms.Label LBLCODIGO1;
         private System.Windows.Forms.Label LBLCODIGO2;
-        private System.Windows.Forms.TextBox TXBDATAFUN;
-        private System.Windows.Forms.TextBox TXBNOMEFUN;
-        private System.Windows.Forms.TextBox TXBCARGOFUN;
-        private System.Windows.Forms.TextBox TXBCPFFUN;
-        private System.Windows.Forms.TextBox TXBCNHFUN;
-        private System.Windows.Forms.TextBox TXBCERTRESFUN;
-        private System.Windows.Forms.TextBox TXBENDFUN;
-        private System.Windows.Forms.TextBox TXBCEPFUN;
-        private System.Windows.Forms.TextBox TXBCOMPFUN;
-        private System.Windows.Forms.TextBox TXBCIDADEFUN;
-        private System.Windows.Forms.TextBox TXBSALARIOFUN;
-        private System.Windows.Forms.TextBox TXBENCARGOSFUN;
-        private System.Windows.Forms.TextBox TXBBONIFIFUN;
         private System.Windows.Forms.ComboBox CBBDESCRICAO;
-        private System.Windows.Forms.TextBox TXBDATADEMISSAO;
-        private System.Windows.Forms.TextBox TXBTEMPO;
-        private System.Windows.Forms.TextBox TXBRGFUN;
-        private System.Windows.Forms.TextBox TXBNUMEROFUN;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox TXBTOTALFUN;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox TXBUFFUN;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox TXBBAIRROFUN;
         private System.Windows.Forms.TextBox TXBDESCRICAO;
         private System.Windows.Forms.ComboBox CBBTIPO;
         private System.Windows.Forms.TextBox TXBNHP;
@@ -2249,7 +2003,6 @@ namespace GRAFICA2
         private System.Windows.Forms.ComboBox CBBTURNO;
         private System.Windows.Forms.ComboBox CBBTIPOHORA;
         private System.Windows.Forms.Label labe32;
-        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button BTNINSERIRCC;
@@ -2261,7 +2014,6 @@ namespace GRAFICA2
         private System.Windows.Forms.Label LBLCODIGO5;
         private System.Windows.Forms.Label LBLCODIGO6;
         private System.Windows.Forms.Label LBLCODIGO7;
-        private System.Windows.Forms.ComboBox CBBFUNCIONARIOS;
         private System.Windows.Forms.ComboBox CBB1;
         private System.Windows.Forms.MenuStrip MS7;
         private System.Windows.Forms.ToolStripMenuItem SAIR7;
